@@ -1,6 +1,6 @@
 # Science
 
-中文版科学知识。
+持续更新...中文版科学知识。
 
 Science knowledge about the world in Chinese.
 
