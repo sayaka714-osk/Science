@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  20 JAN 2021 00:28
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  20 JAN 2021 01:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1386,8 +1386,11 @@ Package: xpinyin 2019/04/07 v2.7 Automatically add pinyin to Chinese characters
 \l__xpinyin_CJKglue_dim=\dimen437
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/xpinyin/xpinyin-database.def
 File: xpinyin-database.def 2019/04/07 v2.7 xpinyin database
-)))
-No file Science.aux.
+))) (./Science.aux
+LaTeX Info: Redefining \rmfamily on input line 20.
+LaTeX Info: Redefining \sffamily on input line 20.
+LaTeX Info: Redefining \ttfamily on input line 20.
+)
 \openout1 = `Science.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1412,6 +1415,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1470,18 +1474,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
+ (./Science.out) (./Science.out)
 \@outlinefile=\write7
 \openout7 = `Science.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Info: Redefining \rmfamily on input line 12.
 LaTeX Info: Redefining \sffamily on input line 12.
 LaTeX Info: Redefining \ttfamily on input line 12.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
-(d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
@@ -1499,19 +1500,19 @@ This may cause the page layout to be inconsistent, however.
 
 [2
 
-]
+] (./Science.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [3] [4] [5] [6])
 \tf@toc=\write8
 \openout8 = `Science.toc'.
 
- [3] [4
+ [7] [8
 
 ] [1
 
-] [2] [3]
-
-LaTeX Warning: Hyper reference `chapter:古典AD-AS模型' on page 4 undefined on input line 249.
-
-[4
+] [2] [3] [4
 
 ] [5] [6
 
@@ -1825,140 +1826,156 @@ Chapter 7.
 
 ]
 Chapter 8.
-[41] [42
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr8!
+Missing character: There is no · in font cmr6!
+ [42] [43]
+Overfull \hbox (8.07318pt too wide) in paragraph at lines 1823--1824
+[]\TU/SimSun(0)/m/n/10.95 新 剑 桥 学 派：|  认 为 利 率 是 借 贷 资 金 的 价 格，|  批 判 综 合 实 际 利 率 理 论 和 流 动 性 偏 好 利 率  |（\TU/CMUSerif(0)/m/n/10.95 loanable-
+ []
+
+Missing character: There is no Δ in font cmmi10!
+[44] [45] [46] [47] [48
 
 ]
 Chapter 9.
-[43] [44
-
-]
-Chapter 10.
-[45] [46
-
-]
-Chapter 11.
-[47] [48
-
-]
-Chapter 12.
 [49] [50
 
 ]
-Chapter 13.
+Chapter 10.
 [51] [52
 
 ]
-Chapter 14.
+Chapter 11.
 [53] [54
 
 ]
-Chapter 15.
+Chapter 12.
 [55] [56
 
 ]
-Chapter 16.
+Chapter 13.
 [57] [58
 
 ]
-Chapter 17.
+Chapter 14.
 [59] [60
+
+]
+Chapter 15.
+[61] [62
+
+]
+Chapter 16.
+[63] [64
+
+]
+Chapter 17.
+[65] [66
 
 ]
 Chapter 18.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1662.
+(hyperref)                removing `math shift' on input line 2093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1662.
+(hyperref)                removing `math shift' on input line 2093.
 
 Missing character: There is no ′ in font cmr10!
 Missing character: There is no ′ in font cmr10!
-[61]
-Overfull \hbox (75.0659pt too wide) detected at line 1745
+[67]
+Overfull \hbox (75.0659pt too wide) detected at line 2176
 []
  []
 
-[62]
-Overfull \hbox (12.70406pt too wide) in paragraph at lines 1830--1830
+[68]
+Overfull \hbox (12.70406pt too wide) in paragraph at lines 2261--2261
 []\TU/SimSun(0)/m/n/10.95 影 响 因 素：| $[] \OT1/cmr/m/n/10.95 = []$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64] [65]
+ [70] [71]
 Underfull \vbox (badness 5726) has occurred while \output is active []
 
- [66]
-Underfull \hbox (badness 10000) in paragraph at lines 2041--2043
+ [72]
+Underfull \hbox (badness 10000) in paragraph at lines 2472--2474
 
  []
 
-[67]
-Underfull \hbox (badness 10000) in paragraph at lines 2099--2101
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 2530--2532
 
  []
 
-[68]
+[74]
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
- [69]
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 2198--2215
+ [75]
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 2629--2646
 [] 
  []
 
-[70]
-Underfull \hbox (badness 10000) in paragraph at lines 2252--2254
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 2683--2685
 
  []
 
-[71] [72]
+[77] [78]
 Chapter 19.
-[73
+[79
 
-] [74
+] [80
 
 ]
 Chapter 20.
-[75] [76
+[81] [82
 
 ]
 Chapter 21.
-[77] [78] [79] [80
+[83] [84] [85] [86
 
 ]
 Chapter 22.
 
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [81]
+ [87]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82] [83]
-Overfull \hbox (56.36243pt too wide) detected at line 2705
+ [88] [89]
+Overfull \hbox (56.36243pt too wide) detected at line 3136
 []
  []
 
-[84]
+[90]
 Chapter 23.
-[85
+[91
 
-] [86
+] [92
 
 ]
 Chapter 24.
-[87] [88
+[93] [94
 
 ]
 Chapter 25.
-[89] [90
+[95] [96
 
-] [91] [92]
+] [97] [98]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1977,41 +1994,29 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2762.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2762.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3193.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2762.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2762.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3193.
+Package rerunfilecheck Info: File `Science.out' has not changed.
+(rerunfilecheck)             Checksum: 8C1FD25F07687657E6A85A756CDBE89C;15321.
 
-
-Package rerunfilecheck Warning: File `Science.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Science.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  4BED9450E097E7997136D0D70F0E2551;13303.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 97906 strings out of 479418
- 2215294 string characters out of 5886345
- 1913443 words of memory out of 5000000
- 114493 multiletter control sequences out of 15000+600000
+ 97969 strings out of 479418
+ 2216299 string characters out of 5886345
+ 1925849 words of memory out of 5000000
+ 114548 multiletter control sequences out of 15000+600000
  553017 words of font info for 149 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,44n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (96 pages).
+Output written on Science.pdf (106 pages).

@@ -347,33 +347,33 @@
 
 \begin{enumerate}[1.]
     \item 原则
-    \begin{enumerate}[(1)]
-        \item 无偏性
-        \begin{gather*}
-            \lim_{n→\infty}{E(\hat{\theta})=\theta } \\ 
-            E\left(\bar{\bm{X}}\right)=\bm{\mu},\ E\left(\frac{1}{n-1}\bm{S}\right)=\bm{\Sigma}	 
-        \end{gather*}
-        \item 有效性
-        \begin{gather*}
-        D(\hat{\theta}_1)<D(\hat{\theta}_2)，\hat{\theta}_1比\hat{\theta}_2有效
-        \end{gather*}
-        \item 一致性
-        \begin{gather*}
-        \lim_{n\rightarrow\infty}{P\left({\left|{\hat{\theta}}_n-\theta\right|<\varepsilon}\right)}=1
-        \end{gather*}
-    \end{enumerate}
+          \begin{enumerate}[(1)]
+              \item 无偏性
+                    \begin{gather*}
+                        \lim_{n→\infty}{E(\hat{\theta})=\theta } \\
+                        E\left(\bar{\bm{X}}\right)=\bm{\mu},\ E\left(\frac{1}{n-1}\bm{S}\right)=\bm{\Sigma}
+                    \end{gather*}
+              \item 有效性
+                    \begin{gather*}
+                        D(\hat{\theta}_1)<D(\hat{\theta}_2)，\hat{\theta}_1比\hat{\theta}_2有效
+                    \end{gather*}
+              \item 一致性
+                    \begin{gather*}
+                        \lim_{n\rightarrow\infty}{P\left({\left|{\hat{\theta}}_n-\theta\right|<\varepsilon}\right)}=1
+                    \end{gather*}
+          \end{enumerate}
     \item 内容
-    \begin{enumerate}[(1)]
-        \item 点估计（point estimation）
-        \item 区间估计（interval estimation）：$z_{\frac{\alpha}{2}}\approx 1.96$
-        \begin{enumerate}[a.]
-            \item $1-\alpha$：置信度，置信区间以$1-\alpha$的概率覆盖总体未知参数。置信度越大，置信区间越宽
-                \item 样本均值：中心位置  
-                \item 总体标准差：总体波动越小，置信区间越窄  
-                \item 样本容量n：样本容量越大，置信区间越窄  
-                \item 样本标准差s：样本标准差越大，置信区间越宽
-        \end{enumerate}
-    \end{enumerate}
+          \begin{enumerate}[(1)]
+              \item 点估计（point estimation）
+              \item 区间估计（interval estimation）：$z_{\frac{\alpha}{2}}\approx 1.96$
+                    \begin{enumerate}[a.]
+                        \item $1-\alpha$：置信度，置信区间以$1-\alpha$的概率覆盖总体未知参数。置信度越大，置信区间越宽
+                        \item 样本均值：中心位置
+                        \item 总体标准差：总体波动越小，置信区间越窄
+                        \item 样本容量n：样本容量越大，置信区间越窄
+                        \item 样本标准差s：样本标准差越大，置信区间越宽
+                    \end{enumerate}
+          \end{enumerate}
 \end{enumerate}
 
 
@@ -401,51 +401,51 @@
 \paragraph{多元}
 
 \begin{align*}
-    \hat{\bm{\mu}}  
-= &\overline{\mathbf{X}}
-=\frac{1}{n}\sum_{a=1}^{n}\mathbf{X}_{(a)}
-=\frac{1}{n}\left[\left[ 
-    \begin{matrix} 	
-    \begin{matrix} 		
-        X_{11}\\
-        X_{12}\\ 	
-    \end{matrix}\\ 	
-\begin{matrix} 		
-    \vdots\\
-    X_{1p}\\ 	
-\end{matrix}\\ 
-\end{matrix}\right]  +\left[ 
-    \begin{matrix} 	
-        \begin{matrix} 		
-            X_{21}\\
-            X_{22}\\ 	
-        \end{matrix}\\ 	
-        \begin{matrix} 		
-            \vdots\\
-            X_{2p}\\ 	
-        \end{matrix}\\ 
-    \end{matrix}\right] +\cdots+ \left[ 
-    \begin{matrix}     
-        \begin{matrix}     	
-            X_{n1}\\
-            X_{n2}\\     
-\end{matrix}\\     
-\begin{matrix}     	
-    \vdots\\
-    X_{np}\\     
-\end{matrix}\\ 
-\end{matrix}\right]\right]\\ 
-=&\frac{1}{n} \left[ 
-    \begin{matrix} 	
-    \begin{matrix} 		
-        X_{11}+X_{21}+\cdots+X_{n1}\\
-        X_{12}+X_{22}+\cdots+X_{n2}\\ 	
-    \end{matrix}\\ 	
-    \begin{matrix} 		
-        \vdots\\
-        X_{1p}+X_{2p}+\cdots+X_{np}\\ 	
-    \end{matrix}\\ \end{matrix}\right] 
-=\left({\overline{X}}_1,{\overline{X}}_2,\cdots,{\overline{X}}_p\right)^\prime 
+    \hat{\bm{\mu}}
+    = & \overline{\mathbf{X}}
+    =\frac{1}{n}\sum_{a=1}^{n}\mathbf{X}_{(a)}
+    =\frac{1}{n}\left[\left[
+            \begin{matrix}
+                \begin{matrix}
+                    X_{11} \\
+                    X_{12} \\
+                \end{matrix} \\
+                \begin{matrix}
+                    \vdots \\
+                    X_{1p} \\
+                \end{matrix} \\
+            \end{matrix}\right]  +\left[
+            \begin{matrix}
+                \begin{matrix}
+                    X_{21} \\
+                    X_{22} \\
+                \end{matrix} \\
+                \begin{matrix}
+                    \vdots \\
+                    X_{2p} \\
+                \end{matrix} \\
+            \end{matrix}\right] +\cdots+ \left[
+    \begin{matrix}
+                \begin{matrix}
+                    X_{n1} \\
+                    X_{n2} \\
+                \end{matrix} \\
+                \begin{matrix}
+                    \vdots \\
+                    X_{np} \\
+                \end{matrix} \\
+            \end{matrix}\right]\right] \\
+    = & \frac{1}{n} \left[
+        \begin{matrix}
+            \begin{matrix}
+                X_{11}+X_{21}+\cdots+X_{n1} \\
+                X_{12}+X_{22}+\cdots+X_{n2} \\
+            \end{matrix} \\
+            \begin{matrix}
+                \vdots                      \\
+                X_{1p}+X_{2p}+\cdots+X_{np} \\
+            \end{matrix} \\\end{matrix}\right]
+    =\left({\overline{X}}_1,{\overline{X}}_2,\cdots,{\overline{X}}_p\right)^\prime
 \end{align*}
 
 
@@ -456,53 +456,53 @@
 \paragraph{一元（离差）}
 
 \begin{gather*}
-S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\bar{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-X)^2}
+    S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\bar{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-X)^2}
 \end{gather*}
 
 
 \paragraph{多元（样本离差阵）}
 
 \begin{align*}
-    
-\mathbf{S}_{p\times p} 
-&= \sum_{a=1}^{n}{\left(\mathbf{X}_{\left(a\right)}-\overline{\mathbf{X}}\right)\left(\mathbf{X}_{\left(a\right)}-\overline{\mathbf{X}}\right)^\prime} 
-= \sum_{a=1}^{n}
-\begin{bmatrix} 	
-    \begin{bmatrix} 		
-        X_{a1}-{\bar{X}}_1 \\
-        X_{a2}-{\bar{X}}_2 \\ 		
-        \vdots             \\
-        X_{ap}-{\bar{X}}_p \\ 	
+
+    \mathbf{S}_{p\times p}
+     & = \sum_{a=1}^{n}{\left(\mathbf{X}_{\left(a\right)}-\overline{\mathbf{X}}\right)\left(\mathbf{X}_{\left(a\right)}-\overline{\mathbf{X}}\right)^\prime}
+    = \sum_{a=1}^{n}
+    \begin{bmatrix}
+        \begin{bmatrix}
+            X_{a1}-{\bar{X}}_1 \\
+            X_{a2}-{\bar{X}}_2 \\
+            \vdots             \\
+            X_{ap}-{\bar{X}}_p \\
+        \end{bmatrix}
+         & \left(X_{a1}-{\bar{X}}_1,X_{a2}-{\bar{X}}_2,\cdots,X_{ap}-{\bar{X}}_p\right) \\
+    \end{bmatrix}                                                                                                                              \\
+     & = \sum_{a=1}^{n}
+    \begin{bmatrix}
+        \left(X_{a1}-{\bar{X}}_1\right)^2
+         & \left(X_{a1}-{\bar{X}}_1\right)\left(X_{a2}-{\bar{X}}_2\right)
+         & \cdots
+         & \left(X_{a1}-{\bar{X}}_1\right)\left(X_{ap}-{\bar{X}}_p\right) \\
+
+        \left(X_{a2}-{\bar{X}}_2\right)\left(X_{a1}-{\bar{X}}_1\right)
+         & \left(X_{a2}-{\bar{X}}_2\right)^2
+         & \cdots
+         & \left(X_{a2}-{\bar{X}}_2\right)\left(X_{ap}-{\bar{X}}_p\right) \\
+        \vdots
+         & \vdots                                                         \\
+         & \                                                              \\
+         & \vdots                                                         \\
+        \left(X_{ap}-{\bar{X}}_p\right)\left(X_{a1}-{\bar{X}}_1\right)
+         & \left(X_{ap}-{\bar{X}}_p\right)\left(X_{a2}-{\bar{X}}_2\right)
+         & \cdots
+         & \left(X_{ap}-{\bar{X}}_p\right)^2                              \\
+    \end{bmatrix}                                                                                                                               \\
+     & = \begin{bmatrix}
+        s_{11} & s_{12} & \cdots & s_{1p} \\
+        s_{21} & s_{22} & \cdots & s_{2p} \\
+        \vdots & \vdots & \      & \vdots \\
+        s_{p1} & s_{p2} & \cdots & s_{pp} \\
     \end{bmatrix}
-    & \left(X_{a1}-{\bar{X}}_1,X_{a2}-{\bar{X}}_2,\cdots,X_{ap}-{\bar{X}}_p\right)\\ 
-\end{bmatrix}\\
-&= \sum_{a=1}^{n}
-\begin{bmatrix} 	
-    \left(X_{a1}-{\bar{X}}_1\right)^2 
-        & \left(X_{a1}-{\bar{X}}_1\right)\left(X_{a2}-{\bar{X}}_2\right)
-        & \cdots
-        & \left(X_{a1}-{\bar{X}}_1\right)\left(X_{ap}-{\bar{X}}_p\right)\\
-        	
-    \left(X_{a2}-{\bar{X}}_2\right)\left(X_{a1}-{\bar{X}}_1\right)
-        &\left(X_{a2}-{\bar{X}}_2\right)^2
-        & \cdots
-        & \left(X_{a2}-{\bar{X}}_2\right)\left(X_{ap}-{\bar{X}}_p\right)\\ 
-    \vdots
-        & \vdots\\
-        & \     \\
-        & \vdots\\
-    \left(X_{ap}-{\bar{X}}_p\right)\left(X_{a1}-{\bar{X}}_1\right)
-        & \left(X_{ap}-{\bar{X}}_p\right)\left(X_{a2}-{\bar{X}}_2\right)
-        & \cdots
-        & \left(X_{ap}-{\bar{X}}_p\right)^2 \\ 		
-\end{bmatrix}\\
-&= \begin{bmatrix} 		
-    s_{11} & s_{12} & \cdots & s_{1p} \\
-    s_{21} & s_{22} & \cdots & s_{2p} \\ 
-    \vdots & \vdots & \      & \vdots \\
-    s_{p1} & s_{p2} & \cdots & s_{pp} \\ 
-\end{bmatrix}
-= \left(s_{ij}\right)_{p\times p}
+    = \left(s_{ij}\right)_{p\times p}
 \end{align*}
 
 
@@ -513,11 +513,11 @@ S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\bar{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n
 
 
 \begin{gather*}
-    Y_i = \beta_0+\beta_{1}X_{i}+{\hat{\varepsilon}}_i\\ 
-    \min_{{\hat{\beta}}_1}{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2} =\sum_{i=1}^{n}{\left(Y_i-{\hat{\beta}}_0-{\hat{\beta}}_1 X_i\right)^2}\\ 
-    \frac{\partial}{\partial \beta_{1}}  \sum_{i=1}^{n}{\hat{ε}_i^2} =-2\sum_{i=1}^{n}{(Y_i-\hat{\beta}_{0}-\hat{\beta}_{1} X_i) X_{i}}=0\\ 
-    \hat{\beta}_{1} = \frac{\sum_{i=1}^{n}\left(X_i-\bar{X}\right)\left(Y_i-\bar{Y}\right)}{\sum_{i=1}^{n}\left(X_i-\bar{X}\right)^2}=\frac{\sum_{i=1}^{n}{x_i y_i}}{\sum_{i=1}^{n}x_i^2}，\hat{\beta}_{0}=\bar{Y}-\hat{\beta}_{1}\bar{X}\\ 
-    {\hat{\beta}}_1 \sim N\left(\beta_1,\frac{\sigma_2}{\sum_{i=1}^{n}{x_i^2}}\right)，\hat{\beta}_{0} \sim N\left(\beta_0, \frac{\sum_{i=1}^{n}{X_i^2}}{ n \sum_{i=1}^{n}{x_i^2}} \sigma^2\right)\\ 
+    Y_i = \beta_0+\beta_{1}X_{i}+{\hat{\varepsilon}}_i\\
+    \min_{{\hat{\beta}}_1}{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2} =\sum_{i=1}^{n}{\left(Y_i-{\hat{\beta}}_0-{\hat{\beta}}_1 X_i\right)^2}\\
+    \frac{\partial}{\partial \beta_{1}}  \sum_{i=1}^{n}{\hat{ε}_i^2} =-2\sum_{i=1}^{n}{(Y_i-\hat{\beta}_{0}-\hat{\beta}_{1} X_i) X_{i}}=0\\
+    \hat{\beta}_{1} = \frac{\sum_{i=1}^{n}\left(X_i-\bar{X}\right)\left(Y_i-\bar{Y}\right)}{\sum_{i=1}^{n}\left(X_i-\bar{X}\right)^2}=\frac{\sum_{i=1}^{n}{x_i y_i}}{\sum_{i=1}^{n}x_i^2}，\hat{\beta}_{0}=\bar{Y}-\hat{\beta}_{1}\bar{X}\\
+    {\hat{\beta}}_1 \sim N\left(\beta_1,\frac{\sigma_2}{\sum_{i=1}^{n}{x_i^2}}\right)，\hat{\beta}_{0} \sim N\left(\beta_0, \frac{\sum_{i=1}^{n}{X_i^2}}{ n \sum_{i=1}^{n}{x_i^2}} \sigma^2\right)\\
 \end{gather*}
 
 
@@ -526,7 +526,7 @@ S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\bar{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n
 \paragraph{多元}
 
 \begin{gather*}
-    \hat{\bm{\beta}} \equiv \left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\bm{Y} 
+    \hat{\bm{\beta}} \equiv \left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\bm{Y}
 \end{gather*}
 
 随机干扰项$\varepsilon_i$的方差
@@ -573,8 +573,8 @@ $k$：变量个数
 
 多元：
 \begin{gather*}
-E(\hat{\bm{\beta}}|\bm{X}) =\bm{\beta}，E(\bm{s}^2|\bm{X})=\sigma^2\\
-E\left(\hat{\bm{\beta}}-\bm{\beta}\middle| X\right) =E\left[\left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\bm{\varepsilon}\middle|\bm{X}\right] =\left[\left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\right]E\left(\bm{\varepsilon}\middle|\bm{X}\right)=\bm{0}
+    E(\hat{\bm{\beta}}|\bm{X}) =\bm{\beta}，E(\bm{s}^2|\bm{X})=\sigma^2\\
+    E\left(\hat{\bm{\beta}}-\bm{\beta}\middle| X\right) =E\left[\left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\bm{\varepsilon}\middle|\bm{X}\right] =\left[\left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\right]E\left(\bm{\varepsilon}\middle|\bm{X}\right)=\bm{0}
 \end{gather*}
 
 
@@ -583,8 +583,8 @@ E\left(\hat{\bm{\beta}}-\bm{\beta}\middle| X\right) =E\left[\left(\bm{X}^\prime\
 一元：
 \begin{gather*}
     Var(\hat{\beta}_1|X)=\frac{\sigma^2}{\sum_{i=1}^{n}x_i^2} \\
-    {\hat{\beta}}_1^\ast=\sum_{i=1}^{n}{c_iY_i}=\sum_{i=1}^{n}{\left(k_i+d_i\right)Y_i}，d_i\text{为不全为零的常数}\\ 
-    Var(\hat{\beta}_1^\ast)\geqslant Var(\hat{\beta}_1) 
+    {\hat{\beta}}_1^\ast=\sum_{i=1}^{n}{c_iY_i}=\sum_{i=1}^{n}{\left(k_i+d_i\right)Y_i}，d_i\text{为不全为零的常数}\\
+    Var(\hat{\beta}_1^\ast)\geqslant Var(\hat{\beta}_1)
 \end{gather*}
 
 
@@ -640,19 +640,19 @@ E\left(\hat{\bm{\beta}}-\bm{\beta}\middle| X\right) =E\left[\left(\bm{X}^\prime\
 \subsubsection{均值估计}
 
 \begin{gather*}
-    \begin{cases} 	
-        E(X) = \frac{1}{n}\sum_{i=1}^{n}{X_i} \\ 	
-        E(X^2) = \frac{1}{n}\sum_{i=1}^{n}{X_i^2} \\ 	
-        \vdots \\ 	
-        E(X^k) = \frac{1}{n}\sum_{i=1}^{n}{X_i^k}  
-    \end{cases} 
+    \begin{cases}
+        E(X) = \frac{1}{n}\sum_{i=1}^{n}{X_i}     \\
+        E(X^2) = \frac{1}{n}\sum_{i=1}^{n}{X_i^2} \\
+        \vdots                                    \\
+        E(X^k) = \frac{1}{n}\sum_{i=1}^{n}{X_i^k}
+    \end{cases}
 \end{gather*}
 
 \subsubsection{系数估计}
 
 \begin{gather*}
-E( \mathbf{X_i} \varepsilon_{i} ) =\mathbf{0} \\ 	
-\hat{\bm{\beta}} \equiv  (\mathbf{X}^{\prime}\mathbf{X})^{-1} \mathbf{X}^{\prime} \mathbf{Y}	 
+    E( \mathbf{X_i} \varepsilon_{i} ) =\mathbf{0} \\
+    \hat{\bm{\beta}} \equiv  (\mathbf{X}^{\prime}\mathbf{X})^{-1} \mathbf{X}^{\prime} \mathbf{Y}
 \end{gather*}
 
 
@@ -678,24 +678,24 @@ E( \mathbf{X_i} \varepsilon_{i} ) =\mathbf{0} \\
 \subsubsection{均值估计}
 
 \begin{gather*}
-    L\left(x_1,x_2,\cdots,x_n;\theta_1,\theta_2,\cdots,\theta_n\right) =\prod_{i=1}^{n}f\left(x_i;\theta_1,\theta_2,\cdots,\theta_k\right)\\	 
-lnL=\sum_{i=1}^{n}lnf\left(x_i;\theta_1,\theta_2,\cdots,\theta_k\right)\\ 
-\frac{\partial lnL}{\partial\theta_i}=0,\ i=1,2,\cdots,k\\ 
-\begin{cases}     
-\hat{\theta}_1 = \hat{\theta}_1(x_1,x_2,\cdots,x_n)\\ 	
-\hat{\theta}_2 = \hat{\theta}_2(x_1,x_2,\cdots,x_n\\ 	
-\vdots\\ 	
-\hat{\theta}_k = \hat{\theta}_k(x_1,x_2,\cdots,x_n)\\ 
-\end{cases}	\\ 
-L\left(\bm{\mu},\bm{\Sigma}\right) =\prod_{i=1}^{n}{f(\bm{X}_i,\bm{\mu},\bm{\Sigma})} 
+    L\left(x_1,x_2,\cdots,x_n;\theta_1,\theta_2,\cdots,\theta_n\right) =\prod_{i=1}^{n}f\left(x_i;\theta_1,\theta_2,\cdots,\theta_k\right)\\
+    lnL=\sum_{i=1}^{n}lnf\left(x_i;\theta_1,\theta_2,\cdots,\theta_k\right)\\
+    \frac{\partial lnL}{\partial\theta_i}=0,\ i=1,2,\cdots,k\\
+    \begin{cases}
+        \hat{\theta}_1 = \hat{\theta}_1(x_1,x_2,\cdots,x_n) \\
+        \hat{\theta}_2 = \hat{\theta}_2(x_1,x_2,\cdots,x_n  \\
+        \vdots                                              \\
+        \hat{\theta}_k = \hat{\theta}_k(x_1,x_2,\cdots,x_n) \\
+    \end{cases}	\\
+    L\left(\bm{\mu},\bm{\Sigma}\right) =\prod_{i=1}^{n}{f(\bm{X}_i,\bm{\mu},\bm{\Sigma})}
 \end{gather*}
 
 
 \subsubsection{系数估计}
 
 \begin{gather*}
-L\left(\bm{\beta},\sigma^2\right) 	=P\left(Y_1,Y_2,\cdots,Y_n\right) \\ 	
-\hat{\bm{\beta}} 	\equiv \left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\bm{Y} 
+    L\left(\bm{\beta},\sigma^2\right) 	=P\left(Y_1,Y_2,\cdots,Y_n\right) \\
+    \hat{\bm{\beta}} 	\equiv \left(\bm{X}^\prime\bm{X}\right)^{-1}\bm{X}^\prime\bm{Y}
 \end{gather*}
 
 
@@ -703,14 +703,14 @@ $Y$服从正态分布
 
 随机干扰项$\sigma_i$的方差
 \begin{gather*}
-    {\hat{\sigma}}^2 
-=\frac{
+    {\hat{\sigma}}^2
+    =\frac{
     \sum_{i=1}^{n}{
-        {\hat{\bm{\varepsilon}}}_i^2}
-    }{n} 
-=\frac{ 
-    {\hat{\bm{\varepsilon}}}^\prime \hat{\bm{\varepsilon}}
-    }{n} 
+    {\hat{\bm{\varepsilon}}}_i^2}
+    }{n}
+    =\frac{
+        {\hat{\bm{\varepsilon}}}^\prime \hat{\bm{\varepsilon}}
+    }{n}
 \end{gather*}
 
 
@@ -748,7 +748,7 @@ $Y$服从正态分布
 
 原理：小概率事件不太可能在一次事件中发生，若发生则有理由拒绝原假设
 
-第一类错误：拒真，$P\{拒绝H_0|H_0为真\}$，能够计算  
+第一类错误：拒真，$P\{拒绝H_0|H_0为真\}$，能够计算
 
 第二类错误：取伪，$P\{接受H_0|H_0不真\}$
 
@@ -774,9 +774,9 @@ $Y$服从正态分布
 \paragraph{一元}
 
 \begin{align*}
-    H_0: \mu = \mu_0 &\leftrightarrow  	H_1: \mu \neq  \mu_0 \text{（双边假设检验）}\\ 	
-    H_0: \mu \leq \mu_0 &\leftrightarrow  	H_1: \mu > \mu_0 \text{（单边假设检验）}\\ 	
-    H_0: \mu \geq \mu_0 &\leftrightarrow  	H_1: \mu < \mu_0 \text{（单边假设检验）}  
+    H_0: \mu = \mu_0    & \leftrightarrow  	H_1: \mu \neq  \mu_0 \text{（双边假设检验）} \\
+    H_0: \mu \leq \mu_0 & \leftrightarrow  	H_1: \mu > \mu_0 \text{（单边假设检验）}     \\
+    H_0: \mu \geq \mu_0 & \leftrightarrow  	H_1: \mu < \mu_0 \text{（单边假设检验）}
 \end{align*}
 
 
@@ -796,9 +796,9 @@ $Y$服从正态分布
 
 拒绝域为：
 \begin{gather*}
-\left|Z\right|>z_{\frac{\alpha}{2}} \\ 
-Z >  z_\alpha\\ 
-Z < -z_\alpha
+    \left|Z\right|>z_{\frac{\alpha}{2}} \\
+    Z >  z_\alpha\\
+    Z < -z_\alpha
 \end{gather*}
 
 
@@ -818,9 +818,9 @@ Z < -z_\alpha
 
 拒绝域为：
 \begin{gather*}
-\left|T\right|>t_{\frac{\alpha}{2}}\left(n-1\right) \\ 
-T>t_\alpha\left(n-1\right) \\ 
-T<-t_\alpha\left(n-1\right)
+    \left|T\right|>t_{\frac{\alpha}{2}}\left(n-1\right) \\
+    T>t_\alpha\left(n-1\right) \\
+    T<-t_\alpha\left(n-1\right)
 \end{gather*}
 
 
@@ -844,8 +844,8 @@ T<-t_\alpha\left(n-1\right)
 
 拒绝域为：
 \begin{gather*}
-    \chi^2>\chi_{\frac{\alpha}{2}}^{2}(n)\\ 
-    \chi^2<\chi_{1-\frac{\alpha}{2}}^{2}(n)   
+    \chi^2>\chi_{\frac{\alpha}{2}}^{2}(n)\\
+    \chi^2<\chi_{1-\frac{\alpha}{2}}^{2}(n)
 \end{gather*}
 
 
@@ -865,7 +865,7 @@ T<-t_\alpha\left(n-1\right)
 
 拒绝域为：
 \begin{gather*}
-    \chi^2>\chi_{\frac{\alpha}{2}}^2(n-1) 或 χ^2<χ_{1-\frac{\alpha}{2}}^2(n-1) 
+    \chi^2>\chi_{\frac{\alpha}{2}}^2(n-1) 或 χ^2<χ_{1-\frac{\alpha}{2}}^2(n-1)
 \end{gather*}
 
 
@@ -892,9 +892,9 @@ T<-t_\alpha\left(n-1\right)
 $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，两样本相互独立
 
 \begin{align*}
-    H_0：\mu_1=\mu_2 &\Leftrightarrow H_1：\mu_1\neq\mu_2 \\ 
-    H_0：\mu_1\le\mu_2 & \Leftrightarrow H_1：\mu_1>\mu_2 \\ 
-    H_0：\mu_1\geq\mu_2 &\Leftrightarrow H_1：\mu_1<\mu_2 
+    H_0：\mu_1=\mu_2    & \Leftrightarrow H_1：\mu_1\neq\mu_2 \\
+    H_0：\mu_1\le\mu_2  & \Leftrightarrow H_1：\mu_1>\mu_2    \\
+    H_0：\mu_1\geq\mu_2 & \Leftrightarrow H_1：\mu_1<\mu_2
 \end{align*}
 
 
@@ -933,7 +933,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 \begin{gather*}
     \mathbf{X}_{a}=(X_{a1},X_{a2},\cdots,X_{ap})^\prime \sim N_p(\bm{\mu}_1,\bm{\Sigma}_1), a=1,2,\cdots,n_1\\
-    \bm{Y}_a=\left(Y_{a1},Y_{a2},\cdots,Y_{ap}\right)' \sim N_p(\bm{\mu}_2,\mathbf{\Sigma}_2), a=1,2,\cdots,n_2 \\ 
+    \bm{Y}_a=\left(Y_{a1},Y_{a2},\cdots,Y_{ap}\right)' \sim N_p(\bm{\mu}_2,\mathbf{\Sigma}_2), a=1,2,\cdots,n_2 \\
     \mathbf{X}_{a}与\mathbf{Y}_a\text{相互独立}, n_1>p, n_2>p\\
     \bar{\bm{X}}=\frac{1}{n_1}\sum_{a=1}^{n_1}{X_a}, \bar{\bm{Y}}=\frac{1}{n_2}\sum_{a=1}^{n_2}{Y_a}
 \end{gather*}
@@ -941,9 +941,9 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 
 \begin{align*}
-    H_0:\bm{\mu}_1=\bm{\mu}_2&\Leftrightarrow H_1:\bm{\mu}_1\neq\bm{\mu}_2 \\ 
-    H_0:\bm{\mu}_1\le\bm{\mu}_2&\Leftrightarrow  H_1:\bm{\mu}_1>\bm{\mu}_2\\ 
-    H_0:\bm{\mu}_1\geq\bm{\mu}_2	&\Leftrightarrow H_1:\bm{\mu}_1<\bm{\mu}_2  
+    H_0:\bm{\mu}_1=\bm{\mu}_2    & \Leftrightarrow H_1:\bm{\mu}_1\neq\bm{\mu}_2 \\
+    H_0:\bm{\mu}_1\le\bm{\mu}_2  & \Leftrightarrow  H_1:\bm{\mu}_1>\bm{\mu}_2   \\
+    H_0:\bm{\mu}_1\geq\bm{\mu}_2 & \Leftrightarrow H_1:\bm{\mu}_1<\bm{\mu}_2
 \end{align*}
 
 
@@ -951,7 +951,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 检验统计量及其分布：
 \begin{gather*}
-    T_0^2 =\frac{n_1\cdot n_2}{n_1+n_2}\left(\bar{\bm{X}}-\bar{\bm{Y}}\right)^\prime\bm{\Sigma}^{-1}\left(\bar{\bm{X}}-\bar{\bm{Y}}\right)=\chi^2\left(p\right) 
+    T_0^2 =\frac{n_1\cdot n_2}{n_1+n_2}\left(\bar{\bm{X}}-\bar{\bm{Y}}\right)^\prime\bm{\Sigma}^{-1}\left(\bar{\bm{X}}-\bar{\bm{Y}}\right)=\chi^2\left(p\right)
 \end{gather*}
 
 2、$\bm{\Sigma}_1,\bm{\Sigma}_2$未知，$\bm{\Sigma}_1=\bm{\Sigma}_2$
@@ -963,7 +963,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 \paragraph{一元}
 
 \begin{gather*}
-    H_0:\sigma^2=\sigma_0^2\Leftrightarrow H_1:\sigma^2\neq\sigma_0^2 
+    H_0:\sigma^2=\sigma_0^2\Leftrightarrow H_1:\sigma^2\neq\sigma_0^2
 \end{gather*}
 
 
@@ -979,14 +979,14 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 \begin{gather*}
     F>F_{\frac{\alpha}{2}}(n_1-1,n_2-1)
     \text{或}
-    F<F_{\frac{\alpha}{2}}(n_1-1,n_2-1)  
+    F<F_{\frac{\alpha}{2}}(n_1-1,n_2-1)
 \end{gather*}
 
 
 \paragraph{多元}
 
 \begin{gather*}
-    H_0:\bm{\Sigma}_1^2=\bm{\Sigma}_2^2	\Leftrightarrow H_1:\bm{\Sigma}_1^2\neq\bm{\Sigma}_2^2 
+    H_0:\bm{\Sigma}_1^2=\bm{\Sigma}_2^2	\Leftrightarrow H_1:\bm{\Sigma}_1^2\neq\bm{\Sigma}_2^2
 \end{gather*}
 
 
@@ -1027,11 +1027,11 @@ ${\bar{X}}_i=\frac{1}{n_i}\sum_{j=1}^{n_i}X_i^{(j)}$，
 $\bar{\bar{X}}=\frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{n_i}{X_i^j},n=n_1+n_2+\cdots+n_k$
 
 $
-SST=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\bar{\bar{X}}\right)^2}, SSA=\sum_{i=1}^{k}n_i\left(X_i-\bar{\bar{X}}\right) , SSE=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\bar{\bar{X}}\right)^2}
+    SST=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\bar{\bar{X}}\right)^2}, SSA=\sum_{i=1}^{k}n_i\left(X_i-\bar{\bar{X}}\right) , SSE=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\bar{\bar{X}}\right)^2}
 $
 
 \begin{gather*}
-    H_0:\mu_1=\mu_2=\cdots=\mu_k\Leftrightarrow H_1:\mu_1,\mu_2,\cdots,\mu_k\text{不全相等} \\ 
+    H_0:\mu_1=\mu_2=\cdots=\mu_k\Leftrightarrow H_1:\mu_1,\mu_2,\cdots,\mu_k\text{不全相等} \\
 \end{gather*}
 
 
@@ -1042,8 +1042,8 @@ $
     F =\frac{MSA}{MSE} =\frac{SSA/(k-1)}{SSE/(n-k)} =\frac{\sum_{i=1}^{k}{m(\bar{X}_i-\bar{\bar{X}})/(k-1)}}{\sum_{i=1}^{k}\sum_{j=1}^{m}{(X_{ij}-\bar{X}_i)^2/(n-k)}} \sim F(k-1,n-k)
 \end{gather*}
 
-\par F值越大越背离原假设  
-\par MSA：组内均方（mean square）  
+\par F值越大越背离原假设
+\par MSA：组内均方（mean square）
 \par MSE：组间均方
 
 \paragraph{多元}
@@ -1052,7 +1052,7 @@ $
 $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$为组内离差阵，$\bm{T}$为总离差阵
 
 \begin{gather*}
-    H_0:\bm{\mu}_1=\bm{\mu}_2=\cdots=\bm{\mu}_k	\Leftrightarrow H_1:\bm{\mu}_1,\bm{\mu}_2,\cdots,\bm{\mu}_k不全相等 \\ 
+    H_0:\bm{\mu}_1=\bm{\mu}_2=\cdots=\bm{\mu}_k	\Leftrightarrow H_1:\bm{\mu}_1,\bm{\mu}_2,\cdots,\bm{\mu}_k不全相等 \\
 \end{gather*}
 
 
@@ -1069,14 +1069,14 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 \paragraph{一元}
 
 \begin{gather*}
-    H_0:\sigma^2=\sigma_0^2 \Leftrightarrow	H_1:\sigma^2\neq\sigma_0^2 
+    H_0:\sigma^2=\sigma_0^2 \Leftrightarrow	H_1:\sigma^2\neq\sigma_0^2
 \end{gather*}
 
 
 \paragraph{多元}
 
 \begin{gather*}
-    H_0:\bm{\Sigma}_1=\bm{\Sigma}_2=\cdots=\bm{\Sigma}_k\Leftrightarrow H_1:\left\{\bm{\Sigma}_i\right\}\text{不全相等} 
+    H_0:\bm{\Sigma}_1=\bm{\Sigma}_2=\cdots=\bm{\Sigma}_k\Leftrightarrow H_1:\left\{\bm{\Sigma}_i\right\}\text{不全相等}
 \end{gather*}
 
 
@@ -1171,7 +1171,7 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
  {\noindent
   \begin{tabu}{|c|X|X|}
       \hline
-                                 & \multicolumn{1}{c|}{价值} & \multicolumn{1}{c|}{使用价值} \\ \hline
+                                 & \multicolumn{1}{c|}{价值}  & \multicolumn{1}{c|}{使用价值} \\ \hline
       定义
                                  & \begin{tabu}{X}
           凝结在商品中的无差别的一般人类劳动
@@ -1190,13 +1190,13 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
               \item 生产者和消费者不能同时占有价值和使用价值
               \item 价值：反映人与社会的关系
               \item 使用价值：反映人与自然的物质关系
-      }}                                                                                     \\ \hline
+      }}                                                                                      \\ \hline
       \multicolumn{1}{|c|}{统一} & \multicolumn{2}{l|}{
           \tablelist{(1)}{\columnwidth}{
               \item 使用价值是价值的基础、物质载体
               \item 通过交换，生产者消费者互相让渡使用价值和价值
           }
-      }                                                                                      \\ \hline
+      }                                                                                       \\ \hline
   \end{tabu}
  }
 
@@ -1575,12 +1575,443 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \chapter{信用}
 
 
 
 
 \chapter{利率}
+
+
+利率：借贷期满的利息总额与贷出本金总额的比率
+
+一、产生原因
+
+\begin{enumerate}[(1)]
+    \item 收益资本化：利息转化为收益的一般形态（capitalization of return）
+          \begin{enumerate}[a.]
+              \item 过程：利息本来以借贷为前提，源于产业利润的利息，逐渐被人们从借贷和生产活动中抽象出来，被赋予与借贷、生产活动无关的特性，逐渐被人们认为与资本的所有权联系，认为是资本所有权的必然产物
+              \item 结果：各种有收益的事物都可以通过收益与利率的对比进行资本定价
+          \end{enumerate}
+    \item 货币的时间价值：同等金额的货币其现在的价值要大于其未来的价值（time value of money）
+          \begin{enumerate}[a.]
+              \item 机会成本：对货币的占用具有机会成本；对当前消费推迟的时间补偿
+              \item 风险溢价：需要对通胀损失、投资风险进行补偿
+          \end{enumerate}
+\end{enumerate}
+
+
+二、产生结果：利息
+
+
+\begin{enumerate}[(1)]
+    \item 定义：借贷关系中资金借入方支付给资金贷出方的报酬（interest）
+          \begin{enumerate}[(a)]
+              \item 是货币时间价值的具体体现
+          \end{enumerate}
+    \item 实质
+          \begin{enumerate}[a.]
+              \item 非货币因素
+                    \begin{enumerate}[(a)]
+                        \item 时差利息论：利息来源于同种和同量物品价值上的差别，这种差别由二者在时间上的差别完成；生产的费时性决定了现在物品和未来物品的差额，利息实质上来源于这种差额
+                        \item 等待论：利息为纯息，利润为毛利息，利息是节欲和等待的报酬
+                        \item 马克思：利息实质来源于劳动创造的价值，体现剥削或分配关系
+                    \end{enumerate}
+              \item 货币因素
+                    \begin{enumerate}[(a)]
+                        \item 流动性偏好利息论：利息是一定时期内放弃货币流动性的报酬
+                    \end{enumerate}
+              \item 现代
+                    \begin{enumerate}[(a)]
+                        \item 利息是投资者让渡资本使用权而索取的补偿或报酬。补偿包括对放弃投资于无风险资产机会成本的补偿和对风险的补偿。
+                        \item 风险资产的收益率=无风险利率+风险溢价
+                    \end{enumerate}
+          \end{enumerate}
+\end{enumerate}
+
+
+三、计算
+\informationBox{
+\begin{enumerate}[(1)]
+    \item 现金流贴现分析：计算现值的过程（discounted cash flow analysis）
+          \par 贴现率：贴现（discount）时所使用的利率（discount rate），又称折现率
+          \par 现金流难以预测，影响也相对短暂；折现率更为重要
+    \item 收益率（yield）、回报率（returns）本质都是利率
+          \par $$RET=\frac{C+P_{t+1}-P_t}{P_t}=\frac{C}{P_t}+\frac{P_{t+1}-P_t}{P_t}$$
+          \par $C$ ：年利息
+          \par $\frac{C}{P_t}$ ：当期收益率：每年的利息收入与证券购买价格的比率（股息收益率）
+          \par $\frac{P_{t+1}-P_t}{P_t}$ ：资本利得（损失）率：证券价格变动相对于购进价格的比率
+          \par 复合收益率：考虑利息再投资的收益率
+\end{enumerate}
+}
+
+
+
+\begin{enumerate}[(1)]
+    \item 单利（simple interest）
+          \begin{gather*}
+              APR=\frac{I}{PV}·\frac{1}{n} =\frac{FV-PV}{PV}·\frac{1}{n}=\frac{r(n)}{n}
+          \end{gather*}
+          \par $APR$：年化百分比利率，常为投资报价利率（annual percentage rate）
+          \par $I$：利息额
+          \par $n$：借贷年数
+          \par $PV$：现值（present value）
+          \par $FV$：终值（final value）
+          \par $r(n)$：n年的总利率
+    \item 复利
+          \begin{enumerate}[a.]
+              \item 一般复利
+                    \begin{gather*}
+                        EAR=\left(1+\frac{APR}{m}\right)^{m\cdot n}-1=\left[1+r\left(n\right)\right]^{1/n}-1
+                    \end{gather*}
+                    \par $EAR$ ：有效年利率，常为投资结算利率（effective annual rate）
+                    \par $r$ ：一般复利年利率
+                    \par $m$ ：每年复利次数
+                    \par $n$ ：借贷年数
+                    \par $r(n)$ ： $n$年的总利率
+                    \par $\left(1+\frac{r}{m}\right)^{m·n}$ ：终值复利因子
+                    \par $d(m,n)=\frac{1}{\left(1+\frac{r}{m}\right)^{m·n}}$ ：现值复利因子/贴现因子/折现因子（discount factor），随时间严格递减，体现了货币的时间价值
+              \item 连续复利（continuous compounding）
+                    \begin{gather*}
+                        I=PV(e^{EAR\times n}-1)
+                    \end{gather*}
+                    \par $r$：连续复利年利率
+                    \par 一般复利利息=连续复利利息：可求出等价的连续复利利息
+                    \par 连续复利：$1+EAR=e^{APR}$
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+\section{利率分类}
+
+
+
+\subsection{市场利率}
+
+
+\begin{enumerate}[1.]
+    \item 计息时间
+          \begin{enumerate}[(1)]
+              \item 年利率：\%（annual interest rate）
+              \item 月利率：‰（monthly interest rate）
+              \item 日利率：‱（daily interest rate）
+          \end{enumerate}
+    \item 决定方式
+          \begin{enumerate}[(1)]
+              \item 市场利率：按照市场规律自发变动的利率（market interest rate）
+              \item 官定利率：一国货币管理部门或者中央银行所规定的利率（official interest rate）
+              \item 公定利率：由非政府部门的民间组织为维护公平竞争所确定的属于行业自律性质的利率（trade-regulated interest rate）
+          \end{enumerate}
+    \item 利率地位
+          \begin{enumerate}[(1)]
+              \item 基准利率：多种利率并存的条件下起决定作用的利率（benchmark interest rate）
+                    \par 西方基准利率通常是中央银行的再贴现利率以及商业银行和金融机构之间的同业拆借利率；我国基准利率是央行对商业银行及其它金融机构的存、贷款利率，又称法定利率；货币市场的基准利率：上海银行间同业拆放利率（Shanghai interbank offered rate，SHIBOR）
+              \item 一般利率：金融机构在金融市场上形成的各种利率（general interest rate）
+          \end{enumerate}
+    \item 信用期限
+          \begin{enumerate}[(1)]
+              \item 短期利率：一年期以内的信用活动适用的利率（short-term interest rate）
+              \item 长期利率：一年期以上的信用活动适用的利率（long-term interest rate）
+          \end{enumerate}
+    \item 业务管理
+          \begin{enumerate}[(1)]
+              \item 普通利率
+              \item 优惠利率
+              \item 惩罚利率
+          \end{enumerate}
+    \item 市场交易
+          \begin{enumerate}[(1)]
+              \item 即期利率：对不同期限的金融工具以复利形式标示的利率（spot interest rate）
+              \item 远期利率：给定即期汇率中隐含的未来一定期限的利率（forward interest rate）
+                    \par  远期的借贷款合约可能按远期利率达成，此意义上远期利率为市场利率
+          \end{enumerate}
+\end{enumerate}
+
+
+\subsection{政策利率}
+
+\begin{enumerate}[1.]
+    \item 币值变化
+          \begin{enumerate}[(1)]
+              \item 名义利率：物价水平不变即货币的实际购买力不变时的利率（real interest rate）
+                    \par 名义利率是持有货币的机会成本 → 预期货币需求取决于名义利率 → 价格水平取决于现期货币量和预期的未来货币量
+              \item 实际利率：包括物价变动因素的利率（nominal interest rate）
+          \end{enumerate}
+    \item 浮动范围
+          \begin{enumerate}[(1)]
+              \item 固定利率：借贷期内利息按照借贷双方事先约定的利率计算，不随市场资金供求状况而调整（fixed interest rate）
+                    \par 借贷期长、市场利率波动较大的情况下不宜采用固定利率
+              \item 浮动利率：借贷期内根据市场利率的变化定期调整利率（floating interest rate）
+                    \par 浮动利率多用于期限较长的借贷和国际金融市场上的借贷
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\section{决定理论}
+
+
+
+
+
+\subsection{马克思}
+
+\begin{enumerate}[1.]
+    \item 理论
+          \begin{enumerate}[(1)]
+              \item 利息量的多少取决于利润总额
+              \item 利息率取决于平均利润率，介于零和平均利润率之间，取决于利润率和总利润在贷款人和借款人之间的分配比例
+              \item 法律、习惯等的影响
+          \end{enumerate}
+    \item 利率特点
+          \begin{enumerate}[(1)]
+              \item 长期内平均利润率处于下降趋势，利率相同
+              \item 利润率下降缓慢，利率比较稳定
+              \item 利率决定有一定偶然性
+          \end{enumerate}
+\end{enumerate}
+
+
+
+\subsection{可贷资金利率理论}
+新剑桥学派：认为利率是借贷资金的价格，批判综合实际利率理论和流动性偏好利率（loanable-funds theory of interest）
+
+\begin{gather*}
+    F_s=F_d\\
+    S+\Delta M_s=I+\Delta M_d
+\end{gather*}
+\par $F_s$：可贷资金的供给
+\par $S$：某一时期的储蓄流量
+\par $ΔM_s$：货币供给的增量
+\par $I$：同期投资流量
+\par $\Delta M_d$：人们希望保有的货币余额
+
+\subsubsection{实际利率理论}
+
+古典学派：储蓄、投资决定利率（非货币因素，实际因素）
+
+\par 投资流量（企业厂房、设备、存货等）导致的资金需求是利率的减函数
+\par 储蓄流量（家庭为主）导致的资金供给是利率的增函数
+
+\subsubsection{流动性偏好理论}
+
+凯恩斯：利率与流动性偏好负相关（货币因素，短期）
+
+M垂直，外生变量
+\par 利率取决于货币供求数量的对比
+\par 货币当局决定货币供给
+\par 人们的流动性偏好决定货币需求
+
+
+\subsection{IS-LM模型}
+
+\subsection{影响因素}
+
+\subsubsection{宏观}
+
+\begin{enumerate}[1.]
+    \item 宏观经济周期（内生）
+          \begin{enumerate}[(1)]
+              \item 危机阶段：资金供不应求，利率走高
+              \item 萧条阶段：资金需求降低，利率走低，甚至零利率
+              \item 复苏阶段：资金需求增加，利率走高
+              \item 繁荣阶段：利率持续提高
+          \end{enumerate}
+    \item 制度（外生）：利率管制程度
+          \begin{enumerate}[(1)]
+              \item 利率管制：直接制定利率或规定上下限
+              \item 利率市场化：通过市场和价值规律机制，在某一时点上由供求关系决定的利率运行机制（interest rate liberalization）
+          \end{enumerate}
+\end{enumerate}
+
+\subsubsection{微观}
+
+
+\par * 时间+风险
+\par * 解释经验事实：
+\par A 不同期限债券的利率随时间变化一起波动
+\par B 短期利率低，收益率曲线更倾向于向上倾斜；如果短期利率高，收益率曲线可能向下倾斜
+\par C 收益率曲线通常是向上倾斜的
+
+\paragraph{预期/期望假说}
+
+（expectation hypothesis）
+
+\begin{enumerate}[1.]
+    \item 假设：
+          \begin{enumerate}[(1)]
+              \item 不同债券完全可替代，投资者不偏好某种债券
+              \item 所有债券都会有相同的收益率
+          \end{enumerate}
+    \item 理论：
+          \begin{enumerate}[(1)]
+              \item A 投资者在不同期限债券之间套利，使得不同期限债券价格相互影响、同升同降
+                    \par $\left(1+r_n\right)^n=\left(1+f_1\right)\left(1+f_2\right)\left(1+f_3\right)..\ldots\left(1+f_n\right)$
+              \item B 短期利率$r_1$，长期债券的到期收益率很大程度上取决于投资者对未来各年度远期利率$f_i$的预期。若$r_1$高位，则$f_i$下降的可能性更大
+                    \par 远期利率：
+                    \begin{gather*}
+                        f_n = \frac{1}{\frac{P_{n-1,t}}{P_{n,t}}}-1=\frac{\left(1+r_n\right)^n}{\left(1+r_n\right)^{n-1}(n-1)}\\
+                        R_F = \frac{R_2T_2-R_1T_1}{T_2-T_1}
+                    \end{gather*}
+                    \par $R_1$：期限为$T_1$的零息利率
+                    \par $R_F$：$T_1$、$T_2$之间的远期利率
+              \item C 无法解释
+          \end{enumerate}
+\end{enumerate}
+
+
+\paragraph{市场分割理论/期限偏好理论}
+
+（market segmentation theory）
+
+
+\begin{enumerate}[1.]
+    \item 假设：
+          \begin{enumerate}[(1)]
+              \item 不同期限的债券不是替代品，不同投资者会对不同期限的债券具有特殊偏好（一般偏好期限较短、利率风险小的证券
+              \item 长期债券产生正的流动性溢价，若市场偏好长期债券，则流动性溢价为负）若短期利率超过长期利率，可能预示着经济衰退
+          \end{enumerate}
+    \item 理论：$f_n=E\left(r_n\right)+\text{流动性溢价}$
+          \begin{enumerate}[(1)]
+              \item A 无法解释
+              \item B 无法解释
+              \item C 需要高利率补偿长期债券的购买
+          \end{enumerate}
+\end{enumerate}
+
+
+\paragraph{期限选择与流动性升水理论}
+
+综合预期假说和市场分割理论（liquidity premium theory）
+
+
+
+\begin{enumerate}[1.]
+    \item 假设：
+          \begin{enumerate}[(1)]
+              \item 不同期限的债券是替代品，但并不完全可替代
+              \item 要让投资者持有风险较大的长期债券，必须向其支付流动性升水以补偿其增加的风险
+          \end{enumerate}
+    \item 理论：
+          \begin{enumerate}[(1)]
+              \item AB同预期假说
+              \item C 当考虑期限选择和流动性升水时，因为需要提供收益补偿，收益率曲线向下的概率会大大降低，向上倾斜的概率会大大增加
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\section{作用与影响}
+
+\subsection{宏观}
+
+\begin{enumerate}[(1)]
+    \item 储蓄投资的规模和结构
+    \item 借贷资金供求
+    \item 资产价格：加息利空房地产价格和证券行市
+    \item 社会总供求的调节：短期易于调节总需求，短期低利率刺激总需求（消费投资），增加总供给压力，长期倾向于增加总供给缓解供求压力，影响消费行为
+    \item 资源配置效率：高利率会淘汰低弱企业，优质企业资金可得性增加，经济增长率会下降，但会导致资源消耗速度下降，资源配置效率提高
+    \item 金融市场：利率是金融工具定价的基本要素
+\end{enumerate}
+
+
+\subsection{微观}
+
+\begin{enumerate}[(1)]
+    \item 促进企业加强核算，提高经济效益
+    \item 调节个人的行为决策
+\end{enumerate}
+
+
+
+\subsection{条件}
+
+
+\begin{enumerate}[(1)]
+    \item 基础性条件
+          \begin{enumerate}[a.]
+              \item 独立的市场决策主体
+                    \begin{enumerate}[(a)]
+                        \item 市场主体独立决策并独立承担责任,权责利的有机结合
+                        \item 微观经济主体是理性经济人
+                    \end{enumerate}
+              \item 市场化的利率决定机制
+                    \begin{enumerate}[(a)]
+                        \item 利率高低能够真实反映资金稀缺程度及其机会成本影响
+                        \item 影响微观主体的投资和融资决策
+                        \item 通过利率信号筛选优质项目,引导和配置资金口厂商的投资决策
+                    \end{enumerate}
+              \item 合理的利率弹性
+          \end{enumerate}
+    \item 经济制度与经济环境
+          \begin{enumerate}[a.]
+              \item 市场化改革：塑造独立决策、独立承担责任的市场行为主体
+              \item 市场投资机会与资金的可得性：影响利率弹性和微观主体对利率的敏感性
+              \item 产权制度：影响微观主体的激励和约束
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2204,7 +2635,7 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
     \end{tabu}
                                & \begin{tabu}{X}
         工人用货币工资实际买到的各类生活资料和服务的数量
-    \end{tabu}                                                         \\\hline
+    \end{tabu}                                                        \\\hline
     \multicolumn{1}{|c|}{对立} & \multicolumn{2}{l|}{\tablelist{(1)}{\columnwidth}{
             \item 在其他条件不变的情况下，名义工资越高，实际工资也就越高
     }}                                                                                                              \\\hline
