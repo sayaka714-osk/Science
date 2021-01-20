@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  20 JAN 2021 01:10
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  20 JAN 2021 14:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1504,13 +1504,12 @@ This may cause the page layout to be inconsistent, however.
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [3] [4] [5] [6])
+ [3] [4] [5] [6] [7])
 \tf@toc=\write8
 \openout8 = `Science.toc'.
 
- [7] [8
+ [8] [1
 
-] [1
 
 ] [2] [3] [4
 
@@ -1818,164 +1817,167 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 6.
-[37] [38
+[37] [38] [39] [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [41] [42] [43] [44]
 Chapter 7.
-[39] [40
+[45
+
+] [46
 
 ]
 Chapter 8.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
+ [47]
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr8!
 Missing character: There is no · in font cmr6!
- [42] [43]
-Overfull \hbox (8.07318pt too wide) in paragraph at lines 1823--1824
+ [48] [49]
+Overfull \hbox (8.07318pt too wide) in paragraph at lines 2260--2261
 []\TU/SimSun(0)/m/n/10.95 新 剑 桥 学 派：|  认 为 利 率 是 借 贷 资 金 的 价 格，|  批 判 综 合 实 际 利 率 理 论 和 流 动 性 偏 好 利 率  |（\TU/CMUSerif(0)/m/n/10.95 loanable-
  []
 
 Missing character: There is no Δ in font cmmi10!
-[44] [45] [46] [47] [48
+[50] [51] [52] [53] [54
 
 ]
 Chapter 9.
-[49] [50
-
-]
-Chapter 10.
-[51] [52
-
-]
-Chapter 11.
-[53] [54
-
-]
-Chapter 12.
 [55] [56
 
 ]
-Chapter 13.
+Chapter 10.
 [57] [58
 
 ]
-Chapter 14.
+Chapter 11.
 [59] [60
 
 ]
-Chapter 15.
+Chapter 12.
 [61] [62
 
 ]
-Chapter 16.
+Chapter 13.
 [63] [64
 
 ]
-Chapter 17.
+Chapter 14.
 [65] [66
+
+]
+Chapter 15.
+[67] [68
+
+]
+Chapter 16.
+[69] [70
+
+]
+Chapter 17.
+[71] [72
 
 ]
 Chapter 18.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2093.
+(hyperref)                removing `math shift' on input line 2530.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2093.
+(hyperref)                removing `math shift' on input line 2530.
 
 Missing character: There is no ′ in font cmr10!
 Missing character: There is no ′ in font cmr10!
-[67]
-Overfull \hbox (75.0659pt too wide) detected at line 2176
+[73]
+Overfull \hbox (75.0659pt too wide) detected at line 2613
 []
  []
 
-[68]
-Overfull \hbox (12.70406pt too wide) in paragraph at lines 2261--2261
+[74]
+Overfull \hbox (12.70406pt too wide) in paragraph at lines 2698--2698
 []\TU/SimSun(0)/m/n/10.95 影 响 因 素：| $[] \OT1/cmr/m/n/10.95 = []$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
+ [75]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70] [71]
+ [76] [77]
 Underfull \vbox (badness 5726) has occurred while \output is active []
 
- [72]
-Underfull \hbox (badness 10000) in paragraph at lines 2472--2474
+ [78]
+Underfull \hbox (badness 10000) in paragraph at lines 2909--2911
 
  []
 
-[73]
-Underfull \hbox (badness 10000) in paragraph at lines 2530--2532
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 2967--2969
 
  []
 
-[74]
+[80]
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
- [75]
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 2629--2646
+ [81]
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 3066--3083
 [] 
  []
 
-[76]
-Underfull \hbox (badness 10000) in paragraph at lines 2683--2685
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 3120--3122
 
  []
 
-[77] [78]
+[83] [84]
 Chapter 19.
-[79
+[85
 
-] [80
+] [86
 
 ]
 Chapter 20.
-[81] [82
+[87] [88
 
 ]
 Chapter 21.
-[83] [84] [85] [86
+[89] [90] [91] [92
 
 ]
 Chapter 22.
 
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [87]
+ [93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88] [89]
-Overfull \hbox (56.36243pt too wide) detected at line 3136
+ [94] [95]
+Overfull \hbox (56.36243pt too wide) detected at line 3573
 []
  []
 
-[90]
+[96]
 Chapter 23.
-[91
+[97
 
-] [92
+] [98
 
 ]
 Chapter 24.
-[93] [94
+[99] [100
 
 ]
 Chapter 25.
-[95] [96
+[101] [102
 
-] [97] [98]
+] [103] [104]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1994,29 +1996,29 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3630.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3630.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3193.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3630.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3630.
 Package rerunfilecheck Info: File `Science.out' has not changed.
-(rerunfilecheck)             Checksum: 8C1FD25F07687657E6A85A756CDBE89C;15321.
+(rerunfilecheck)             Checksum: E7248CB33337E562CB0E26BDBEAAE5A7;16969.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 97969 strings out of 479418
- 2216299 string characters out of 5886345
- 1925849 words of memory out of 5000000
- 114548 multiletter control sequences out of 15000+600000
+ 98024 strings out of 479418
+ 2219117 string characters out of 5886345
+ 1927617 words of memory out of 5000000
+ 114603 multiletter control sequences out of 15000+600000
  553017 words of font info for 149 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,44n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (106 pages).
+Output written on Science.pdf (112 pages).
