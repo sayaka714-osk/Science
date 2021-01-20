@@ -429,7 +429,7 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
               \item 无偏性
                     \begin{gather*}
                         \lim_{n→\infty}{E(\hat{\theta})=\theta } \\
-                        E\left(\bar{\bm{X}}\right)=\bm{\mu},\ E\left(\frac{1}{n-1}\bm{S}\right)=\bm{\Sigma}
+                        E\left(\overline{\bm{X}}\right)=\bm{\mu},\ E\left(\frac{1}{n-1}\bm{S}\right)=\bm{\Sigma}
                     \end{gather*}
               \item 有效性
                     \begin{gather*}
@@ -471,7 +471,7 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 \paragraph{一元}
 
 \begin{gather*}
-    \bar{X}=\frac{1}{n}\sum_{i=0}^{n}X_i
+    \overline{X}=\frac{1}{n}\sum_{i=0}^{n}X_i
 \end{gather*}
 
 
@@ -534,7 +534,7 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 \paragraph{一元（离差）}
 
 \begin{gather*}
-    S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\bar{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-X)^2}
+    S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-X)^2}
 \end{gather*}
 
 
@@ -547,32 +547,32 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
     = \sum_{a=1}^{n}
     \begin{bmatrix}
         \begin{bmatrix}
-            X_{a1}-{\bar{X}}_1 \\
-            X_{a2}-{\bar{X}}_2 \\
+            X_{a1}-{\overline{X}}_1 \\
+            X_{a2}-{\overline{X}}_2 \\
             \vdots             \\
-            X_{ap}-{\bar{X}}_p \\
+            X_{ap}-{\overline{X}}_p \\
         \end{bmatrix}
-         & \left(X_{a1}-{\bar{X}}_1,X_{a2}-{\bar{X}}_2,\cdots,X_{ap}-{\bar{X}}_p\right) \\
+         & \left(X_{a1}-{\overline{X}}_1,X_{a2}-{\overline{X}}_2,\cdots,X_{ap}-{\overline{X}}_p\right) \\
     \end{bmatrix}                                                                                                                              \\
      & = \sum_{a=1}^{n}
     \begin{bmatrix}
-        \left(X_{a1}-{\bar{X}}_1\right)^2
-         & \left(X_{a1}-{\bar{X}}_1\right)\left(X_{a2}-{\bar{X}}_2\right)
+        \left(X_{a1}-{\overline{X}}_1\right)^2
+         & \left(X_{a1}-{\overline{X}}_1\right)\left(X_{a2}-{\overline{X}}_2\right)
          & \cdots
-         & \left(X_{a1}-{\bar{X}}_1\right)\left(X_{ap}-{\bar{X}}_p\right) \\
+         & \left(X_{a1}-{\overline{X}}_1\right)\left(X_{ap}-{\overline{X}}_p\right) \\
 
-        \left(X_{a2}-{\bar{X}}_2\right)\left(X_{a1}-{\bar{X}}_1\right)
-         & \left(X_{a2}-{\bar{X}}_2\right)^2
+        \left(X_{a2}-{\overline{X}}_2\right)\left(X_{a1}-{\overline{X}}_1\right)
+         & \left(X_{a2}-{\overline{X}}_2\right)^2
          & \cdots
-         & \left(X_{a2}-{\bar{X}}_2\right)\left(X_{ap}-{\bar{X}}_p\right) \\
+         & \left(X_{a2}-{\overline{X}}_2\right)\left(X_{ap}-{\overline{X}}_p\right) \\
         \vdots
          & \vdots                                                         \\
          & \                                                              \\
          & \vdots                                                         \\
-        \left(X_{ap}-{\bar{X}}_p\right)\left(X_{a1}-{\bar{X}}_1\right)
-         & \left(X_{ap}-{\bar{X}}_p\right)\left(X_{a2}-{\bar{X}}_2\right)
+        \left(X_{ap}-{\overline{X}}_p\right)\left(X_{a1}-{\overline{X}}_1\right)
+         & \left(X_{ap}-{\overline{X}}_p\right)\left(X_{a2}-{\overline{X}}_2\right)
          & \cdots
-         & \left(X_{ap}-{\bar{X}}_p\right)^2                              \\
+         & \left(X_{ap}-{\overline{X}}_p\right)^2                              \\
     \end{bmatrix}                                                                                                                               \\
      & = \begin{bmatrix}
         s_{11} & s_{12} & \cdots & s_{1p} \\
@@ -594,7 +594,7 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
     Y_i = \beta_0+\beta_{1}X_{i}+{\hat{\varepsilon}}_i\\
     \min_{{\hat{\beta}}_1}{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2} =\sum_{i=1}^{n}{\left(Y_i-{\hat{\beta}}_0-{\hat{\beta}}_1 X_i\right)^2}\\
     \frac{\partial}{\partial \beta_{1}}  \sum_{i=1}^{n}{\hat{ε}_i^2} =-2\sum_{i=1}^{n}{(Y_i-\hat{\beta}_{0}-\hat{\beta}_{1} X_i) X_{i}}=0\\
-    \hat{\beta}_{1} = \frac{\sum_{i=1}^{n}\left(X_i-\bar{X}\right)\left(Y_i-\bar{Y}\right)}{\sum_{i=1}^{n}\left(X_i-\bar{X}\right)^2}=\frac{\sum_{i=1}^{n}{x_i y_i}}{\sum_{i=1}^{n}x_i^2}，\hat{\beta}_{0}=\bar{Y}-\hat{\beta}_{1}\bar{X}\\
+    \hat{\beta}_{1} = \frac{\sum_{i=1}^{n}\left(X_i-\overline{X}\right)\left(Y_i-\overline{Y}\right)}{\sum_{i=1}^{n}\left(X_i-\overline{X}\right)^2}=\frac{\sum_{i=1}^{n}{x_i y_i}}{\sum_{i=1}^{n}x_i^2}，\hat{\beta}_{0}=\overline{Y}-\hat{\beta}_{1}\overline{X}\\
     {\hat{\beta}}_1 \sim N\left(\beta_1,\frac{\sigma_2}{\sum_{i=1}^{n}{x_i^2}}\right)，\hat{\beta}_{0} \sim N\left(\beta_0, \frac{\sum_{i=1}^{n}{X_i^2}}{ n \sum_{i=1}^{n}{x_i^2}} \sigma^2\right)\\
 \end{gather*}
 
@@ -632,7 +632,7 @@ $k$：变量个数
 
 一元：
 \begin{gather*}
-    {\hat{\beta}}_1=\frac{\sum_{i=1}^{n}{x_iy_i}}{\sum_{i=1}^{n}x_i^2}=\frac{\sum_{i=1}^{n}{x_i\left(Y_i-\bar{Y}\right)}}{\sum_{i=1}^{n}x_i^2}=\frac{\sum_{i=1}^{n}{x_iY_i}}{\sum_{i=1}^{n}x_i^2}-\frac{\bar{Y}\sum_{i=1}^{n}x_i}{\sum_{i=1}^{n}x_i^2}=\sum_{i=1}^{n}{k_iY_i}, k_i=\frac{x_i}{\sum_{i=1}^{n}{x_i^2}}
+    {\hat{\beta}}_1=\frac{\sum_{i=1}^{n}{x_iy_i}}{\sum_{i=1}^{n}x_i^2}=\frac{\sum_{i=1}^{n}{x_i\left(Y_i-\overline{Y}\right)}}{\sum_{i=1}^{n}x_i^2}=\frac{\sum_{i=1}^{n}{x_iY_i}}{\sum_{i=1}^{n}x_i^2}-\frac{\overline{Y}\sum_{i=1}^{n}x_i}{\sum_{i=1}^{n}x_i^2}=\sum_{i=1}^{n}{k_iY_i}, k_i=\frac{x_i}{\sum_{i=1}^{n}{x_i^2}}
 \end{gather*}
 
 多元：
@@ -862,13 +862,13 @@ $Y$服从正态分布
 
 在$\mu = \mu_0$时，检验统计量及其分布为：
 \begin{gather*}
-    Z=\frac{\bar{X}-\mu_0}{\frac{\sigma}{\sqrt{n}}}\sim N(0,1)
+    Z=\frac{\overline{X}-\mu_0}{\frac{\sigma}{\sqrt{n}}}\sim N(0,1)
 \end{gather*}
 
 
 置信区间为：
 \begin{gather*}
-    \left(\frac{\bar{X}-\sigma_0}{\sqrt{n}}Z_{\frac{\alpha}{2}}, \frac{\bar{X}+\sigma_0}{\sqrt{n}}Z_{\frac{\alpha}{2}} \right)
+    \left(\frac{\overline{X}-\sigma_0}{\sqrt{n}}Z_{\frac{\alpha}{2}}, \frac{\overline{X}+\sigma_0}{\sqrt{n}}Z_{\frac{\alpha}{2}} \right)
 \end{gather*}
 
 
@@ -884,13 +884,13 @@ $Y$服从正态分布
 
 在$\mu = \mu_0$时，检验统计量及其分布为：
 \begin{gather*}
-    T=\frac{\bar{X}-\mu_0}{\frac{S}{\sqrt{n}}}\sim t(n-1)
+    T=\frac{\overline{X}-\mu_0}{\frac{S}{\sqrt{n}}}\sim t(n-1)
 \end{gather*}
 
 
 置信区间为：
 \begin{gather*}
-    \left( \bar{X}-\frac{S}{\sqrt{n}}t_{\frac{\alpha}{2}}(n-1), \bar{X}+\frac{S}{\sqrt{n}}t_{\frac{\alpha}{2}}(n-1) \right)
+    \left( \overline{X}-\frac{S}{\sqrt{n}}t_{\frac{\alpha}{2}}(n-1), \overline{X}+\frac{S}{\sqrt{n}}t_{\frac{\alpha}{2}}(n-1) \right)
 \end{gather*}
 
 
@@ -931,7 +931,7 @@ $Y$服从正态分布
 
 检验统计量及其分布为：
 \begin{gather*}
-    \chi^2=\frac{1}{\sigma^2}\sum_{i=1}^{n}{X_i- \bar{X}} =\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)
+    \chi^2=\frac{1}{\sigma^2}\sum_{i=1}^{n}{X_i- \overline{X}} =\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)
 \end{gather*}
 
 
@@ -980,7 +980,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 检验统计量及其分布：
 \begin{gather*}
-    U=\frac{\bar{X}-\bar{Y}}{\sqrt{\frac{\sigma_1^2}{n}+\frac{\sigma_2^2}{m}}}\sim N(0,1)
+    U=\frac{\overline{X}-\overline{Y}}{\sqrt{\frac{\sigma_1^2}{n}+\frac{\sigma_2^2}{m}}}\sim N(0,1)
 \end{gather*}
 
 
@@ -994,7 +994,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 检验统计量及其分布：
 \begin{gather*}
-    T=\frac{\bar{X}-\bar{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{\left(n_1-1\right)S_1^2+\left(n_2-1\right)S_2^2}{n_1+n_2-2}}\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\sim t(n_1+n_2-2)
+    T=\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{\left(n_1-1\right)S_1^2+\left(n_2-1\right)S_2^2}{n_1+n_2-2}}\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\sim t(n_1+n_2-2)
 \end{gather*}
 
 
@@ -1013,7 +1013,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
     \mathbf{X}_{a}=(X_{a1},X_{a2},\cdots,X_{ap})^\prime \sim N_p(\bm{\mu}_1,\bm{\Sigma}_1), a=1,2,\cdots,n_1\\
     \bm{Y}_a=\left(Y_{a1},Y_{a2},\cdots,Y_{ap}\right)' \sim N_p(\bm{\mu}_2,\mathbf{\Sigma}_2), a=1,2,\cdots,n_2 \\
     \mathbf{X}_{a}与\mathbf{Y}_a\text{相互独立}, n_1>p, n_2>p\\
-    \bar{\bm{X}}=\frac{1}{n_1}\sum_{a=1}^{n_1}{X_a}, \bar{\bm{Y}}=\frac{1}{n_2}\sum_{a=1}^{n_2}{Y_a}
+    \overline{\bm{X}}=\frac{1}{n_1}\sum_{a=1}^{n_1}{X_a}, \overline{\bm{Y}}=\frac{1}{n_2}\sum_{a=1}^{n_2}{Y_a}
 \end{gather*}
 
 
@@ -1029,7 +1029,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 检验统计量及其分布：
 \begin{gather*}
-    T_0^2 =\frac{n_1\cdot n_2}{n_1+n_2}\left(\bar{\bm{X}}-\bar{\bm{Y}}\right)^\prime\bm{\Sigma}^{-1}\left(\bar{\bm{X}}-\bar{\bm{Y}}\right)=\chi^2\left(p\right)
+    T_0^2 =\frac{n_1\cdot n_2}{n_1+n_2}\left(\overline{\bm{X}}-\overline{\bm{Y}}\right)^\prime\bm{\Sigma}^{-1}\left(\overline{\bm{X}}-\overline{\bm{Y}}\right)=\chi^2\left(p\right)
 \end{gather*}
 
 2、$\bm{\Sigma}_1,\bm{\Sigma}_2$未知，$\bm{\Sigma}_1=\bm{\Sigma}_2$
@@ -1101,11 +1101,11 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 \paragraph{一元}
 $k$个正态总体$N\left(\mu_1,\sigma_1^2\right),\ \cdots,N\left(\mu_k,\sigma_k^2\right)$，$k$个样本相互独立，第$i$个样本有$n_i$个个体
 
-${\bar{X}}_i=\frac{1}{n_i}\sum_{j=1}^{n_i}X_i^{(j)}$，
-$\bar{\bar{X}}=\frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{n_i}{X_i^j},n=n_1+n_2+\cdots+n_k$
+${\overline{X}}_i=\frac{1}{n_i}\sum_{j=1}^{n_i}X_i^{(j)}$，
+$\overline{\overline{X}}=\frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{n_i}{X_i^j},n=n_1+n_2+\cdots+n_k$
 
 $
-    SST=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\bar{\bar{X}}\right)^2}, SSA=\sum_{i=1}^{k}n_i\left(X_i-\bar{\bar{X}}\right) , SSE=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\bar{\bar{X}}\right)^2}
+    SST=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\overline{\overline{X}}\right)^2}, SSA=\sum_{i=1}^{k}n_i\left(X_i-\overline{\overline{X}}\right) , SSE=\sum_{i=1}^{k}\sum_{j=1}^{n_i}{\left(X_i^j-\overline{\overline{X}}\right)^2}
 $
 
 \begin{gather*}
@@ -1117,7 +1117,7 @@ $
 
 检验统计量及其分布：
 \begin{gather*}
-    F =\frac{MSA}{MSE} =\frac{SSA/(k-1)}{SSE/(n-k)} =\frac{\sum_{i=1}^{k}{m(\bar{X}_i-\bar{\bar{X}})/(k-1)}}{\sum_{i=1}^{k}\sum_{j=1}^{m}{(X_{ij}-\bar{X}_i)^2/(n-k)}} \sim F(k-1,n-k)
+    F =\frac{MSA}{MSE} =\frac{SSA/(k-1)}{SSE/(n-k)} =\frac{\sum_{i=1}^{k}{m(\overline{X}_i-\overline{\overline{X}})/(k-1)}}{\sum_{i=1}^{k}\sum_{j=1}^{m}{(X_{ij}-\overline{X}_i)^2/(n-k)}} \sim F(k-1,n-k)
 \end{gather*}
 
 \par F值越大越背离原假设
@@ -1176,6 +1176,1090 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 适用于定类、定序数据、离散变量
 
 假设是关于总体其他的统计特征（如总体分布、独立性等）
+
+
+
+
+
+
+\section{回归分析}
+
+
+\subsection{相关分析}
+
+
+
+相关分析（Correlation Analysis）
+
+\informationBox{
+    \par 适用所有统计关系。因为不区分解释变量和被解释变量，因此具有对称性。
+    \par 不存在线性相关并不意味着不相关，存在相关关系并不一定存在因果关系
+}
+
+\subsubsection{变量关系}
+
+\begin{enumerate}[1.]
+    \item 函数关系：规律+确定性（无扰动项）  
+    \item 相关关系：规律+不确定性（有扰动项）  
+    \begin{enumerate}[(1)]
+        \item 原因  
+        \begin{enumerate}[a.]
+            \item 直接关系：直接的因果关系，X导致Y或Y导致X  
+            \item 共同反应：X和Y共同为Z导致  
+            \item 交叉关系： X和潜在变量Z共同导致Y  
+        \end{enumerate}
+        \item 表现  
+        \begin{enumerate}[a.]
+            \item 相关方向：正相关，负相关   
+            \item 相关形式：线性相关，非线性相关  
+            \item 变量数目：单相关（两个变量的相关），复相关  
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+\subsubsection{衡量}
+
+1. 双变量：皮尔森单相关系数
+
+（1）总体相关系数：
+$$
+\rho_{XY}\equiv Corr\left(X,Y\right)\equiv\frac{Cov\left(X,Y\right)}{\sqrt{Var\left(X\right)Var\left(Y\right)}}=\frac{\sigma_{XY}}{\sigma_X\sigma_Y}
+$$
+
+（2）样本相关系数：
+$$
+r_{XY} = \frac{\sum_{i=1}^{n}{ (X_i-\bar{X})(Y_i-Y)}}{\sqrt{\sum_{i=1}^{n}{(X_i-\bar{X})^2}}· \sqrt{\sum_{i=1}^{n}{(Y_i-\bar{Y})^2}}  }, -1\leq r \leq 1
+$$
+
+（3）强弱：
+\begin{align*}
+0\le\left|r\right|<0.3：\text{无线性相关} \\ 
+0.3\le\left|r\right|<0.5：\text{弱相关} \\ 
+0.5\le\left|r\right|<0.8：\text{中度相关} \\ 
+0.8\le\left|r\right|\le1：\text{强相关}
+\end{align*}
+
+
+（4）检验：
+\begin{gather*}
+    H_0: \rho =0
+\end{gather*}
+检验统计量：
+\begin{gather*}
+    t = \frac{r\sqrt{n-2}}{\sqrt{(1-r)^2}} \sim t(n-2) 
+\end{gather*}
+
+
+2. 多变量：复相关系数，偏相关系数
+
+
+\subsection{横截面模型}
+
+
+
+
+
+
+
+古典线性回归模型（Classical Linear Regression Model，CLRM）。 同时满足正态性假设的线性回归模型，称为经典正态线性回归模型（Classical Normal Linear Regression Model, CNLRM）。
+
+\subsubsection{假设}
+
+\paragraph{模型设定}
+
+
+\begin{enumerate}[1.]
+    \item 线性假定（linearity）：总体模型为：
+          \begin{gather*}
+              Y_i=\beta_0+\beta_1X_{i1}+\beta_2X_{i2}+\cdots+\beta_kX_{ik}+\mu_i\ \left(i=1,\cdots,n\right)
+          \end{gather*}
+          若边际效应可变，可引入平方项（$X_{ik}^2$）、三次方项（$X_{ik}^3$）或交叉项（$X_{ik}X_{im}$）
+    \item 选择了正确的变量
+\end{enumerate}
+
+
+
+
+\paragraph{解释变量}
+
+
+\begin{enumerate}[1.]
+    \item 样本方差趋于非零有限常数
+    \begin{gather*}
+        \sum_{i=1}^{n}\frac{\left(X_i-\bar{X}\right)^2}{n}\rightarrow Q (n\rightarrow \infty )
+    \end{gather*}
+    \item $R\left(\bm{X}_{\bm{n}\times\left(\bm{k}+\bm{1}\right)}\right)=k+1$
+    \begin{enumerate}[(1)]
+        \item 无完全多重共线性：矩阵$\bm{X}$列满秩（多元特有）
+        \item 样本观测值变异性：样本中的观测值不能完全相同，无自相关
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+\paragraph{随机干扰项}
+
+\begin{enumerate}[1.]
+    \item $E\left(\bm{\varepsilon}\middle|\bm{X}\right)=\bm{0}$
+          \begin{enumerate}[(1)]
+              \item 条件0均值性：
+                    \begin{gather*}
+                        E\left(\varepsilon_i|X_1,X_2,\cdots,X_k\right)=0, i=1,2,\cdots,n
+                    \end{gather*}
+              \item 严格外生性（strict exogeneity） ：
+                    \begin{gather*}
+                        Cov\left(\mathbf{X_i},\varepsilon_i\right)=E(\mathbf{X_i}\varepsilon_{i})=0, i=1,2,\cdots,n
+                    \end{gather*}
+                    \par 解释变量与随机项不相关，$\bm{X}$同期外生（contemporaneously exogenous），$\bm{X}$与$\varepsilon$同期不相关（contemporaneously uncorrelated）。
+          \end{enumerate}
+    \item 球型扰动项（spherical disturbance）
+          \begin{gather*}
+              Var\left(\bm{\varepsilon}\middle|\bm{X} \right)
+              =E\left( \bm{\varepsilon}\bm{\varepsilon}^\prime\middle|\bm{X} 	\right)
+              =E\left( \begin{matrix}
+                  \varepsilon_1^2            & \cdots & \varepsilon_1\varepsilon_n \\\vdots&\ddots&\vdots\\
+                  \varepsilon_n\varepsilon_1 & \cdots & \varepsilon_n\varepsilon_n \\
+              \end{matrix} \middle|\bm{X}\right)
+              =\left(\begin{matrix}
+                      \sigma^2 & \      & 0        \\
+                      \        & \ddots & \        \\
+                      0        & \      & \sigma^2 \\
+                  \end{matrix}\right)
+              =\sigma^2\mathbf{I_n}
+          \end{gather*}
+          \begin{enumerate}[(1)]
+              \item 条件同方差（conditional homoskedasticity）：
+                    \begin{gather*}
+                        Var\left(\varepsilon_i\middle| X_1,X_2,\cdots,X_k\right)=\sigma^2，i=1,2,\cdots,n
+                    \end{gather*}
+              \item 序列不相关：
+                    \begin{gather*}
+                        Cov\left (\varepsilon_i,\varepsilon_j\middle| X_1,X_2,\cdots,X_k\right)=0,i\neq j  i,j=1,2,\cdots,n
+                    \end{gather*}
+              \item 正态性：在采用OLS进行参数估计时，不需要正态性假设。在利用参数估计量进行统计推断时，需要假设随机项的概率分布。
+                    \begin{gather*}
+                        \bm{\varepsilon}|\mathbf{X}\sim N(\mathbf{0},\sigma^2\mathbf{I_n})\\
+                        \varepsilon_i|X_1,X_2,\cdots,X_k\sim N(0,\sigma^2)
+                    \end{gather*}
+          \end{enumerate}
+\end{enumerate}
+
+
+
+\subsubsection{模型设计}
+
+\paragraph{总体回归模型}
+
+（population regression model, PRM）
+
+又称数据生成过程（data creating process, DGP）
+
+$$
+Y_{i} = E(Y|X_{i1},X_{i2},\cdots,X_{iK})+\varepsilon_{i}\\ 
+=\beta_{0} + \beta_{1}X_{i1}+\beta_{2}X_{i2}+\cdots+\beta_{k}X_{ik}+\varepsilon_{i}, i=1,2,⋯,n\\ 
+\\   
+\bm{Y}=\bm{X\beta}+\bm{\varepsilon}
+$$
+
+其中
+$\bm{Y}\equiv (Y_{1} Y_{2} \cdots  Y_{n})'$，
+$\bm{X}\equiv (X_{1} X_{2} \cdots X_{k})'$，
+$X_{i}\equiv (X_{i1} X_{i2} ⋯ X_{ik})'$，
+$\bm{\beta}\equiv (\beta_{0} \beta_{1} \beta_{2} \cdots \beta_{k})'$，
+$\varepsilon \equiv (\varepsilon_{1} \varepsilon_{2} \cdots \varepsilon_{n})'$。
+
+\begin{enumerate}[1.]
+    \item $Y_i$：被解释变量（explained variable）/因变量（dependent variable）/响应变量（response variable），假设为随机的
+    \item 确定性部分/系统性部分：$E(Y|X_{i1},X_{i2},\cdots,X_{ik})$；系统性误差，不同水平之间的差异，所属总体的特征
+    \begin{enumerate}[(1)]
+        \item $X$：解释变量（explanatory variable，regressor）/自变量（independent variable）/协变量（covariate），非随机
+        \item $\beta_j(j=1,2,⋯,k)$：偏回归系数（partial regression coefficient） 
+        \item 控制变量：为了准确估计感兴趣参数而控制的解释变量（control variables）
+    \end{enumerate}
+    \item 随机部分/非系统型部分：
+    \begin{enumerate}[(1)]
+        \item $\varepsilon_i$ ：离差（deviation）/随机误差项（stochastic error）/随机扰动项/随机干扰项（stochastic disturbance）；随机误差，水平内部存在的差异，单个个体的个别特征
+        \par 设置原因：
+    \begin{enumerate}[a.] 
+        \item 原生：代表未知的影响因素；变量的内在随机性  
+        \item 衍生（可避免）：代表残缺数据；代表数据观测误差；代表众多细小影响因素；代表模型设定误差
+    \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+\paragraph{样本回归模型}
+
+$$
+Y_i  ={\hat{Y}}_i+{\hat{\varepsilon}}_i \\ 
+={\hat{\beta}}_0+{\hat{\beta}}_1X_{i1}+{\hat{\beta}}_2X_{i2}+\cdots+{\hat{\beta}}_kX_{ik}+{\hat{\varepsilon}}_i\ , i=1,2,\cdots,n \\  
+\mathbf{Y}=\mathbf{X}\hat{\mathbf{\beta}}+\hat{\mathbf{\varepsilon}}
+$$
+
+\par ${\hat{Y}}_i$：样本回归函数（sample regression function，SRF）
+\par ${\hat{\varepsilon}}_i$：（样本）残差项/剩余项（residual）
+
+\subsubsection{检验与评价}
+
+\paragraph{拟合优度检验}
+
+$$
+TSS=ESS+RSS
+$$
+
+\par 总离差平方和（Total Sum of Squares）：  
+$$ TSS=\sum_{i=1}^{n}y_i^2=\sum_{i=1}^{n}\left(Y_i-\bar{Y}\right)^2=SST $$  
+\par 回归平方和（Explained Sum of Squares）： 回归方程能解释的，  
+$$ ESS=\sum_{i=1}^{n}{\hat{y}}_i^2=\sum_{i=1}^{n}\left({\hat{Y}}_i-\bar{Y}\right)^2=SSA $$
+\par 残差平方和（Residual Sum of Squares）： 回归方程不能解释的  
+$$ RSS=\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2=\sum_{i=1}^{n}\left(Y_i-{\hat{Y}}_i\right)^2=SSE $$
+
+
+1、拟合优度/可决系数/判定系数：
+
+\begin{gather*}
+R^2=\frac{ESS}{TSS} 
+=\frac{\sum_{i=1}^{n}\left({\hat{Y}}_i-\bar{Y}\right)^2}{\sum_{i=1}^{n}\left(Y_i-\bar{Y}\right)^2} 
+=1-\frac{RSS}{TSS}
+=1-\frac{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2}{\sum_{i=1}^{n}\left(Y_i-\bar{Y}\right)^2}，0≤R^2≤1 \\ 
+R^2=\left[Corr\left(Y_i,{\hat{Y}}_i\right)\right]^2
+\end{gather*}
+
+
+\par 含义：模型能解释Y变异或波动的$R^2$  
+\par 如果增加解释变量，$R^2$往往增大（至少不变）
+
+2、校正拟合优度（adjusted $R^2$）：
+
+\begin{gather*}
+    {\bar{R}}^2 
+=1-\frac{\sum_{i=1}^{n}{\varepsilon_i^2/(n-k-1)}}{\sum_{i=1}^{n}{(Y_i-\bar{Y})^2}/(n-1)} 
+=1-(1-R^2)\frac{n-1}{n-k-1}, 0\leqslant R^2\leqslant 1
+\end{gather*}
+
+
+\paragraph{显著性检验}
+
+1、$t$检验
+
+变量回归系数的显著性检验（$n-k\geq 8$时较为稳定）
+
+$$
+H_0:\beta_j=0；H_1：β_j≠0（j=1,2,⋯,k）
+$$
+
+一元：
+
+\begin{gather*}
+\beta_1:
+t
+=\frac{\hat{\beta}_1-\beta_1}{S_{\hat{\beta}_1}} 
+=\frac{\hat{\beta}_1-\beta_1}{\sqrt{\frac{\hat{\sigma}^2}{\sum_{i=1}^{n}{x_i^2}}}}\\
+\beta_0: 
+t
+=\frac{\hat{\beta}_0-\beta_0}{S_{\hat{\beta}_0}} 
+=\frac{\hat{\beta}_1-\beta_1}{\sqrt{\frac{\hat{\sigma}^2\sum_{i=1}^{n}{X_i^2}}{n \sum_{i=1}^{n}{x_i^2}}}}
+\end{gather*}
+
+
+多元：
+\begin{gather*}
+    t=\frac{\hat{\beta}_j-\beta_j}{S_{\hat{\beta}_j}} =\frac{\hat{\beta}_j-\beta_j}{\sqrt{c_{jj}\frac{\sum_{i=1}^{n}{\varepsilon_i^2}}{n -k-1}}} =\frac{\hat{\beta}_j-\beta_j}{\sqrt{c_{ij}\frac{\bm{\hat{\varepsilon}}' \bm{ \hat{\varepsilon}}}{n -k-1}}} \sim t(n-k-1)
+\end{gather*}
+
+
+$c_{jj}$：$\left(\bm{X}^\prime\bm{X}\right)^{-1}$对角线上的第$j$个元素
+
+若$\left|t\right|>t_{\frac{a}{2}}$，拒绝$H_0$
+
+2、$F$检验
+
+总体线性关系显著性（$n\geq 30$或至少$n\geq3\left(k+1\right)$基本要求）
+
+\begin{gather*}
+    H_0:\beta_1=\beta_2=\cdots=\beta_k=0；H_1：β_{j}, j=1,2,⋯,k\text{不全为零}
+\end{gather*}
+
+
+一元：t检验与F检验一致
+
+多元：
+\begin{gather*}
+F=\frac{ESS/k}{RSS/(n-k-1)} = \frac{\sum_{i=1}^{n}{\hat{y}_i^2/k}}{\sum_{i=1}^{n}{\hat{\varepsilon}_i^2/(n-k-1)}}\sim F(k,n-k-1)
+\end{gather*}
+
+
+若$F>F_\alpha$，拒绝$H_0$
+
+$$
+{\bar{R}}^2=1-\frac{n-1}{n-k-1+kF}, F=\frac{R^2/k}{(1-R^2)/(n-k-1)}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{时间序列模型}
+
+\subsubsection{平稳性}
+
+
+
+
+
+
+
+时间序列的平稳性：假定某个时间序列是由某一随机过程（stochastic process）生成的，即假定时间序列${X_t}(t=1,2,…)$的每一个数值都是从一个概率分布中随机得到，如果满足下列条件：
+
+\par 均值$E(X_t)=\mu$是与时间$t$无关的常数  
+\par 方差$Var\left(X_t\right)=\sigma^2$是与时间$t$无关的常数  
+\par 协方差$Cov\left(X_t,X_{t+k}\right)=\gamma_k$是只与时期间隔$k$有关，与时间$t$无关的常数
+
+\paragraph{平稳时间序列}
+
+
+
+\begin{enumerate}[1.]
+    \item 分类
+    \begin{enumerate}[(1)]
+        \item 严平稳
+        \begin{enumerate}[a.]
+            \item $\forall \text{正整数}m,\forall t_1,t_2,⋯,t_m\in T，\forall \text{正整数}\tau$，有：
+            \begin{gather*}
+                F_{t_1,t_2,⋯,t_m}(x_1,x_2,⋯,x_m)=F_{t_{1+\tau },t_{2+\tau },⋯,t_{m+\tau }}(x_1,x_2,⋯,x_m)
+            \end{gather*}
+        \end{enumerate}
+        \item 宽平稳
+        \begin{enumerate}[a.]
+            \item $EX_t^2<\infty,\forall t\in T$  
+            \item $EX_t=\mu$，$\mu$为常数，$\forall t\in T$  
+            \item $\gamma (t,s)=\gamma (k,k+s-t)$，$\forall t,s,k$且$k+s-t\in T$
+        \end{enumerate}
+    \end{enumerate}
+    \item 好处
+    \begin{enumerate}
+        \item 可替代随机抽样假定
+        \item 有效减少虚假回归/伪回归（spurious regression）
+    \end{enumerate}
+    \item 例子
+\begin{enumerate}[(1)]
+    \item 白噪声序列（white noise）：$X_t=\mu_t, \mu_t\sim N(0,\sigma^2)$，又称纯随机序列
+\begin{enumerate}[a.]
+    \item 纯随机性：$\gamma(k)=0，\forall k\neq 0$，各序列值之间没有任何相关关系，即为“没有记忆”的序列，如果时间序列是白噪声，分析则无意义  
+    \item 方差齐性：$DX_t=\gamma(0)=\sigma^2$。根据马尔可夫定理，只有方差齐性假定成立时，用最小二乘法得到的未知参数估计值才是准确的、有效的
+\end{enumerate}
+\item 检验：
+    \begin{enumerate}[a.]
+        \item $H_0：\rho _1=\rho _2=\cdots =\rho _m=0,\forall m\geqslant 1$ 。延迟期数小于或等于m期的序列值之间相互独立。为白噪声序列  
+        \item $H_1$：至少存在某个$\rho _k≠0,\forall m\geqslant 1，k\leqslant m$。延迟期数小于或等于m期的序列值之间有相关性  
+        \item Q统计量：$Q=n\sum_{k=1}^{m}{\hat{\rho}}_k^2~\chi^2\left(m\right)$  
+        \item LB(Ljung-Box)统计量：$LB=n(n+2)\sum_{k=1}^{m}{(\frac{{\hat{\rho}}_k^2}{n-k})}~\chi^2(m)$
+    \end{enumerate}
+    \item d阶单整序列（integrated of d）：原时间序列经过d次差分变平稳
+    \begin{enumerate}[a.]
+        \item 一阶自回归$AR(1)$过程：$X_t=\phi X_{t-1}+\mu_t，\mu_t\sim N(0,σ_2)$  
+        \item $\left|\phi\right|>1$：随机过程生成的时间序列发散  
+        \item $\Phi=1$：随机游走（random walk）过程，非平稳  
+        \item $\Delta X_t=X_t-X_{t-1}=\mu_t$
+    \end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+\paragraph{检验}
+单位根检验：通过检验特征根是在单位圆内还是单位圆上（外），来检验序列的平稳性（unit root test）
+
+\subparagraph{图示法}
+
+\begin{enumerate}[1.]
+    \item 时序图检验：根据平稳时间序列均值、方差为常数的性质，平稳序列的时序图应该显示出该序列始终在一个常数值附近随机波动，而且波动的范围有界、无明显趋势及周期特征  
+    \item 自相关图检验：平稳序列通常具有短期相关性。该性质用自相关系数来描述就是随着延迟期数的增加，平稳序列的自相关系数会很快地衰减向零
+\end{enumerate}
+
+
+\subparagraph{DF检验（Dicky-Fuller test）}
+
+一阶序列相关
+
+> $X_t=\alpha+\rho X_{t-1}+\mu_t$或$∆X_t=α+δX_{t-1}+μ_{t}$  
+> $H_0：δ=0，即ρ=1；H_1：δ<0，即ρ<1 $  
+> $\rho=\left|\varphi_1\right|-1， \tau=\frac{\hat{\rho}}{S(\hat{\rho})}$  
+> $H_0$：$φ_1≥1$，非平稳；  
+> $\left|\varphi_1\right|<1$时，$t(φ_1)=\frac{\hat{φ}_1-φ_1}{S(\hat{φ}_1)}$渐进$N(0,1)$  
+> $\left|\varphi_1\right|=1$时，$τ=\frac{|\hat{φ}_1|-1}{S(\hat{φ}_1)}$极限$\frac{\int_{0}^{1}W(r)dW(r)}{\int_{0}^{1}[W(r)]^2dr}$  
+> 若拒绝$H_0$（$t<\tau$临界值，$t$统计量有偏误）则为平稳序列  
+\begin{gather*}
+x_t=\phi_{1}x_{t-1}+\varepsilon_t\\
+x_t=\mu+\varphi_{1}x_{t-1}+\varepsilon_t\\
+x_t=\mu+\beta t+\varphi_{1}x_{t-1}+\varepsilon_t
+\end{gather*}
+
+
+\subparagraph{ADF检验（Augmented Dickey-Fuller test）}
+
+多阶序列相关，用于方差齐性的情况。
+
+> 若$AR(p)$序列有单位根存在，则自回归系数之和恰好等于1  
+> $$
+> \lambda^p-\varphi_1\lambda^{p-1}-\cdots-\varphi_p=0 \Rightarrow^{\lambda=1} 1-\varphi_1-\cdots-\varphi_p=0 \Rightarrow\varphi_1+\varphi_2+\cdots+\varphi_p=1
+> $$
+> 
+> $x_t=\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t$  
+> $x_t=\mu+\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t$  
+> $x_t=\mu+\beta t+\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t$  
+> 模型1：$∆X_t=δX_{t-1}+\sum_{i=1}^{m}β_i∆X_{t-i}+ε_t$  
+> 模型2：$∆X_t=α+δX_{t-1}+\sum_{i=1}^{m}β_i∆X_{t-i}+ε_{t}$  
+> 模型3：$∆X_t=α+β_T+δX_{t-1}+\sum_{i=1}^{m}β_i∆X_{t-i}+ε_{t}$  
+> $T$：趋势项，时间变量，代表时间序列随时间变化的趋势  
+> $\alpha$：漂移项   
+> $m$：滞后阶数，一般用$LM$检验确定  
+> $H_0：δ=0；H_1：δ<0$；$\tau=\frac{\hat{\rho}}{S(\hat{\rho})}$  
+> 自下而上检验，拒绝$H_0$（$t<\tau$临界值）则为平稳序列，否则继续检验
+
+\subparagraph{PP检验}
+
+异方差的平稳性检验
+
+\begin{gather*}
+    Z\left(\tau\right) =\tau(\hat{\sigma}^2/\hat{\sigma}_{Sl}^2 ) -\frac{1}{2}  (\hat{\sigma}_{Sl}^2-\hat{\sigma}^2) T \sqrt{\hat{\sigma}_{Sl}^2 \sum_{t=2}^{T}{(x_{t-1}-x_{T-1})^2}} 
+\end{gather*}
+\par ${\hat{\sigma}}^2=T^{-1}\sum_{t=1}^{T}{\hat{\varepsilon}}_t^2$  
+\par ${\hat{\sigma}}_{Sl}^2=T^{-1}\sum_{t=1}^{T}{\hat{\varepsilon}}_t^2+2T^{-1}\sum_{j=1}^{l}{w_j(l)\sum_{t=j+1}^{T}{{\hat{\varepsilon}}_t{\hat{\varepsilon}}_{t-j}}}$  
+\par $\bar{x}_{T-1}=\frac{1}{T-1}\sum_{t=1}^{T-1}{x_t}$
+
+
+
+
+
+
+
+
+
+
+
+\subsection{面板模型}
+
+
+\informationBox{
+    * 面板类型：
+    \begin{enumerate}[(1)]
+    \item 短面板：时间维度T较少，个体维度n较多（short panel）
+    \item 长面板：时间维度T较多，个体维度n较少（long panel）
+    \item 平衡面板：样本中每个时期的个体完全一样（balanced panel）
+    \item 非平衡面板：样本中每个时期的个体不完全一样（unbalanced panel），又称不完全面板（incomplete panel）
+    \item 动态面板：解释变量包括被解释变量的滞后值（dynamic panel）
+    \item 静态面板：解释变量不包括被解释变量的滞后值（static panel）  
+    \end{enumerate}
+}
+
+检验：豪斯曼检验（Hausman test）
+$Cov(\alpha_i,X_{it})=0$ → 无关（随机效应模型）：FE和RE都是一致的，但RE更有效
+$Cov(\alpha_i,X_{it})\neq 0 $ → 有关（固定效应效应）：FE仍然一致，但RE是有偏的
+
+\subsubsection{固定效应模型}
+假设： $Cov(\alpha_i,X_{it})\neq0$
+截面个体和时点变截距模型（双向固定效应模型）：
+$$Y_{it} =\alpha_i+\gamma_t+\beta_1X_{1,it}+\beta_2X_{2,it}+\cdots+\beta_kX_{k,it}+\varepsilon_{it}\left(i=1,2,\cdots,n\right) $$ \\  
+\par $\alpha_i$ ：个体固定效应（individual fixed effects），随个体而变，不随时间而变
+\par $\gamma_t$ ：时间固定效应（time fixed effect），随时间而变，不随个体而变
+* 估计方法
+1、虚拟变量法：
+实质上就是在传统的线性回归模型中加入N-1个虚拟变量，使得每个截面都有自己的截距项
+2、组内离差法：
+(1) 可以通过先从Y和X中减去个体和时间平均值，然后估计被减后的Y关于被减后的X的多元回归方程的方法来估计X的系数。这种方法可以避免二元变量的出现。
+(2) 从Y, X和时间指示变量中减去个体(不是时间)均值然后估计，被减后的Y对被减后的X和被减后的时间指示变量的多元回归中的k+T个系数
+
+\subsubsection{随机效应模型}
+假设： $Cov(\alpha_i,X_{it})=0 $
+模型：
+\begin{align*} 
+    Y_{it} & = \beta_1 X_{1,it}+\beta_2 X_{2,it}+\cdots +\beta_k X_{k,it}+v_{it} \\ & =\beta_1 X_{1,it}+\beta_2 X_{2,it}+\cdots +\beta_k X_{k,it}+\alpha_i+u_{it} (i=1,2,⋯,n) 
+\end{align*} 
+\par $v_{it}$ ：随机误差项
+\par $\alpha_i$ ：不随时间变化的误差项
+\par $u_{it}$ ：随时间变化的误差项
+
+
+\subsubsection{混合回归模型（polled regression model）}
+每个个体都有完全一样的回归方程，实质为OLS
+
+
+
+
+\subsection{放宽假设：多重共线性}
+
+
+
+\subsubsection{截面数据}
+
+
+
+
+**多重共线性**：某几个解释变量之间出现相关性（multi-collinearity）
+
+$$
+Cov\left(X_i,X_j\right)\neq0,\ i\neq j 
+$$
+
+\paragraph{原因}
+1、经济变量相关的共同趋势  
+2、模型设定不谨慎  
+3、样本资料的限制
+
+\paragraph{后果}
+1、完全共线性（perfect multicollinearity）
+
+参数估计量不存在：相关的变量会合并，多元回归模型会退化
+> 存在$c_1X_{i1}+c_2X_{i2}+\cdots+c_kX_{ik}=0,c_i$不全为0，即某几个解释变量可以用其他解释变量的线性组合表示
+
+2、近似共线性（approximate multicollinearity），又称交互相关（intercorrelated）
+> 普通最小二乘法参数估计量的方差变大。存在$c_1X_{i1}+c_2X_{i2}+\cdots+c_kX_{ik}+v_i=0$，$c_i$不全为0，$v_i$为随机干扰项  
+> 例：二元线性回归：$Var(\hat{\beta}_{1})=\frac{σ2}{\sum{i=1}^{n}{x_{i1}^{2}}}⋅\frac{1}{(1-r)^2}>\frac{σ2}{\sum_{i=1}^{n}{x_{i1}^{2}}}$  
+> 方差膨胀因子（variance inflation factor，VIF）：$VIF\left({\hat{\beta}}_1\right)=\frac{1}{1-r^2}$，越高说明其越能被其他自变量所解释
+
+3、参数估计量经济意义不合理
+> 相关变量的参数反映共同影响，非单独影响
+
+4、变量的显著性检验和模型的预测功能失去意义
+> 不影响一致性，只影响有效性（方差变大）   
+> 方差变大，t值小于临界值误导做出参数为零的推断  
+> 方差变大，区间变大
+
+\paragraph{检验}
+（一）是否存在
+
+1、两个解释变量：简单相关系数法
+
+> $|r|$接近1
+
+2、多个解释变量：综合统计检验法
+
+> (1) 模型的$R^2$与$F$值较大 → 各解释变量对$Y$的联合线性作用显著  
+> (2) 各参数估计的$t$检验值较小 → 各解释变量间存在共线性使得它们对$Y$的独立作用不能分辨
+
+（二）存在范围
+
+1、判定系数检验法
+> 构造F检验：$F_j=\frac{R_{j\cdot}^{2}/(k-1)}{(1-R_{j\cdot}^{2})/(n-k)}\sim F(k-1,n-k)$  
+> $R_{j\cdot}$是第$j$个解释变量对其他解释变量的回归方程的决定系数  
+> 进行辅助回归（auxiliary regression），如果某一种回归$X_{ji}=\alpha_{1}X_{1i}+\alpha_{2}X_{2i}+\cdots+\alpha_{L}X_{Li}$的判定系数较大，说明$X_j$与其他$X$间存在共线性。
+
+2、排除变量法（Stepwise Backward Regression）
+> 在模型中排除某一个解释变量$X_j$，估计模型；  
+> 如果拟合优度与包含$X_j$时十分接近，则说明$X_j$与其它解释变量之间存在共线性
+
+3、逐步回归法（Stepwise Forward Regression）
+> 以$Y$为被解释变量，逐个引入解释变量  
+> 若拟合优度变化（增加）显著，说明新引入变量是独立解释变量
+
+\paragraph{解决方法}
+
+（一）剔除
+
+剩余系数的估值和经济意义发生变化；可能产生内生性问题
+
+（二）减小参数估计量的方差
+
+1、增加样本容量
+
+2、岭回归法（ridge regression）
+
+
+
+
+
+\subsection{放宽假设：序列相关性}
+
+\subsubsection{截面数据}
+空间相关（spatial autocorrelation），空间计量经济学。
+
+
+
+
+\subsubsection{时序数据}
+
+
+
+
+
+
+
+**序列相关性**：模型的随机干扰项之间存在相关性（serial correlation），又称自相关（autocorrelation）
+
+$$
+Cov\left(\varepsilon_i,\ \varepsilon_j\right)=E\left(\varepsilon_i\varepsilon_j\right)\neq0\\
+$$
+
+一、原因
+
+1、经济变量固有的惯性：如消费习惯  
+2、模型设定的偏误（specification error）：虚假序列相关（只有非平稳时间序列之间才能出现虚假回归），如人口和GDP总量  
+3、数据生成：根据已知数据生成所需数据时，生成数据与原数据产生内在联系
+
+二、后果
+
+1、参数估计量非有效：OLS估计量仍然具有线性性、无偏性、一致性、渐进正态分布  
+2、变量的显著性检验失去意义：t、F统计量利用了同方差条件  
+3、模型的预测失效
+
+三、检验
+原理：分析随机误差项的近似估计量${\hat{\varepsilon}}_t\approx\widetilde{{\hat{\varepsilon}}_t}=Y_t-\left({\hat{Y}}_t\right)_{OLS}$之间的相关性
+
+（一）图示法
+
+（二）回归检验法
+
+存在某一种函数形式，使得方程显著成立，则存在序列相关性
+$$
+{\hat{\varepsilon}}_t=\rho{\hat{\varepsilon}}_{t-1}+e_t，t=2,⋯,T\\ {\hat{\varepsilon}}_t=\rho_1{\hat{\varepsilon}}_{t-1}+\rho_2{\hat{\varepsilon}}_{t-2}+e_t，t=3,⋯,T
+$$
+
+（三）DW检验（Durbin-Watson test）
+
+检验一阶序列相关
+
+1、假设：
+> ① 解释变量X非随机  
+> ② 随机误差项$\varepsilon_t$为一阶自回归形式：$\varepsilon_t=\rho\varepsilon_{t-1}+e_t$  
+> ③ $\rho$：自协方差系数（coefficient of autocovariance），又称一阶自相关系数（first-order coefficient of autocorrelation）  
+> ④ 回归模型中不应含有滞后因变量作为解释变量  
+> ⑤ 回归含有截距项
+
+2、步骤：
+
+$$
+H_0：E(ε_{t},ε_{t-1})=0⇔ρ=0（ε_{t}不存在一阶自回归）\\ D.W.=\frac{\sum_{t=2}^{n}\left({\hat{\varepsilon}}_t-{\hat{\varepsilon}}_{t-1}\right)^2}{\sum_{t=1}^{n}{\hat{\varepsilon}}_t^2}\\ 若0<D.W.<d_{L}，存在正自相关\\ 若d_{L}<D.W.<d_{U}，不能确定\\ 若d_{U}<D.W.<4-d_{U}，无自相关（D.W.≈2）\\ 若4-d_{U}<D.W.<4-d_{L}，不能确定\\ 若4-d_{L}<D.W.<4，存在负自相关 
+$$
+
+3、Durbin h检验：
+
+> 当回归因子包含延迟因变量时，残差序列的DW统计量是一个有偏统计量。在这种场合下使用DW统计量容易产生残差序列正自相关性不显著的误判
+> $$
+> Dh=DW\frac{n}{1-n\sigma_\beta^2}
+> $$
+
+（四）拉格朗日乘数检验
+
+拉格朗日乘数（Lagrange multiplier）检验（LM test；GB test）：p阶序列相关
+
+$$
+\varepsilon_t=\rho_1\varepsilon_{t-1}+\rho_2\epsilon_{t-2}+\cdots+\rho_p\varepsilon_{t-p}+e_t\\ 
+Y_t=\beta_0+\beta_1X_{t1}+\cdots+\beta_kX_{tk}+\rho_1\varepsilon_{t-1}+\rho_2\varepsilon_{t-2}+\cdots+\rho_p\varepsilon_{t-p}+e_t\\ 
+H_0：ρ_1=ρ_2=⋯=ρ_p=0\\ 
+LM={\left(T-p\right)R}^2~\chi_\alpha^2\left(p\right)\\ 
+T：ε_t=β_0+β_{1}X_{t1}+⋯+β_{k}X_{tk}+ρ_{1}ε_{t-1}+ρ_{2}ε_{t-2}+⋯+ρ_{p}ε_{t-p}+e_{t}的样本容量\\ 
+R^2：ε_t=β_0+β_1X_{t1}+⋯+β_kX_{tk}+ρ_1ε_{t-1}+ρ_{2}ε_{t-2}+⋯+ρ_{p}ε_{t-p}+e_{t}的可决系数 
+$$
+
+若LM超过临界值，拒$H_0$
+
+四、解决方法
+（一）模型变换
+
+1、广义最小二乘法
+
+2、广义差分法（generalized difference method）
+
+（二）序列方差稳健估计法（serial correlation-robust method）
+
+1、序列相关稳健标准误法（method of serial correction-robust standard error）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{放宽假设：异方差性}
+
+
+\subsubsection{截面数据}
+
+
+
+
+
+
+
+
+**异方差性**：对于不同的样本点，随机干扰项的方差不是常数，互不相同（heteroscedasticity）
+
+类型：
+> ① 单调递增型：$\sigma_i^2$随X的增大而增大  
+> ② 单调递减型：$\sigma_i^2$随X的增大而减小  
+> ③ 复杂型：$\sigma_i^2$与$X$的变化呈复杂形式
+
+一、后果
+1、参数估计量非有效
+> OLS估计量仍然具有线性性、无偏性、一致性、渐近正态
+
+2、变量的显著性检验失去意义
+> t、F统计量利用了同方差条件
+
+
+3、模型的预测失效
+
+二、检验
+原理：首先采用OLS估计，得到残差估计值，用它的平方近似随机误差项的方差
+
+（一）图示检验法
+
+> $X$与$e_i^2$的散点图
+
+（二）帕克检验（Park test）
+
+> $\tilde{e} _i^2 =f(X_{ji})+\varepsilon_{i} =\sigma^2X_{ji}^\alpha e^{\varepsilon_i}$  
+> 若$\alpha$在统计上是显著的，表明存在异方差性
+
+（三）戈里瑟检验（Glejser test）
+
+> $$
+> \left|{\widetilde{e}}_i^2\right| =f\left(X_{ji}\right)+\varepsilon_i
+> $$
+
+（四）布罗施-帕甘检验（Breusch-Pagan test）
+
+> $\varepsilon_i^2\approx{\hat{\varepsilon}}_i^2=\delta_0+\delta_1X_{i1}+\delta_2X_{i2}+\cdots+\delta_kX_{ik}+e$ ，可决系数为$R_{{\hat{\varepsilon}}^2}^2$  
+> $$
+> H_0：δ_0=δ_1=δ_2=\cdots=δ_k=0\\ F =  \frac{ R_{{\hat{\varepsilon}}^2}^2/k}{    {(1-R}_{{\hat{\varepsilon}}^2}^2)/(n-k-1)}\\ 拉格朗日乘数检验：LM=n⋅R_{{\hat{\varepsilon}}^2}^2\sim \chi(k) 
+> $$
+> 若$F$或$LM$＞临界值则拒绝$H_0$，表明存在异方差性
+
+（五）怀特检验（White test）
+
+> 二元为例： 
+> $$
+> \varepsilon_i^2\approx{\hat{\varepsilon}}_i^2=\delta_0+\delta_1X_{i1}+\delta_2X_{i2}+\delta_3X_{i1}^2+\delta_4X_{i2}^2+\delta_5X_{i1}X_{i2}+e_i \\ H_0：δ_1=δ_2=\cdots=δ_5=0\\ F=\frac{R_{{\hat{\varepsilon}}^2}^2/k}{{(1-R}_{{\hat{\varepsilon}}^2}^2)/(n-k-1)}\\ LM=n⋅R_{{\hat{\varepsilon}}^2}^2\sim \chi(k)
+> $$  
+> 若$F$或$LM$＞临界值则拒绝$H_0$，表明存在异方差性
+
+（六）斯皮尔曼等级相关检验法（Spearman Rank Relation test）
+
+（七）戈德弗尔德-匡特检验法（Goldfeld Quandt test）
+
+三、解决方法
+
+（一）广义最小二乘法（Generalized Least Squares，GLS）
+
+（二）加权最小二乘法（Weighted Least Squares, WLS）
+
+> GLS的特例，在采用OLS方法时：对较小的残差平方 $\hat{\varepsilon}_i^2$赋予较大的权数；对较大的残差平方$\hat{\varepsilon}_i^2$赋予较小的权数
+> $$
+> \sum{w_i \hat{\varepsilon}_i^2}=\sum{w_i\left[Y_i-(\hat{\beta}_0+\hat{\beta}_1 X_1 + \hat{\beta}_2 X_2 +\cdots+\hat{\beta}_k X_k)\right]^2}，w_i为权数
+> $$
+
+（三）异方差稳健标准误法（Heteroscedasticity-Consistent Variances and Standard Errors）
+
+> 仍然采用OLS，但对OLS估计量的标准差进行修正  
+> 一元回归：大样本下，$\sum{ \frac{x_i^2 \hat{\varepsilon}_i^2}{(\sum{x_i^2})^2}}$是$Var(\hat{\beta}_1) = \sum{ \frac{x_i^2 \sigma_i^2}{(\sum{x_i^2})^2}}$的一致估计
+
+
+
+
+
+
+
+
+
+
+\subsubsection{时序数据}
+
+
+
+
+
+
+
+
+
+异方差性：随机误差序列的方差随时间变化而变化
+
+$$
+Var(\varepsilon_t)=h(t)
+$$
+
+一、后果
+忽视异方差的存在会导致残差的方差会被严重低估，继而参数显著性检验容易犯纳伪错误(Type II error)，这使得参数的显著性检验失去意义，最终导致模型的拟合精度受影响
+
+二、检验
+残差序列的方差实际上就是它平方的期望。
+
+$$
+Var(ε_t)=E(ε_t^2)
+$$
+
+所以考察残差序列是否方差齐性，主要是考察残差平方序列是否平稳
+
+(1) 残差图
+
+(2) 残差平方图
+
+三、解决方法
+（一）已知异方差函数形式
+
+方差齐性变化
+> 序列显示出显著的异方差性，且方差与均值之间具有某种函数关系$σ_t^2=h(μ_t)$，$h(⋅)$是某个已知函数  
+> ① 尝试寻找一个转换函数$g(⋅)$，使得经转换后的变量满足方差齐性$Var[g(x_t)]=σ^2$  
+> ② 转换函数$g(x_t)$在$\mu_t$附近作一阶泰勒展开 $g(x_{t}) ≅ g(\mu_t)+(x_{t} - \mu_{t} ) g' (\mu_t)$  
+> ③ 求转换函数的方差  
+> $Var[g(x_t)]≅Var[g(μ_t)+(x_t-μ_t)g^{'} (μ_t)]=[g^{'} (μ_t)]^2 h(μ_t)$  
+> ④ 转换函数的确定$g^{'} (μ_t)=1/\sqrt{h(μ_t)}$
+
+（二）ARCH模型
+
+自回归条件异方差模型：通过构造残差平方序列的自回归模型来拟合异方差函数（Autoregressive Conditional Heteroscedasticity Model，ARCH）
+
+（二）GARCH模型
+
+广义自回归条件异方差模型（generalized autoregressive conditional heteroscedasticity model，GARCH）
+
+（三）TGARCH模型
+
+（四）EGARCH模型
+
+
+
+
+
+
+
+
+
+\subsection{放宽假设：内生解释变量}
+
+
+
+
+
+
+
+
+**内生性**：同期相关（同期内生），解释变量与扰动项相关
+
+$$
+Cov(\mathbf{X_i},\varepsilon_i)\neq\mathbf{0}
+$$
+
+一、原因
+1、双向因果关系
+> 面板数据被解释变量领先一期
+
+2、样本自选择
+
+3、遗漏变量
+
+4、测量误差
+
+二、解决办法
+
+（一）工具变量法（IV）
+
+工具变量（instrumental variable，IV）：
+
+> (1) 相关性：工具变量与所替代的随机解释变量高度相关，$Cov(Z_i,X_i)$  
+> (2) 外生性：工具变量与随机误差项不相关，$Cov(\varepsilon_i,Z_i)=0$  
+> 只有过度识别（工具变量数量>内生解释变量数量）时才能检验工具变量的外生性；  
+> 恰好识别时只能依靠经济学原理、历史背景分析等
+
+两阶段最小二乘法（TSLS）、有限信息极大似然法（LIML）
+
+（二）倾向得分匹配（PSM）
+
+（三）合成控制法
+
+
+
+
+
+
+
+\subsection{放宽假设：模型设定偏误}
+
+
+
+
+
+
+
+
+
+
+
+
+
+模型设定偏误主要包括**函数形式偏误**和**变量选择偏误**。
+
+一、函数形式：非线性回归分析
+（一）模型转换
+
+1、指数函数：$y={\rm ax}^b\rightarrow y^\prime=lny,\ x^\prime=lnx,\ A=lna\rightarrow y^\prime=A+bx^\prime$
+
+2、对数变换：
+
+（1）单对数变换：$X$变化1单位，$Y$平均增长率为 $β$
+$$
+lnY=\beta_0+\beta_1X+\varepsilon
+$$
+
+（2）双对数变换：$X$变化1单位，$X$对$Y$的弹性变化$β$
+
+$$
+lnY=\beta_0+\beta_1lnX+\varepsilon\\ \ln{Y_2}-lnY_1 
+=\left[\beta_0+\beta_0\ln{\left(X_1+1\right)}+\varepsilon\right]-\left(\beta_0+\beta_0\ln{X_1}+\varepsilon\right)\\ 
+=ln\frac{Y_2}{Y_1} =\beta_0\ln{\frac{X_1+1}{X_1}}\\ 
+\approx\frac{\Delta Y}{Y} =\frac{Y_2-Y_1}{Y} \\
+$$
+
+3、级数展开法
+
+（二）非线性最小二乘法
+
+1、门限自回归模型
+
+ 二、函数形式：误设函数形式
+（一）检验
+
+1、Ramsey' s RESET检验（regression equation specification error test）
+
+三、变量：遗漏变量
+（一）解决办法
+
+> ① 加入尽可能多的控制变量  
+> ② 使用代理变量（proxy variable）：多余性（代理变量仅通过影响遗漏变量而作用于被解释变量）+剩余独立性（遗漏变量中不受代理变量影响的剩余部分与所有解释变量均不相关）  
+> ③ 工具变量法  
+> ④ 使用面板数据  
+> ⑤ 随机实验和自然实验
+
+四、变量：无关变量
+（一）赤池信息准则和施瓦茨准则
+
+要求增加的解释变量能够减少对应值
+
+1、赤池信息准则（Akaike information criterion，AIC）
+
+$$
+AIC = \ln{ \frac{{\hat{\bm{\varepsilon}}}^\prime\hat{\bm{\varepsilon}}}{n} }+\frac{2(k+1)}{n} + 1 + \ln(2\pi)
+$$
+2、施瓦茨准则（Schwarz criterion）
+
+$$
+SC = \ln{\frac{{ \hat{ \bm{\varepsilon} }}^\prime\hat{\bm{\varepsilon}}}{n}}+\frac{k+1}{n} \ln{(n)} + 1 + \ln{(2\pi)} 
+$$
+
+（二）贝叶斯信息准则（Bayesian information criterion, BIC）
+
+（三）汉南-昆信息准则（Hannan-Quinn information criterion, HQIC）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{放宽假设：数据问题}
+
+
+
+
+
+
+\begin{equation*} 数据问题\begin{cases} 数据质量\begin{cases} 极端数据\\ 缺失数据\\ 受限被解释变量\begin{cases} 断尾回归模型\\ 归并回归模型\\ 样本选择模型 \end{cases} \end{cases}\\ 数据性质\begin{cases} 解释变量\begin{cases} 定性\begin{cases} 虚拟变量法\\ 双重差分法\\ 三重差分法 \end{cases} \end{cases}\\ 被解释变量\begin{cases} 离散选择模型\begin{cases} 二值选择模型\\ 多值选择模型\\ 计数模型\\ 排序模型 \end{cases} \end{cases} \end{cases} \end{cases} \end{equation*}  
+
+一、数据质量
+（一）极端数据
+（二）缺失数据
+（三）受限被解释变量（limited dependent variable）
+1、断尾回归模型（truncated regression model）
+$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i<c$时数据缺失\\ 
+2、归并回归模型（censored regression）
+$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i\geq c$时数据被归并为$c$\\ 
+3、样本选择模型（sample selection）/偶然断尾（incidental truncation）
+$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i$的断尾与$z_i$（二值选择变量）有关\\ 
+二、数据性质
+（一）解释变量：定性
+1、一重差分法（虚拟变量）
+虚拟变量只作为解释变量，自变量为离散型，一般选0和1。
+① 加法方式：斜率相同，截距不同（平行回归）；系数表示1类平均比0类多β
+② 乘法方式：斜率不同，截距相同；系数表示X每增加一单位，1类比0类多增加β
+③ 加法乘法：斜率不同，截距不同
+▪ 设置原则：每一定性变量所需的虚拟变量个数=定性变量类别－1
+否则与截距项完全共线，少的变量即为常数项。全为0的为基准组。
+2、双重差分法（differsence in difference, DID）
+（1）假设	
+① 平行趋势假定
+② 政策变量外生性
+（2）模型
+ 两期：
+\begin{gather*}
+    y_{it}=\alpha+\gamma D_t+\beta x_{it}+u_i+\varepsilon_{it} (i=1,2,\cdots,n;t=1,2) \\ \Delta y_i = \gamma+\beta x_{i2}+\Delta \varepsilon_i \\ {\hat{\beta}}_{OLS}=\Delta{\bar{y}}_{treat}-\Delta \bar{y}_{control} = \bar{y}_{treat,2}-\bar{y}_{treat,1}- \bar{y}_{control,2}-\bar{y}_{control,1}\
+\end{gather*}
+\par $D_t$ ：实验期虚拟变量（1=实验后；0=实验前）
+\par $u_i$ ：不可观测的个体特征
+\par $x_{it}$ ：政策虚拟变量（1=i∈实验组且t=2；0=其他）
+3、三重差分法
+（二）被解释变量：离散选择模型（discrete choice model）
+1、二值选择模型
+（1）Probit模型
+（2）Logit模型
+\begin{gather*}
+    \ln{\left(\frac{p}{1-p}\right)}=\\ 
+\end{gather*}
+
+$\frac{p}{1-p}$ ：几率比（odds ratio），意味着y=1的概率是y=0概率的 $\frac{p}{1-p}$ 倍
+2、多值选择模型
+3、排序模型
+4、计数模型
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2420,6 +3504,299 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 
 
 
+
+
+
+
+
+
+信用：以还本付息为条件的借贷活动（credit）
+
+> (1) 赤字形成净债务，盈余形成净债权  
+> (2) 政治经济学：特殊的价值运动形式。是与市场经济和货币流通紧密联系的经济范畴，是商品生产、货币流通、市场贸易发展到一定阶段的产物  
+> (3) 实物借贷，货币借贷（主要）
+
+ 一、产生发展
+
+（一）产生
+
+> (1) 私有制是信用产生的基础  
+> (2) 产权制度的建立完善为信用的良性发展奠定坚实基础  
+> (3) 必要性：社会资源的不合理配置  
+> ① 商品交易困难  
+> ② 货币时空分布不均  
+> (4) 可能性：  
+> ① 基础：商品经济的产生和发展  
+> ② 前提：货币发挥支付手段职能
+
+（二）发展
+
+> (1) 货币借贷拓展了信用范围，扩大了信用的规模  
+> (2) 信用货币以信用为基础，是信用的产物  
+> (3) 信用与货币结合形成金融
+
+
+
+
+\section{信用分类}
+
+
+
+
+
+
+
+
+一、传统信用
+
+（一）高利贷信用
+
+特点
+> (1) 利率极高  
+> (2) 利率不稳定且差异极大  
+> (3) 随意性大，借贷双方话语权不同
+
+原因 
+> (1) 借贷资金的供求状况：供不应求  
+> (2) 贷者的垄断地位：资金供给高度分散而有限  
+> (3) 风险与成本的补偿：借者关乎生死存亡；贷者收回债务本息需强威慑力
+
+（二）民间信用
+
+定义：游离于正规金融体系之外（比如银行借贷、证券市场融资）出于互助目标或为解决自身融资问题而进行的小规模金融活动，又称民间借贷、民间金融
+
+原因：
+> ▪ 供给  
+> 1、投资：民间信用的借款方很难从传统金融部门融得资金  
+> (1) 借款方缺乏抵押品或信用记录，银行等传统金融部门在控制自身风险的约束下会拒绝向其提供资金。  
+> (2) 交易成本：  
+> ① 借款方融资金额较低导致单位资金融资交易成本过高，被传统金融部门信贷歧视  
+> ② 民间借贷面向亲友等小范围的借贷，合会等民间借贷模式相对成熟，因此在借贷过程中并不需要太高的交易成本  
+> (3) 民间信用准入门槛低(不需要良好的信用记录，不需要提供抵押品)，审批速度快  
+> ▪ 需求  
+> 1、投资：为部分投资者提供了新的投资渠道  
+> ① 需求：中国私人财富快速增长，需要寻求投资渠道；民间信用可以提高数量庞大的低财富值群体的福利  
+> ② 供给：传统投资渠道收益率低(银行理财产品)或者不稳定(中国股市风险相对较高)  
+> 2、生产：传统信贷忽略了创造就业岗位能力强的大多数小微企业，不利于就业和经济增长，还影响社会稳定。民间信用则可以缓解此问题  
+> 3、消费：传统信贷忽略了边际消费倾向较高的群体，从而形成消费需求不足。民间信用为该群体提供服务，可以提振消费
+
+形式：合会
+> 定义：两两之间的借贷协议，每一个会员都有义务向得会先于他的会员贷出资金，也有权利向得会后于他的会员借入资金，全称轮转储蓄与贷款协会（Rotating Savings and Credit Association，ROSCA）  
+> ▪ 完全基于信用，不依赖抵押品或担保  
+> ▪ 规则：每次举会由会员缴纳一定数量的金额（称为“会金”）轮流交一人使用。会首会得到第一笔会金，以后依不同方式决定会脚得到会金的次序。每个合会成员都有一次获得会金的机会  
+> ① 会首相当于首先得到一笔贷款然后在每次举会时分期偿还  
+> ② 最后一轮得会的会脚等价于参加了零存整取的储蓄  
+> ③ 其他的会脚则相当于先参加一个零存整取的储蓄，然后获得一笔贷款后分期偿还
+
+影响：
+> ▪ 不足  
+> (1) 难以形成规模效应  
+> ① 民间借贷主要在熟人之间进行交易，这使得借贷的对象范围太窄，融资和投资的数量极为有限。过度本土化。  
+> ② 民间信用尽管能在一定程度上解决小微企业融资难融资贵的问题，但其与现实要求相距甚远。  
+> (2) 风险分散能力较弱  
+> ① 每位投资者只能在少数借款者（例如参与合会的会员）之间进行分散投资  
+> ② 每位借款者也只能在少数投资者融得资金  
+> (3) 利率定价不合理  
+> ① 尽管民间信用会考虑信用风险因素，但基本上仍然由经验规则确定，而且在具体借贷过程中还可能引入一些非理性因素。  
+> ② 基于熟人借贷网络，市场分割，不存在统一的市场化定价   
+> (4) 内在不稳定性：可能存在风险传染。  
+> ① 不同借贷网络之间的利率差异导致网络之间套利的存在，当此种套利行为比较普遍时，相对分割的各个民间信用网络就会被联系起来，进而会引发风险传染渠道。  
+> ② 普遍的套利行为会催生民间信贷规模膨胀、民间金融潜在风险的累积。当潜在风险累积到一定程度并导致风险的释放  
+> ③ 风险的爆发→已经发放的民间借贷出现大量坏账→借贷双方信任减弱→新增的民间借贷急剧减少→民间金融市场出现信贷紧缩（credit crunch）→对实体经济产生负向的外部性。  
+> 当民间借贷市场产生系统性的风险传染时，一些同时参与银行借贷与民间借贷的投资者会将此种风险传染至银行体系。乃至实体经济
+
+二、现代信用
+
+（一）商业信用
+
+定义：工商企业之间买卖商品时，卖方以商品形式向买方提供的信用（commercial credit）
+
+> ▪ 政治经济学：以赊账方式出售商品（或提供劳务）时买卖双方之间相互提供的信用  
+> ▪ 是银行信用乃至信用体系的基础，直接信用
+
+特点：
+> ① 信用对象是商业资本  
+> ② 借贷行为和买卖行为相结合  
+> ③ 政治经济学：债权人和债务人是职能资本家（主体）  
+> ④ 商业信用的规模和发展程度直接依存于生产流通状况（周期性变化）
+
+形式：赊销
+> ▪ 商业票据：商业信用中被广泛使用的表明买卖双方债权债务关系的凭证，是商业信用中卖方为保证自己对买方拥有债务索取权而保有的书面凭证  
+> ① 商业汇票  
+> ② 商业本票  
+> ▪ 背书：商业票据的债权人在转让票据时在其背面签字以承担连带责任的行为（endorsement）
+
+影响：
+> ▪ 优点  
+> 促进生产和流通的顺畅进行  
+> ▪ 不足  
+> ① 规模：不能超出企业所售商品量，受单个企业资金规模的限制  
+> ② 方向：卖方提供给买方；上游企业提供给下游企业  
+> ③ 期限：期限短，受企业生产周转时间限制，难以提供较长期信用  
+> ④ 流通：受信贷双方了解程度和信任程度的局限，商业票据差异大，作为支付凭证时会受限
+
+（二）银行信用
+
+定义：银行或其他金融机构以货币形态提供的信用（bank credit）
+> ▪ 我国最主要的信用形式，属于间接融资  
+> ▪ 银行信用以商业信用为基础，通过票据服务
+
+特点 ：
+> ① 间接信用，银行作为中介，吸收贷出闲置资本，资金来源于各部门闲散资金  
+> ② 信用对象是货币资本  
+> ③ 存贷款数量和期限具有灵活性，可满足多样化需求  
+> 扩大信用的规模和范围←突破个别资本数量和周转的限制，不受商品流转方向限制
+
+（三）企业信用
+
+定义：资本所有者与企业作为资本的使用者之间建立起的直接融资关系
+
+（四）国家信用
+
+定义：政府作为债权人或者债务人的信用活动（state credit），又称政府信用/公共信用
+> ▪ 国家信用是财政政策的重要工具，通常免税
+
+形式：
+
+> 1、中央政府债券：一国中央政府为弥补财政赤字或筹措建设资金而发行的债券（national debt），又称国债  
+> 中长期国债一般有附有固定的息票（coupon），每半年付息一次  
+> (1) 短期国债：国库券：期限在1年或者1年以下的国债（treasury bill）  
+> (2) 中期国债：国库票据：期限在10年或者10年以下的国债（treasury note）  
+> (3) 长期国债：国库债券：期限在10年以上的国债（treasury bond）  
+> 2、地方政府债券：（local government bonds），又称市政债券（municipal bond）  
+> (1) 一般义务债券：以地方政府的税收、行政收费等各项收益为偿还来源，又称一般责任债券（general obligation securities/bond）  
+> (2) 收益债券：以某一特定工程或某一特定业务的收入为偿还来源的债券，又称收入债券（revenue securities/bond）  
+> (3) 产业发展债券：为商业企业筹集资金的债券（industrial development bond）  
+> 3、政府担保债券：政府作为担保人而由其他主体发行的债券（government guaranteed bonds）  
+> 主体通常是政府所属的企业或者与政府相关的部门，等级仅次于中央政府债券
+
+（五）消费信用
+
+定义：工商企业、银行和其他金融机构提供给消费者用于消费支出的一种信用形式（consumer credit）
+
+形式：
+(1) 赊销：工商企业对消费者提供的短期信用（短期信用）  
+> (1) 赊销：工商企业对消费者提供的短期信用（短期信用）  
+> (2) 分期付款：消费者购买消费品或享受相关服务时，只需支付一部分货款，然后按合同条款分期支付其余货款的本金和利息（中长期信用）  
+> (3) 消费贷款：银行及其他金融机构采用信用放贷或抵押放款方式对消费者发放的贷款（长期信用）  
+> ① 买方信贷：对购买消费品的消费者直接发放的贷款  
+> ② 卖方信贷：以分期付款单作抵押，对销售消费品的工商企业发放贷款，或者由银行与以信用方式出售消费品的企业签订合同将贷款直接支付给企业，再由购买商品的消费者逐步向银行还款
+
+影响：
+> ▪ 积极：  
+> (1) 宏观经济调节（宏观）  
+> ① 总量：通过调整消费信用的规模和投向，能够在一定程度上调节消费需求的总量和结构，有利于市场供求在总量和结构上的平衡  
+> ② 结构：调节某些领域和部门的结构，从而促进或限制某些领域或经济部门发展  
+> (2) 生命周期内的财务安排（微观）  
+> 提供将未来的预期收入用于当前消费的有效途径
+> ▪ 消极：  
+> ① 过度的消费信用倾向于掩盖消费品的供求矛盾，产生虚假需求，向生产者传递错误信息，导致某些消费品盲目发展，严重时可能导致产能过剩和产品的大量积压  
+> ② 过量发展易导致信用膨胀，导致通货膨胀的压力  
+> ③ 诱导借款人误判未来预期收入，加重借款人的债务负担，降低生活水平，增加社会不稳定因素
+
+（六）国际信用
+
+定义：一切跨国的借贷关系和借贷活动（international credit）
+
+形式： 
+> （1）国外借贷  
+> 定义：一国与该国之外的经济主体之间进行的借贷活动（foreign loan）  
+> 出口信贷：（export credit）  
+> 国际商业银行贷款：（international commercial bank loan）  
+> 外国政府贷款：（foreign government loan）  
+> 国际金融机构贷款：（international financial institution loan）  
+> 国际资本市场融资：（financing at international capital markets）  
+> 国际融资租赁：（international financial leasing）  
+> （2）国际直接投资  
+> 定义：一国居民、企业等直接对另一个国家的企业进行生产性投资，并由此获得对投资企业的管理与控制权（international direct investment）
+
+
+\section{作用与影响}
+
+\begin{enumerate}[1.]
+    \item 积极
+    \begin{enumerate}[(1)]
+        \item （信用拓宽了企业融资的渠道）加速资本的积聚和集中，扩大投资规模和企业规模  
+        \item （企业之间的资金相互拆借、发行企业债券、购买股票）可以增加投资机会，促进资本在行业和地区之间的自由转移，优化社会资源的配置  
+        \item （汇票、本票、银等信用形式使很多交易采用）非现金结算，节省流通资金，加快商品流通速度  
+        \item （股票、储蓄、债券等）为居民提供多样化的投资渠道，（消费信贷等）可以改变居民的消费水平，形成合理消费结构  
+        \item （国家信用，如政府债券等）可以调节和改变资金流向，促进国民经济健康发展   
+    \end{enumerate}
+    \item 消极
+    \begin{enumerate}[(1)]
+        \item （商业信用、银行信用等）过度发展有可能造成虚假繁荣，触发生产过剩的危机  
+        \item （债务规模过大，不能按期偿还可能会）引发货币信用危机  
+        \item 刺激投机（忽视实体支撑），加剧经济风险和经济危机
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+\section{信用制度}
+
+
+
+
+
+
+
+
+
+
+
+现代信用体系
+
+一、基础性保障
+> ① 道德规范仍然是信用体系构建的重要基础  
+> ② 高效快捷社会征信系统，是防止同一主体多次出现失信行为的利器  
+> ③ 法律规范对失信行为的严厉制裁，是完备信用体系的终极制度保障
+
+二、内容
+
+（一）信用制度：规范和约束社会信用活动和信用关系的行为规则  
+> ① 信用制度是保证信用活动正常进行的基本条件  
+> ② 以法律为主题的、完善的信用制度是信用活动健康发展的重要基石
+
+（二）信用机构体系：
+> ① 信用中介机构：其主体是金融机构，包括利用互联网和金融科技发展成果的新型互联网金融平台  
+> ② 信用服务机构：如信息咨询公司、投资咨询公司、征信公司、信用评估机构等专业信用服务机构，还有律师事务所、会计师事务所等非专业信用服务机构  
+> ③ 信用管理机构：分政府设立的监管机构和行业自律型管理机构，前者如中国人民银行、银保监会、证监会，后者如银行业协会、证券业协会和保险业协会
+
+（三）社会征信系统：
+> ① 信用档案系统：包括个人信用档案系统和企业信用档案系统  
+> ② 信用调查系统  
+> ③ 信用评估系统   
+> ④ 信息查询系统  
+> ⑤ 失信公示系统
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \chapter{利率}
 
 
@@ -2822,6 +4199,470 @@ M垂直，外生变量
 
 
 \chapter{汇率}
+
+
+
+
+
+
+
+汇率：一种货币用另一种货币表示的价格（exchange rate），又称汇价
+> ⑴	对内价值：国内物价；对内价值是对外价值的基础  
+> ⑵	对外价值：汇率  
+>   ① 直接标价法：以一定单位的外币为标准计算应付多少本币来表示汇率（direct quotation）  
+>   ② 间接标价法：以一定数量的本币单位为基准，计算应收多少外币表示汇率（indirect quotation）
+> ▪直接标价法与间接标价法互为倒数
+
+
+外汇（foreign exchange）：
+> ⑴ 广义：以外币标示的各种金融资产。包括外币、外币有价证券（如外国政府的债券、信用级别比较高的外国公司债券和股票）、外币支付凭证等一切可用于国际结算的债券  
+> ⑵ 狭义：以外币标示的、可用于国际结算的支付手段  
+> ▪ 条件：  
+> ① 可以自由输出入国境  
+> ② 可以自由兑换、买卖  
+> ③ 在国际支付中被广泛接受
+
+
+
+
+
+
+
+
+
+
+\section{汇率分类}
+
+
+
+
+
+
+
+\subsection{市场汇率}
+
+\begin{enumerate}[1.]
+    \item 外汇买卖	
+    \begin{enumerate}[(1)]
+        \item 买入汇率：外汇银行买进外汇（结汇）时所使用的汇率（bidding rate），又称买入价（bid price）  
+        \par 现钞买入价 < 现汇买入价  
+        \item 卖出汇率：银行售出外汇（售汇）时所使用的汇率（offering rate），又称卖出价（ask price）现钞卖出价、现汇卖出价  
+        \par 间接标价法下买入汇率高于卖出汇率  
+        \item 中间汇率：买入汇率和卖出汇率的算术平均数（intermediate exchange rate）  
+    \end{enumerate}
+    \item 交割期限	
+    \begin{enumerate}[(1)]
+        \item 即期汇率：买卖双方成交后，办理交割时所使用的汇率（spot exchange rate）  
+        \item 远期汇率：买卖双方事先约定的，据以在未来一定时期（或时点）进行外汇交割时所使用的汇率（forward exchange rate）  
+        \begin{enumerate}[a.]
+            \item 升水：远期汇率高于即期汇率，对于外汇来说（premium）  
+            \item 贴水：远期汇率低于即期汇率（discount）  
+            \item 平价：远期汇率等于即期汇率（par）
+        \end{enumerate}
+    \end{enumerate}
+    \item 兑换方式
+    \begin{enumerate}[(1)]
+        \item 电汇汇率：银行卖出外汇后以电信方式通知国外行或代理行付款时所使用的一种汇率（telegraphic transfer rate）  
+        \par 电汇汇率是国际支付最主要的方式，是外汇汇率的基准汇率  
+        \item 信汇汇率：以信函解付的方式买卖外汇时所使用的汇率（mail transfer rate）  
+        \item 票汇汇率：以票据作为支付手段进行外汇买卖时所使用的汇率（note transfer rate）    
+    \end{enumerate}	
+    \item 营业时间
+    \begin{enumerate}[(1)]
+        \item 开盘汇率：外汇银行在一个营业日开始时进行首批外汇买卖时使用的汇率（open exchange rate）  
+        \item 收盘汇率：外汇银行在一个营业日结束时所使用的汇率（close exchange rate）
+    \end{enumerate}	 
+\end{enumerate}
+
+\subsection{政策汇率}
+
+
+\begin{enumerate}[1.]
+    \item 制定方法	
+    \begin{enumerate}[(1)]
+        \item 基准汇率：本币与对外经济交往中最常用的主要货币之间的汇率（benchmark exchange rate）  
+        \par 基准汇率：一般以美元为基本外币来确定. 我国基准汇率：人民币兑美元、欧元、日元、港币和英镑  
+        \item 套算汇率：根据本币基准汇率套算出本币兑非主要货币的其他外币的汇率或套算出其他外币之间的汇率（cross exchange rate ），又称交叉汇率
+    \end{enumerate}
+    \item 汇率管理
+    \begin{enumerate}[(1)]
+        \item 官方汇率：一国的外汇管理当局制定并公布实行的汇率（official exchange rate）  
+        \item 市场汇率：由外汇市场供求关系决定的汇率（market exchange rate）
+    \end{enumerate}	
+    \item 汇率制度
+    \begin{enumerate}[(1)]
+        \item 固定汇率：一国货币的汇率基本固定，汇率波动幅度被限制在较小范围内（fixed exchange rate）  
+        \item 浮动汇率：不规定汇率波动的上下限，汇率随外汇市场的供求关系自由波动（floating exchange rate）
+    \end{enumerate} 
+    \item 物价差异
+    \begin{enumerate}[(1)]
+        \item 名义汇率：市场上观察到的挂牌交易使用的汇率（nominal exchange rate）  
+        \par 两个国家通货的相对价格  
+        \item 实际汇率：在名义汇率的基础上，考虑到一种货币所在经济体与其他经济体之间物价差异因素的汇率（real exchange rate）  
+        \par 两国产品的相对价格 
+    \end{enumerate}
+    \item 综合	
+    \begin{enumerate}[(1)]
+        \item 有效汇率：加权汇率指数（effective exchange rate）  
+        \par $$ NEER_t=\sum_{i=1}^{n}\left(w_i\cdot\frac{E_t}{E_{base}}\right) $$  
+        \par NEER：名义有效汇率    
+        \par $w_i$：每个国家货币的权重，多以贸易份额  
+        \par $E_t$：t 年汇率（间接标价法）    
+        \par $E_{base}$：基年汇率（间接标价法）反映一国货币总体升贬值情况     
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{决定理论}
+
+
+
+
+
+
+
+直接标价法
+
+> 人民币汇率四大决定因素：货币政策 + 经济增长前景 + 资本流动管制 + 中间价形成机制 → 名义利差 + 经济增长与长期汇率预期 + 国际收支结构 + 中间价与短期预期粘性 → 即期汇率   
+> Asset Pricing-Carry Trade（主流）
+
+
+\subsection{购买力平价理论}
+
+> （purchasing power parity，PPP）  
+> 适用：长期，高通胀趋势性的商品市场
+
+
+（一）假设
+
+	
+> 1. 完全的资本流动，无交易成本  
+> 2. Y 不变  
+> 3. 长期价格灵活性（P 可变）  
+> 4. 充分就业（汇率和价格调整的结果）（长期平均消费倾向不变）  
+> 5. e可变  
+
+
+
+
+（二）模型
+
+
+1、绝对购买力平价（absolute purchasing power parity）
+$$
+E=\frac{P}{P^\ast}
+=\frac{E·P*}{P}·\frac{P}{P*}=e⋅\frac{P}{P*}
+$$
+
++货币分析法（monetary approach）
+
+\begin{align*}
+E
+&=\frac{P}{P^\ast}
+=\frac{\frac{M_S=M_D}{L\left(r+\pi^e,Y\right)}}{\frac{M_S^\ast=M_D^\ast}{L\left(r^\ast+\pi^{e^\ast},Y^\ast\right)}}
+=\frac{\frac{M_S}{L\left(R,Y\right)}}{\frac{M_S^\ast}{L\left(R^\ast,Y^\ast\right)}}
+=\frac{\frac{M_S}{kY^\alpha R^{-\beta}}}{\frac{M_S^\ast}{kY^{\ast^\alpha}R^{\ast^{-\beta}}}}
+=\frac{M_S}{M_S^\ast}·(\frac{Y*}{Y})^\alpha·(\frac{R}{R^*})^\beta\\
+&\approx (\dot{M_s}-\dot{M_s}^*)+\alpha(\dot{Y}^*-\dot{Y})+\beta(\dot{R}-\dot{R}^*)
+\end{align*}
+
+> $E$：名义汇率  
+> $P$、$P^∗$：国内物价水平、外国物价水平（以本国货币衡量）  
+> $MD$：名义货币需求  
+> $L(R,Y)$：实际货币需求  
+> ${\dot{M}}_s^\ast$、${\dot{M}}_s$：外国与本国的货币供应量变动率  
+> $\dot{Y}^∗$、$\dot{Y}$：外国与本国的国民收入变动率  
+> $R$、$R^{∗}$：外国和本国的利率变动率
+
+
+2、相对购买力平价（relative purchasing power parity）
+> 变动，通过价格传导
+$$ 
+M_S\uparrow\rightarrow Y\downarrow\rightarrow i\downarrow\rightarrow P\uparrow\rightarrow E\uparrow 
+$$
+实际汇率不变：
+$$
+\left.\begin{matrix}
+  \frac{E_1}{E_0}-1 = \frac{P_1/P_0}{P_1^*/P_0^*} -1=\frac{1+\pi}{1+\pi^{*}} \\
+或 lnE=ln(P/P^{*}) = lnP-lnP^{*}
+\end{matrix}\right\}
+→\frac{E_1-E_0}{E_0} = \pi-\pi^{*}
+$$
+
+实际汇率变化：
+$$
+  \ln{E}=\ln{\left(e\frac{P}{P^\ast}\right)}=\ln{e}+\ln{P}-\ln{P^\ast}\Rightarrow\frac{E_1-E_0}{E_0}=\frac{e_1-e_0}{e_0}+\left(\pi-\pi^\ast\right)
+$$
+> $E_0$：基期汇率  
+> $P_0$、$P_0^∗$：国内、外国基期价格水平  
+> $P_1$、$P_1^∗$：国内、外国$E$时期后的价格水平   
+> $e$：实际汇率（$e < 1$，本国商品竞争力弱）
+
+
+（三）理论
+
+
+
+\subsection{利率平价理论}
+
+> （interest rate parity）  
+> 适用：短期波动性的货币市场 + 外汇市场
+
+
+（一）假设
+
+> 完全的资本流动，无交易成本  
+> Y 可变短期价格刚性（P 不变）  
+> 存在失业、资源闲置（短期边际消费倾向递减）  
+> $\pi^e$不变  
+
+
+（二）模型
+
+1、名义利率平价
+> 思想：用相同货币衡量的任意两种货币存款的预期收益率相同
+$$
+R = R^\ast+\frac{E^e-E}{E}+\rho\left(B-A\right) \\
+R = R^\ast+\frac{f-s}{s}+\rho\left(B-A\right)
+$$
+> $i^\ast$、$i$：国外利率、国内利率  
+> $E^e$：预期汇率（uncovered，UCIP 无抛补、未套期保值）  
+> $f$：远期汇率（远期合约 covered，CIP，抛补、套期保值）  
+> $s$：即期汇率  
+> $\rho$：风险升水（与$B−A$正相关；政府挤出投资: $B↑/A↓→\rho ↑ →r↑→I↓$ ）（若$\rho =0$，本币债券和外币债券完全替代；否则不可完全替代）  
+> $B$：本国政府债券存量   
+> $A$：央行持有的国内资产加息国家货币在远期外汇市场上贬值，即期升值
+
+
+
+2、实际利率平价
+> 通过资本流动、收益率传导
+
+实际汇率不变（引入费雪效应）：
+$$
+  r^e-r^{\ast^e}=\left(R-\pi^e\right)-\left(R^\ast-\pi^{e^\ast}\right)=\left(R-R^\ast\right)-\left(\pi^e-\pi^{e^\ast}\right)=\frac{E^e-E}{E}-\left(\pi^e-\pi^{e^\ast}\right)
+$$
+
+实际汇率变化：
+$$
+  =\left[\frac{e^e-e}{e}+\left(\pi^e-\pi^{e^\ast}\right)\right]-\left(\pi^e-\pi^{e^\ast}\right)=\frac{e^e-e}{e}
+$$
+
+当市场预期符合相对购买力平价时：
+$$
+  e^e=e,\ r^e=r^{\ast^e},\ R-R^\ast=\pi^e-\pi^{e^\ast},\ \frac{E^e-E}{E}=\pi^e-\pi^{e^\ast}=r-r^\ast
+$$
+
+（三）理论
+
+暂时性$M_S$↑→r ↓ →i ↓（流动性偏好理论）→E ↑
+
+
+
+
+
+
+
+
+
+
+
+
+\section{作用与影响}
+
+
+
+
+> 条件：  
+> ① 进出口商品的需求弹性、出口商品的供给弹性  
+> ② 各国经济体制、市场条件、市场运行机制  
+> ③ 对外开放程度   
+> ④ 汇率制度
+
+
+一、自身	
+
+（一）风险	
+
+> 1、交易汇率风险  
+> ① 进出口贸易：收付外汇损失  
+> 2、折算汇率风险（会计风险）  
+> ① 外汇储备：外汇资产贬值损失  
+> ② 外债：清偿外债损失  
+> 3、经济汇率风险（经营风险）  
+> ① 长久汇率扭曲，导致经济长期衰退，影响经济结构
+
+措施：
+> ① 进口支付尽量使用软货币（有贬值趋势或压力的货币）  
+> ② 出口收入外汇尽量选择硬货币  
+> ③ 运用远期外汇买卖进行套期保值
+
+二、其他	
+（一）进出口
+> ▪ 假设：进口需求和出口供给有价格弹性  
+> ① 本币贬值，本国商品国际竞争力提高，促进出口、抑制进口    
+> ② 本币升值，利于进口，不利出口  
+
+
+（二）物价	
+> ① 进口商品和原材料：本币（名义）汇率贬值，进口商品国内价上涨  
+> ② 出口商品：本币（名义）汇率贬值＋出口商品供给弹性小→国内抢购此商品（收购）→抬高国内价格   
+> 汇率贬值→国外需求增加＋国内需求不变→总需求增加→价格上涨  
+> ▪ 对物价总指数的影响，取决于在GNP中所占的比重
+
+（三）资本流动	
+
+> 本币对外贬值→持有本币计值金融资产意愿降低，相对吸引力下降→转兑成外汇，资本外流→外汇需求增加→本币汇率进一步下跌  
+> ▪ 对长期资本流动影响较小
+
+（四）金融资产选择	
+
+> 本币汇率下降，持有更多本币资产
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{汇率制度}
+
+
+
+\informationBox{
+    * 影响因素：
+    \begin{enumerate}[(1)]
+        \item 经济论：经济规模、经济发展程度、经济开放程度、通货膨胀率
+        \item 依附论：经济政治等对于他国的依赖程度
+    \end{enumerate}
+}
+
+
+
+
+\subsection{原理}
+
+\subsubsection{不可能三角}
+
+> 定义：一国不可能同时拥有自由的资本流动、固定汇率和独立的货币政策（impossible trinity），又称国际金融三角困境（trilemma of international finance）
+
+
+> 固定汇率制，两地区利率应趋同（美国和香港）
+
+
+\subsection{分类}
+
+\subsubsection{固定汇率制}
+
+1、定义
+> 一国的汇率基本固定，汇率的波动幅度被限制在较小的范围内，各国中央银行有义务维持本币币值基本稳定的汇率制度（fixed exchange rate regime）  
+> 经济开放程度⾼、经济规模⼩，或贸易商品结构和地区分布⽐较集中的国家，⼀般倾向于实⾏固定汇率制。
+
+2、分类
+> 1、No separate legal tender  
+> (1)美元化：本国货币被其他国家货币替代（Dollarization）  
+> 国家体量小，对于美元依赖高；通胀严重  
+> (2)货币联盟汇率：本国货币与主要贸易伙伴的货币保持固定比价，而对其他经济体的货币随该货币锚而浮动  
+> 2、货币局制度（currency board）  
+> 经济体货币与另一货币保持强固定  
+> 如香港  
+> 不能成为最后贷款人
+
+
+3、优点
+> 限制政府任意的宏观经济政策
+
+4、缺点
+> 政策难协调：  
+> ①货币政策：balance of payments crisis：固定汇率制下外国资产不足以支持维持固定汇率制，看好预期改变，为了阻止资本外逃，央行大幅提高利率，但会冲击国内经济  
+> ②财政政策：米德冲突：失业+经常账户盈余=财政政策扩张；失业+赤字=？；缺人+盈余=？；缺人+赤字=紧缩
+
+
+
+\subsubsection{浮动汇率制}
+
+
+\begin{enumerate}[1.]
+    \item 定义：政府不规定汇率波动的上下限允许汇率随外汇市场供求关系的变化而自由波动，各国中央银行仅根据需要自由选择是否进行干预的汇率制度（floating exchange rate regime）
+    \item 分类
+          \begin{enumerate}[(1)]
+              \item （independent float, Clean float）
+                    \par 恶性冲击、过度波动时干预
+              \item 管理浮动制（managed float, dirty floating）
+                    \par 中国：以市场供求为基础、参考一篮子货币进行调节、有管理的浮动汇率制度
+          \end{enumerate}
+    \item 优点：相对固定汇率制
+          \begin{enumerate}[(1)]
+              \item 贸易金融：汇率自动调节国际收支（automatic stablization）
+              \item 央行：减少国际游资的冲击，减少国际储备需求（固定汇率制下，投机性资金集中抛售软货币，抢购硬货币谋利）
+              \item 货币政策：货币政策有独立性，内外均衡易于协调
+              \item 汇率政策避免资本流动不利影响对外均衡，财政货币政策对内均衡（固定汇率逆差、经济衰退时，只能紧缩财政货币政策，这对经济不利）
+              \item 防治国外通胀传至国内
+          \end{enumerate}
+    \item 缺点
+          \begin{enumerate}[(1)]
+              \item 不利于国际贸易和投资的发展（成本、收益难以精准核算，不确定性大）
+              \item 助长国际金融市场上的投机活动
+              \item 经济波动加大
+              \item 货币政策：可能引发货币之间竞相贬值（一国通过汇率贬值改善国际收支）
+              \item 货币政策受限少，更容易诱发通胀
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+\subsubsection{中间汇率制}
+
+1、定义
+
+2、分类
+> (1) 传统盯住（Conventional Peg） 
+> (2) 波幅钉住（Peg with bands） 
+> (3) 爬行钉住（Crawling Peg） 
+> 波幅爬行钉住
+
+3、优点
+
+4、缺点
+
+
+
+
+
+
 
 
 
