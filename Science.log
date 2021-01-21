@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  21 JAN 2021 12:22
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  21 JAN 2021 23:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2464,53 +2464,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 5471--5473
 [119] [120]
 Chapter 20.
 
-Underfull \vbox (badness 1168) has occurred while \output is active []
+Underfull \vbox (badness 3907) has occurred while \output is active []
 
  [121
 
-] [122]
-Missing character: There is no Δ in font cmmi10!
-Missing character: There is no · in font cmr10!
-Missing character: There is no Δ in font cmmi10!
-Missing character: There is no · in font cmr10!
- [123] [124
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [122] [123] [124
+
+] [125
 
 ]
+Overfull \hbox (0.68788pt too wide) in paragraph at lines 5900--5979
+[]  
+ []
+
+[126
+
+]
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 右 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no 右 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 套 in font cmr10!
+Missing character: There is no 利 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 套 in font cmr10!
+Missing character: There is no 利 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no 资 in font cmr10!
+Missing character: There is no 本 in font cmr10!
+Missing character: There is no 流 in font cmr10!
+Missing character: There is no 出 in font cmr10!
+Missing character: There is no 资 in font cmr10!
+Missing character: There is no 本 in font cmr10!
+Missing character: There is no 流 in font cmr10!
+Missing character: There is no 出 in font cmr10!
+Missing character: There is no Δ in font cmmi10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no Δ in font cmmi10!
+Missing character: There is no · in font cmr10!
+ [127
+
+] [128]
 Chapter 21.
-[125] [126
+[129
+
+] [130
 
 ]
 Chapter 22.
-[127] [128] [129] [130
+[131] [132] [133] [134
 
 ]
 Chapter 23.
 
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [131]
+ [135]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [132] [133]
-Overfull \hbox (56.36243pt too wide) detected at line 6042
+ [136] [137]
+Overfull \hbox (56.36243pt too wide) detected at line 6398
 []
  []
 
-[134]
+[138]
 Chapter 24.
-[135
+[139
 
-] [136
+] [140
 
 ]
 Chapter 25.
-[137] [138
+[141] [142
 
 ]
 Chapter 26.
-[139] [140
+[143] [144
 
-] [141] [142]
+] [145] [146]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2529,29 +2587,29 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6099.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6099.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6455.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6455.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6099.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6099.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6455.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6455.
 Package rerunfilecheck Info: File `Science.out' has not changed.
-(rerunfilecheck)             Checksum: 3A3C1B9D1FAFD4A04F2C6E3834389D6D;28454.
+(rerunfilecheck)             Checksum: 18EBBA1BAB4F4D31BAD09DCB6A716C7B;28546.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 98423 strings out of 479418
- 2230903 string characters out of 5886345
- 1939635 words of memory out of 5000000
- 115002 multiletter control sequences out of 15000+600000
- 553017 words of font info for 149 fonts, out of 8000000 for 9000
+ 99024 strings out of 479418
+ 2244016 string characters out of 5886345
+ 1983918 words of memory out of 5000000
+ 115602 multiletter control sequences out of 15000+600000
+ 553025 words of font info for 150 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,44n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (154 pages).
+Output written on Science.pdf (158 pages).
