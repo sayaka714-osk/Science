@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  20 JAN 2021 21:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  21 JAN 2021 12:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1509,12 +1509,13 @@ Overfull \hbox (9.05632pt too wide) in paragraph at lines 85--85
  [][] [][][]\TU/CMUSerif(0)/m/n/12 ADF \TU/SimSun(0)/m/n/12 检 验  |（\TU/CMUSerif(0)/m/n/12 Augmented Dickey-Fuller test\TU/SimSun(0)/m/n/12 ）| 
  []
 
-[5] [6] [7] [8] [9])
+[5] [6] [7] [8] [9] [10])
 \tf@toc=\write8
 \openout8 = `Science.toc'.
 
- [10] [1
+ [11] [12
 
+] [1
 
 ] [2] [3] [4
 
@@ -2462,46 +2463,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 5471--5473
 
 [119] [120]
 Chapter 20.
-[121
 
-] [122
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [121
+
+] [122]
+Missing character: There is no Δ in font cmmi10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no Δ in font cmmi10!
+Missing character: There is no · in font cmr10!
+ [123] [124
 
 ]
 Chapter 21.
-[123] [124
+[125] [126
 
 ]
 Chapter 22.
-[125] [126] [127] [128
+[127] [128] [129] [130
 
 ]
 Chapter 23.
 
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [129]
+ [131]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [130] [131]
-Overfull \hbox (56.36243pt too wide) detected at line 5924
+ [132] [133]
+Overfull \hbox (56.36243pt too wide) detected at line 6042
 []
  []
 
-[132]
+[134]
 Chapter 24.
-[133
+[135
 
-] [134
+] [136
 
 ]
 Chapter 25.
-[135] [136
+[137] [138
 
 ]
 Chapter 26.
-[137] [138
+[139] [140
 
-] [139] [140]
+] [141] [142]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2520,29 +2529,29 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5981.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5981.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6099.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6099.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5981.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5981.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6099.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6099.
 Package rerunfilecheck Info: File `Science.out' has not changed.
-(rerunfilecheck)             Checksum: D2693C97C4310159B11507FF99E8995F;27715.
+(rerunfilecheck)             Checksum: 3A3C1B9D1FAFD4A04F2C6E3834389D6D;28454.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 98147 strings out of 479418
- 2224909 string characters out of 5886345
- 1938851 words of memory out of 5000000
- 114726 multiletter control sequences out of 15000+600000
+ 98423 strings out of 479418
+ 2230903 string characters out of 5886345
+ 1939635 words of memory out of 5000000
+ 115002 multiletter control sequences out of 15000+600000
  553017 words of font info for 149 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,44n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (150 pages).
+Output written on Science.pdf (154 pages).

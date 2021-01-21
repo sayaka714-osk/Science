@@ -5604,6 +5604,124 @@ $$
 \chapter{凯恩斯AD-AS模型}\label{chapter:凯恩斯AD-AS模型}
 
 
+\section{封闭经济：IS-LM模型}
+
+IS-LM模型：新古典综合学派
+
+
+
+\subsection{假设}
+国民经济均衡是商品市场和货币市场的同时均衡
+
+\begin{enumerate}[1.]
+    \item $\overline{T}$
+    \item $\overline{G}$
+    \item $\overline{M}_s$ 
+\end{enumerate}
+
+
+
+\subsection{模型}
+
+\subsubsection{商品市场（IS）}
+
+\begin{gather*}
+    Y=PE=C(Y-\overline{T} )+I (r)+\overline{G}=C(Y-T)+I(i-\pi^e)+G
+\end{gather*}
+\par $Y$：实际支出；$PE$：计划支出（$D$：总需求）
+\par $Y$：总收入
+\par $T$：税收
+\par $Y-T$：可支配收入
+\par $I$：计划投资
+\par $G$：政府购买
+
+
+\par IS下方：供给＜需求：短缺经济
+\par IS上方：供给＞需求：过剩经济
+
+\subsubsection{货币市场（LM）}
+流动性偏好理论
+\begin{gather*}
+    \left(\frac{M}{P}\right)^s= \frac{\overline{M}}{\overline{P}} ={\left(\frac{M}{P}\right)}^d=L(i,Y) 
+\end{gather*}
+
+
+
+\subsubsection{均衡}
+\begin{gather*}
+    IS: Y=C(Y-T)+I(i)+G\\ 
+    LM: \frac{M}{P}=L(r,Y) 
+\end{gather*}
+
+
+\begin{tikzpicture}
+    % axis
+    \draw[eaxis] (0,0) -- (10,0) node[below] {收入，产出，$Y$};
+    \draw[eaxis] (0,0) -- (0,10) node[above] {利率，$r$};
+    % line/curve
+    \draw[elegant,black,domain=1:9] plot(\x,{ 
+        10/(\x^0.5)-1
+        }) node[right]{$IS$};
+    \draw[elegant,black,domain=1/pi:8] plot(\x,{
+        0.4*\x^1.5
+        }) node[right]{$LM$};
+    \draw[dashed] (4.45,3.8)--(0,3.8) node[left]{均衡利率};
+    \draw[dashed] (4.45,3.8)--(4.45,0) node[below]{均衡收入水平};
+\end{tikzpicture}
+    
+
+均衡(A)下短期冲击(A→B)的长期调整(B→A)：
+
+(1) IS右移：财政政策
+\begin{gather*}
+    A(\overline{Y})+ \left\{\begin{matrix} G\uparrow&\Rightarrow& B(Y\uparrow)\\ 
+    T\downarrow &\Rightarrow&  B(C\uparrow\Rightarrow Y\uparrow) \end{matrix}\right\}  +B(r\uparrow) \Rightarrow B(Y\downarrow+r\downarrow) \Rightarrow A(\overline{Y}) 
+\end{gather*}
+
+(2) LM右移：货币政策
+\begin{gather*}
+    A(\overline{Y})+M_{s}\uparrow\Rightarrow B(r\downarrow+Y\uparrow)\Rightarrow B(r\uparrow+Y\downarrow)\Rightarrow A(\overline{Y}) 
+\end{gather*}
+
+
+
+\subsection{理论}
+
+\begin{enumerate}[1.]
+    \item 利率是既定的国民收入下由商品市场和货币市场共同决定的
+    \item 政策有效性
+          \begin{enumerate}[(1)]
+              \item LM曲线越陡峭（利率对货币供给），IS曲线越平坦（投资对利率），货币政策越有效
+              \item LM曲线越平坦（乘数效应大），IS曲线越陡峭（挤出效应小），财政政策越有效
+                    \par 对LM的冲击比对IS的更普遍
+          \end{enumerate}
+    \item 挤出效应
+          \begin{enumerate}[(1)]
+              \item 政府购买乘数（government-purchases multiplier）：
+                    \begin{gather*}
+                        \frac{\Delta Y}{\Delta G}=\frac{1}{1-MPC}>1 \\
+                        \Delta G\rightarrow \Delta Y=Y_1-Y_2=\frac{\Delta G}{1-MPC}
+                    \end{gather*}
+                    \par G↑→i↑→挤出投资
+              \item 税收乘数（tax multiplier）：
+                    \begin{gather*}
+                        \frac{\Delta Y}{\Delta T}=-\frac{MPC}{1-MPC} \\
+                        ΔT\rightarrow \Delta Y=Y_1-Y_2=\frac{\Delta T·MPC}{1-MPC}
+                    \end{gather*}
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
