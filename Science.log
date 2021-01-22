@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  22 JAN 2021 21:38
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  22 JAN 2021 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1524,12 +1524,13 @@ Overfull \hbox (11.8827pt too wide) in paragraph at lines 144--144
  [][] [][][]\TU/SimSun(0)/m/n/12 被 解 释 变 量：|  离 散 选 择 模 型  |（\TU/CMUSerif(0)/m/n/12 discrete choice model\TU/SimSun(0)/m/n/12 ）| 
  []
 
-[7] [8] [9] [10] [11])
+[7] [8] [9] [10] [11] [12])
 \tf@toc=\write8
 \openout8 = `Science.toc'.
 
- [12] [1
+ [13] [14
 
+] [1
 
 ] [2] [3] [4
 
@@ -1548,7 +1549,7 @@ Missing character: There is no ＋ in font cmr12!
  [10]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
 
  []
 
@@ -1568,7 +1569,7 @@ Missing character: There is no 效 in font cmr12!
 Missing character: There is no ， in font cmr12!
 Missing character: There is no ， in font cmr12!
 
-Overfull \hbox (39.79047pt too wide) detected at line 584
+Overfull \hbox (39.79047pt too wide) detected at line 606
 []
  []
 
@@ -1603,28 +1604,28 @@ Missing character: There is no 不 in font cmr12!
 Missing character: There is no 真 in font cmr12!
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 851.
+(hyperref)                removing `math shift' on input line 873.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 851.
+(hyperref)                removing `\mu' on input line 873.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 851.
+(hyperref)                removing `math shift' on input line 873.
 
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 906.
+(hyperref)                removing `math shift' on input line 928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 906.
+(hyperref)                removing `\sigma' on input line 928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 906.
+(hyperref)                removing `math shift' on input line 928.
 
 [20]
 Missing character: There is no 或 in font cmr10!
@@ -1636,15 +1637,15 @@ Missing character: There is no χ in font cmmi10!
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 968.
+(hyperref)                removing `math shift' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 968.
+(hyperref)                removing `\mu' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 968.
+(hyperref)                removing `math shift' on input line 990.
 
 Missing character: There is no ： in font cmr10!
 Missing character: There is no ： in font cmr10!
@@ -1663,31 +1664,31 @@ Missing character: There is no 与 in font cmr10!
 [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1040.
+(hyperref)                removing `math shift' on input line 1062.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 1040.
+(hyperref)                removing `\sigma' on input line 1062.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1040.
+(hyperref)                removing `math shift' on input line 1062.
 
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1100.
+(hyperref)                removing `math shift' on input line 1122.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 1100.
+(hyperref)                removing `\mu' on input line 1122.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1100.
+(hyperref)                removing `math shift' on input line 1122.
 
 
-Overfull \hbox (2.73326pt too wide) in paragraph at lines 1108--1111
+Overfull \hbox (2.73326pt too wide) in paragraph at lines 1130--1133
 []$\OML/cmm/m/it/10.95 SST \OT1/cmr/m/n/10.95 = [][] [][] []\OML/cmm/m/it/10.95 ; SSA \OT1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 n[] [] ; SSE \OT1/cmr/m/n/10.95 = [][] [][] []$ 
  []
 
@@ -1701,15 +1702,15 @@ Missing character: There is no 相 in font cmr10!
 Missing character: There is no 等 in font cmr10!
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1146.
+(hyperref)                removing `math shift' on input line 1168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 1146.
+(hyperref)                removing `\sigma' on input line 1168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1146.
+(hyperref)                removing `math shift' on input line 1168.
 
 [23] [24] [25]
 Missing character: There is no ， in font cmr10!
@@ -1746,7 +1747,7 @@ Missing character: There is no ， in font cmr10!
 Missing character: There is no ， in font cmr10!
 Missing character: There is no ≥ in font cmr10!
  [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1692--1693
+Underfull \hbox (badness 10000) in paragraph at lines 1714--1715
 
  []
 
@@ -1790,89 +1791,89 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [48]
 Chapter 4.
 
-Overfull \hbox (41.74998pt too wide) in paragraph at lines 2540--2540
+Overfull \hbox (41.74998pt too wide) in paragraph at lines 2562--2562
 []$[]$| 
  []
 
 
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 2511--2540
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 2533--2562
 [] 
  []
 
 [49
 
 ]
-Overfull \hbox (29.74998pt too wide) in paragraph at lines 2596--2596
+Overfull \hbox (29.74998pt too wide) in paragraph at lines 2618--2618
 []$[]$| 
  []
 
 
-Overfull \hbox (6.98639pt too wide) in paragraph at lines 2596--2596
+Overfull \hbox (6.98639pt too wide) in paragraph at lines 2618--2618
 []$[]$| 
  []
 
 
-Overfull \hbox (47.09999pt too wide) in paragraph at lines 2573--2596
+Overfull \hbox (47.09999pt too wide) in paragraph at lines 2595--2618
 [] 
  []
 
 
-Overfull \hbox (6.98639pt too wide) in paragraph at lines 2627--2627
+Overfull \hbox (6.98639pt too wide) in paragraph at lines 2649--2649
 []$[]$| 
  []
 
 
-Overfull \hbox (29.74998pt too wide) in paragraph at lines 2627--2627
+Overfull \hbox (29.74998pt too wide) in paragraph at lines 2649--2649
 []$[]$| 
  []
 
 
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 2603--2627
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 2625--2649
 [] 
  []
 
 [50]
-Overfull \hbox (30.79999pt too wide) in paragraph at lines 2666--2666
+Overfull \hbox (30.79999pt too wide) in paragraph at lines 2688--2688
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2666--2666
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2688--2688
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2666--2666
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2688--2688
 []$[]$| 
  []
 
 
-Overfull \hbox (47.09999pt too wide) in paragraph at lines 2640--2666
+Overfull \hbox (47.09999pt too wide) in paragraph at lines 2662--2688
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2667--2669
+Underfull \hbox (badness 10000) in paragraph at lines 2689--2691
 
  []
 
 
-Overfull \hbox (30.79999pt too wide) in paragraph at lines 2697--2697
+Overfull \hbox (30.79999pt too wide) in paragraph at lines 2719--2719
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2697--2697
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2719--2719
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2697--2697
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2719--2719
 []$[]$| 
  []
 
 
-Overfull \hbox (47.09999pt too wide) in paragraph at lines 2675--2697
+Overfull \hbox (47.09999pt too wide) in paragraph at lines 2697--2719
 [] 
  []
 
@@ -1890,7 +1891,7 @@ Chapter 5.
 ]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2878--2880
+Underfull \hbox (badness 10000) in paragraph at lines 2900--2902
 
  []
 
@@ -1901,12 +1902,12 @@ Missing character: There is no — in font cmr10!
 Missing character: There is no … in font cmr10!
 Missing character: There is no … in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 2904--2906
+Underfull \hbox (badness 10000) in paragraph at lines 2926--2928
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2929--2931
+Underfull \hbox (badness 10000) in paragraph at lines 2951--2953
 
  []
 
@@ -1921,68 +1922,68 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Chapter 7.
 [61] [62] [63] [64]
+Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65] [66] [67]
-Overfull \hbox (13.08907pt too wide) detected at line 3544
+Underfull \vbox (badness 1902) has occurred while \output is active []
+
+ [68]
+Underfull \vbox (badness 4673) has occurred while \output is active []
+
+ [69] [70]
+Overfull \hbox (13.08907pt too wide) detected at line 3746
 [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3219) has occurred while \output is active []
 
- [68]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [69]
+ [71]
 Missing character: There is no ↑ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 3631--3633
+ [72]
+Underfull \hbox (badness 10000) in paragraph at lines 3833--3835
 
  []
 
-[70]
-Underfull \vbox (badness 2689) has occurred while \output is active []
-
- [71]
-Underfull \vbox (badness 1824) has occurred while \output is active []
-
- [72] [73] [74
-
-]
+[73] [74] [75] [76]
 Chapter 8.
-[75] [76] [77] [78] [79] [80] [81] [82
+[77
+
+] [78] [79] [80] [81] [82] [83] [84
 
 ]
 Chapter 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
+ [85]
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr8!
 Missing character: There is no · in font cmr6!
- [84] [85]
-Overfull \hbox (8.07318pt too wide) in paragraph at lines 4434--4435
+ [86] [87]
+Overfull \hbox (8.07318pt too wide) in paragraph at lines 4636--4637
 []\TU/SimSun(0)/m/n/10.95 新 剑 桥 学 派：|  认 为 利 率 是 借 贷 资 金 的 价 格，|  批 判 综 合 实 际 利 率 理 论 和 流 动 性 偏 好 利 率  |（\TU/CMUSerif(0)/m/n/10.95 loanable-
  []
 
 Missing character: There is no Δ in font cmmi10!
-[86] [87] [88] [89] [90
+[88] [89] [90] [91] [92
 
 ]
 Chapter 10.
-[91] [92]
+[93] [94]
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no ⋅ in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no ⋅ in font cmr10!
- [93]
+ [95]
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
@@ -1998,7 +1999,7 @@ Missing character: There is no   in font cmr10!
 Missing character: There is no → in font cmr10!
 Missing character: There is no ∗ in font cmr8!
 Missing character: There is no ∗ in font cmr8!
- [94]
+ [96]
 Missing character: There is no − in font cmr10!
 Missing character: There is no ↑ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
@@ -2008,124 +2009,130 @@ Missing character: There is no → in font cmr10!
 Missing character: There is no ↑ in font cmr10!
 Missing character: There is no → in font cmr10!
 Missing character: There is no ↓ in font cmr10!
- [95]
+ [97]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [96]
+ [98]
 Missing character: There is no ⾼ in font SimSun/OT:script=hani;language=dflt;!
 Missing character: There is no ⼩ in font SimSun/OT:script=hani;language=dflt;!
 Missing character: There is no ⽐ in font SimSun/OT:script=hani;language=dflt;!
 Missing character: There is no ⼀ in font SimSun/OT:script=hani;language=dflt;!
 Missing character: There is no ⾏ in font SimSun/OT:script=hani;language=dflt;!
- [97] [98]
+ [99] [100]
 Chapter 11.
-[99
+[101
 
-] [100
+] [102
 
 ]
 Chapter 12.
-[101] [102
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+[103] [104] [105] [106
 
 ]
 Chapter 13.
-[103] [104
-
-]
-Chapter 14.
-[105] [106
-
-]
-Chapter 15.
 [107] [108
 
 ]
-Chapter 16.
+Chapter 14.
 [109] [110
 
 ]
-Chapter 17.
+Chapter 15.
 [111] [112
 
 ]
+Chapter 16.
+[113] [114
+
+]
+Chapter 17.
+[115] [116
+
+]
 Chapter 18.
+[117] [118
+
+]
+Chapter 19.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5238.
+(hyperref)                removing `math shift' on input line 5583.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5238.
+(hyperref)                removing `math shift' on input line 5583.
 
 Missing character: There is no ′ in font cmr10!
 Missing character: There is no ′ in font cmr10!
-[113]
-Overfull \hbox (75.0659pt too wide) detected at line 5321
+[119]
+Overfull \hbox (75.0659pt too wide) detected at line 5666
 []
  []
 
-[114]
-Overfull \hbox (12.70406pt too wide) in paragraph at lines 5406--5406
+[120]
+Overfull \hbox (12.70406pt too wide) in paragraph at lines 5751--5751
 []\TU/SimSun(0)/m/n/10.95 影 响 因 素：| $[] \OT1/cmr/m/n/10.95 = []$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [115]
+ [121]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116] [117]
+ [122] [123]
 Underfull \vbox (badness 5726) has occurred while \output is active []
 
- [118]
-Underfull \hbox (badness 10000) in paragraph at lines 5617--5619
+ [124]
+Underfull \hbox (badness 10000) in paragraph at lines 5962--5964
 
  []
 
-[119]
-Underfull \hbox (badness 10000) in paragraph at lines 5675--5677
+[125]
+Underfull \hbox (badness 10000) in paragraph at lines 6020--6022
 
  []
 
-[120]
+[126]
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
- [121]
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 5774--5791
+ [127]
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 6119--6136
 [] 
  []
 
-[122]
-Underfull \hbox (badness 10000) in paragraph at lines 5828--5830
+[128]
+Underfull \hbox (badness 10000) in paragraph at lines 6173--6175
 
  []
 
-[123] [124]
-Chapter 19.
+[129] [130]
+Chapter 20.
 
 Underfull \vbox (badness 3907) has occurred while \output is active []
 
- [125
+ [131
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [126] [127] [128
+ [132] [133] [134
 
-] [129
+] [135
 
 ]
-Overfull \hbox (3.34029pt too wide) in paragraph at lines 6294--6378
+Overfull \hbox (3.34029pt too wide) in paragraph at lines 6639--6723
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [130
+ [136
 
-] [131]
+] [137]
 Missing character: There is no 套 in font cmr10!
 Missing character: There is no 利 in font cmr10!
 Missing character: There is no 左 in font cmr10!
@@ -2144,54 +2151,68 @@ Missing character: There is no ↑ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
- [132
+ [138
 
 ]
 Missing character: There is no Δ in font cmmi10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no Δ in font cmmi10!
 Missing character: There is no · in font cmr10!
- [133] [134
-
-]
-Chapter 20.
-[135] [136
+ [139] [140
 
 ]
 Chapter 21.
-[137] [138] [139] [140
+[141] [142
 
 ]
 Chapter 22.
-
-Underfull \vbox (badness 1377) has occurred while \output is active []
-
- [141]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [142]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [143] [144]
-Overfull \hbox (56.36243pt too wide) detected at line 6948
-[]
- []
-
-[145] [146
+[143] [144] [145] [146
 
 ]
 Chapter 23.
-[147] [148
+
+Underfull \vbox (badness 1377) has occurred while \output is active []
+
+ [147]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [148]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149] [150]
+Overfull \hbox (56.36243pt too wide) detected at line 7293
+[]
+ []
+
+[151] [152
 
 ]
 Chapter 24.
-[149] [150
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 7305.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [153]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [154] [155] [156
 
 ]
 Chapter 25.
-[151] [152
+[157] [158
 
-] [153] [154]
+]
+Chapter 26.
+[159] [160
+
+]
+Chapter 27.
+[161] [162
+
+] [163] [164]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2210,29 +2231,38 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7005.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7005.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7487.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7487.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7005.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7005.
-Package rerunfilecheck Info: File `Science.out' has not changed.
-(rerunfilecheck)             Checksum: FA37CFD6C29EC34DA7CF1F1AF4D21AAC;36181.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7487.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7487.
 
+
+Package rerunfilecheck Warning: File `Science.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Science.out':
+(rerunfilecheck)             Before: D40EE5D79B6212CA1089B49D803A1755;38779
+(rerunfilecheck)             After:  98A6B1FFF38A931C392270EB08A75FF3;39074.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 99230 strings out of 479418
- 2249123 string characters out of 5886345
- 2028739 words of memory out of 5000000
- 115808 multiletter control sequences out of 15000+600000
- 553025 words of font info for 150 fonts, out of 8000000 for 9000
+ 99259 strings out of 479418
+ 2250221 string characters out of 5886345
+ 2032054 words of memory out of 5000000
+ 115835 multiletter control sequences out of 15000+600000
+ 553041 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,44n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,56n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (166 pages).
+Output written on Science.pdf (178 pages).
