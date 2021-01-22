@@ -1854,86 +1854,89 @@ $$
 
 
 
-**序列相关性**：模型的随机干扰项之间存在相关性（serial correlation），又称自相关（autocorrelation）
+序列相关性：模型的随机干扰项之间存在相关性（serial correlation），又称自相关（autocorrelation）
 
 $$
 Cov\left(\varepsilon_i,\ \varepsilon_j\right)=E\left(\varepsilon_i\varepsilon_j\right)\neq0\\
 $$
 
-一、原因
+\paragraph{原因}
 
 1、经济变量固有的惯性：如消费习惯  
 2、模型设定的偏误（specification error）：虚假序列相关（只有非平稳时间序列之间才能出现虚假回归），如人口和GDP总量  
 3、数据生成：根据已知数据生成所需数据时，生成数据与原数据产生内在联系
 
-二、后果
+\paragraph{后果}
 
 1、参数估计量非有效：OLS估计量仍然具有线性性、无偏性、一致性、渐进正态分布  
 2、变量的显著性检验失去意义：t、F统计量利用了同方差条件  
 3、模型的预测失效
 
-三、检验
+\paragraph{检验}
+
 原理：分析随机误差项的近似估计量${\hat{\varepsilon}}_t\approx\widetilde{{\hat{\varepsilon}}_t}=Y_t-\left({\hat{Y}}_t\right)_{OLS}$之间的相关性
 
-（一）图示法
 
-（二）回归检验法
+\begin{enumerate}[1.]
+    \item 图示法
+    \item 回归检验法：存在某一种函数形式，使得方程显著成立，则存在序列相关性
+    \begin{gather*}
+    {\hat{\varepsilon}}_t=\rho{\hat{\varepsilon}}_{t-1}+e_t, t=2,\cdots,T\\ 
+    {\hat{\varepsilon}}_t=\rho_1{\hat{\varepsilon}}_{t-1}+\rho_2{\hat{\varepsilon}}_{t-2}+e_t,t=3,⋯,T
+    \end{gather*}
+    \item DW检验（Durbin-Watson test）：检验一阶序列相关
+    \begin{enumerate}[(1)]
+        \item 假设：
+        \begin{enumerate}[a.]
+            \item 解释变量X非随机  
+            \item 随机误差项$\varepsilon_t$为一阶自回归形式：$\varepsilon_t=\rho\varepsilon_{t-1}+e_t$  
+            \item $\rho$：自协方差系数（coefficient of autocovariance），又称一阶自相关系数（first-order coefficient of autocorrelation）  
+            \item 回归模型中不应含有滞后因变量作为解释变量  
+            \item 回归含有截距项
+        \end{enumerate}
+        \item 步骤：
+        \begin{gather*}
+            H_0: E(\varepsilon _{t},\varepsilon _{t-1})=0\Leftrightarrow \rho =0(\varepsilon _{t}\text{不存在一阶自回归})\\ 
+            D.W.=\frac{\sum_{t=2}^{n}\left({\hat{\varepsilon}}_t-{\hat{\varepsilon}}_{t-1}\right)^2}{\sum_{t=1}^{n}{\hat{\varepsilon}}_t^2}\\ 
+            \text{若}0<D.W.<d_{L} \text{，存在正自相关}\\ 
+            \text{若}d_{L}<D.W.<d_{U} \text{，不能确定}\\ 
+            \text{若}d_{U}<D.W.<4-d_{U} \text{，无自相关}(D.W.\approx 2)\\ 
+            \text{若}4-d_{U}<D.W.<4-d_{L} \text{，不能确定}\\ 
+            \text{若}4-d_{L}<D.W.<4 \text{，存在负自相关}
+        \end{gather*}
+        \item Durbin h检验：当回归因子包含延迟因变量时，残差序列的DW统计量是一个有偏统计量。在这种场合下使用DW统计量容易产生残差序列正自相关性不显著的误判
+        \begin{gather*}
+            Dh=DW\frac{n}{1-n\sigma_\beta^2}
+        \end{gather*} 
+    \end{enumerate}
+    \item 拉格朗日乘数检验（Lagrange multiplier）检验（LM test；GB test）：p阶序列相关
+    \begin{gather*}
+        \varepsilon_t=\rho_1\varepsilon_{t-1}+\rho_2\epsilon_{t-2}+\cdots+\rho_p\varepsilon_{t-p}+e_t\\ 
+        Y_t=\beta_0+\beta_1X_{t1}+\cdots+\beta_kX_{tk}+\rho_1\varepsilon_{t-1}+\rho_2\varepsilon_{t-2}+\cdots+\rho_p\varepsilon_{t-p}+e_t
+    \end{gather*}
+    \begin{enumerate}[(1)]
+        \item $H_0$：$\rho_1=\rho_2=\cdots=\rho_p=0$
+        \item $LM={(T-p)R}^2\sim\chi_\alpha^2(p)$
+        \item $T$：$\varepsilon_t=\beta_0+\beta_{1}X_{t1}+\cdots+\beta_{k}X_{tk}+\rho_{1}\varepsilon_{t-1}+\rho_{2}\varepsilon_{t-2}+\cdots+\rho_{p}\varepsilon_{t-p}+e_{t}$的样本容量
+        \item $R^2$：$\varepsilon_t=\beta_0+\beta_1X_{t1}+\cdots+\beta_kX_{tk}+\rho_1\varepsilon_{t-1}+\rho_{2}\varepsilon_{t-2}+\cdots+\rho_{p}\varepsilon_{t-p}+e_{t}$的可决系数
+        \item 若LM超过临界值，拒$H_0$
+    \end{enumerate}
+\end{enumerate}
 
-存在某一种函数形式，使得方程显著成立，则存在序列相关性
-$$
-{\hat{\varepsilon}}_t=\rho{\hat{\varepsilon}}_{t-1}+e_t，t=2,⋯,T\\ {\hat{\varepsilon}}_t=\rho_1{\hat{\varepsilon}}_{t-1}+\rho_2{\hat{\varepsilon}}_{t-2}+e_t，t=3,⋯,T
-$$
 
-（三）DW检验（Durbin-Watson test）
+\paragraph{解决方法}
 
-检验一阶序列相关
-
-1、假设：
-> ① 解释变量X非随机  
-> ② 随机误差项$\varepsilon_t$为一阶自回归形式：$\varepsilon_t=\rho\varepsilon_{t-1}+e_t$  
-> ③ $\rho$：自协方差系数（coefficient of autocovariance），又称一阶自相关系数（first-order coefficient of autocorrelation）  
-> ④ 回归模型中不应含有滞后因变量作为解释变量  
-> ⑤ 回归含有截距项
-
-2、步骤：
-
-$$
-H_0：E(ε_{t},ε_{t-1})=0⇔ρ=0（ε_{t}不存在一阶自回归）\\ D.W.=\frac{\sum_{t=2}^{n}\left({\hat{\varepsilon}}_t-{\hat{\varepsilon}}_{t-1}\right)^2}{\sum_{t=1}^{n}{\hat{\varepsilon}}_t^2}\\ 若0<D.W.<d_{L}，存在正自相关\\ 若d_{L}<D.W.<d_{U}，不能确定\\ 若d_{U}<D.W.<4-d_{U}，无自相关（D.W.≈2）\\ 若4-d_{U}<D.W.<4-d_{L}，不能确定\\ 若4-d_{L}<D.W.<4，存在负自相关 
-$$
-
-3、Durbin h检验：
-
-> 当回归因子包含延迟因变量时，残差序列的DW统计量是一个有偏统计量。在这种场合下使用DW统计量容易产生残差序列正自相关性不显著的误判
-> $$
-> Dh=DW\frac{n}{1-n\sigma_\beta^2}
-> $$
-
-（四）拉格朗日乘数检验
-
-拉格朗日乘数（Lagrange multiplier）检验（LM test；GB test）：p阶序列相关
-
-$$
-\varepsilon_t=\rho_1\varepsilon_{t-1}+\rho_2\epsilon_{t-2}+\cdots+\rho_p\varepsilon_{t-p}+e_t\\ 
-Y_t=\beta_0+\beta_1X_{t1}+\cdots+\beta_kX_{tk}+\rho_1\varepsilon_{t-1}+\rho_2\varepsilon_{t-2}+\cdots+\rho_p\varepsilon_{t-p}+e_t\\ 
-H_0：ρ_1=ρ_2=⋯=ρ_p=0\\ 
-LM={\left(T-p\right)R}^2~\chi_\alpha^2\left(p\right)\\ 
-T：ε_t=β_0+β_{1}X_{t1}+⋯+β_{k}X_{tk}+ρ_{1}ε_{t-1}+ρ_{2}ε_{t-2}+⋯+ρ_{p}ε_{t-p}+e_{t}的样本容量\\ 
-R^2：ε_t=β_0+β_1X_{t1}+⋯+β_kX_{tk}+ρ_1ε_{t-1}+ρ_{2}ε_{t-2}+⋯+ρ_{p}ε_{t-p}+e_{t}的可决系数 
-$$
-
-若LM超过临界值，拒$H_0$
-
-四、解决方法
-（一）模型变换
-
-1、广义最小二乘法
-
-2、广义差分法（generalized difference method）
-
-（二）序列方差稳健估计法（serial correlation-robust method）
-
-1、序列相关稳健标准误法（method of serial correction-robust standard error）
-
+\begin{enumerate}[1.]
+    \item 模型变换
+          \begin{enumerate}[(1)]
+              \item 广义最小二乘法
+              \item 广义差分法（generalized difference method）
+          \end{enumerate}
+    \item 序列方差稳健估计法（serial correlation-robust method）
+          \begin{enumerate}[(1)]
+              \item 序列相关稳健标准误法（method of serial correction-robust standard error）
+          \end{enumerate}
+\end{enumerate}
 
 
 
@@ -1965,77 +1968,89 @@ $$
 
 
 
+异方差性：对于不同的样本点，随机干扰项的方差不是常数，互不相同（heteroscedasticity）
 
-**异方差性**：对于不同的样本点，随机干扰项的方差不是常数，互不相同（heteroscedasticity）
+\informationBox{
+    * 类型：
+    \begin{enumerate}
+        \item 单调递增型：$\sigma_i^2$随X的增大而增大  
+        \item 单调递减型：$\sigma_i^2$随X的增大而减小  
+        \item 复杂型：$\sigma_i^2$与$X$的变化呈复杂形式  
+    \end{enumerate}
+}
 
-类型：
-> ① 单调递增型：$\sigma_i^2$随X的增大而增大  
-> ② 单调递减型：$\sigma_i^2$随X的增大而减小  
-> ③ 复杂型：$\sigma_i^2$与$X$的变化呈复杂形式
+\paragraph{后果}
 
-一、后果
-1、参数估计量非有效
-> OLS估计量仍然具有线性性、无偏性、一致性、渐近正态
-
-2、变量的显著性检验失去意义
-> t、F统计量利用了同方差条件
+\begin{enumerate}[1.]
+    \item 参数估计量非有效：OLS估计量仍然具有线性性、无偏性、一致性、渐近正态
+    \item 变量的显著性检验失去意义：t、F统计量利用了同方差条件
+    \item 模型的预测失效
+\end{enumerate}
 
 
-3、模型的预测失效
+\paragraph{检验}
 
-二、检验
 原理：首先采用OLS估计，得到残差估计值，用它的平方近似随机误差项的方差
 
-（一）图示检验法
 
-> $X$与$e_i^2$的散点图
+\begin{enumerate}[1.]
+    \item 图示检验法
+          \begin{enumerate}[(1)]
+              \item $X$与$e_i^2$的散点图
+          \end{enumerate}
+    \item 帕克检验（Park test）
+          \begin{enumerate}[(1)]
+              \item $\tilde{e} _i^2 =f(X_{ji})+\varepsilon_{i} =\sigma^2X_{ji}^\alpha e^{\varepsilon_i}$
+              \item 若$\alpha$在统计上是显著的，表明存在异方差性
+          \end{enumerate}
+    \item 戈里瑟检验（Glejser test）
+          \begin{gather*}
+              \left|{\widetilde{e}}_i^2\right| =f\left(X_{ji}\right)+\varepsilon_i
+          \end{gather*}
+    \item 布罗施-帕甘检验（Breusch-Pagan test）
+          \begin{enumerate}[(1)]
+              \item $\varepsilon_i^2\approx{\hat{\varepsilon}}_i^2=\delta_0+\delta_1X_{i1}+\delta_2X_{i2}+\cdots+\delta_kX_{ik}+e$ ，可决系数为$R_{{\hat{\varepsilon}}^2}^2$
+              \item $H_0$：$δ_0=δ_1=δ_2=\cdots=δ_k=0$
+                    \begin{gather*}
+                        F =  \frac{ R_{{\hat{\varepsilon}}^2}^2/k}{ {(1-R}_{{\hat{\varepsilon}}^2}^2)/(n-k-1)}
+                    \end{gather*}
+              \item 拉格朗日乘数检验：$LM=n⋅R_{{\hat{\varepsilon}}^2}^2\sim \chi(k)$
+              \item 若$F$或$LM$＞临界值则拒绝$H_0$，表明存在异方差性
+          \end{enumerate}
+    \item 怀特检验（White test）
+          \begin{enumerate}[(1)]
+              \item 二元为例：
+                    \begin{gather*}
+                        \varepsilon_i^2\approx{\hat{\varepsilon}}_i^2=\delta_0+\delta_1X_{i1}+\delta_2X_{i2}+\delta_3X_{i1}^2+\delta_4X_{i2}^2+\delta_5X_{i1}X_{i2}+e_i \\
+                        H_0：δ_1=δ_2=\cdots=δ_5=0\\
+                        F=\frac{R_{{\hat{\varepsilon}}^2}^2/k}{{(1-R}_{{\hat{\varepsilon}}^2}^2)/(n-k-1)}\\
+                        LM=n⋅R_{{\hat{\varepsilon}}^2}^2\sim \chi(k)
+                    \end{gather*}
+              \item 若$F$或$LM$＞临界值则拒绝$H_0$，表明存在异方差性
+          \end{enumerate}
+    \item 斯皮尔曼等级相关检验法（Spearman Rank Relation test）
+    \item 戈德弗尔德-匡特检验法（Goldfeld Quandt test）
+\end{enumerate}
 
-（二）帕克检验（Park test）
 
-> $\tilde{e} _i^2 =f(X_{ji})+\varepsilon_{i} =\sigma^2X_{ji}^\alpha e^{\varepsilon_i}$  
-> 若$\alpha$在统计上是显著的，表明存在异方差性
 
-（三）戈里瑟检验（Glejser test）
+\paragraph{解决方法}
 
-> $$
-> \left|{\widetilde{e}}_i^2\right| =f\left(X_{ji}\right)+\varepsilon_i
-> $$
-
-（四）布罗施-帕甘检验（Breusch-Pagan test）
-
-> $\varepsilon_i^2\approx{\hat{\varepsilon}}_i^2=\delta_0+\delta_1X_{i1}+\delta_2X_{i2}+\cdots+\delta_kX_{ik}+e$ ，可决系数为$R_{{\hat{\varepsilon}}^2}^2$  
-> $$
-> H_0：δ_0=δ_1=δ_2=\cdots=δ_k=0\\ F =  \frac{ R_{{\hat{\varepsilon}}^2}^2/k}{    {(1-R}_{{\hat{\varepsilon}}^2}^2)/(n-k-1)}\\ 拉格朗日乘数检验：LM=n⋅R_{{\hat{\varepsilon}}^2}^2\sim \chi(k) 
-> $$
-> 若$F$或$LM$＞临界值则拒绝$H_0$，表明存在异方差性
-
-（五）怀特检验（White test）
-
-> 二元为例： 
-> $$
-> \varepsilon_i^2\approx{\hat{\varepsilon}}_i^2=\delta_0+\delta_1X_{i1}+\delta_2X_{i2}+\delta_3X_{i1}^2+\delta_4X_{i2}^2+\delta_5X_{i1}X_{i2}+e_i \\ H_0：δ_1=δ_2=\cdots=δ_5=0\\ F=\frac{R_{{\hat{\varepsilon}}^2}^2/k}{{(1-R}_{{\hat{\varepsilon}}^2}^2)/(n-k-1)}\\ LM=n⋅R_{{\hat{\varepsilon}}^2}^2\sim \chi(k)
-> $$  
-> 若$F$或$LM$＞临界值则拒绝$H_0$，表明存在异方差性
-
-（六）斯皮尔曼等级相关检验法（Spearman Rank Relation test）
-
-（七）戈德弗尔德-匡特检验法（Goldfeld Quandt test）
-
-三、解决方法
-
-（一）广义最小二乘法（Generalized Least Squares，GLS）
-
-（二）加权最小二乘法（Weighted Least Squares, WLS）
-
-> GLS的特例，在采用OLS方法时：对较小的残差平方 $\hat{\varepsilon}_i^2$赋予较大的权数；对较大的残差平方$\hat{\varepsilon}_i^2$赋予较小的权数
-> $$
-> \sum{w_i \hat{\varepsilon}_i^2}=\sum{w_i\left[Y_i-(\hat{\beta}_0+\hat{\beta}_1 X_1 + \hat{\beta}_2 X_2 +\cdots+\hat{\beta}_k X_k)\right]^2}，w_i为权数
-> $$
-
-（三）异方差稳健标准误法（Heteroscedasticity-Consistent Variances and Standard Errors）
-
-> 仍然采用OLS，但对OLS估计量的标准差进行修正  
-> 一元回归：大样本下，$\sum{ \frac{x_i^2 \hat{\varepsilon}_i^2}{(\sum{x_i^2})^2}}$是$Var(\hat{\beta}_1) = \sum{ \frac{x_i^2 \sigma_i^2}{(\sum{x_i^2})^2}}$的一致估计
+\begin{enumerate}[1.]
+    \item 广义最小二乘法（Generalized Least Squares，GLS）
+    \item 加权最小二乘法（Weighted Least Squares, WLS）
+          \begin{enumerate}[(1)]
+              \item GLS的特例，在采用OLS方法时：对较小的残差平方 $\hat{\varepsilon}_i^2$赋予较大的权数；对较大的残差平方$\hat{\varepsilon}_i^2$赋予较小的权数
+                    \begin{gather*}
+                        \sum{w_i \hat{\varepsilon}_i^2}=\sum{w_i\left[Y_i-(\hat{\beta}_0+\hat{\beta}_1 X_1 + \hat{\beta}_2 X_2 +\cdots+\hat{\beta}_k X_k)\right]^2}, w_i\text{为权数}
+                    \end{gather*}
+          \end{enumerate}
+    \item 异方差稳健标准误法（Heteroscedasticity-Consistent Variances and Standard Errors）
+          \begin{enumerate}[(1)]
+              \item 仍然采用OLS，但对OLS估计量的标准差进行修正
+              \item 一元回归：大样本下，$\sum{ \frac{x_i^2 \hat{\varepsilon}_i^2}{(\sum{x_i^2})^2}}$是$Var(\hat{\beta}_1) = \sum{ \frac{x_i^2 \sigma_i^2}{(\sum{x_i^2})^2}}$的一致估计
+          \end{enumerate}
+\end{enumerate}
 
 
 
@@ -2058,48 +2073,48 @@ $$
 
 异方差性：随机误差序列的方差随时间变化而变化
 
-$$
-Var(\varepsilon_t)=h(t)
-$$
+\begin{gather*}
+    Var(\varepsilon_t)=h(t)
+\end{gather*}
 
-一、后果
+
+\paragraph{后果}
 忽视异方差的存在会导致残差的方差会被严重低估，继而参数显著性检验容易犯纳伪错误(Type II error)，这使得参数的显著性检验失去意义，最终导致模型的拟合精度受影响
 
-二、检验
-残差序列的方差实际上就是它平方的期望。
+\paragraph{检验}
 
-$$
-Var(ε_t)=E(ε_t^2)
-$$
+残差序列的方差实际上就是它平方的期望：
+$Var(\varepsilon_t)=E(\varepsilon_t^2)$，所以考察残差序列是否方差齐性，主要是考察残差平方序列是否平稳
 
-所以考察残差序列是否方差齐性，主要是考察残差平方序列是否平稳
+\begin{enumerate}[1.]
+    \item 残差图
+    \item 残差平方图
+\end{enumerate}
 
-(1) 残差图
 
-(2) 残差平方图
+\paragraph{解决方法}
 
-三、解决方法
-（一）已知异方差函数形式
+\begin{enumerate}[1.]
+    \item 已知异方差函数形式：方差齐性变化
+          \begin{enumerate}[(1)]
+              \item 序列显示出显著的异方差性，且方差与均值之间具有某种函数关系$σ_t^2=h(\mu_t)$，$h(⋅)$是某个已知函数
+              \item 尝试寻找一个转换函数$g(⋅)$，使得经转换后的变量满足方差齐性$Var[g(x_t)]=\sigma^2$
+              \item 转换函数$g(x_t)$在$\mu_t$附近作一阶泰勒展开 $g(x_{t})\cong g(\mu_t)+(x_{t} - \mu_{t} ) g' (\mu_t)$
+              \item 求转换函数的方差  $Var[g(x_t)]\cong Var[g(\mu_t)+(x_t-\mu_t)g^{'} (\mu_t)]=[g^{'} (\mu_t)]^2 h(\mu_t)$
+              \item 转换函数的确定$g^{'} (\mu_t)=1/\sqrt{h(\mu_t)}$
+          \end{enumerate}
+    \item ARCH模型
+          \begin{enumerate}[(1)]
+              \item 自回归条件异方差模型：通过构造残差平方序列的自回归模型来拟合异方差函数（Autoregressive Conditional Heteroscedasticity Model，ARCH）
+          \end{enumerate}
+    \item GARCH模型
+          \begin{enumerate}[(1)]
+              \item 广义自回归条件异方差模型（generalized autoregressive conditional heteroscedasticity model，GARCH）
+          \end{enumerate}
+    \item TGARCH模型
+    \item EGARCH模型
+\end{enumerate}
 
-方差齐性变化
-> 序列显示出显著的异方差性，且方差与均值之间具有某种函数关系$σ_t^2=h(μ_t)$，$h(⋅)$是某个已知函数  
-> ① 尝试寻找一个转换函数$g(⋅)$，使得经转换后的变量满足方差齐性$Var[g(x_t)]=σ^2$  
-> ② 转换函数$g(x_t)$在$\mu_t$附近作一阶泰勒展开 $g(x_{t}) ≅ g(\mu_t)+(x_{t} - \mu_{t} ) g' (\mu_t)$  
-> ③ 求转换函数的方差  
-> $Var[g(x_t)]≅Var[g(μ_t)+(x_t-μ_t)g^{'} (μ_t)]=[g^{'} (μ_t)]^2 h(μ_t)$  
-> ④ 转换函数的确定$g^{'} (μ_t)=1/\sqrt{h(μ_t)}$
-
-（二）ARCH模型
-
-自回归条件异方差模型：通过构造残差平方序列的自回归模型来拟合异方差函数（Autoregressive Conditional Heteroscedasticity Model，ARCH）
-
-（二）GARCH模型
-
-广义自回归条件异方差模型（generalized autoregressive conditional heteroscedasticity model，GARCH）
-
-（三）TGARCH模型
-
-（四）EGARCH模型
 
 
 
@@ -2124,32 +2139,49 @@ $$
 Cov(\mathbf{X_i},\varepsilon_i)\neq\mathbf{0}
 $$
 
-一、原因
-1、双向因果关系
-> 面板数据被解释变量领先一期
+\subsubsection{原因}
 
-2、样本自选择
+\begin{enumerate}[1.]
+    \item 双向因果关系：面板数据被解释变量领先一期
+    \item 样本自选择
+    \item 遗漏变量
+    \item 测量误差
+\end{enumerate}
 
-3、遗漏变量
-
-4、测量误差
 
 \subsubsection{解决办法}
 
-（一）工具变量法（IV）
 
-工具变量（instrumental variable，IV）：
 
-> (1) 相关性：工具变量与所替代的随机解释变量高度相关，$Cov(Z_i,X_i)$  
-> (2) 外生性：工具变量与随机误差项不相关，$Cov(\varepsilon_i,Z_i)=0$  
-> 只有过度识别（工具变量数量>内生解释变量数量）时才能检验工具变量的外生性；  
-> 恰好识别时只能依靠经济学原理、历史背景分析等
 
-两阶段最小二乘法（TSLS）、有限信息极大似然法（LIML）
+\paragraph{工具变量法（IV）}
 
-（二）倾向得分匹配（PSM）
+\paragraph{工具变量（instrumental variable，IV）}
 
-（三）合成控制法
+
+\begin{enumerate}[1.]
+    \item 要求
+    \begin{enumerate}[(1)]
+        \item 相关性：工具变量与所替代的随机解释变量高度相关，$Cov(Z_i,X_i)$  
+        \item 外生性：工具变量与随机误差项不相关，$Cov(\varepsilon_i,Z_i)=0$  
+    \end{enumerate}
+    \item 方法：两阶段最小二乘法（TSLS）、有限信息极大似然法（LIML）
+    \item 只有过度识别（工具变量数量>内生解释变量数量）时才能检验工具变量的外生性；  
+    \item 恰好识别时只能依靠经济学原理、历史背景分析等
+\end{enumerate}
+
+
+
+
+\paragraph{倾向得分匹配（PSM）}
+
+
+\paragraph{Heckman selection model}
+
+
+
+
+\paragraph{合成控制法}
 
 
 
@@ -2171,69 +2203,85 @@ $$
 
 
 
-模型设定偏误主要包括**函数形式偏误**和**变量选择偏误**。
+模型设定偏误主要包括函数形式偏误和变量选择偏误。
 
-一、函数形式：非线性回归分析
-（一）模型转换
+\subsubsection{函数形式：非线性回归分析}
 
-1、指数函数：$y={\rm ax}^b\rightarrow y^\prime=lny,\ x^\prime=lnx,\ A=lna\rightarrow y^\prime=A+bx^\prime$
 
-2、对数变换：
+\paragraph{模型转换}
 
-（1）单对数变换：$X$变化1单位，$Y$平均增长率为 $β$
-$$
-lnY=\beta_0+\beta_1X+\varepsilon
-$$
 
-（2）双对数变换：$X$变化1单位，$X$对$Y$的弹性变化$β$
+\begin{enumerate}[1.]
+    \item 指数函数：$y=a{x}^b\rightarrow y^\prime=lny,\ x^\prime=lnx,\ A=lna\rightarrow y^\prime=A+bx^\prime$
+    \item 对数变换：
+          \begin{enumerate}[(1)]
+              \item 单对数变换：$X$变化1单位，$Y$平均增长率为 $\beta$
+                    \begin{gather*}
+                        lnY=\beta_0+\beta_1X+\varepsilon
+                    \end{gather*}
+              \item 双对数变换：$X$变化1单位，$X$对$Y$的弹性变化$\beta$
+                    \begin{align*}
+                        lnY&=\beta_0+\beta_1lnX+\varepsilon\\
+                        \ln{Y_2}-lnY_1
+                        &=\left[\beta_0+\beta_0\ln{\left(X_1+1\right)}+\varepsilon\right]-\left(\beta_0+\beta_0\ln{X_1}+\varepsilon\right)\\
+                        &=ln\frac{Y_2}{Y_1} =\beta_0\ln{\frac{X_1+1}{X_1}}\\
+                        \approx\frac{\Delta Y}{Y} =\frac{Y_2-Y_1}{Y}
+                    \end{align*}
+          \end{enumerate}
+    \item 级数展开法
+\end{enumerate}
 
-$$
-lnY=\beta_0+\beta_1lnX+\varepsilon\\ \ln{Y_2}-lnY_1 
-=\left[\beta_0+\beta_0\ln{\left(X_1+1\right)}+\varepsilon\right]-\left(\beta_0+\beta_0\ln{X_1}+\varepsilon\right)\\ 
-=ln\frac{Y_2}{Y_1} =\beta_0\ln{\frac{X_1+1}{X_1}}\\ 
-\approx\frac{\Delta Y}{Y} =\frac{Y_2-Y_1}{Y} \\
-$$
 
-3、级数展开法
 
-（二）非线性最小二乘法
+\paragraph{非线性最小二乘法}
 
-1、门限自回归模型
 
- 二、函数形式：误设函数形式
-（一）检验
+\begin{enumerate}[1.]
+    \item 门限自回归模型
+\end{enumerate}
 
-1、Ramsey' s RESET检验（regression equation specification error test）
 
-三、变量：遗漏变量
-（一）解决办法
+\subsubsection{函数形式：误设函数形式}
 
-> ① 加入尽可能多的控制变量  
-> ② 使用代理变量（proxy variable）：多余性（代理变量仅通过影响遗漏变量而作用于被解释变量）+剩余独立性（遗漏变量中不受代理变量影响的剩余部分与所有解释变量均不相关）  
-> ③ 工具变量法  
-> ④ 使用面板数据  
-> ⑤ 随机实验和自然实验
+\paragraph{检验}
 
-四、变量：无关变量
-（一）赤池信息准则和施瓦茨准则
+\begin{enumerate}[1.]
+    \item Ramsey's RESET检验（regression equation specification error test）
+\end{enumerate}
+
+\subsubsection{变量：遗漏变量}
+
+\paragraph{解决办法}
+
+\begin{enumerate}[1.]
+    \item 加入尽可能多的控制变量  
+    \item 使用代理变量（proxy variable）：多余性（代理变量仅通过影响遗漏变量而作用于被解释变量）+剩余独立性（遗漏变量中不受代理变量影响的剩余部分与所有解释变量均不相关）  
+    \item 工具变量法  
+    \item 使用面板数据  
+    \item 随机实验和自然实验 
+\end{enumerate}
+
+
+\subsubsection{变量：无关变量}
+
+
+
+\paragraph{检测}
 
 要求增加的解释变量能够减少对应值
 
-1、赤池信息准则（Akaike information criterion，AIC）
-
-$$
-AIC = \ln{ \frac{{\hat{\bm{\varepsilon}}}^\prime\hat{\bm{\varepsilon}}}{n} }+\frac{2(k+1)}{n} + 1 + \ln(2\pi)
-$$
-2、施瓦茨准则（Schwarz criterion）
-
-$$
-SC = \ln{\frac{{ \hat{ \bm{\varepsilon} }}^\prime\hat{\bm{\varepsilon}}}{n}}+\frac{k+1}{n} \ln{(n)} + 1 + \ln{(2\pi)} 
-$$
-
-（二）贝叶斯信息准则（Bayesian information criterion, BIC）
-
-（三）汉南-昆信息准则（Hannan-Quinn information criterion, HQIC）
-
+\begin{enumerate}[1.]
+    \item 赤池信息准则（Akaike information criterion，AIC）
+    \begin{gather*}
+        AIC = \ln{ \frac{{\hat{\bm{\varepsilon}}}^\prime\hat{\bm{\varepsilon}}}{n} }+\frac{2(k+1)}{n} + 1 + \ln(2\pi)
+    \end{gather*}
+    \item 施瓦茨准则（Schwarz criterion）
+    \begin{gather*}
+        SC = \ln{\frac{{ \hat{ \bm{\varepsilon} }}^\prime\hat{\bm{\varepsilon}}}{n}}+\frac{k+1}{n} \ln{(n)} + 1 + \ln{(2\pi)} 
+    \end{gather*}
+    \item 贝叶斯信息准则（Bayesian information criterion, BIC）
+    \item 汉南-昆信息准则（Hannan-Quinn information criterion, HQIC）
+\end{enumerate}
 
 
 
@@ -2256,63 +2304,131 @@ $$
 
 
 
-\begin{equation*} 
-    数据问题\begin{cases} 数据质量\begin{cases} 极端数据\\ 缺失数据\\ 受限被解释变量
-        \begin{cases} 断尾回归模型\\ 归并回归模型\\ 样本选择模型 \end{cases} 
-    \end{cases}\\ 数据性质\begin{cases} 解释变量\begin{cases} 定性
-        \begin{cases} 虚拟变量法\\ 双重差分法\\ 三重差分法 \end{cases} 
-    \end{cases}\\ 被解释变量\begin{cases} 离散选择模型\begin{cases} 
-        二值选择模型\\ 多值选择模型\\ 计数模型\\ 排序模型 \end{cases} 
-    \end{cases} \end{cases} \end{cases} 
-\end{equation*}  
+\begin{equation*}
+    \text{数据问题}\mindmap{
+        \text{数据质量}\mindmap{
+            \text{极端数据} \\
+            \text{缺失数据} \\
+            \text{受限被解释变量}\mindmap{
+                \text{断尾回归模型} \\
+                \text{归并回归模型} \\
+                \text{样本选择模型}
+            }
+        }
+        \text{数据性质}\mindmap{
+            \text{解释变量}\mindmap{
+                \text{定性}\mindmap{
+                    \text{虚拟变量法} \\
+                    \text{双重差分法} \\
+                    \text{三重差分法}
+                }
+            }
+            \text{被解释变量}\mindmap{
+                \text{离散选择模型}\mindmap{
+                    \text{二值选择模型} \\
+                    \text{多值选择模型} \\
+                    \text{计数模型}     \\
+                    \text{排序模型}
+                }
+            }
+        }
+    }
+\end{equation*}
 
 \subsubsection{数据质量}
-（一）极端数据
-（二）缺失数据
-（三）受限被解释变量（limited dependent variable）
-1、断尾回归模型（truncated regression model）
-$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i<c$时数据缺失\\ 
-2、归并回归模型（censored regression）
-$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i\geq c$时数据被归并为$c$\\ 
-3、样本选择模型（sample selection）/偶然断尾（incidental truncation）
-$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i$的断尾与$z_i$（二值选择变量）有关\\ 
+
+
+\paragraph{极端数据}
+
+
+\paragraph{缺失数据}
+
+
+\paragraph{受限被解释变量}
+
+（limited dependent variable）
+
+\subparagraph{断尾回归模型（truncated regression model）}
+
+$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i<c$时数据缺失
+
+\subparagraph{归并回归模型（censored regression）}
+
+$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i\geq c$时数据被归并为$c$
+
+\subparagraph{样本选择模型（sample selection）/偶然断尾（incidental truncation）}
+
+$\bm{Y}=\bm{X\beta}+\bm{\mu}$，$Y_i$的断尾与$z_i$（二值选择变量）有关
 
 
 
 \subsubsection{数据性质}
-（一）解释变量：定性
-1、一重差分法（虚拟变量）
-虚拟变量只作为解释变量，自变量为离散型，一般选0和1。
-① 加法方式：斜率相同，截距不同（平行回归）；系数表示1类平均比0类多β
-② 乘法方式：斜率不同，截距相同；系数表示X每增加一单位，1类比0类多增加β
-③ 加法乘法：斜率不同，截距不同
-▪ 设置原则：每一定性变量所需的虚拟变量个数=定性变量类别－1
-否则与截距项完全共线，少的变量即为常数项。全为0的为基准组。
-2、双重差分法（differsence in difference, DID）
-（1）假设	
-① 平行趋势假定
-② 政策变量外生性
-（2）模型
- 两期：
-\begin{gather*}
-    y_{it}=\alpha+\gamma D_t+\beta x_{it}+u_i+\varepsilon_{it} (i=1,2,\cdots,n;t=1,2) \\ \Delta y_i = \gamma+\beta x_{i2}+\Delta \varepsilon_i \\ {\hat{\beta}}_{OLS}=\Delta{\bar{y}}_{treat}-\Delta \bar{y}_{control} = \bar{y}_{treat,2}-\bar{y}_{treat,1}- \bar{y}_{control,2}-\bar{y}_{control,1}\
-\end{gather*}
-\par $D_t$ ：实验期虚拟变量（1=实验后；0=实验前）
-\par $u_i$ ：不可观测的个体特征
-\par $x_{it}$ ：政策虚拟变量（1=i∈实验组且t=2；0=其他）
-3、三重差分法
-（二）被解释变量：离散选择模型（discrete choice model）
-1、二值选择模型
+
+
+\paragraph{解释变量：定性}
+
+\subparagraph{一重差分法（虚拟变量）}
+
+
+\begin{enumerate}[1.]
+    \item 虚拟变量只作为解释变量，自变量为离散型，一般选0和1
+    \item 方法
+    \begin{enumerate}[(1)]
+        \item 加法方式：斜率相同，截距不同（平行回归）；系数表示1类平均比0类多β
+        \item 乘法方式：斜率不同，截距相同；系数表示X每增加一单位，1类比0类多增加β
+        \item 加法乘法：斜率不同，截距不同
+    \end{enumerate}
+    \item 设置原则：每一定性变量所需的虚拟变量个数=定性变量类别－1，否则与截距项完全共线，少的变量即为常数项。全为0的为基准组。
+\end{enumerate}
+
+
+\subparagraph{双重差分法（differsence in difference, DID）}
+
+\begin{enumerate}[1.]
+    \item 假设
+          \begin{enumerate}[(1)]
+              \item 平行趋势假定
+              \item 政策变量外生性
+          \end{enumerate}
+    \item 模型
+          \begin{enumerate}[(1)]
+              \item 两期：
+                    \begin{gather*}
+                        y_{it}=\alpha+\gamma D_t+\beta x_{it}+u_i+\varepsilon_{it} (i=1,2,\cdots,n;t=1,2) \\ \Delta y_i = \gamma+\beta x_{i2}+\Delta \varepsilon_i \\ {\hat{\beta}}_{OLS}=\Delta{\bar{y}}_{treat}-\Delta \bar{y}_{control} = \bar{y}_{treat,2}-\bar{y}_{treat,1}- \bar{y}_{control,2}-\bar{y}_{control,1}\
+                    \end{gather*}
+                    \par $D_t$ ：实验期虚拟变量（1=实验后；0=实验前）
+                    \par $u_i$ ：不可观测的个体特征
+                    \par $x_{it}$ ：政策虚拟变量（$1=i\in $实验组且$t=2$；0=其他）
+          \end{enumerate}
+\end{enumerate}
+
+
+\subparagraph{三重差分法}
+
+
+\paragraph{被解释变量：离散选择模型（discrete choice model）}
+
+
+\subparagraph{二值选择模型}
+
 （1）Probit模型
+
 （2）Logit模型
 \begin{gather*}
     \ln{\left(\frac{p}{1-p}\right)}=\\ 
 \end{gather*}
 
 $\frac{p}{1-p}$ ：几率比（odds ratio），意味着y=1的概率是y=0概率的 $\frac{p}{1-p}$ 倍
-2、多值选择模型
-3、排序模型
-4、计数模型
+
+\subparagraph{多值选择模型}
+
+
+\subparagraph{排序模型}
+
+
+\subparagraph{计数模型}
+
+
 
 
 
@@ -2590,18 +2706,22 @@ $\frac{p}{1-p}$ ：几率比（odds ratio），意味着y=1的概率是y=0概率
 
 定义：劳动者在一段时间内生产某种使用价值的效率
 
-\informationBox{
-    * 劳动生产率=产品量/劳动时间
+\begin{gather*}
+    \text{劳动生产率}=\frac{\text{产品量}}{\text{劳动时间}}
+\end{gather*}
+
+\begin{enumerate}[1.]
+    \item 含义
     \begin{enumerate}[(1)]
         \item 单位时间内生产的产品数量
         \item 生产单位产品所耗费的劳动时间
     \end{enumerate}
-    * 规律
+    \item 规律
     \begin{enumerate}[(1)]
         \item 同一劳动在同样的时间内提供的价值量相同
         \item 劳动生产率同商品的使用价值量成正比，同商品的价值量成反比
     \end{enumerate}
-    * 影响因素
+    \item 影响因素
     \begin{enumerate}[(1)]
         \item 劳动者：劳动者的平均熟练程度
         \item 劳动工具：科技发展水平，及其在生产中的应用程度
@@ -2609,8 +2729,9 @@ $\frac{p}{1-p}$ ：几率比（odds ratio），意味着y=1的概率是y=0概率
         \item 管理：生产过程的社会结合（分工协作、劳动组织、生产管理）形式（生产过程各要素的契合程度）
         \item 自然条件（农业受的影响大）
     \end{enumerate}
+\end{enumerate}
+    
 
-}
 
 
 
@@ -2618,86 +2739,126 @@ $\frac{p}{1-p}$ ：几率比（odds ratio），意味着y=1的概率是y=0概率
 \subsubsection{利润率}
 
 
-（一）计算
-
-$$
-利润率=\frac{利润额}{预付资本}
+\begin{gather*}
+    \text{利润率}=\frac{\text{利润额}}{\text{预付资本}}
 =\frac{m}{C}
 =\frac{m}{v+c}
-$$
+\end{gather*}
 
-$C$：全部预付资本  
-成本：为生产商品和实现资本价值增殖而发生的资本耗费
+\par $C$：全部预付资本  
+\par 成本：为生产商品和实现资本价值增殖而发生的资本耗费
+\par 利润：商品价值扣除生产成本后的余额
 
-利润：商品价值扣除生产成本后的余额
 
-（二）影响因素
+\begin{enumerate}[1.]
+    \item 影响因素
+          \begin{enumerate}[(1)]
+              \item 高低
+                    \begin{enumerate}[a.]
+                        \item 劳动：剩余劳动的活劳动占比
+                        \item 资本：资本的节省，资本运动的快慢
+                        \item 市场：竞争，需求形势；经营者的市场经营能力和市场拓展能力
+                    \end{enumerate}
+              \item 变动（等式右边分子分母同时除以v）
+                    \begin{enumerate}[a.]
+                        \item 剩余价值率
+                        \item 资本的有机构成：不变资本和可变资本的比例（部门），由技术资本构成决定并反映资本技术构成变化的资本价值构成
+                        \item 资本周转速度
+                        \item 不变资本的节省状况
+                    \end{enumerate}
+              \item
+                    \begin{enumerate}[a.]
+                        \item 成本：不变资本节省，活劳动占比大
+                        \item 销量：数量，速度；需求，销售能力
+                    \end{enumerate}
+          \end{enumerate}
+\end{enumerate}
 
-1、高低
-
-① 劳动：剩余劳动的活劳动占比  
-② 资本：资本的节省，资本运动的快慢  
-③ 市场：竞争，需求形势；经营者的市场经营能力和市场拓展能力  
-
-2、变动（等式右边分子分母同时除以v）
-
-① 剩余价值率  
-② 资本的有机构成：由技术资本构成决定并反映资本技术构成变化的资本价值构成  
-不变资本和可变资本的比例（部门）  
-③ 资本周转速度  
-④ 不变资本的节省状况
-
-3、
-
-① 成本：不变资本节省，活劳动占比大  
-② 销量：数量，速度；需求，销售能力
 
 
 
 \subsubsection{剩余价值率}
-关系：  
-① 利润额＝剩余价值额，利润率≠剩余价值率  
-② 利润率表示劳动占比，剩余价值率表示剥削率
 
-（一）计算
+
 
 1、物化劳动表示法：
 
-$$
-m'=\frac{剩余价值}{必要劳动价值}
-=\frac{剩余价值}{可变资本}
+\begin{gather*}
+m'=\frac{\text{剩余价值}}{\text{必要劳动价值}}
+=\frac{\text{剩余价值}}{\text{可变资本}}
 = \frac{m}{v}
-$$
+\end{gather*}
+
 
 2、活劳动表示法：
-$$
-m'=\frac{剩余劳动时间}{必要劳动时间}
-$$
-> 剩余价值：活劳动在剩余劳动时间里创造的价值  
-> 必要劳动：劳动者用以实现劳动再生产而付出的劳动  
-> 剩余劳动：一定时期内劳动者的劳动中超出必要劳动的部分
+\begin{gather*}
+    m'=\frac{\text{剩余劳动时间}}{\text{必要劳动时间}}
+\end{gather*}
+\par 剩余价值：活劳动在剩余劳动时间里创造的价值  
+\par 必要劳动：劳动者用以实现劳动再生产而付出的劳动  
+\par 剩余劳动：一定时期内劳动者的劳动中超出必要劳动的部分
 
-（二）生产方法
 
-① 方法：延长剩余劳动时间  
-② 本质：剥削，获取剩余价值  
-③ 绝对剩余价值是资本主义剥削的一般基础，是相对剩余价值的起点
 
-1、绝对剩余价值生产  
-- 方法：生产技术不变
-  - ① 延长工作日
-  - ② 提高劳动强度  
-- 结果  
-① 绝对剩余价值：在必要劳动时间不变的条件下，通过延长工作日长度而生产的剩余价值
 
-2、相对剩余价值生产  
-- 方法：生产技术不断变革
-    - ①提高社会生产率
-    - ②降低生活资料价值
-    - ③降低劳动力的价值  
-- 结果：社会劳动生产率提高  
-    - ① 超额剩余价值：企业由于提高劳动生产率而使商品个别价值低于社会价值的差额（单个企业）  
-    - ② 相对剩余价值：在工作日长度不变的条件下，通过缩短必要劳动时间来相应延长剩余劳动时间的剩余价值（行业）
+
+
+
+
+
+\informationBox{
+    * 关系： 
+    \begin{enumerate}[(1)]
+        \item 利润额＝剩余价值额，利润率≠剩余价值率  
+        \item 利润率表示劳动占比，剩余价值率表示剥削率
+    \end{enumerate} 
+}
+
+
+
+
+
+\begin{enumerate}[1.]
+    \item 生产方法
+          \informationBox{
+              \begin{enumerate}[(1)]
+                  \item 方法：延长剩余劳动时间
+                  \item 本质：剥削，获取剩余价值
+                  \item 绝对剩余价值是资本主义剥削的一般基础，是相对剩余价值的起点
+              \end{enumerate}
+          }
+          \begin{enumerate}[(1)]
+              \item 绝对剩余价值生产
+                    \begin{enumerate}[a.]
+                        \item 方法：生产技术不变
+                              \begin{enumerate}[(a)]
+                                  \item 延长工作日
+                                  \item 提高劳动强度
+                              \end{enumerate}
+                        \item 结果
+                              \begin{enumerate}[(a)]
+                                  \item 绝对剩余价值：在必要劳动时间不变的条件下，通过延长工作日长度而生产的剩余价值
+                              \end{enumerate}
+                    \end{enumerate}
+              \item 相对剩余价值生产
+                    \begin{enumerate}[a.]
+                        \item 方法：生产技术不断变革
+                              \begin{enumerate}[(a)]
+                                  \item 提高社会生产率
+                                  \item 降低生活资料价值
+                                  \item 降低劳动力的价值
+                              \end{enumerate}
+                        \item 结果：社会劳动生产率提高
+                              \begin{enumerate}[(a)]
+                                  \item 超额剩余价值：企业由于提高劳动生产率而使商品个别价值低于社会价值的差额（单个企业）
+                                  \item 相对剩余价值：在工作日长度不变的条件下，通过缩短必要劳动时间来相应延长剩余劳动时间的剩余价值（行业）
+                              \end{enumerate}
+                    \end{enumerate}
+          \end{enumerate}
+\end{enumerate}
+
+
+
 
 
 
@@ -2843,7 +3004,6 @@ $$
               \item 虚拟资本价格变动相对独立，可能不随实体资本价值的变动而变动，而与其背离
           \end{enumerate}
 \end{enumerate}
-
 
 
 
@@ -4287,17 +4447,22 @@ $$
 
 古典学派：储蓄、投资决定利率（非货币因素，实际因素）
 
-\par 投资流量（企业厂房、设备、存货等）导致的资金需求是利率的减函数
-\par 储蓄流量（家庭为主）导致的资金供给是利率的增函数
+\begin{enumerate}[1.]
+    \item 投资流量（企业厂房、设备、存货等）导致的资金需求是利率的减函数
+    \item 储蓄流量（家庭为主）导致的资金供给是利率的增函数
+\end{enumerate}
 
 \subsubsection{流动性偏好理论}
 
 凯恩斯：利率与流动性偏好负相关（货币因素，短期）
 
-M垂直，外生变量
-\par 利率取决于货币供求数量的对比
-\par 货币当局决定货币供给
-\par 人们的流动性偏好决定货币需求
+\begin{enumerate}[1.]
+    \item M垂直，外生变量
+    \item 利率取决于货币供求数量的对比
+    \item 货币当局决定货币供给
+    \item 人们的流动性偏好决定货币需求
+\end{enumerate}
+
 
 
 \subsection{IS-LM模型}
@@ -4324,7 +4489,6 @@ M垂直，外生变量
 \subsubsection{微观}
 
 
-\par * 时间+风险
 \par * 解释经验事实：
 \par A 不同期限债券的利率随时间变化一起波动
 \par B 短期利率低，收益率曲线更倾向于向上倾斜；如果短期利率高，收益率曲线可能向下倾斜
@@ -4476,20 +4640,36 @@ M垂直，外生变量
 
 
 汇率：一种货币用另一种货币表示的价格（exchange rate），又称汇价
-> ⑴	对内价值：国内物价；对内价值是对外价值的基础  
-> ⑵	对外价值：汇率  
->   ① 直接标价法：以一定单位的外币为标准计算应付多少本币来表示汇率（direct quotation）  
->   ② 间接标价法：以一定数量的本币单位为基准，计算应收多少外币表示汇率（indirect quotation）
-> ▪直接标价法与间接标价法互为倒数
+
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item 对内价值：国内物价；对内价值是对外价值的基础  
+        \item 对外价值：汇率  
+        \begin{enumerate}[a.]
+            \item 直接标价法：以一定单位的外币为标准计算应付多少本币来表示汇率（direct quotation）  
+            \item 间接标价法：以一定数量的本币单位为基准，计算应收多少外币表示汇率（indirect quotation）
+            \par 直接标价法与间接标价法互为倒数
+        \end{enumerate}
+    \end{enumerate}
+}
+
 
 
 外汇（foreign exchange）：
-> ⑴ 广义：以外币标示的各种金融资产。包括外币、外币有价证券（如外国政府的债券、信用级别比较高的外国公司债券和股票）、外币支付凭证等一切可用于国际结算的债券  
-> ⑵ 狭义：以外币标示的、可用于国际结算的支付手段  
-> ▪ 条件：  
-> ① 可以自由输出入国境  
-> ② 可以自由兑换、买卖  
-> ③ 在国际支付中被广泛接受
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item 广义：以外币标示的各种金融资产。包括外币、外币有价证券（如外国政府的债券、信用级别比较高的外国公司债券和股票）、外币支付凭证等一切可用于国际结算的债券  
+        \item 狭义：以外币标示的、可用于国际结算的支付手段  
+        \item 条件： 
+        \begin{enumerate}[a.]
+            \item 可以自由输出入国境  
+            \item 可以自由兑换、买卖  
+            \item 在国际支付中被广泛接受
+        \end{enumerate} 
+    \end{enumerate}
+}
+
+
 
 
 
@@ -4609,38 +4789,51 @@ M垂直，外生变量
 
 直接标价法
 
-> 人民币汇率四大决定因素：货币政策 + 经济增长前景 + 资本流动管制 + 中间价形成机制 → 名义利差 + 经济增长与长期汇率预期 + 国际收支结构 + 中间价与短期预期粘性 → 即期汇率   
-> Asset Pricing-Carry Trade（主流）
+
+\informationBox{
+    \par * 人民币汇率四大决定因素：货币政策 + 经济增长前景 + 资本流动管制 + 中间价形成机制 → 名义利差 + 经济增长与长期汇率预期 + 国际收支结构 + 中间价与短期预期粘性 → 即期汇率   
+    \par * Asset Pricing-Carry Trade（主流）
+}
+
 
 
 \subsection{购买力平价理论}
 
-> （purchasing power parity，PPP）  
-> 适用：长期，高通胀趋势性的商品市场
+（purchasing power parity，PPP） 
 
-
-（一）假设
-
-	
-> 1. 完全的资本流动，无交易成本  
-> 2. Y 不变  
-> 3. 长期价格灵活性（P 可变）  
-> 4. 充分就业（汇率和价格调整的结果）（长期平均消费倾向不变）  
-> 5. e可变  
+\informationBox{
+    * 适用：长期，高通胀趋势性的商品市场
+}
 
 
 
+\subsubsection{假设}
 
-（二）模型
+\begin{enumerate}[1.]
+    \item 完全的资本流动，无交易成本  
+    \item $Y$不变  
+    \item 长期价格灵活性（$P$可变）  
+    \item 充分就业（汇率和价格调整的结果）（长期平均消费倾向不变）  
+    \item $e$可变  
+\end{enumerate}
 
 
-1、绝对购买力平价（absolute purchasing power parity）
-$$
-E=\frac{P}{P^\ast}
-=\frac{E·P*}{P}·\frac{P}{P*}=e⋅\frac{P}{P*}
-$$
 
-+货币分析法（monetary approach）
+
+
+\subsubsection{模型}
+
+\paragraph{绝对购买力平价}
+
+（absolute purchasing power parity）
+
+\begin{gather*}
+    E=\frac{P}{P^\ast}
+    =\frac{E·P*}{P}·\frac{P}{P*}=e⋅\frac{P}{P*}  
+\end{gather*}
+
+
+货币分析法（monetary approach）
 
 \begin{align*}
 E
@@ -4652,94 +4845,110 @@ E
 &\approx (\dot{M_s}-\dot{M_s}^*)+\alpha(\dot{Y}^*-\dot{Y})+\beta(\dot{R}-\dot{R}^*)
 \end{align*}
 
-> $E$：名义汇率  
-> $P$、$P^∗$：国内物价水平、外国物价水平（以本国货币衡量）  
-> $MD$：名义货币需求  
-> $L(R,Y)$：实际货币需求  
-> ${\dot{M}}_s^\ast$、${\dot{M}}_s$：外国与本国的货币供应量变动率  
-> $\dot{Y}^∗$、$\dot{Y}$：外国与本国的国民收入变动率  
-> $R$、$R^{∗}$：外国和本国的利率变动率
+\par $E$：名义汇率  
+\par $P$、$P^∗$：国内物价水平、外国物价水平（以本国货币衡量）  
+\par $MD$：名义货币需求  
+\par $L(R,Y)$：实际货币需求  
+\par ${\dot{M}}_s^\ast$、${\dot{M}}_s$：外国与本国的货币供应量变动率  
+\par $\dot{Y}^∗$、$\dot{Y}$：外国与本国的国民收入变动率  
+\par $R$、$R^{∗}$：外国和本国的利率变动率
 
 
-2、相对购买力平价（relative purchasing power parity）
-> 变动，通过价格传导
-$$ 
-M_S\uparrow\rightarrow Y\downarrow\rightarrow i\downarrow\rightarrow P\uparrow\rightarrow E\uparrow 
-$$
+\paragraph{相对购买力平价}
+
+（relative purchasing power parity）：通过价格传导
+
+\begin{gather*}
+    M_S\uparrow\rightarrow Y\downarrow\rightarrow i\downarrow\rightarrow P\uparrow\rightarrow E\uparrow 
+\end{gather*}
+
 实际汇率不变：
-$$
-\left.\begin{matrix}
-  \frac{E_1}{E_0}-1 = \frac{P_1/P_0}{P_1^*/P_0^*} -1=\frac{1+\pi}{1+\pi^{*}} \\
-或 lnE=ln(P/P^{*}) = lnP-lnP^{*}
-\end{matrix}\right\}
-→\frac{E_1-E_0}{E_0} = \pi-\pi^{*}
-$$
+\begin{gather*}
+    \left.\begin{matrix}
+        \frac{E_1}{E_0}-1 = \frac{P_1/P_0}{P_1^*/P_0^*} -1=\frac{1+\pi}{1+\pi^{*}} \\
+    \text{或} lnE=ln(P/P^{*}) = lnP-lnP^{*}
+      \end{matrix}\right\}
+      →\frac{E_1-E_0}{E_0} = \pi-\pi^{*}
+\end{gather*}
+
 
 实际汇率变化：
-$$
-  \ln{E}=\ln{\left(e\frac{P}{P^\ast}\right)}=\ln{e}+\ln{P}-\ln{P^\ast}\Rightarrow\frac{E_1-E_0}{E_0}=\frac{e_1-e_0}{e_0}+\left(\pi-\pi^\ast\right)
-$$
-> $E_0$：基期汇率  
-> $P_0$、$P_0^∗$：国内、外国基期价格水平  
-> $P_1$、$P_1^∗$：国内、外国$E$时期后的价格水平   
-> $e$：实际汇率（$e < 1$，本国商品竞争力弱）
+\begin{gather*}
+    \ln{E}=\ln{\left(e\frac{P}{P^\ast}\right)}=\ln{e}+\ln{P}-\ln{P^\ast}\Rightarrow\frac{E_1-E_0}{E_0}=\frac{e_1-e_0}{e_0}+\left(\pi-\pi^\ast\right)
+\end{gather*}
+\par $E_0$：基期汇率  
+\par $P_0$、$P_0^∗$：国内、外国基期价格水平  
+\par $P_1$、$P_1^∗$：国内、外国$E$时期后的价格水平   
+\par $e$：实际汇率（$e < 1$，本国商品竞争力弱）
 
 
-（三）理论
+\subsubsection{理论}
 
 
 
 \subsection{利率平价理论}
 
-> （interest rate parity）  
-> 适用：短期波动性的货币市场 + 外汇市场
+（interest rate parity）  
 
-
-（一）假设
-
-> 完全的资本流动，无交易成本  
-> Y 可变短期价格刚性（P 不变）  
-> 存在失业、资源闲置（短期边际消费倾向递减）  
-> $\pi^e$不变  
-
-
-（二）模型
-
-1、名义利率平价
-> 思想：用相同货币衡量的任意两种货币存款的预期收益率相同
-$$
-R = R^\ast+\frac{E^e-E}{E}+\rho\left(B-A\right) \\
-R = R^\ast+\frac{f-s}{s}+\rho\left(B-A\right)
-$$
-> $i^\ast$、$i$：国外利率、国内利率  
-> $E^e$：预期汇率（uncovered，UCIP 无抛补、未套期保值）  
-> $f$：远期汇率（远期合约 covered，CIP，抛补、套期保值）  
-> $s$：即期汇率  
-> $\rho$：风险升水（与$B−A$正相关；政府挤出投资: $B↑/A↓→\rho ↑ →r↑→I↓$ ）（若$\rho =0$，本币债券和外币债券完全替代；否则不可完全替代）  
-> $B$：本国政府债券存量   
-> $A$：央行持有的国内资产加息国家货币在远期外汇市场上贬值，即期升值
+\informationBox{
+    * 适用：短期波动性的货币市场 + 外汇市场
+}
 
 
 
-2、实际利率平价
-> 通过资本流动、收益率传导
+\subsubsection{假设}
+
+\begin{enumerate}[1.]
+    \item 完全的资本流动，无交易成本  
+    \item Y 可变短期价格刚性（P 不变）  
+    \item 存在失业、资源闲置（短期边际消费倾向递减）  
+    \item $\pi^e$不变 
+\end{enumerate}
+ 
+
+
+\subsubsection{模型}
+
+\paragraph{名义利率平价}
+
+用相同货币衡量的任意两种货币存款的预期收益率相同
+
+\begin{gather*}
+    R = R^\ast+\frac{E^e-E}{E}+\rho\left(B-A\right) \\
+    R = R^\ast+\frac{f-s}{s}+\rho\left(B-A\right) 
+\end{gather*}
+\par $i^\ast$、$i$：国外利率、国内利率  
+\par $E^e$：预期汇率（uncovered，UCIP 无抛补、未套期保值）  
+\par $f$：远期汇率（远期合约 covered，CIP，抛补、套期保值）  
+\par $s$：即期汇率  
+\par $\rho$：风险升水（与$B−A$正相关；政府挤出投资: $B↑/A↓→\rho ↑ →r↑→I↓$ ）（若$\rho =0$，本币债券和外币债券完全替代；否则不可完全替代）  
+\par $B$：本国政府债券存量   
+\par $A$：央行持有的国内资产加息国家货币在远期外汇市场上贬值，即期升值
+
+
+
+\paragraph{实际利率平价}
+
+通过资本流动、收益率传导
 
 实际汇率不变（引入费雪效应）：
-$$
-  r^e-r^{\ast^e}=\left(R-\pi^e\right)-\left(R^\ast-\pi^{e^\ast}\right)=\left(R-R^\ast\right)-\left(\pi^e-\pi^{e^\ast}\right)=\frac{E^e-E}{E}-\left(\pi^e-\pi^{e^\ast}\right)
-$$
+\begin{gather*}
+    r^e-r^{\ast^e}=\left(R-\pi^e\right)-\left(R^\ast-\pi^{e^\ast}\right)=\left(R-R^\ast\right)-\left(\pi^e-\pi^{e^\ast}\right)=\frac{E^e-E}{E}-\left(\pi^e-\pi^{e^\ast}\right)
+\end{gather*}
+
 
 实际汇率变化：
-$$
-  =\left[\frac{e^e-e}{e}+\left(\pi^e-\pi^{e^\ast}\right)\right]-\left(\pi^e-\pi^{e^\ast}\right)=\frac{e^e-e}{e}
-$$
+\begin{gather*}
+    =\left[\frac{e^e-e}{e}+\left(\pi^e-\pi^{e^\ast}\right)\right]-\left(\pi^e-\pi^{e^\ast}\right)=\frac{e^e-e}{e} 
+\end{gather*}
+
 
 当市场预期符合相对购买力平价时：
-$$
-  e^e=e,\ r^e=r^{\ast^e},\ R-R^\ast=\pi^e-\pi^{e^\ast},\ \frac{E^e-E}{E}=\pi^e-\pi^{e^\ast}=r-r^\ast
-$$
+\begin{gather*}
+    e^e=e,\ r^e=r^{\ast^e},\ R-R^\ast=\pi^e-\pi^{e^\ast},\ \frac{E^e-E}{E}=\pi^e-\pi^{e^\ast}=r-r^\ast
+\end{gather*}
 
-（三）理论
+\subsubsection{理论}
 
 暂时性$M_S$↑→r ↓ →i ↓（流动性偏好理论）→E ↑
 
@@ -4758,52 +4967,45 @@ $$
 
 
 
-
-> 条件：  
-> ① 进出口商品的需求弹性、出口商品的供给弹性  
-> ② 各国经济体制、市场条件、市场运行机制  
-> ③ 对外开放程度   
-> ④ 汇率制度
-
-
-一、自身	
-
-（一）风险	
-
-> 1、交易汇率风险  
-> ① 进出口贸易：收付外汇损失  
-> 2、折算汇率风险（会计风险）  
-> ① 外汇储备：外汇资产贬值损失  
-> ② 外债：清偿外债损失  
-> 3、经济汇率风险（经营风险）  
-> ① 长久汇率扭曲，导致经济长期衰退，影响经济结构
-
-措施：
-> ① 进口支付尽量使用软货币（有贬值趋势或压力的货币）  
-> ② 出口收入外汇尽量选择硬货币  
-> ③ 运用远期外汇买卖进行套期保值
-
-二、其他	
-（一）进出口
-> ▪ 假设：进口需求和出口供给有价格弹性  
-> ① 本币贬值，本国商品国际竞争力提高，促进出口、抑制进口    
-> ② 本币升值，利于进口，不利出口  
-
-
-（二）物价	
-> ① 进口商品和原材料：本币（名义）汇率贬值，进口商品国内价上涨  
-> ② 出口商品：本币（名义）汇率贬值＋出口商品供给弹性小→国内抢购此商品（收购）→抬高国内价格   
-> 汇率贬值→国外需求增加＋国内需求不变→总需求增加→价格上涨  
-> ▪ 对物价总指数的影响，取决于在GNP中所占的比重
-
-（三）资本流动	
-
-> 本币对外贬值→持有本币计值金融资产意愿降低，相对吸引力下降→转兑成外汇，资本外流→外汇需求增加→本币汇率进一步下跌  
-> ▪ 对长期资本流动影响较小
-
-（四）金融资产选择	
-
-> 本币汇率下降，持有更多本币资产
+\begin{enumerate}[1.]
+    \item 风险
+          \begin{enumerate}[(1)]
+              \item 分类
+                    \begin{enumerate}[a.]
+                        \item 交易汇率风险：进出口贸易有收付外汇损失
+                        \item 折算汇率风险（会计风险）：外汇资产贬值损失；清偿外债损失
+                        \item 经济汇率风险（经营风险）：长久汇率扭曲，导致经济长期衰退，影响经济结构
+                    \end{enumerate}
+              \item 措施：
+                    \begin{enumerate}[a.]
+                        \item 进口支付尽量使用软货币（有贬值趋势或压力的货币）
+                        \item 出口收入外汇尽量选择硬货币
+                        \item 运用远期外汇买卖进行套期保值
+                    \end{enumerate}
+          \end{enumerate}
+    \item 进出口
+          \begin{enumerate}[(1)]
+              \item 假设：进口需求和出口供给有价格弹性
+              \item 本币贬值，本国商品国际竞争力提高，促进出口、抑制进口
+              \item 本币升值，利于进口，不利出口
+          \end{enumerate}
+    \item 物价
+          \begin{enumerate}[(1)]
+              \item 进口商品和原材料：本币（名义）汇率贬值，进口商品国内价上涨
+              \item 出口商品：本币（名义）汇率贬值＋出口商品供给弹性小→国内抢购此商品（收购）→抬高国内价格
+                    \par 汇率贬值→国外需求增加＋国内需求不变→总需求增加→价格上涨
+              \item 对物价总指数的影响，取决于在GNP中所占的比重
+          \end{enumerate}
+    \item 资本流动
+          \begin{enumerate}[(1)]
+              \item 本币对外贬值→持有本币计值金融资产意愿降低，相对吸引力下降→转兑成外汇，资本外流→外汇需求增加→本币汇率进一步下跌
+              \item 对长期资本流动影响较小
+          \end{enumerate}
+    \item 金融资产选择
+          \begin{enumerate}[(1)]
+              \item 本币汇率下降，持有更多本币资产
+          \end{enumerate}
+\end{enumerate}
 
 
 
@@ -4816,6 +5018,21 @@ $$
 
 
 
+
+
+
+
+
+
+
+\subsection{条件}
+
+\begin{enumerate}[1.]
+    \item 进出口商品的需求弹性、出口商品的供给弹性  
+    \item 各国经济体制、市场条件、市场运行机制  
+    \item 对外开放程度   
+    \item 汇率制度
+\end{enumerate}
 
 
 
@@ -4845,39 +5062,52 @@ $$
 
 \subsubsection{不可能三角}
 
-> 定义：一国不可能同时拥有自由的资本流动、固定汇率和独立的货币政策（impossible trinity），又称国际金融三角困境（trilemma of international finance）
+定义：一国不可能同时拥有自由的资本流动、固定汇率和独立的货币政策（impossible trinity），又称国际金融三角困境（trilemma of international finance）
 
 
-> 固定汇率制，两地区利率应趋同（美国和香港）
+
 
 
 \subsection{分类}
 
 \subsubsection{固定汇率制}
 
-1、定义
-> 一国的汇率基本固定，汇率的波动幅度被限制在较小的范围内，各国中央银行有义务维持本币币值基本稳定的汇率制度（fixed exchange rate regime）  
-> 经济开放程度⾼、经济规模⼩，或贸易商品结构和地区分布⽐较集中的国家，⼀般倾向于实⾏固定汇率制。
-
-2、分类
-> 1、No separate legal tender  
-> (1)美元化：本国货币被其他国家货币替代（Dollarization）  
-> 国家体量小，对于美元依赖高；通胀严重  
-> (2)货币联盟汇率：本国货币与主要贸易伙伴的货币保持固定比价，而对其他经济体的货币随该货币锚而浮动  
-> 2、货币局制度（currency board）  
-> 经济体货币与另一货币保持强固定  
-> 如香港  
-> 不能成为最后贷款人
 
 
-3、优点
-> 限制政府任意的宏观经济政策
 
-4、缺点
-> 政策难协调：  
-> ①货币政策：balance of payments crisis：固定汇率制下外国资产不足以支持维持固定汇率制，看好预期改变，为了阻止资本外逃，央行大幅提高利率，但会冲击国内经济  
-> ②财政政策：米德冲突：失业+经常账户盈余=财政政策扩张；失业+赤字=？；缺人+盈余=？；缺人+赤字=紧缩
-
+\begin{enumerate}[1.]
+    \item 定义
+          \begin{enumerate}[(1)]
+              \item 一国的汇率基本固定，汇率的波动幅度被限制在较小的范围内，各国中央银行有义务维持本币币值基本稳定的汇率制度（fixed exchange rate regime）
+              \item 经济开放程度⾼、经济规模⼩，或贸易商品结构和地区分布⽐较集中的国家，⼀般倾向于实⾏固定汇率制。
+          \end{enumerate}
+    \item 分类
+          \begin{enumerate}[(1)]
+              \item No separate legal tender
+                    \begin{enumerate}[a.]
+                        \item 美元化：本国货币被其他国家货币替代（Dollarization）
+                              \begin{enumerate}[(a)]
+                                  \item 国家体量小，对于美元依赖高；通胀严重
+                              \end{enumerate}
+                        \item 货币联盟汇率：本国货币与主要贸易伙伴的货币保持固定比价，而对其他经济体的货币随该货币锚而浮动
+                    \end{enumerate}
+              \item 货币局制度（currency board）
+                    \begin{enumerate}[a.]
+                        \item 经济体货币与另一货币保持强固定，固定汇率制两地区利率应趋同（美国和香港）
+                        \item 如香港
+                        \item 不能成为最后贷款人
+                    \end{enumerate}
+          \end{enumerate}
+    \item 优点
+          \begin{enumerate}[(1)]
+              \item 限制政府任意的宏观经济政策
+          \end{enumerate}
+    \item 缺点：政策难协调
+          \begin{enumerate}[(1)]
+              \item 货币政策：balance of payments crisis：固定汇率制下外国资产不足以支持维持固定汇率制，看好预期改变，为了阻止资本外逃，央行大幅提高利率，但会冲击国内经济
+              \item 财政政策：米德冲突：失业+经常账户盈余=财政政策扩张；失业+赤字=？；缺人+盈余=？；缺人+赤字=紧缩
+          \end{enumerate}
+\end{enumerate}
 
 
 \subsubsection{浮动汇率制}
@@ -4915,17 +5145,20 @@ $$
 
 \subsubsection{中间汇率制}
 
-1、定义
 
-2、分类
-> (1) 传统盯住（Conventional Peg） 
-> (2) 波幅钉住（Peg with bands） 
-> (3) 爬行钉住（Crawling Peg） 
-> 波幅爬行钉住
+\begin{enumerate}[1.]
+    \item 定义
+    \item 分类
+          \begin{enumerate}[(1)]
+              \item 传统盯住（Conventional Peg）
+              \item 波幅钉住（Peg with bands）
+              \item 爬行钉住（Crawling Peg）
+              \item 波幅爬行钉住
+          \end{enumerate}
+    \item 优点
+    \item 缺点
+\end{enumerate}
 
-3、优点
-
-4、缺点
 
 
 
@@ -5825,9 +6058,11 @@ IS-LM模型：新古典综合学派
 \end{gather*}
 
 
-产品市场
-购买力平价
-D=Y=C(Y－T)+I(r*)+G+CA(eP*/P)=D(eP*/P,Y－T,I,G)
+产品市场：购买力平价
+\begin{gather*}
+    D=Y=C(Y-T)+I(r^*)+G+CA(eP^*/P)=D(eP^*/P,Y-T,I,G)
+\end{gather*}
+
 
 \begin{tikzpicture}
     %%%%%%%%%  凯恩斯交叉  %%%%%%%%%
@@ -5907,7 +6142,8 @@ D=Y=C(Y－T)+I(r*)+G+CA(eP*/P)=D(eP*/P,Y－T,I,G)
 
 \clearpage
 \subsubsection{货币市场（LM）}
-流动性偏好理论
+
+资产分析法（流动性偏好理论）
 \begin{gather*}
     \left(\frac{M}{P}\right)^s= \frac{\overline{M}}{\overline{P}} ={\left(\frac{M}{P}\right)}^d=L(i,Y) 
 \end{gather*}
@@ -5957,17 +6193,34 @@ D=Y=C(Y－T)+I(r*)+G+CA(eP*/P)=D(eP*/P,Y－T,I,G)
 
 \clearpage
 \subsubsection{国际市场BP}
-外汇市场
-$$
-NX(e)=CF(r)
-$$
-货币市场：资产分析法
-$M/P=L(r,Y)$
-外汇市场：货币分析法（汇率：利率平价理论）
-$r-r^*=(f-e)/e$
 
-$r$：实际利率
-$r^*$：世界利率（world interest rate）
+
+
+
+外汇市场：货币分析法（汇率：利率平价理论）
+\begin{gather*}
+    r-r^*=(f-e)/e\\
+    NX(e)=CF(r)
+\end{gather*}
+\par $r$：实际利率
+\par $r^*$：世界利率（world interest rate）
+
+
+
+\paragraph{理论：利率平价理论}
+
+
+
+
+
+
+
+
+
+
+\paragraph{模型}
+
+
 
 {\noindent
 \begin{tikzpicture}
@@ -6199,43 +6452,40 @@ $r^*$：世界利率（world interest rate）
     \begin{enumerate}[(1)]
         \item 固定汇率制（货币政策无效）
         \begin{enumerate}[a.]
-            \item IS*右移：财政政策（ $G↑/T↓$ ），贸易政策（限制进口配额+关税）
+            \item IS*右移：财政政策（ $G\uparrow /T\downarrow $ ），贸易政策（限制进口配额+关税）
             \begin{gather*}
-                \left.\begin{matrix} A(\overline{Y})\\ A(\overline{Y})+G\uparrow/T\downarrow \end{matrix}\right\} \Rightarrow A(LM^*右移\Rightarrow Y\uparrow)\Rightarrow B(\overline{Y}) 
+                \left.\begin{matrix} A(\overline{Y})\\ A(\overline{Y})+G\uparrow/T\downarrow \end{matrix}\right\} \Rightarrow A(LM^*\text{右移}\Rightarrow Y\uparrow)\Rightarrow B(\overline{Y}) 
             \end{gather*}
             \item LM*右移：货币政策（$ M_s\uparrow$ ）
             \begin{gather*}
-                A(\overline{Y})+M_s \uparrow \Rightarrow \left\{\begin{matrix} B(e↓)\Rightarrow A(套利\Rightarrow LM^*左移\Rightarrow \overline{Y})\\ B(Y↑+e↓\Rightarrow EX↑) \end{matrix}\right.
+                A(\overline{Y})+M_s \uparrow \Rightarrow 
+                \left\{\begin{matrix} 
+                    B(e\uparrow \Rightarrow 套利\Rightarrow LM^*左移\Rightarrow Y\downarrow)\Rightarrow A(\overline{Y})\\ 
+                    B(Y↑+e↓\Rightarrow EX↑) \Rightarrow B(\overline{Y})
+                \end{matrix}\right.
             \end{gather*}
         \end{enumerate}
         \item 浮动汇率制（财政政策无效）
         \begin{enumerate}[a.]
             \item IS*右移：财政政策（ $G↑/T↓$ ），贸易政策（限制进口配额+关税）
             \begin{gather*}
-                A(\overline{Y})\Rightarrow \left\{\begin{matrix} G↑/T↓\Rightarrow NX↓\\ NX↓ \end{matrix}\right\} \Rightarrow B(\overline{Y}+e↑) 
+                A(\overline{Y})
+                \Rightarrow \begin{Bmatrix} 
+                    G\uparrow/T\downarrow
+                    \Rightarrow e\downarrow
+                    \Rightarrow NX\downarrow \\
+                    \text{贸易限制}\Rightarrow NX\downarrow 
+            \end{Bmatrix}
+            \Rightarrow A(\overline{Y}) 
             \end{gather*}
             \item LM*右移：货币政策（ $M_s\uparrow$ ）
             \begin{gather*}
-                A(\overline{Y})+M_s\uparrow \Rightarrow B(资本流出\Rightarrow e\downarrow\Rightarrow NX\uparrow\Rightarrow Y\uparrow) \Rightarrow A(P\uparrow\Rightarrow M/P\downarrow\Rightarrow Y\downarrow) \Rightarrow A(\overline{Y})  
+                A(\overline{Y})+M_s\uparrow \Rightarrow \text{资本流出}\Rightarrow e\uparrow\Rightarrow NX\uparrow\Rightarrow Y\uparrow \Rightarrow B(\overline{Y})  
             \end{gather*}
         \end{enumerate}
     \end{enumerate}
     \item DD-AA模型：资本完全流动，大型经济体
     \begin{enumerate}[(1)]
-        \item 浮动汇率制
-        \begin{enumerate}[a.]
-            \item DD右移：财政政策（$G\uparrow,T\downarrow$）
-            \begin{gather*}
-                A(Ȳ)→B(Y↑+r↑→CF↓→e↓→NX↓)→C(Y＞Ȳ→\pi^e \uparrow\rightarrow e  ͤ↑→AA左移→Ȳ+e↓)
-                G↑/T↓→IS右移→Y↑+r↑→CF↓→e↑→NX↓
-            \end{gather*}
-            \item AA右移：货币政策（$M_s\uparrow$）
-            \begin{gather*}
-                A(Ȳ)→B(Y↑+r↓→CF↑→e↑→NX↑)→C(P↑→DD左移+AA左移→Ȳ+e↓)
-                最终的e要高于最初的e
-                Ms↑→LM下移→Y↑+r↓→CF↑→e↑→NX↑
-            \end{gather*}
-        \end{enumerate}    
         \item 固定汇率制
         \begin{enumerate}[a.]
             \item P↑→X－M↓→D↓→Y↓（DD左移）
@@ -6244,6 +6494,39 @@ $r^*$：世界利率（world interest rate）
             \item I↑→D↑→Y↑
             \item G↑→D↑→Y↑
         \end{enumerate}
+        \item 浮动汇率制
+        \begin{enumerate}[a.]
+            \item DD右移：财政政策（$G\uparrow,T\downarrow$）
+            \begin{align*}
+                A(\overline{Y})+G\uparrow/T\downarrow
+                &\Rightarrow 
+                    B(Y\uparrow+r\uparrow
+                    \Rightarrow CF\downarrow
+                    \Rightarrow e\downarrow
+                    \Rightarrow NX\downarrow) \\ 
+               & \Rightarrow 
+                    C(Y>\overline{Y}
+                    \Rightarrow\pi^e \uparrow
+                    \Rightarrow e^e\uparrow
+                    \Rightarrow AA\text{左移}
+                    \Rightarrow e\downarrow
+                    \Rightarrow A(\overline{Y})
+            \end{align*}
+            \item AA右移：货币政策（$M_s\uparrow$）
+            \begin{align*}
+                A(\overline{Y})
+                &\Rightarrow 
+                    B(Y\uparrow+r↓
+                    \Rightarrow CF\uparrow
+                    \Rightarrow e\uparrow
+                    \Rightarrow NX\uparrow )
+                \\&\Rightarrow 
+                    C(P\uparrow
+                    \Rightarrow DD\text{左移}+AA\text{左移}
+                    \Rightarrow e\downarrow
+                    \Rightarrow A(\overline{Y})+B(e)>A(e)
+            \end{align*}
+        \end{enumerate}    
     \end{enumerate}
 \end{enumerate}
 
