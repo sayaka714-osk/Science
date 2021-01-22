@@ -160,7 +160,7 @@
             \text{完全竞争市场}\mindmap{
                 \text{静态分析}\mindmap{
                     \text{长期}\mindmap{
-                        \text{\hyperref[chapter:古典AD-AS模型]{古典AD-AS模型}}\\
+                        \text{古典AD-AS模型}\\
                         \text{剩余价值理论}
                     }
                     \text{极短期：凯恩斯AD-AS模型}\mindmap{
@@ -2564,13 +2564,89 @@ $\frac{p}{1-p}$ ：几率比（odds ratio），意味着y=1的概率是y=0概率
 
 
 
+\subsubsection{利润率}
+
+
+（一）计算
+
+$$
+利润率=\frac{利润额}{预付资本}
+=\frac{m}{C}
+=\frac{m}{v+c}
+$$
+
+$C$：全部预付资本  
+成本：为生产商品和实现资本价值增殖而发生的资本耗费
+
+利润：商品价值扣除生产成本后的余额
+
+（二）影响因素
+
+1、高低
+
+① 劳动：剩余劳动的活劳动占比  
+② 资本：资本的节省，资本运动的快慢  
+③ 市场：竞争，需求形势；经营者的市场经营能力和市场拓展能力  
+
+2、变动（等式右边分子分母同时除以v）
+
+① 剩余价值率  
+② 资本的有机构成：由技术资本构成决定并反映资本技术构成变化的资本价值构成  
+不变资本和可变资本的比例（部门）  
+③ 资本周转速度  
+④ 不变资本的节省状况
+
+3、
+
+① 成本：不变资本节省，活劳动占比大  
+② 销量：数量，速度；需求，销售能力
 
 
 
+\subsubsection{剩余价值率}
+关系：  
+① 利润额＝剩余价值额，利润率≠剩余价值率  
+② 利润率表示劳动占比，剩余价值率表示剥削率
 
+（一）计算
 
+1、物化劳动表示法：
 
+$$
+m'=\frac{剩余价值}{必要劳动价值}
+=\frac{剩余价值}{可变资本}
+= \frac{m}{v}
+$$
 
+2、活劳动表示法：
+$$
+m'=\frac{剩余劳动时间}{必要劳动时间}
+$$
+> 剩余价值：活劳动在剩余劳动时间里创造的价值  
+> 必要劳动：劳动者用以实现劳动再生产而付出的劳动  
+> 剩余劳动：一定时期内劳动者的劳动中超出必要劳动的部分
+
+（二）生产方法
+
+① 方法：延长剩余劳动时间  
+② 本质：剥削，获取剩余价值  
+③ 绝对剩余价值是资本主义剥削的一般基础，是相对剩余价值的起点
+
+1、绝对剩余价值生产  
+- 方法：生产技术不变
+  - ① 延长工作日
+  - ② 提高劳动强度  
+- 结果  
+① 绝对剩余价值：在必要劳动时间不变的条件下，通过延长工作日长度而生产的剩余价值
+
+2、相对剩余价值生产  
+- 方法：生产技术不断变革
+    - ①提高社会生产率
+    - ②降低生活资料价值
+    - ③降低劳动力的价值  
+- 结果：社会劳动生产率提高  
+    - ① 超额剩余价值：企业由于提高劳动生产率而使商品个别价值低于社会价值的差额（单个企业）  
+    - ② 相对剩余价值：在工作日长度不变的条件下，通过缩短必要劳动时间来相应延长剩余劳动时间的剩余价值（行业）
 
 
 
@@ -4849,9 +4925,6 @@ $$
 
 
 
-\chapter{古典AD-AS模型}\label{chapter:古典AD-AS模型}
-
-
 \chapter{剩余价值理论}
 
 
@@ -5601,10 +5674,10 @@ $$
 
 
 
-\chapter{凯恩斯AD-AS模型}\label{chapter:凯恩斯AD-AS模型}
+\chapter{AD-AS模型}\label{chapter:AD-AS模型}
 
 
-\section{IS-LM-BP模型}
+\section{AD：IS-LM-BP模型}
 
 IS-LM模型：新古典综合学派
 
@@ -5701,23 +5774,27 @@ IS-LM模型：新古典综合学派
 \end{gather*}
 
 
+产品市场
+购买力平价
+D=Y=C(Y－T)+I(r*)+G+CA(eP*/P)=D(eP*/P,Y－T,I,G)
+
 \begin{tikzpicture}
     %%%%%%%%%  凯恩斯交叉  %%%%%%%%%
-    \draw[eaxis] (7,7)--(12,7) node[below] {\small 收入，产出，$Y$};
-    \draw[eaxis] (7,7)--(7,12) node[above] {\small 支出};
+    \draw[eaxis] (7,7)--(12,7) node[below] {\footnotesize 收入，产出，$Y$};
+    \draw[eaxis] (7,7)--(7,12) node[above] {\footnotesize 支出};
     \draw[elegant,black,domain=7:11.5] plot(\x,{
         \x
-        }) node[right]{\small 实际支出};
+        }) node[right]{\footnotesize 实际支出};
     \draw[elegant,black,domain=7:11.5] plot(\x,{
         0.3*(\x-7)+9.1
-        }) node[right]{\small$PE_1$};
+        }) node[right]{\footnotesize $PE_1$};
     \draw[elegant,black,domain=7:11.5] plot(\x,{
         0.3*(\x-7)+8.05
-        }) node[right]{\small$PE_2$};
+        }) node[right]{\footnotesize $PE_2$};
     \draw[decorate,decoration={brace,raise=3pt}] (7,8.05)--(7,9.1);
-    \draw[dashed] (6.8,8.5)--(6.8,8.5) node[left]{\small$\Delta NX$};
-    \draw[dashed] (8.5,8.5)--(8.5,7) node[below]{\small$Y_2$};
-    \draw[dashed] (10,10)--(10,7) node[below]{\small$Y_1$};
+    \draw[dashed] (6.8,8.5)--(6.8,8.5) node[left]{\footnotesize $\Delta NX$};
+    \draw[dashed] (8.5,8.5)--(8.5,7) node[below]{\footnotesize $Y_2$};
+    \draw[dashed] (10,10)--(10,7) node[below]{\footnotesize $Y_1$};
     \draw[dashed] (9.25,7)--(9.25,7) node[below]{$\leftarrow $};
     \draw (8,8.75)--(8,8.75) node[left]{$\downarrow$};
     \draw[dashed] (9.25,6)--(9.25,6) node[below]{(1) 凯恩斯交叉};
@@ -5727,39 +5804,41 @@ IS-LM模型：新古典综合学派
     \coordinate (b) at (7.025,7.025);
     \pic["$45^\circ $", draw=black, -, angle eccentricity=1.7, angle radius=0.5cm]
     {angle=a--o--b};
-    %%%%%%%%%  投资函数  %%%%%%%%%
-    \draw[eaxis] (0,0)--(5,0) node[below] {\small 净出口，$NX$};
-    \draw[eaxis] (0,0)--(0,5) node[above] {\small 汇率，$e$};
+    %%%%%%%%%  净出口曲线  %%%%%%%%%
+    \draw[eaxis] (0,0)--(5,0) node[below] {\footnotesize 净出口，$NX$};
+    \draw[eaxis] (0,0)--(0,5) node[above] {\footnotesize 汇率，$e$};
     \draw[elegant,black,domain=0.5:4.5] plot(\x,{
-        -2*\x^0.6+5.5
-        }) node[right]{\small$NX(e)$};
-    \draw[dashed] (1.5,-2*1.5^0.6+5.5)--(1.5,0) node[below]{\small$NX(e_2)$};
-    \draw[dashed] (3,-2*3^0.6+5.5)--(3,0) node[below]{\small$NX(e_1)$};
+        0.4*(\x)^1.5+1
+        }) node[right]{\footnotesize $NX(e)$};
+    \draw[dashed] (1.5,0.4*1.5^1.5+1)--(1.5,0) node[below]{\footnotesize $NX(e_2)$};
+    \draw[dashed] (3,0.4*3^1.5+1)--(3,0) node[below]{\footnotesize $NX(e_1)$};
     \draw[decorate,decoration={brace,raise=3pt}] (1.5,0)--(3,0);
-    \draw[dashed] (2.25,0.2)--(2.25,0.2) node[above]{\small$\Delta NX$};
-    \draw[dashed] (6.5,-2*1.5^0.6+5.5)--(0,-2*1.5^0.6+5.5) node[left]{\small$e_2$};
-    \draw[dashed] (6.5,-2*3^0.6+5.5)--(0,-2*3^0.6+5.5) node[left]{\small$e_1$};
+    \draw[dashed] (2.25,0.2)--(2.25,0.2) node[above]{\footnotesize $\Delta NX$};
+    \draw[dashed] (6.5,0.4*1.5^1.5+1)--(0,0.4*1.5^1.5+1) node[left]{\footnotesize $e_2$};
+    \draw[dashed] (6.5,0.4*3^1.5+1)--(0,0.4*3^1.5+1) node[left]{\footnotesize $e_1$};
     \draw (2.25,0)--(2.25,0) node[below]{$\leftarrow $};
-    \draw (0,2.3)--(0,2.3) node[left]{$\uparrow$};
+    \draw (0,2.4) node[left]{$\downarrow$};
     \draw (2.25,-1)--(2.25,-1) node[below]{(2) 净出口曲线};
     %%%%%%%%%  IS曲线  %%%%%%%%%
-    \draw[eaxis] (7,0)--(12,0) node[below] {\small 收入，产出，$Y$};
-    \draw[eaxis] (7,0)--(7,5) node[above] {\small 汇率，$e$};
+    \draw[eaxis] (7,0)--(12,0) node[below] {\footnotesize 收入，产出，$Y$};
+    \draw[eaxis] (7,0)--(7,5) node[above] {\footnotesize 汇率，$e$};
     \draw[elegant,black,domain=7.5:11.5] plot(\x,{
-                    -2*(\x-7)^0.6+5.5
-                }) node[right]{\small$IS$};
-    \draw[dashed] (8.5,6.5)--(8.5,0) node[below]{\small$Y_2$};
-    \draw[dashed] (10,6.5)--(10,0) node[below]{\small$Y_1$};
-    \draw[dashed] (8.5,-2*1.5^0.6+5.5)--(7,-2*1.5^0.6+5.5) node[left]{\small$e_2$};
-    \draw[dashed] (10,-2*3^0.6+5.5)--(7,-2*3^0.6+5.5) node[left]{\small$e_1$};
+        0.4*(\x-7)^1.5+1
+                }) node[right]{\footnotesize$IS^*$};
+    \draw[dashed] (8.5,6.5)--(8.5,0) node[below]{\footnotesize $Y_2$};
+    \draw[dashed] (10,6.5)--(10,0) node[below]{\footnotesize $Y_1$};
+    \draw[dashed] (8.5,0.4*1.5^1.5+1)--(7,0.4*1.5^1.5+1) node[left]{\footnotesize $e_2$};
+    \draw[dashed] (10,0.4*3^1.5+1)--(7,0.4*3^1.5+1) node[left]{\footnotesize $e_1$};
     \draw (9.25,0)--(9.25,0) node[below]{$\leftarrow $};
-    \draw (7,2.3)--(7,2.3) node[left]{$\uparrow$};
+    \draw (7,2.4) node[left]{$\downarrow$};
     \draw (9.25,-1)--(9.25,-1) node[below]{(3) $IS^*$曲线};
 \end{tikzpicture}
 
-间接标价法
+
+
+直接标价法
 \begin{gather*}
-    e\uparrow 
+    e\downarrow 
     \Rightarrow NX\downarrow
     \Rightarrow PE\downarrow
     \Rightarrow Y\downarrow
@@ -5802,7 +5881,7 @@ IS-LM模型：新古典综合学派
     \draw (0,2) node[left]{$\uparrow$};
     \draw (1.8,2) node[left]{$\rightarrow$};
     \draw (2.25,-1) node[below]{(1) 实际货币余额市场};
-    %%%%%%%%%  IS曲线  %%%%%%%%%
+    %%%%%%%%%  LM曲线  %%%%%%%%%
     \draw[eaxis] (7,0)--(12,0) node[below] {收入，产出，$Y$};
     \draw[eaxis] (7,0)--(7,5) node[above] {利率，$r$};
     \draw[elegant,black,domain=7.5:11.5] plot(\x,{
@@ -5827,7 +5906,17 @@ IS-LM模型：新古典综合学派
 
 \clearpage
 \subsubsection{国际市场BP}
+外汇市场
+$$
+NX(e)=CF(r)
+$$
+货币市场：资产分析法
+$M/P=L(r,Y)$
+外汇市场：货币分析法（汇率：利率平价理论）
+$r-r^*=(f-e)/e$
 
+$r$：实际利率
+$r^*$：世界利率（world interest rate）
 
 {\noindent
 \begin{tikzpicture}
@@ -5893,13 +5982,14 @@ IS-LM模型：新古典综合学派
 \clearpage
 \subsubsection{均衡}
 \begin{gather*}
-    IS: Y=C(Y-T)+I(i)+G+NX(e)\\ 
+    IS: Y=C(Y-T)+I(i)+G+NX(e)=C(Y-T)+I(i)+G+CF(r)\\ 
     LM: \frac{M}{P}=L(r,Y) 
 \end{gather*}
 
+
 {\noindent
 \begin{tikzpicture}
-    % 资本完全流动
+    % 资本完全流动：小型IS-LM-BP
     \draw[eaxis] (0,0) -- (4,0) node[below] {\footnotesize 收入，产出，$Y$};
     \draw[eaxis] (0,0) -- (0,4) node[above] {\footnotesize 利率，$r$};
     \draw[elegant,black,domain=0.5:3.5] plot(\x,{
@@ -5913,22 +6003,11 @@ IS-LM模型：新古典综合学派
         }) node[right]{\footnotesize $BP$};
     \draw[dashed] (1.8,1.92)--(1.8,0) node[below]{\footnotesize 均衡收入};
     \draw (0,1.92) node[left]{\footnotesize 均衡利率};
-    % 资本完全不流动
-    \draw[eaxis] (5,0) -- (9,0) node[below] {\footnotesize $Y$};
-    \draw[eaxis] (5,0) -- (5,4) node[above] {\footnotesize $r$};
-    \draw[elegant,black,domain=5.5:8.5] plot(\x,{
-        -3*(\x-5)^0.3+5.5
-        }) node[right]{\footnotesize $IS$};
-    \draw[elegant,black,domain=5.5:8] plot(\x,{
-        0.7*(\x-5)^1.2+0.5
-        }) node[right]{\footnotesize $LM$};
-    \draw[elegant,black] (6.8,0)--(6.8,3.5) node[above]{\footnotesize $BP$};
-    \draw (7,-1.5-5) node[above]{\footnotesize (2) 资本完全不流动};
-    %%%  资本完全流动
+    %%%  资本完全流动：M-F
     \draw[eaxis] (0,-5) -- (0,4-5) node[above] {\footnotesize $e$};
     \draw[eaxis] (0,-5) -- (4,-5) node[below] {\footnotesize $Y$};
-    \draw[elegant,black,domain=0.5:3.5] plot(\x,{
-        -3*\x^0.3+5.5-5
+    \draw[elegant,black,domain=0.5:3] plot(\x,{
+        0.7*\x^1.2+0.5-5
         }) node[right]{\footnotesize $IS^*$};
     \draw[elegant,black] (1.8,-5)--(1.8,-1.5) node[right]{\footnotesize $LM^*$};
     \draw[dashed,domain=1.8:0] plot(\x,{
@@ -5936,44 +6015,114 @@ IS-LM模型：新古典综合学派
         }) node[left]{\footnotesize 均衡汇率};
     \draw[dashed] (1.8,-1.5)--(1.8,-0.5);
     \draw (1.8,-5) node[below]{\footnotesize 均衡收入};
-    \draw (2,-1.5-5) node[above]{\footnotesize (1) 资本完全流动};
-    %%%  资本不完全流动
-    %  BP'<LM'
-    \draw[eaxis] (0,-6-5) -- (0,-2-5) node[above] {\footnotesize $r$};
-    \draw[eaxis] (0,-6-5) -- (4,-6-5) node[below] {\footnotesize $Y$};
+    \draw (2,-1.5-10) node[above]{\footnotesize (1a) 资本完全流动：小型};
+    % 资本完全流动：小型AD
+    \draw[eaxis] (0,-5*2) -- (4,-5*2) node[below] {\footnotesize $Y$};
+    \draw[eaxis] (0,-5*2) -- (0,4-5*2) node[above] {\footnotesize $P$};
     \draw[elegant,black,domain=0.5:3.5] plot(\x,{
-        -3*\x^0.3+5.5-6-5
-        }) node[right]{\footnotesize $IS$};
-    \draw[elegant,black,domain=0.5:3] plot(\x,{
-        0.7*\x^1.2+0.5-6-5
-        }) node[right]{\footnotesize $LM$};
-    \draw[elegant,black,domain=0.5:3.5] plot(\x,{
-            0.4*\x^1.1+1.15-6-5
-        }) node[right]{\footnotesize $BP$};
-    \draw (2,-7-5) node[above]{\footnotesize (3a) 资本不完全流动a};
-    % BP'=LM'
-    \draw[eaxis] (5,-6-5) -- (5,-2-5) node[above] {\footnotesize $r$};
-    \draw[eaxis] (5,-6-5) -- (4+5,-6-5) node[below] {\footnotesize $Y$};
+        -3*(\x)^0.3+5.5-5*2
+        }) node[right]{\footnotesize $AD$};
+    \draw[dashed] (1.8,-0.5-5)--(1.8,-5-5) node[below]{\footnotesize 均衡收入};
+    \draw[dashed] (1.8,1.9-5*2)--(0,1.9-5*2) node[left]{\footnotesize 均衡价格};
+    %% 资本完全流动：大型IS-LM
+    \draw[eaxis] (5,0) -- (4+5,0) node[below] {\footnotesize $Y$};
+    \draw[eaxis] (5,0) -- (5,4) node[above] {\footnotesize $r$};
     \draw[elegant,black,domain=5.5:8.5] plot(\x,{
-        -3*(\x-5)^0.3+5.5-6-5
+            -2*(\x-5)^0.3+4.3
         }) node[right]{\footnotesize $IS$};
     \draw[elegant,black,domain=5.5:8] plot(\x,{
-        0.7*(\x-5)^1.2+0.5-6-5
+            0.7*(\x-5)^1.2+0.5
+        }) node[right]{\footnotesize $LM$};
+    \draw[dashed] (5,1.92)--(10,1.92);
+    \draw[dashed] (6.8,1.92)--(6.8,0) node[below]{\footnotesize 均衡收入};
+    % CF
+    \draw[eaxis] (5*2,0)--(5*2,4) node[above] {\footnotesize $r$};
+    \draw[eaxis] (5*2,0)--(5*2+4,0) node[below] {\footnotesize $CF$};
+    \draw[dashed] (10,1.92)--(11.55,1.92)--(11.55,-1.5);
+    \draw[elegant,black,domain=10.5:13] plot(\x,{
+        -(\x-10)+3.5
+        }) node[right]{\footnotesize $CF(r)$};
+    % NX
+    \draw[eaxis] (5*2,0-5)--(5*2,4-5) node[above] {\footnotesize $e$};
+    \draw[eaxis] (5*2,0-5)--(5*2+4,0-5) node[below] {\footnotesize $NX$};
+    \draw[elegant,black] (11.55,-5)--(11.55,-1.5) node[right]{\footnotesize $CF$};
+    \draw[elegant,black,domain=10.5:13] plot(\x,{
+        -(\x-10)+3.5-5
+        }) node[right]{\footnotesize $NX(e)$};
+    \draw[dashed] (10,1.92-5)--(11.55,1.92-5);
+    % DD-AA
+    \draw[eaxis] (5,0-5) -- (4+5,0-5) node[below] {\footnotesize $Y$};
+    \draw[eaxis] (5,0-5) -- (5,4-5) node[above] {\footnotesize $e$};
+    \draw[elegant,black,domain=5.5:8.5] plot(\x,{
+        -3*(\x-5)^0.3+5.5-5
+        }) node[below]{\footnotesize $DD,IS^*$};
+    \draw[elegant,black,domain=5.5:8] plot(\x,{
+            0.7*(\x-5)^1.2+0.5-5
+        }) node[above]{\footnotesize $AA,LM^*$};
+    \draw[dashed] (5,1.92-5)--(10,1.92-5);
+    \draw[dashed] (6.8,1.92-5)--(6.8,0-5);
+    % 大型AD
+    \draw[eaxis] (5,-5*2) -- (5+4,-5*2) node[below] {\footnotesize $Y$};
+    \draw[eaxis] (5,-5*2) -- (5,4-5*2) node[above] {\footnotesize $P$};
+    \draw[elegant,black,domain=5.5:8.5] plot(\x,{
+        -3*(\x-5)^0.3+5.5-5*2
+        }) node[right]{\footnotesize $AD$};
+    \draw[dashed] (1.8+5,-5)--(1.8+5,-5-5) node[below]{\footnotesize 均衡收入};
+    \draw[dashed] (1.8+5,1.9-5*2)--(0+5,1.9-5*2) node[left]{\footnotesize 均衡价格};
+    \draw (10,-1.5-10) node[above]{\footnotesize (1b) 资本完全流动：大型};
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}
+    % 资本完全不流动
+    \draw[eaxis] (0,-5-1) -- (4,-5-1) node[below] {\footnotesize $Y$};
+    \draw[eaxis] (0,-5-1) -- (0,4-5-1) node[above] {\footnotesize $r$};
+    \draw[elegant,black,domain=0.5:3.5] plot(\x,{
+        -3*(\x)^0.3+5.5-5-1
+        }) node[right]{\footnotesize $IS$};
+    \draw[elegant,black,domain=0.5:3] plot(\x,{
+        0.7*(\x)^1.2+0.5-5-1
+        }) node[right]{\footnotesize $LM$};
+    \draw[elegant,black] (1.8,-5-1)--(1.8,3.5-5-1) node[above]{\footnotesize $BP$};
+    \draw (2,-1-5-1) node[above]{\footnotesize (2) 资本完全不流动};
+    %%%  资本不完全流动
+    %  BP'<LM'
+    \draw[eaxis] (0,-6-5*2-1) -- (0,-2-5*2-1) node[above] {\footnotesize $r$};
+    \draw[eaxis] (0,-6-5*2-1) -- (4,-6-5*2-1) node[below] {\footnotesize $Y$};
+    \draw[elegant,black,domain=0.5:3.5] plot(\x,{
+        -3*\x^0.3+5.5-6-5*2-1
+        }) node[right]{\footnotesize $IS$};
+    \draw[elegant,black,domain=0.5:3] plot(\x,{
+        0.7*\x^1.2+0.5-6-5*2-1
+        }) node[right]{\footnotesize $LM$};
+    \draw[elegant,black,domain=0.5:3.5] plot(\x,{
+            0.4*\x^1.1+1.15-6-5*2-1
+        }) node[right]{\footnotesize $BP$};
+    \draw (2,-7-5*2-1) node[above]{\footnotesize (3a) 资本不完全流动a};
+    % BP'=LM'
+    \draw[eaxis] (5,-6-5*2-1) -- (5,-2-5*2-1) node[above] {\footnotesize $r$};
+    \draw[eaxis] (5,-6-5*2-1) -- (4+5,-6-5*2-1) node[below] {\footnotesize $Y$};
+    \draw[elegant,black,domain=5.5:8.5] plot(\x,{
+        -3*(\x-5)^0.3+5.5-6-5*2-1
+        }) node[right]{\footnotesize $IS$};
+    \draw[elegant,black,domain=5.5:8] plot(\x,{
+        0.7*(\x-5)^1.2+0.5-6-5*2-1
         }) node[right]{\footnotesize $LM, BP$};
-    \draw (7,-7-5) node[above]{\footnotesize (3b) 资本不完全流动b};
+    \draw (7,-7-5*2-1) node[above]{\footnotesize (3b) 资本不完全流动b};
     %  BP'>LM'
-    \draw[eaxis] (10,-6-5) -- (10,-2-5) node[above] {\footnotesize $r$};
-    \draw[eaxis] (10,-6-5) -- (14,-6-5) node[below] {\footnotesize $Y$};
+    \draw[eaxis] (10,-6-5*2-1) -- (10,-2-5*2-1) node[above] {\footnotesize $r$};
+    \draw[eaxis] (10,-6-5*2-1) -- (14,-6-5*2-1) node[below] {\footnotesize $Y$};
     \draw[elegant,black,domain=10.5:13.5] plot(\x,{
-        -3*(\x-10)^0.3+5.5-6-5
+        -3*(\x-10)^0.3+5.5-6-5*2-1
         }) node[right]{\footnotesize $IS$};
     \draw[elegant,black,domain=10.5:13] plot(\x,{
-        0.7*(\x-10)^1.2+0.5-6-5
+        0.7*(\x-10)^1.2+0.5-6-5*2-1
         }) node[right]{\footnotesize $LM$};
     \draw[elegant,black,domain=10.5:13] plot(\x,{
-            0.8*(\x-10)^1.5-6-5
+            0.8*(\x-10)^1.5-6-5*2-1
         }) node[right]{\footnotesize $BP$};
-    \draw (12,-7-5) node[above]{\footnotesize (3c) 资本不完全流动c};
+    \draw (12,-7-5*2-1) node[above]{\footnotesize (3c) 资本不完全流动c};
 \end{tikzpicture}
 }
 
@@ -5995,7 +6144,7 @@ IS-LM模型：新古典综合学派
             A(\overline{Y})+M_{s}\uparrow\Rightarrow B(r\downarrow+Y\uparrow)\Rightarrow B(r\uparrow+Y\downarrow)\Rightarrow A(\overline{Y}) 
         \end{gather*}
     \end{enumerate}
-    \item 蒙代尔-弗莱明模型（Mundell-Fleming model）：资本完全流动
+    \item 蒙代尔-弗莱明模型（Mundell-Fleming model）：资本完全流动，小型经济体
     \begin{enumerate}[(1)]
         \item 固定汇率制（货币政策无效）
         \begin{enumerate}[a.]
@@ -6019,8 +6168,31 @@ IS-LM模型：新古典综合学派
                 A(\overline{Y})+M_s\uparrow \Rightarrow B(资本流出\Rightarrow e\downarrow\Rightarrow NX\uparrow\Rightarrow Y\uparrow) \Rightarrow A(P\uparrow\Rightarrow M/P\downarrow\Rightarrow Y\downarrow) \Rightarrow A(\overline{Y})  
             \end{gather*}
         \end{enumerate}
-        
-        
+    \end{enumerate}
+    \item DD-AA模型：资本完全流动，大型经济体
+    \begin{enumerate}[(1)]
+        \item 浮动汇率制
+        \begin{enumerate}[a.]
+            \item DD右移：财政政策（$G\uparrow,T\downarrow$）
+            \begin{gather*}
+                A(Ȳ)→B(Y↑+r↑→CF↓→e↓→NX↓)→C(Y＞Ȳ→\pi^e \uparrow\rightarrow e  ͤ↑→AA左移→Ȳ+e↓)
+                G↑/T↓→IS右移→Y↑+r↑→CF↓→e↑→NX↓
+            \end{gather*}
+            \item AA右移：货币政策（$M_s\uparrow$）
+            \begin{gather*}
+                A(Ȳ)→B(Y↑+r↓→CF↑→e↑→NX↑)→C(P↑→DD左移+AA左移→Ȳ+e↓)
+                最终的e要高于最初的e
+                Ms↑→LM下移→Y↑+r↓→CF↑→e↑→NX↑
+            \end{gather*}
+        \end{enumerate}    
+        \item 固定汇率制
+        \begin{enumerate}[a.]
+            \item P↑→X－M↓→D↓→Y↓（DD左移）
+            \item P*→
+            \item T↑→Y－T↓→D↓→Y↓
+            \item I↑→D↑→Y↑
+            \item G↑→D↑→Y↑
+        \end{enumerate}
     \end{enumerate}
 \end{enumerate}
 
@@ -6073,9 +6245,21 @@ IS-LM模型：新古典综合学派
 
 
 
+\section{AS}
 
 
 
+
+\subsection{凯恩斯AS}
+
+
+\subsection{古典AS}
+
+
+
+
+
+\section{均衡}
 
 
 
@@ -6326,12 +6510,44 @@ $I$：投资：私人企业为进行再生产而留下的用于购买厂房、�
 
 
 $G$：政府购买：政府购买商品和服务使用的数额（government purchases ）
+$T$：税收－转移支付
 \informationBox{
     \par * 不包括转移支付
-    \par $T$：税收－转移支付
-    \par $G>T$：预算赤字(budget surplus)
-    \par $G=T$：预算平衡(balanced budget)
-    \par $G<T$：预算盈余(budget deficit)
+    \par 财政收支：政府参与国民收入分配和再分配活动的主要体现，参与和干预经济运行的主要渠道
+    \par 常为财政赤字
+\begin{enumerate}[1.]
+    \item $G>T$：财政赤字，预算赤字(budget surplus)
+    \begin{enumerate}[(1)]
+        \item 增加税收 ：缩减居民和企业的可支配收入  
+        \item 向央行透支：影响货币稳定，诱发通胀  
+        \item 借款：对内发公债，对外发行债券或借款  
+        \begin{enumerate}[a.]
+            \item 公债影响  
+            \begin{enumerate}[(a)]
+                \item 公债利率常为无风险基准利率  
+                \item 金融机构调节资金流动性最主要工具  
+                \item 央行公开市场操作的主要操作工具
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+    \item $G=T$：预算平衡(balanced budget)
+    \item $G<T$：财政盈余，预算盈余(budget deficit)
+    \begin{enumerate}[(1)]
+        \item 偿还前期政府债券：减少非政府部门投资机会，供求引起债券价格上涨  
+        \item 保留盈余以备后用：增加央行账户上的政府存款  
+        \item 政府投资  
+        \begin{enumerate}[a.]
+            \item 国内：经济发展；经济结构调整  
+            \item 国际：  
+            \begin{enumerate}[(a)]
+                \item 外汇储备  
+                \item 主权财富基金：一国政府利用外汇储备资产创立的在全球范围内进行投资以提升本国经济和居民福利的机构投资者（Sovereign Wealth Funds ，SWFs），简称主权基金
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+    
+    
 }
 
 
