@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  22 JAN 2021 23:15
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  23 JAN 2021 00:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1524,13 +1524,12 @@ Overfull \hbox (11.8827pt too wide) in paragraph at lines 144--144
  [][] [][][]\TU/SimSun(0)/m/n/12 被 解 释 变 量：|  离 散 选 择 模 型  |（\TU/CMUSerif(0)/m/n/12 discrete choice model\TU/SimSun(0)/m/n/12 ）| 
  []
 
-[7] [8] [9] [10] [11] [12])
+[7] [8] [9] [10] [11] [12] [13])
 \tf@toc=\write8
 \openout8 = `Science.toc'.
 
- [13] [14
+ [14] [1
 
-] [1
 
 ] [2] [3] [4
 
@@ -2022,117 +2021,146 @@ Missing character: There is no ⾏ in font SimSun/OT:script=hani;language=dflt;!
 Chapter 11.
 [101
 
-] [102
+] [102]
+Missing character: There is no → in font cmr6!
+Missing character: There is no → in font cmr6!
+Missing character: There is no → in font cmr6!
+Missing character: There is no → in font cmr6!
+Missing character: There is no → in font cmr6!
+Missing character: There is no → in font cmr6!
 
-]
-Chapter 12.
-Missing character: There is no · in font cmr10!
-Missing character: There is no · in font cmr10!
-[103] [104] [105] [106
-
-]
-Chapter 13.
-[107] [108
-
-]
-Chapter 14.
-[109] [110
-
-]
-Chapter 15.
-[111] [112
-
-]
-Chapter 16.
-[113] [114
-
-]
-Chapter 17.
-[115] [116
-
-]
-Chapter 18.
-[117] [118
-
-]
-Chapter 19.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5583.
+Overfull \hbox (8.58138pt too wide) in paragraph at lines 5576--5576
+[]$[]$| 
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5583.
-
-Missing character: There is no ′ in font cmr10!
-Missing character: There is no ′ in font cmr10!
-[119]
-Overfull \hbox (75.0659pt too wide) detected at line 5666
+Overfull \hbox (160.52629pt too wide) detected at line 5576
 []
  []
 
-[120]
-Overfull \hbox (12.70406pt too wide) in paragraph at lines 5751--5751
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103
+
+]
+Overfull \vbox (23.22318pt too high) has occurred while \output is active []
+
+ [104]
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+ [105
+
+] [106] [107]
+Missing character: There is no   in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no   in font cmr10!
+ [108] [109] [110
+
+]
+Chapter 12.
+[111] [112
+
+]
+Chapter 13.
+[113] [114
+
+]
+Chapter 14.
+[115] [116
+
+]
+Chapter 15.
+[117] [118
+
+]
+Chapter 16.
+[119] [120
+
+]
+Chapter 17.
+[121] [122
+
+]
+Chapter 18.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 5899.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 5899.
+
+Missing character: There is no ′ in font cmr10!
+Missing character: There is no ′ in font cmr10!
+[123]
+Overfull \hbox (75.0659pt too wide) detected at line 5982
+[]
+ []
+
+[124]
+Overfull \hbox (12.70406pt too wide) in paragraph at lines 6067--6067
 []\TU/SimSun(0)/m/n/10.95 影 响 因 素：| $[] \OT1/cmr/m/n/10.95 = []$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121]
+ [125]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [122] [123]
+ [126] [127]
 Underfull \vbox (badness 5726) has occurred while \output is active []
 
- [124]
-Underfull \hbox (badness 10000) in paragraph at lines 5962--5964
+ [128]
+Underfull \hbox (badness 10000) in paragraph at lines 6278--6280
 
  []
 
-[125]
-Underfull \hbox (badness 10000) in paragraph at lines 6020--6022
+[129]
+Underfull \hbox (badness 10000) in paragraph at lines 6336--6338
 
  []
 
-[126]
+[130]
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
- [127]
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 6119--6136
+ [131]
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 6435--6452
 [] 
  []
 
-[128]
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6175
+[132]
+Underfull \hbox (badness 10000) in paragraph at lines 6489--6491
 
  []
 
-[129] [130]
-Chapter 20.
+[133] [134]
+Chapter 19.
 
 Underfull \vbox (badness 3907) has occurred while \output is active []
 
- [131
+ [135
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [132] [133] [134
+ [136] [137] [138
 
-] [135
+] [139
 
 ]
-Overfull \hbox (3.34029pt too wide) in paragraph at lines 6639--6723
+Overfull \hbox (3.34029pt too wide) in paragraph at lines 6955--7039
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [136
+ [140
 
-] [137]
+] [141]
 Missing character: There is no 套 in font cmr10!
 Missing character: There is no 利 in font cmr10!
 Missing character: There is no 左 in font cmr10!
@@ -2151,68 +2179,68 @@ Missing character: There is no ↑ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
- [138
+ [142
 
 ]
 Missing character: There is no Δ in font cmmi10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no Δ in font cmmi10!
 Missing character: There is no · in font cmr10!
- [139] [140
+ [143] [144
+
+]
+Chapter 20.
+[145] [146
 
 ]
 Chapter 21.
-[141] [142
+[147] [148] [149] [150
 
 ]
 Chapter 22.
-[143] [144] [145] [146
+
+Underfull \vbox (badness 1377) has occurred while \output is active []
+
+ [151]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [152]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [153] [154]
+Overfull \hbox (56.36243pt too wide) detected at line 7609
+[]
+ []
+
+[155] [156
 
 ]
 Chapter 23.
 
-Underfull \vbox (badness 1377) has occurred while \output is active []
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 7621.
 
- [147]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [148]
+ [157]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149] [150]
-Overfull \hbox (56.36243pt too wide) detected at line 7293
-[]
- []
-
-[151] [152
+ [158] [159] [160
 
 ]
 Chapter 24.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 7305.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [153]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [154] [155] [156
+[161] [162
 
 ]
 Chapter 25.
-[157] [158
+[163] [164
 
 ]
 Chapter 26.
-[159] [160
+[165] [166
 
-]
-Chapter 27.
-[161] [162
-
-] [163] [164]
+] [167] [168]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2231,38 +2259,29 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7487.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7487.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7803.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7803.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7487.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7487.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7803.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7803.
+Package rerunfilecheck Info: File `Science.out' has not changed.
+(rerunfilecheck)             Checksum: 5FAB9028B8EA1D242C0298A5F9BFAE14;42890.
 
-
-Package rerunfilecheck Warning: File `Science.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Science.out':
-(rerunfilecheck)             Before: D40EE5D79B6212CA1089B49D803A1755;38779
-(rerunfilecheck)             After:  98A6B1FFF38A931C392270EB08A75FF3;39074.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 99259 strings out of 479418
- 2250221 string characters out of 5886345
- 2032054 words of memory out of 5000000
- 115835 multiletter control sequences out of 15000+600000
- 553041 words of font info for 152 fonts, out of 8000000 for 9000
+ 99350 strings out of 479418
+ 2252699 string characters out of 5886345
+ 2032967 words of memory out of 5000000
+ 115928 multiletter control sequences out of 15000+600000
+ 553025 words of font info for 150 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,56n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (178 pages).
+Output written on Science.pdf (182 pages).

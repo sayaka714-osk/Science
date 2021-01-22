@@ -5375,31 +5375,231 @@ E
 
 
 
+\section{绝对价值评估}
 
 
 
 
-\chapter{衍生工具}
+\subsection{股票}
 
 
-\section{远期}
+
+
+\subsubsection{现金流折现模型}
+
+
+
+\paragraph{一般折现模型}
+
+（divided discount model，DDM）
+
+\begin{gather*}
+  P_0 = \sum_{t=1}^{\infty}{\frac{C_t}{(1+r)^t}}
+\end{gather*}
+ 
+\par $P_0$：企业价值
+\par $C_t$：$t$期每股现金流（现金流不确定，风险高，因此收益高于债券）
+\par $r$：贴现率
+
+
+\paragraph{零增长模型}
+
+（Zero-growth Model）
+
+
+假设$C$零增长，即$g=0$
+\begin{gather*}
+  P_0=\sum_{t=1}^{\infty}{\frac{C}{(1+r)^t}} 
+     =\frac{C}{r}
+\end{gather*}
+
+
+\paragraph{固定增长模型}
+
+成熟性公司（constant growth model）
+
+\begin{align*}
+  P_0& = \sum_{t=1}^{\infty}{\frac{C_0(1+g)^t}{(1+r)^t}}
+      = \frac{C_{0}(1+g)}{r-g}
+      =\frac{C_1}{r-g} \\
+  P_t&=\frac{C_{t+1}}{r-g}
+     =\frac{C_t\left(1+g\right)}{r-g}
+     =P_{t-1}\left(1+g\right)
+\end{align*}
+\par $C_0$：当期每股现金流
+\par $g$：现金流预期增长率，假设等比例上升（$r>g$）
+
+
+\paragraph{两阶段折现模型}
+
+规模大的成长型公司（2-stage divided discount model）
+
+
+\begin{align*}
+  P_0&=\sum_{t=1}^{n}{\frac{C_0 (1+g_1 )^t}{(1+r)^t}} +\sum_{t=n+1}^{\infty}{\frac{C_0 (1+g_2 )^t}{(1+r)^t}} \\
+  P_n&=\frac{C_{n+1}}{r-g_2} \\
+  P_0&=\sum_{t=1}^{n}{\frac{C_t}{(1+r)^t}}
+\end{align*}
+\par $g_1$：发展期现金流预期增长率（growing）
+\par $g_2$：成熟期现金流预期增长率（constant g, using constant model）
+\par $n$：发展期末年份
+
+\paragraph{三阶段折现模型}
+
+规模小的成长型公司
+
+
+
+
+
+
+\begin{landscape}
+    \tiny
+    \begin{tabu}to 0.8\columnwidth{|c|c|c|c|c|}
+        \hline
+             &                            & \multicolumn{2}{c|}{权益估值（equity valuation）} & 公司估值（film valuation）                             \\\hline
+             &                            & equity holder                                     & equity holder              & debt holder+equity holder \\\hline
+        P    &
+             & P：股票价格
+             & \begin{tabu}[t]{c}
+                    E：所有权价值 \\
+                    $P=\frac{E}{shares}$
+                \end{tabu}
+             & \begin{tabu}[t]{c}
+                    V：企业价值 \\
+                    $P=\frac{V-MVD=MVE}{shares}$
+                \end{tabu} \\\hline
+        C    &
+             & \begin{tabu}[t]{c}
+            D：每股股票分红
+        \end{tabu}
+             & \begin{tabu}[t]{c}
+            FCFE：股东自由现金流
+        \end{tabu}
+             & \begin{tabu}[t]{c}
+            FCFF：企业自由现金流
+        \end{tabu}                               \\\hline
+         r    &
+              & \multicolumn{2}{l|}{
+             \begin{tabu}to 10cm{X}
+                 $r_s$：贴现率
+                 \begin{gather*}
+                     expected\ return =\frac{{\hat{D}}_1+{\hat{P}}_1-P_0}{P_0}={\hat{D}}_1+\frac{{\hat{P}}_1-P_0}{P_0}=DY+CGY\\
+                     =DY+g=HPR→market\ price \\
+                     required\ return = \frac{{\hat{D}}_1+{\hat{P}}_1-{\hat{P}}_0}{{\hat{P}}_0}=r_f+\beta\left[r_m-r_f\right]\rightarrow intrinsic\ price \\
+                     actual\ return   = \frac{D_1+P_1-P_0}{P_0}
+                 \end{gather*}
+                 \par market\ price < intrinsic\ price $\Leftrightarrow$ expected\ return>required\ return $\Leftrightarrow$ undervalue $\Leftrightarrow$ buy
+                 \par market\ price = intrinsic\ price $\Leftrightarrow$ expected\ return=required\ return $\Leftrightarrow$ fair\ value $\Leftrightarrow$ hold
+                 \par market\ price > intrinsic\ price $\Leftrightarrow$ expected\ return<required\ return $\Leftrightarrow $overvalue $\Leftrightarrow$ sell
+                 \par $r_m$：market return
+                 \par $DY$：dividend yield
+                 \par $CGY$：capital gain yield
+             \end{tabu}
+         } 
+              & \begin{tabu}to 10cm{X}
+             \tablelist{1.}{0.4\columnwidth}{
+                \item 
+                    \begin{gather*}
+                        {WACC}_t = w_d\ast r_d(1-t)+w_p\ast r_p+w_s\ast r_s
+                    \end{gather*}
+                \item $WACC$：Weighted Average Cost of Capital，都使用市价，不用账面价值
+                \item $w_d$：长期负债权重
+                \item $w_p$：优先股权重
+                \item $w_s$：普通股权重
+                \item $r_d$：
+                    \begin{enumerate}[(1)]
+                        \item 用债券折现模型
+                        \item 无股票交易用债券评级表找到估计的RP
+                        \item 若未发债，根据Interest Coverage Ratio=EBIT/Interest划分评级
+                    \end{enumerate}
+                \item $r_p$：
+                    \begin{gather*}
+                        g=0, P=\frac{D_0 (1+g)}{r-g}
+                        \Rightarrow r_p=\frac{D_p}{P_p}
+                        \end{gather*}
+                 \item $r_s$：机会成本（不派发红利+再投资）
+                     \begin{enumerate}[(1)]
+                         \item CAPM：$r_s=r_{RF}+\beta\left(r_M-r_{RF}\right)$，$r_{RF}$用同期限的国债利率
+                         \item DCF：$r_s= D1/P01-f+g$，可用于non-constant growth
+                         \item Bond-yield+RP：$r_s=r_d+RP$，RP不是CAPM的，是两个债券的差
+                         \item Fama-French
+                         \item average
+                     \end{enumerate}
+                     \par 当前股价不受持有时间的影响
+                     \par 当考察对象是项目时，WACC要进行相应的调整
+             }
+         \end{tabu}  \\\hline
+        \multirow{2}{*}{g}
+             & 自身
+             & $g_{Div.}$：股票分红增长率
+             & $g_{FCFE}$：FCFE增长率
+             & $g_{FCFF}$：FCFF增长率                                                                                                                  \\\cline{2-5}
+             & 其他
+             & \multicolumn{3}{l|}{
+            \tablelist{1.}{0.4\columnwidth}{
+                \item EPS：假设公司没有派发新股，没有回购股票
+                \begin{enumerate}[(1)]
+                    \item 历史数据：$g_{EPS,t}=\frac{{EPS}_t-{EPS}_{t-1}}{{EPS}_{t-1}}$
+                    \item 分析师预测：$g_{EPS,t+1}=\frac{{EPS}_{t+1}-{EPS}_t}{{EPS}_t} $
+                \end{enumerate}
+                \item 基本面分析：
+                \begin{enumerate}[(1)]
+                    \item 假设ROE不变：投资带来的增长是可持续的
+                          \begin{gather*}
+                              g=b\times ROE=\frac{RE}{NI}\cdot ROE=retention\ rate\times ROE=\frac{NI-Dividend}{NI}\cdot ROE=\left(1-Payout\right)\times ROE=\left(1-\frac{DPS}{EPS}\right)\times ROE
+                          \end{gather*}
+                    \item 假设ROE变化：ROE的增长不可持续，竞争导致不可能一直有投资机会
+                          \begin{gather*}
+                              g_{t+1}=b\cdot{ROE}_{t+1}+\frac{{ROE}_{t+1}-ROE_t}{{ROE}_t}
+                          \end{gather*}
+                          \par Small changes in ROE translate into large changes in the expected growth rate
+                \end{enumerate}
+            }
+        }   \\\hline
+        适用 &
+             & \begin{tabu}[t]{l}
+            分红稳定上市公司 \\
+            资本结构相对稳定
+        \end{tabu}
+             & \begin{tabu}[t]{l}
+            所有企业（金融企业慎用） \\
+            并购时用（不关心debt）   \\
+            资本结构相对稳定
+        \end{tabu}
+             & \begin{tabu}[t]{l}
+            所有企业（金融企业慎用） \\
+            资本结构可能变化
+        \end{tabu}
+        \\
+        \hline
+    \end{tabu}
+\end{landscape}
+
+\subsubsection{期权估值模型}
+
+初创企业
+
+
+
+
+
+
+
+\subsection{债券}
+
+
+
+
+
+\subsection{衍生品：远期}
+
 
 远期合约价格=即期或现金价格+持有成本（carry cost）
 
-
-
-
-
-\subsection{绝对价值评估}
-
-
-
-
-
-
 \subsubsection{远期外汇}
 
-\textbf{外币标的}
+\paragraph{外币标的}
 \begin{gather*}
     F(t)=S(t) e^{(r-q)(T-t)}
 \end{gather*}
@@ -5407,7 +5607,7 @@ E
 \par $r$：期限为$T$的本币无风险利率
 \par $q$：期限为$T$的外币无风险利率，或资产收益率
 
-\textbf{金银标的}
+\paragraph{金银标的}
 \begin{gather*}
   F(t)=[S(t)+U] e^{r(T-t)} 
       =S(t) e^{(r+u)(T-t)}
@@ -5432,20 +5632,7 @@ E
 
 
 
-
-
-
-
-
-
-\section{期货}
-
-
-
-
-
-\subsection{绝对价值评估}
-
+\subsection{衍生品：期货}
 
 
 \subsubsection{假设}
@@ -5460,7 +5647,7 @@ E
 
 \subsubsection{模型}
 
-\textbf{无收益资产}	
+\paragraph{无收益资产}	
 
 \begin{gather*}
   F\left(t\right)=S\left(t\right)e^{r\left(T-t\right)} \\
@@ -5476,7 +5663,7 @@ E
 \par $F\left(t\right)$：$t$时刻的远期合约和期货合约中的理论远期价格和理论期货价格，即远期价格和期货价格
 \par $r$：$T$时刻到期的以连续复利计算的$t$时刻的无风险年利率
 
-\textbf{已知收益}
+\paragraph{已知收益}
 
 已知现金收益的资产：到期前会产生完全可预测的现金流的资产
 \begin{gather*}
@@ -5485,7 +5672,7 @@ E
 \end{gather*}
 \par $I$：中间收入的现值
 
-\textbf{已知收益率}	
+\paragraph{已知收益率}	
 
 已知现金收益率的资产：到期前将产生与该资产现货价格成一定比率收益的资产
 \begin{gather*}
@@ -5499,6 +5686,121 @@ E
 
 
 
+\subsection{衍生品：期权}
+
+
+\subsection{衍生品：互换}
+
+
+\section{相对价值评估}
+
+
+
+\subsection{股票}
+
+
+
+
+
+\subsubsection{回归法}
+
+相对估价转换为回归的方式，克服传统的不可比问题；回归中不同行业等可比
+
+\paragraph{资本资产定价模型（capital asset pricing model，CAPM）}
+
+
+\subparagraph{假设}	
+
+\begin{enumerate}[(1)]
+  \item 投资者是理性的，严格按照马科维茨模型的有效规则进行多样化投资，从有效边界的某处选择投资组合
+  \item 资本市场完全有效，没有任何摩擦阻碍投资
+  \item 投资者只关心某一特定时段内的收益率 (time horizons for different traders are different)
+  \item 投资者只关心前两阶矩（first two moments）期望值和标准差
+  \item 不同投资者的ε相互独立
+  \item 所有投资者以无风险利率借贷资金
+  \item 不考虑税收
+  \item 投资者具有一致性预期性（homogeneous expectation）。估计出相同的期望、标准差、投资品的相关系数
+\end{enumerate}	
+
+\subparagraph{模型}
+
+\begin{gather*}
+  E(R_i) = \bar{R}_i = R_f+\beta_i (\bar{R}_m-R_f )+\varepsilon_i
+\end{gather*}
+\par $\bar{R}_i$：预期回报率，期望收益率（expected return）
+\par $R_f$：无风险资产回报率（risk-free rate），无风险收益率，货币的时间价值
+\par $\beta_i$：组合证券的β系数，衡量证券或投资组合相对于总体市场波动性（volatility），反映系统性风险
+\par $\bar{R}_m=E(R_m )$：市场期望回报率（expected market return）
+\par $\bar{R}_m-R_f$：股票市场溢价（equity market premium），超额收益（excess return）
+\par $\beta_i (\bar{R}_m-R_f )$：风险溢价（risk premium），风险和不确定性
+\par $\alpha_i=\varepsilon_i$：（extra return）
+
+$$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
+
+
+
+\subparagraph{理论}
+
+\begin{enumerate}[(1)]
+  \item $\beta$系数高，投资者会提升股票的预期回报率
+  \item 所有投资者期望持有相同的投资组合
+\end{enumerate}
+
+
+
+
+
+
+\paragraph{套利定价模型（arbitrage pricing theory，APT）}
+
+\subparagraph{假设}	
+\begin{enumerate}[(1)]
+  \item 投资者有相同的投资理念
+  \item 投资者是回避风险的，并且要求效用最大化
+  \item 市场是完全的
+\end{enumerate}
+
+\subparagraph{模型}
+
+单因素：资产收益率影响因素来自公司特有的因素和宏观经济因素（共同因素）
+\begin{gather*}
+  E(r_p )=r_p+\beta_p [F-E(F)]+\varepsilon_p
+\end{gather*}
+\par $E(r_p)$：预期收益率
+\par $r_p$：公司最近一期收益率
+\par $\beta_p$：证券对该因素的敏感性
+\par $F$：共同因素（通胀率、失业率等）
+\par $E(F)$：预期的共同因素
+\par $\varepsilon_p$：公司因素引起收益的波动
+\par 共同因子为系统性风险，其余为非系统性风险
+
+
+多因素
+\begin{gather*}
+  E(r_i) = r_f + \sum_{j=1}^{k}{\beta_{ij} [E(r_{F_j})- r_f]} +\varepsilon_i
+\end{gather*}
+\par $E(r_i)$：预期收益率
+\par $\beta_{ij}$：第i种股票收益率对因素$F_j$的敏感性
+\par $F_j$：第j种因素（j=1,2,…,k）
+\par $r_f$：无风险收益率
+\par $\varepsilon_i$：第i种股票发行公司因素引起的收益波动
+
+
+
+
+
+\subparagraph{Fama-French因子模型}
+
+\subparagraph{假设}
+
+\subparagraph{模型}	
+
+\begin{gather*}
+  E(R_i ) = R_F + \beta_{i1}(R_M-R_F) + \beta_{i2}R_{SMB} + \beta_{i3}R_{HML} + \varepsilon_{it}
+\end{gather*}
+\par $R_{SMB}$：市值因子，低市值-高市值（small minus big）
+\par $R_{HML}$：账面市值比因子（high minus low）
+\par $\sqrt{Var(\varepsilon_{it})}$：异质性风险（idiosyncratic risk）
 
 
 
@@ -5508,14 +5810,15 @@ E
 
 
 
+\section{绝对风险评估}
 
 
 
 
-\section{期权}
+\section{相对风险评估}
 
 
-\section{互换}
+
 
 
 
@@ -5523,6 +5826,19 @@ E
 
 
 
+
+
+\section{货币市场}
+
+
+
+
+\section{证券市场}
+
+
+
+
+\section{衍生品市场}
 
 \chapter{金融机构}
 
