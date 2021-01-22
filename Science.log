@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  22 JAN 2021 13:55
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  22 JAN 2021 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1386,11 +1386,8 @@ Package: xpinyin 2019/04/07 v2.7 Automatically add pinyin to Chinese characters
 \l__xpinyin_CJKglue_dim=\dimen437
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/xpinyin/xpinyin-database.def
 File: xpinyin-database.def 2019/04/07 v2.7 xpinyin database
-))) (./Science.aux
-LaTeX Info: Redefining \rmfamily on input line 20.
-LaTeX Info: Redefining \sffamily on input line 20.
-LaTeX Info: Redefining \ttfamily on input line 20.
-)
+)))
+No file Science.aux.
 \openout1 = `Science.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1415,7 +1412,6 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1474,15 +1470,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
- (./Science.out) (./Science.out)
 \@outlinefile=\write7
 \openout7 = `Science.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Info: Redefining \rmfamily on input line 12.
 LaTeX Info: Redefining \sffamily on input line 12.
 LaTeX Info: Redefining \ttfamily on input line 12.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
- (d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+(d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
@@ -1500,20 +1499,11 @@ This may cause the page layout to be inconsistent, however.
 
 [2
 
-] (./Science.toc
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
- [3] [4]
-Overfull \hbox (9.05632pt too wide) in paragraph at lines 85--85
- [][] [][][]\TU/CMUSerif(0)/m/n/12 ADF \TU/SimSun(0)/m/n/12 检 验  |（\TU/CMUSerif(0)/m/n/12 Augmented Dickey-Fuller test\TU/SimSun(0)/m/n/12 ）| 
- []
-
-[5] [6] [7] [8] [9] [10])
+]
 \tf@toc=\write8
 \openout8 = `Science.toc'.
 
- [11] [12
+ [3] [4
 
 ] [1
 
@@ -1589,28 +1579,28 @@ Missing character: There is no 不 in font cmr12!
 Missing character: There is no 真 in font cmr12!
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 850.
+(hyperref)                removing `math shift' on input line 851.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 850.
+(hyperref)                removing `\mu' on input line 851.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 850.
+(hyperref)                removing `math shift' on input line 851.
 
 [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 905.
+(hyperref)                removing `math shift' on input line 906.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 905.
+(hyperref)                removing `\sigma' on input line 906.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 905.
+(hyperref)                removing `math shift' on input line 906.
 
 [20]
 Missing character: There is no 或 in font cmr10!
@@ -1622,15 +1612,15 @@ Missing character: There is no χ in font cmmi10!
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 967.
+(hyperref)                removing `math shift' on input line 968.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 967.
+(hyperref)                removing `\mu' on input line 968.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 967.
+(hyperref)                removing `math shift' on input line 968.
 
 Missing character: There is no ： in font cmr10!
 Missing character: There is no ： in font cmr10!
@@ -1649,31 +1639,31 @@ Missing character: There is no 与 in font cmr10!
 [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1039.
+(hyperref)                removing `math shift' on input line 1040.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 1039.
+(hyperref)                removing `\sigma' on input line 1040.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1039.
+(hyperref)                removing `math shift' on input line 1040.
 
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1099.
+(hyperref)                removing `math shift' on input line 1100.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 1099.
+(hyperref)                removing `\mu' on input line 1100.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1099.
+(hyperref)                removing `math shift' on input line 1100.
 
 
-Overfull \hbox (2.73326pt too wide) in paragraph at lines 1107--1110
+Overfull \hbox (2.73326pt too wide) in paragraph at lines 1108--1111
 []$\OML/cmm/m/it/10.95 SST \OT1/cmr/m/n/10.95 = [][] [][] []\OML/cmm/m/it/10.95 ; SSA \OT1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 n[] [] ; SSE \OT1/cmr/m/n/10.95 = [][] [][] []$ 
  []
 
@@ -1687,29 +1677,20 @@ Missing character: There is no 相 in font cmr10!
 Missing character: There is no 等 in font cmr10!
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1145.
+(hyperref)                removing `math shift' on input line 1146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 1145.
+(hyperref)                removing `\sigma' on input line 1146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1145.
+(hyperref)                removing `math shift' on input line 1146.
 
-[23] [24]
-Missing character: There is no · in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ： in font cmr10!
- [25]
+[23] [24] [25]
 Missing character: There is no ， in font cmr10!
 Missing character: There is no ， in font cmr10!
+Missing character: There is no ⋯ in font cmr10!
 Missing character: There is no ⋯ in font cmr10!
  [26]
 Missing character: There is no ⋯ in font cmr10!
@@ -1721,22 +1702,7 @@ Missing character: There is no ≤ in font cmr10!
 Missing character: There is no ， in font cmr10!
 Missing character: There is no ≤ in font cmr10!
 Missing character: There is no ≤ in font cmr10!
-Missing character: There is no ； in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no β in font cmmi10!
-Missing character: There is no ≠ in font cmr10!
-Missing character: There is no （ in font cmr10!
-Missing character: There is no ⋯ in font cmr10!
-Missing character: There is no ） in font cmr10!
  [28]
-Missing character: There is no ； in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no β in font cmmi10!
-Missing character: There is no ⋯ in font cmr10!
-Missing character: There is no ； in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no β in font cmmi10!
-Missing character: There is no ⋯ in font cmr10!
 Missing character: There is no … in font cmr10!
 Missing character: There is no ⋯ in font cmr10!
 Missing character: There is no ， in font cmr10!
@@ -1750,76 +1716,24 @@ Missing character: There is no ⋯ in font cmr8!
 Missing character: There is no ⋯ in font cmr10!
  [29]
 Missing character: There is no ， in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no ≠ in font cmr10!
 Missing character: There is no ， in font cmr10!
 Missing character: There is no ， in font cmr10!
-Missing character: There is no σ in font cmmi10!
-Missing character: There is no ∆ in font cmr10!
-Missing character: There is no α in font cmmi10!
-Missing character: There is no δ in font cmmi10!
-Missing character: There is no μ in font cmmi10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no δ in font cmmi10!
-Missing character: There is no ， in font cmr10!
-Missing character: There is no 即 in font cmr10!
-Missing character: There is no ρ in font cmmi10!
-Missing character: There is no ； in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no δ in font cmmi10!
-Missing character: There is no ， in font cmr10!
-Missing character: There is no 即 in font cmr10!
-Missing character: There is no ρ in font cmmi10!
-Missing character: There is no ， in font cmr10!
-Missing character: There is no φ in font cmmi10!
-Missing character: There is no ≥ in font cmr10!
-Missing character: There is no φ in font cmmi10!
-Missing character: There is no φ in font cmmi10!
-Missing character: There is no φ in font cmmi10!
-Missing character: There is no φ in font cmmi8!
-Missing character: There is no φ in font cmmi8!
-Missing character: There is no φ in font cmmi8!
-Missing character: There is no φ in font cmmi10!
-Missing character: There is no φ in font cmmi10!
-Missing character: There is no τ in font cmmi10!
-Missing character: There is no φ in font cmmi8!
-Missing character: There is no φ in font cmmi8!
  [30]
-Missing character: There is no ∆ in font cmr10!
-Missing character: There is no δ in font cmmi10!
-Missing character: There is no β in font cmmi10!
-Missing character: There is no ∆ in font cmr10!
-Missing character: There is no ε in font cmmi10!
-Missing character: There is no ∆ in font cmr10!
-Missing character: There is no α in font cmmi10!
-Missing character: There is no δ in font cmmi10!
-Missing character: There is no β in font cmmi10!
-Missing character: There is no ∆ in font cmr10!
-Missing character: There is no ε in font cmmi10!
-Missing character: There is no ∆ in font cmr10!
-Missing character: There is no α in font cmmi10!
-Missing character: There is no β in font cmmi10!
-Missing character: There is no δ in font cmmi10!
-Missing character: There is no β in font cmmi10!
-Missing character: There is no ∆ in font cmr10!
-Missing character: There is no ε in font cmmi10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no δ in font cmmi10!
-Missing character: There is no ； in font cmr10!
-Missing character: There is no ： in font cmr10!
-Missing character: There is no δ in font cmmi10!
+Missing character: There is no ， in font cmr10!
+Missing character: There is no ≥ in font cmr10!
  [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1681--1682
+Underfull \hbox (badness 10000) in paragraph at lines 1692--1693
 
  []
 
-Missing character: There is no ⋯ in font cmr10!
-Missing character: There is no ⋯ in font cmr10!
 [32]
+Missing character: There is no ⋯ in font cmr10!
+Missing character: There is no ⋯ in font cmr10!
+ [33]
 Missing character: There is no σ in font cmmi8!
 Missing character: There is no ⋅ in font cmr10!
 Missing character: There is no σ in font cmmi8!
- [33]
+ [34]
 Missing character: There is no ， in font cmr10!
 Missing character: There is no ⋯ in font cmr10!
 Missing character: There is no ， in font cmr10!
@@ -1883,11 +1797,11 @@ Missing character: There is no 自 in font cmr10!
 Missing character: There is no 相 in font cmr10!
 Missing character: There is no 关 in font cmr10!
 
-Overfull \hbox (238.05537pt too wide) detected at line 1851
+Overfull \hbox (238.05537pt too wide) detected at line 1902
 \OML/cmm/m/it/10.95 H[]E\OT1/cmr/m/n/10.95 ([]\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ) = 0 = 0[][] \OML/cmm/m/it/10.95 D:W: \OT1/cmr/m/n/10.95 = [][] 0 \OML/cmm/m/it/10.95 < D:W: < d[][] d[] < D:W: < d[][] d[] < D:W: < \OT1/cmr/m/n/10.95 4 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 d[]D:W:\OT1/cmr/m/n/10.95 2[] 4 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 d[] < D:W: < \OT1/cmr/m/n/10.95 4 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 d[][] \OT1/cmr/m/n/10.95 4 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 d[] < D:W: < \OT1/cmr/m/n/10.95 4
  []
 
-[34]
+[35]
 Missing character: There is no ： in font cmr10!
 Missing character: There is no ρ in font cmmi10!
 Missing character: There is no ρ in font cmmi10!
@@ -1930,7 +1844,7 @@ Missing character: There is no 决 in font cmr10!
 Missing character: There is no 系 in font cmr10!
 Missing character: There is no 数 in font cmr10!
 
-Overfull \hbox (629.88026pt too wide) detected at line 1871
+Overfull \hbox (629.88026pt too wide) detected at line 1922
 \OML/cmm/m/it/10.95 "[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^Z[]"[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^Z[]^^O[] \OT1/cmr/m/n/10.95 + [] + \OML/cmm/m/it/10.95 ^^Z[]"[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 e[][] Y[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^L[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^L[]X[] \OT1/cmr/m/n/10.95 + [] + \OML/cmm/m/it/10.95 ^^L[]X[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^Z[]"[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^Z[]"[] \OT1/cmr/m/n/10.95 + [] + \OML/cmm/m/it/10.95 ^^Z[]"[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 e[][] H[][] \OT1/cmr/m/n/10.95 = [] =  = [] = 0[] \OML/cmm/m/it/10.95 LM \OT1/cmr/m/n/10.95 = [][] []\OML/cmm/m/it/10.95 ^^_[] [] [] T[] \OT1/cmr/m/n/10.95 = [] + []\OML/cmm/m/it/10.95 X[] \OT1/cmr/m/n/10.95 +  + []\OML/cmm/m/it/10.95 X[] \OT1/cmr/m/n/10.95 + [][] + [][] +  + [][] + \OML/cmm/m/it/10.95 e[][] R[][] \OT1/cmr/m/n/10.95 = [] + []\OML/cmm/m/it/10.95 X[] \OT1/cmr/m/n/10.95 +  + []\OML/cmm/m/it/10.95 X[] \OT1/cmr/m/n/10.95 + [][] + [][] +  + [][] + \OML/cmm/m/it/10.95 e[]
  []
 
@@ -1952,14 +1866,14 @@ Missing character: There is no 检 in font cmr10!
 Missing character: There is no 验 in font cmr10!
 Missing character: There is no ： in font cmr10!
 Missing character: There is no ⋅ in font cmr10!
-[35]
+[36]
 Missing character: There is no ： in font cmr10!
 Missing character: There is no δ in font cmmi10!
 Missing character: There is no δ in font cmmi10!
 Missing character: There is no δ in font cmmi10!
 Missing character: There is no ⋅ in font cmr10!
 
-Overfull \hbox (161.2639pt too wide) detected at line 1966
+Overfull \hbox (161.2639pt too wide) detected at line 2017
 \OML/cmm/m/it/10.95 > "[] \OMS/cmsy/m/n/10.95 ^^Y [] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^N[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N[]X[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N[]X[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N[]X[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N[]X[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N[]X[]X[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 e[][] H[][] \OT1/cmr/m/n/10.95 = [] = [] = [] = 0[] \OML/cmm/m/it/10.95 F \OT1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 LM \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 nR[] \OMS/cmsy/m/n/10.95 ^^X \OML/cmm/m/it/10.95 ^^_\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 >
  []
 
@@ -1987,19 +1901,19 @@ Missing character: There is no μ in font cmmi10!
 Missing character: There is no ④ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no μ in font cmmi10!
 Missing character: There is no μ in font cmmi10!
-[36]
-Overfull \hbox (3.41263pt too wide) in paragraph at lines 2047--2048
+[37]
+Overfull \hbox (3.41263pt too wide) in paragraph at lines 2098--2099
 []\TU/SimSun(0)/m/n/10.95 广 义 自 回 归 条 件 异 方 差 模 型  |（\TU/CMUSerif(0)/m/n/10.95 generalized autoregressive conditional heteroscedasticity model\TU/SimSun(0)/m/n/10.95 ，|
  []
 
+[38]
 Missing character: There is no β in font cmmi10!
 Missing character: There is no β in font cmmi10!
 
-Overfull \hbox (122.48001pt too wide) detected at line 2144
+Overfull \hbox (122.48001pt too wide) detected at line 2195
 \OML/cmm/m/it/10.95 lnY \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^L[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^L[]lnX \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 "[]  [] [] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 lnY[] \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95 ^^@ [] []  \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ln[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^L[] [] [][]  \OMS/cmsy/m/n/10.95 ^^Y [] \OT1/cmr/m/n/10.95 = [][] 
  []
 
-[37]
 Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ③ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
@@ -2105,8 +2019,8 @@ Missing character: There is no 题 in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
-Underfull \hbox (badness 10000) in paragraph at lines 2219--2228
+ [39]
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2279
 
  []
 
@@ -2116,105 +2030,105 @@ Missing character: There is no ③ in font CMU Serif Roman/OT:script=latn;langua
 Missing character: There is no ▪ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[39]
+[40]
 Missing character: There is no ∈ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
- [40] [41
+ [41] [42
 
-] [42] [43
+] [43] [44] [45
 
-] [44]
+] [46]
 Chapter 4.
 
-Overfull \hbox (41.74998pt too wide) in paragraph at lines 2373--2373
+Overfull \hbox (41.74998pt too wide) in paragraph at lines 2424--2424
 []$[]$| 
  []
 
 
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 2344--2373
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 2395--2424
 [] 
  []
 
-[45
+[47
 
 ]
-Overfull \hbox (29.74998pt too wide) in paragraph at lines 2429--2429
+Overfull \hbox (29.74998pt too wide) in paragraph at lines 2480--2480
 []$[]$| 
  []
 
 
-Overfull \hbox (6.98639pt too wide) in paragraph at lines 2429--2429
+Overfull \hbox (6.98639pt too wide) in paragraph at lines 2480--2480
 []$[]$| 
  []
 
 
-Overfull \hbox (47.09999pt too wide) in paragraph at lines 2406--2429
+Overfull \hbox (47.09999pt too wide) in paragraph at lines 2457--2480
 [] 
  []
 
 
-Overfull \hbox (6.98639pt too wide) in paragraph at lines 2460--2460
+Overfull \hbox (6.98639pt too wide) in paragraph at lines 2511--2511
 []$[]$| 
  []
 
 
-Overfull \hbox (29.74998pt too wide) in paragraph at lines 2460--2460
+Overfull \hbox (29.74998pt too wide) in paragraph at lines 2511--2511
 []$[]$| 
  []
 
 
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 2436--2460
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 2487--2511
 [] 
  []
 
-[46]
-Overfull \hbox (30.79999pt too wide) in paragraph at lines 2499--2499
+[48]
+Overfull \hbox (30.79999pt too wide) in paragraph at lines 2550--2550
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2499--2499
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2550--2550
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2499--2499
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2550--2550
 []$[]$| 
  []
 
 
-Overfull \hbox (47.09999pt too wide) in paragraph at lines 2473--2499
+Overfull \hbox (47.09999pt too wide) in paragraph at lines 2524--2550
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2500--2502
+Underfull \hbox (badness 10000) in paragraph at lines 2551--2553
 
  []
 
 
-Overfull \hbox (30.79999pt too wide) in paragraph at lines 2530--2530
+Overfull \hbox (30.79999pt too wide) in paragraph at lines 2581--2581
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2530--2530
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2581--2581
 []$[]$| 
  []
 
 
-Overfull \hbox (18.79999pt too wide) in paragraph at lines 2530--2530
+Overfull \hbox (18.79999pt too wide) in paragraph at lines 2581--2581
 []$[]$| 
  []
 
 
-Overfull \hbox (47.09999pt too wide) in paragraph at lines 2508--2530
+Overfull \hbox (47.09999pt too wide) in paragraph at lines 2559--2581
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
+ [49]
 Missing character: There is no 利 in font cmr10!
 Missing character: There is no 润 in font cmr10!
 Missing character: There is no 率 in font cmr10!
@@ -2240,7 +2154,7 @@ Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;langua
 
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
- [48]
+ [50]
 Missing character: There is no 剩 in font cmr10!
 Missing character: There is no 余 in font cmr10!
 Missing character: There is no 价 in font cmr10!
@@ -2282,97 +2196,97 @@ Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;langua
 Missing character: There is no ③ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
- [49] [50
+ [51] [52
 
 ]
 Chapter 5.
-[51] [52
+[53] [54
 
 ]
 Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2666--2668
-
- []
-
-Missing character: There is no — in font cmr10!
-Missing character: There is no — in font cmr10!
-Missing character: There is no — in font cmr10!
-Missing character: There is no — in font cmr10!
-Missing character: There is no … in font cmr10!
-Missing character: There is no … in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 2692--2694
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 2717--2719
 
  []
 
+Missing character: There is no — in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no — in font cmr10!
+Missing character: There is no … in font cmr10!
+Missing character: There is no … in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 2743--2745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2768--2770
+
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54] [55] [56
+ [56] [57] [58
 
 ]
 Chapter 7.
-[57] [58] [59] [60]
+[59] [60] [61] [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61] [62] [63]
-Overfull \hbox (13.08907pt too wide) detected at line 3333
+ [63] [64] [65]
+Overfull \hbox (13.08907pt too wide) detected at line 3384
 [] [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
+ [67]
 Missing character: There is no ↑ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 3420--3422
+Underfull \hbox (badness 10000) in paragraph at lines 3471--3473
 
  []
 
-[66]
+[68]
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
- [67]
+ [69]
 Underfull \vbox (badness 1824) has occurred while \output is active []
 
- [68] [69] [70
+ [70] [71] [72
 
 ]
 Chapter 8.
-[71] [72] [73] [74] [75] [76] [77] [78
+[73] [74] [75] [76] [77] [78] [79] [80
 
 ]
 Chapter 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
+ [81]
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr8!
 Missing character: There is no · in font cmr6!
- [80] [81]
-Overfull \hbox (8.07318pt too wide) in paragraph at lines 4223--4224
+ [82] [83]
+Overfull \hbox (8.07318pt too wide) in paragraph at lines 4274--4275
 []\TU/SimSun(0)/m/n/10.95 新 剑 桥 学 派：|  认 为 利 率 是 借 贷 资 金 的 价 格，|  批 判 综 合 实 际 利 率 理 论 和 流 动 性 偏 好 利 率  |（\TU/CMUSerif(0)/m/n/10.95 loanable-
  []
 
 Missing character: There is no Δ in font cmmi10!
-[82] [83] [84] [85] [86
+[84] [85] [86] [87] [88
 
 ]
 Chapter 10.
@@ -2387,7 +2301,7 @@ Missing character: There is no ▪ in font CMU Serif Roman/OT:script=latn;langua
 Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ③ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[87] [88]
+[89] [90]
 Missing character: There is no · in font cmr10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no ⋅ in font cmr10!
@@ -2404,7 +2318,7 @@ Missing character: There is no 或 in font cmr10!
 Missing character: There is no → in font cmr10!
 Missing character: There is no ∗ in font cmr8!
 Missing character: There is no ∗ in font cmr8!
- [89]
+ [91]
 Missing character: There is no − in font cmr10!
 Missing character: There is no ↑ in font cmr10!
 Missing character: There is no ↓ in font cmr10!
@@ -2425,7 +2339,7 @@ Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;langua
 Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ③ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
- [90]
+ [92]
 Missing character: There is no ▪ in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
@@ -2438,364 +2352,364 @@ Missing character: There is no ⼩ in font SimSun/OT:script=hani;language=dflt;!
 Missing character: There is no ⽐ in font SimSun/OT:script=hani;language=dflt;!
 Missing character: There is no ⼀ in font SimSun/OT:script=hani;language=dflt;!
 Missing character: There is no ⾏ in font SimSun/OT:script=hani;language=dflt;!
- [91]
+ [93]
 Missing character: There is no ① in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ② in font CMU Serif Roman/OT:script=latn;language=dflt;mapping=tex-text;!
- [92] [93] [94
+ [94] [95] [96
 
 ]
 Chapter 11.
-[95] [96
-
-]
-Chapter 12.
 [97] [98
 
 ]
-Chapter 13.
+Chapter 12.
 [99] [100
 
 ]
-Chapter 14.
+Chapter 13.
 [101] [102
 
 ]
-Chapter 15.
+Chapter 14.
 [103] [104
 
 ]
-Chapter 16.
+Chapter 15.
 [105] [106
 
 ]
-Chapter 17.
+Chapter 16.
 [107] [108
+
+]
+Chapter 17.
+[109] [110
 
 ]
 Chapter 18.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4954.
+(hyperref)                removing `math shift' on input line 5005.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4954.
+(hyperref)                removing `math shift' on input line 5005.
 
 Missing character: There is no ′ in font cmr10!
 Missing character: There is no ′ in font cmr10!
-[109]
-Overfull \hbox (75.0659pt too wide) detected at line 5037
+[111]
+Overfull \hbox (75.0659pt too wide) detected at line 5088
 []
  []
 
-[110]
-Overfull \hbox (12.70406pt too wide) in paragraph at lines 5122--5122
+[112]
+Overfull \hbox (12.70406pt too wide) in paragraph at lines 5173--5173
 []\TU/SimSun(0)/m/n/10.95 影 响 因 素：| $[] \OT1/cmr/m/n/10.95 = []$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [111]
+ [113]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112] [113]
+ [114] [115]
 Underfull \vbox (badness 5726) has occurred while \output is active []
 
- [114]
-Underfull \hbox (badness 10000) in paragraph at lines 5333--5335
+ [116]
+Underfull \hbox (badness 10000) in paragraph at lines 5384--5386
 
  []
 
-[115]
-Underfull \hbox (badness 10000) in paragraph at lines 5391--5393
+[117]
+Underfull \hbox (badness 10000) in paragraph at lines 5442--5444
 
- []
-
-[116]
-Underfull \vbox (badness 2057) has occurred while \output is active []
-
- [117]
-Overfull \hbox (50.74634pt too wide) in paragraph at lines 5490--5507
-[] 
  []
 
 [118]
-Underfull \hbox (badness 10000) in paragraph at lines 5544--5546
+Underfull \vbox (badness 2057) has occurred while \output is active []
+
+ [119]
+Overfull \hbox (50.74634pt too wide) in paragraph at lines 5541--5558
+[] 
+ []
+
+[120]
+Underfull \hbox (badness 10000) in paragraph at lines 5595--5597
 
  []
 
-[119] [120]
+[121] [122]
 Chapter 19.
 
 Underfull \vbox (badness 3907) has occurred while \output is active []
 
- [121
+ [123
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [122] [123] [124
+ [124] [125] [126
 
-] [125
+] [127
 
 ]
-Overfull \hbox (3.34029pt too wide) in paragraph at lines 5990--6074
+Overfull \hbox (3.34029pt too wide) in paragraph at lines 6041--6125
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [126
-
-] [127]
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no 右 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no 右 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no 套 in font cmr10!
-Missing character: There is no 利 in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no 套 in font cmr10!
-Missing character: There is no 利 in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no 资 in font cmr10!
-Missing character: There is no 本 in font cmr10!
-Missing character: There is no 流 in font cmr10!
-Missing character: There is no 出 in font cmr10!
-Missing character: There is no 资 in font cmr10!
-Missing character: There is no 本 in font cmr10!
-Missing character: There is no 流 in font cmr10!
-Missing character: There is no 出 in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ＞ in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ͤ in font cmmi10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 右 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ＞ in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ͤ in font cmmi10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 右 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no 最 in font cmr10!
-Missing character: There is no 终 in font cmr10!
-Missing character: There is no 的 in font cmr10!
-Missing character: There is no 要 in font cmr10!
-Missing character: There is no 高 in font cmr10!
-Missing character: There is no 于 in font cmr10!
-Missing character: There is no 最 in font cmr10!
-Missing character: There is no 初 in font cmr10!
-Missing character: There is no 的 in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 下 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no Ȳ in font cmmi10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no 最 in font cmr10!
-Missing character: There is no 终 in font cmr10!
-Missing character: There is no 的 in font cmr10!
-Missing character: There is no 要 in font cmr10!
-Missing character: There is no 高 in font cmr10!
-Missing character: There is no 于 in font cmr10!
-Missing character: There is no 最 in font cmr10!
-Missing character: There is no 初 in font cmr10!
-Missing character: There is no 的 in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no 下 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no → in font cmr10!
-Missing character: There is no ↑ in font cmr10!
  [128
+
+] [129]
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 右 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no 右 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 套 in font cmr10!
+Missing character: There is no 利 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 套 in font cmr10!
+Missing character: There is no 利 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no 资 in font cmr10!
+Missing character: There is no 本 in font cmr10!
+Missing character: There is no 流 in font cmr10!
+Missing character: There is no 出 in font cmr10!
+Missing character: There is no 资 in font cmr10!
+Missing character: There is no 本 in font cmr10!
+Missing character: There is no 流 in font cmr10!
+Missing character: There is no 出 in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ＞ in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ͤ in font cmmi10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 右 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ＞ in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ͤ in font cmmi10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 右 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 最 in font cmr10!
+Missing character: There is no 终 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 要 in font cmr10!
+Missing character: There is no 高 in font cmr10!
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 最 in font cmr10!
+Missing character: There is no 初 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 下 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no Ȳ in font cmmi10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no 最 in font cmr10!
+Missing character: There is no 终 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 要 in font cmr10!
+Missing character: There is no 高 in font cmr10!
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 最 in font cmr10!
+Missing character: There is no 初 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no 下 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no → in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+ [130
 
 ]
 Missing character: There is no Δ in font cmmi10!
 Missing character: There is no · in font cmr10!
 Missing character: There is no Δ in font cmmi10!
 Missing character: There is no · in font cmr10!
- [129] [130
+ [131] [132
 
 ]
 Chapter 20.
-[131] [132
+[133] [134
 
 ]
 Chapter 21.
-[133] [134] [135] [136
+[135] [136] [137] [138
 
 ]
 Chapter 22.
 
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [137]
+ [139]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [138]
+ [140]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139] [140]
-Overfull \hbox (56.36243pt too wide) detected at line 6614
+ [141] [142]
+Overfull \hbox (56.36243pt too wide) detected at line 6665
 []
  []
 
-[141] [142
-
-]
-Chapter 23.
 [143] [144
 
 ]
-Chapter 24.
+Chapter 23.
 [145] [146
 
 ]
-Chapter 25.
+Chapter 24.
 [147] [148
 
-] [149] [150]
+]
+Chapter 25.
+[149] [150
+
+] [151] [152]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2814,29 +2728,38 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6671.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6671.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6722.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6722.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6671.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6671.
-Package rerunfilecheck Info: File `Science.out' has not changed.
-(rerunfilecheck)             Checksum: 5E37125F75D0448D81E26ABFA3DA8656;28973.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6722.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6722.
 
+
+Package rerunfilecheck Warning: File `Science.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Science.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  5E37125F75D0448D81E26ABFA3DA8656;28973.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 99191 strings out of 479418
- 2247886 string characters out of 5886345
- 2028498 words of memory out of 5000000
- 115769 multiletter control sequences out of 15000+600000
+ 99086 strings out of 479418
+ 2246162 string characters out of 5886345
+ 2028168 words of memory out of 5000000
+ 115672 multiletter control sequences out of 15000+600000
  553025 words of font info for 150 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,44n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (162 pages).
+Output written on Science.pdf (156 pages).

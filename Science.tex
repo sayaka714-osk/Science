@@ -820,17 +820,18 @@ $Y$服从正态分布
 
 \section{参数检验}
 
-适用于定量、连续变量
 
-假设是针对总体分布中未知参数提出的
+
+假设是针对总体分布中未知参数提出的，适用于定量、连续变量。
 
 原理：小概率事件不太可能在一次事件中发生，若发生则有理由拒绝原假设
+\begin{enumerate}[(1)]
+    \item 第一类错误：拒真，$P\{拒绝H_0|H_0为真\}$，能够计算
+    \item 第二类错误：取伪，$P\{接受H_0|H_0不真\}$
+    \item 一般将样本支持的放在备择假设，样本背离的放在原假设；药物治愈、培训成果等将无效放在原假设；等号放在原假设
+\end{enumerate}
 
-第一类错误：拒真，$P\{拒绝H_0|H_0为真\}$，能够计算
 
-第二类错误：取伪，$P\{接受H_0|H_0不真\}$
-
-一般将样本支持的放在备择假设，样本背离的放在原假设；药物治愈、培训成果等将无效放在原假设；等号放在原假设
 
 
 
@@ -1173,9 +1174,9 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 
 \section{非参数检验}
 
-适用于定类、定序数据、离散变量
 
-假设是关于总体其他的统计特征（如总体分布、独立性等）
+
+假设是关于总体其他的统计特征（如总体分布、独立性等），适用于定类、定序数据、离散变量。
 
 
 
@@ -1222,38 +1223,37 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 
 \subsubsection{衡量}
 
-1. 双变量：皮尔森单相关系数
 
-（1）总体相关系数：
-$$
-\rho_{XY}\equiv Corr\left(X,Y\right)\equiv\frac{Cov\left(X,Y\right)}{\sqrt{Var\left(X\right)Var\left(Y\right)}}=\frac{\sigma_{XY}}{\sigma_X\sigma_Y}
-$$
-
-（2）样本相关系数：
-$$
-r_{XY} = \frac{\sum_{i=1}^{n}{ (X_i-\bar{X})(Y_i-Y)}}{\sqrt{\sum_{i=1}^{n}{(X_i-\bar{X})^2}}· \sqrt{\sum_{i=1}^{n}{(Y_i-\bar{Y})^2}}  }, -1\leq r \leq 1
-$$
-
-（3）强弱：
-\begin{align*}
-0\le\left|r\right|<0.3：\text{无线性相关} \\ 
-0.3\le\left|r\right|<0.5：\text{弱相关} \\ 
-0.5\le\left|r\right|<0.8：\text{中度相关} \\ 
-0.8\le\left|r\right|\le1：\text{强相关}
-\end{align*}
-
-
-（4）检验：
-\begin{gather*}
-    H_0: \rho =0
-\end{gather*}
-检验统计量：
-\begin{gather*}
-    t = \frac{r\sqrt{n-2}}{\sqrt{(1-r)^2}} \sim t(n-2) 
-\end{gather*}
-
-
-2. 多变量：复相关系数，偏相关系数
+\begin{enumerate}[1.]
+    \item 双变量：皮尔森单相关系数
+          \begin{enumerate}[(1)]
+              \item 总体相关系数：
+                    \begin{gather*}
+                        \rho_{XY}\equiv Corr\left(X,Y\right)\equiv\frac{Cov\left(X,Y\right)}{\sqrt{Var\left(X\right)Var\left(Y\right)}}
+                        =\frac{\sigma_{XY}}{\sigma_X\sigma_Y}
+                    \end{gather*}
+              \item 样本相关系数：
+                    \begin{gather*}
+                        r_{XY} = \frac{\sum_{i=1}^{n}{ (X_i-\bar{X})(Y_i-Y)}}{\sqrt{\sum_{i=1}^{n}{(X_i-\bar{X})^2}}\cdot \sqrt{\sum_{i=1}^{n}{(Y_i-\bar{Y})^2}}  }, -1\leq r \leq 1
+                    \end{gather*}
+              \item 强弱：
+                    \begin{align*}
+                        0\le\left|r\right|<0.3:\text{无线性相关} \\
+                        0.3\le\left|r\right|<0.5:\text{弱相关}   \\
+                        0.5\le\left|r\right|<0.8:\text{中度相关} \\
+                        0.8\le\left|r\right|\le1:\text{强相关}
+                    \end{align*}
+              \item 检验：
+                    \begin{gather*}
+                        H_0: \rho =0
+                    \end{gather*}
+                    \par 检验统计量：
+                    \begin{gather*}
+                        t = \frac{r\sqrt{n-2}}{\sqrt{(1-r)^2}} \sim t(n-2)
+                    \end{gather*}
+          \end{enumerate}
+    \item 多变量：复相关系数，偏相关系数
+\end{enumerate}
 
 
 \subsection{横截面模型}
@@ -1358,12 +1358,12 @@ $$
 
 又称数据生成过程（data creating process, DGP）
 
-$$
-Y_{i} = E(Y|X_{i1},X_{i2},\cdots,X_{iK})+\varepsilon_{i}\\ 
-=\beta_{0} + \beta_{1}X_{i1}+\beta_{2}X_{i2}+\cdots+\beta_{k}X_{ik}+\varepsilon_{i}, i=1,2,⋯,n\\ 
-\\   
-\bm{Y}=\bm{X\beta}+\bm{\varepsilon}
-$$
+\begin{align*}
+Y_{i} &= E(Y|X_{i1},X_{i2},\cdots,X_{iK})+\varepsilon_{i}\\ 
+&=\beta_{0} + \beta_{1}X_{i1}+\beta_{2}X_{i2}+\cdots+\beta_{k}X_{ik}+\varepsilon_{i}, i=1,2,⋯,n\\ 
+\bm{Y}&=\bm{X\beta}+\bm{\varepsilon}
+\end{align*}
+
 
 其中
 $\bm{Y}\equiv (Y_{1} Y_{2} \cdots  Y_{n})'$，
@@ -1396,11 +1396,11 @@ $\varepsilon \equiv (\varepsilon_{1} \varepsilon_{2} \cdots \varepsilon_{n})'$�
 
 \paragraph{样本回归模型}
 
-$$
-Y_i  ={\hat{Y}}_i+{\hat{\varepsilon}}_i \\ 
-={\hat{\beta}}_0+{\hat{\beta}}_1X_{i1}+{\hat{\beta}}_2X_{i2}+\cdots+{\hat{\beta}}_kX_{ik}+{\hat{\varepsilon}}_i\ , i=1,2,\cdots,n \\  
-\mathbf{Y}=\mathbf{X}\hat{\mathbf{\beta}}+\hat{\mathbf{\varepsilon}}
-$$
+\begin{align*}
+Y_i & ={\hat{Y}}_i+{\hat{\varepsilon}}_i ={\hat{\beta}}_0+{\hat{\beta}}_1X_{i1}+{\hat{\beta}}_2X_{i2}+\cdots+{\hat{\beta}}_kX_{ik}+{\hat{\varepsilon}}_i\ , i=1,2,\cdots,n \\  
+\mathbf{Y}&=\mathbf{X}\hat{\bm{\beta}}+\hat{\bm{\varepsilon}}
+\end{align*}
+
 
 \par ${\hat{Y}}_i$：样本回归函数（sample regression function，SRF）
 \par ${\hat{\varepsilon}}_i$：（样本）残差项/剩余项（residual）
@@ -1451,7 +1451,7 @@ R^2=\left[Corr\left(Y_i,{\hat{Y}}_i\right)\right]^2
 变量回归系数的显著性检验（$n-k\geq 8$时较为稳定）
 
 $$
-H_0:\beta_j=0；H_1：β_j≠0（j=1,2,⋯,k）
+H_0:\beta_j=0; H_1:\beta_j\neq 0, j=1,2,\cdots,k
 $$
 
 一元：
@@ -1483,7 +1483,7 @@ $c_{jj}$：$\left(\bm{X}^\prime\bm{X}\right)^{-1}$对角线上的第$j$个元素
 总体线性关系显著性（$n\geq 30$或至少$n\geq3\left(k+1\right)$基本要求）
 
 \begin{gather*}
-    H_0:\beta_1=\beta_2=\cdots=\beta_k=0；H_1：β_{j}, j=1,2,⋯,k\text{不全为零}
+    H_0:\beta_1=\beta_2=\cdots=\beta_k=0;H_1:\beta_{j}, j=1,2,\cdots,k\text{不全为零}
 \end{gather*}
 
 
@@ -1523,10 +1523,12 @@ $$
 
 
 时间序列的平稳性：假定某个时间序列是由某一随机过程（stochastic process）生成的，即假定时间序列${X_t}(t=1,2,…)$的每一个数值都是从一个概率分布中随机得到，如果满足下列条件：
+\begin{enumerate}[(1)]
+    \item 均值$E(X_t)=\mu$是与时间$t$无关的常数  
+    \item 方差$Var(X_t)=\sigma^2$是与时间$t$无关的常数  
+    \item 协方差$Cov\left(X_t,X_{t+k}\right)=\gamma_k$是只与时期间隔$k$有关，与时间$t$无关的常数
+\end{enumerate}
 
-\par 均值$E(X_t)=\mu$是与时间$t$无关的常数  
-\par 方差$Var\left(X_t\right)=\sigma^2$是与时间$t$无关的常数  
-\par 协方差$Cov\left(X_t,X_{t+k}\right)=\gamma_k$是只与时期间隔$k$有关，与时间$t$无关的常数
 
 \paragraph{平稳时间序列}
 
@@ -1563,14 +1565,14 @@ $$
 \end{enumerate}
 \item 检验：
     \begin{enumerate}[a.]
-        \item $H_0：\rho _1=\rho _2=\cdots =\rho _m=0,\forall m\geqslant 1$ 。延迟期数小于或等于m期的序列值之间相互独立。为白噪声序列  
-        \item $H_1$：至少存在某个$\rho _k≠0,\forall m\geqslant 1，k\leqslant m$。延迟期数小于或等于m期的序列值之间有相关性  
-        \item Q统计量：$Q=n\sum_{k=1}^{m}{\hat{\rho}}_k^2~\chi^2\left(m\right)$  
-        \item LB(Ljung-Box)统计量：$LB=n(n+2)\sum_{k=1}^{m}{(\frac{{\hat{\rho}}_k^2}{n-k})}~\chi^2(m)$
+        \item $H_0:\rho _1=\rho _2=\cdots =\rho _m=0,\forall m\geqslant 1$ 。延迟期数小于或等于m期的序列值之间相互独立。为白噪声序列  
+        \item $H_1$：至少存在某个$\rho _k\neq 0,\forall m\geqslant 1，k\leqslant m$。延迟期数小于或等于m期的序列值之间有相关性  
+        \item Q统计量：$Q=n\sum_{k=1}^{m}{\hat{\rho}}_k^2\sim \chi^2\left(m\right)$  
+        \item LB(Ljung-Box)统计量：$LB=n(n+2)\sum_{k=1}^{m}{(\frac{{\hat{\rho}}_k^2}{n-k})}\sim\chi^2(m)$
     \end{enumerate}
     \item d阶单整序列（integrated of d）：原时间序列经过d次差分变平稳
     \begin{enumerate}[a.]
-        \item 一阶自回归$AR(1)$过程：$X_t=\phi X_{t-1}+\mu_t，\mu_t\sim N(0,σ_2)$  
+        \item 一阶自回归$AR(1)$过程：$X_t=\phi X_{t-1}+\mu_t，\mu_t\sim N(0,\sigma_2)$  
         \item $\left|\phi\right|>1$：随机过程生成的时间序列发散  
         \item $\Phi=1$：随机游走（random walk）过程，非平稳  
         \item $\Delta X_t=X_t-X_{t-1}=\mu_t$
@@ -1600,13 +1602,13 @@ $$
 
 一阶序列相关
 
-> $X_t=\alpha+\rho X_{t-1}+\mu_t$或$∆X_t=α+δX_{t-1}+μ_{t}$  
-> $H_0：δ=0，即ρ=1；H_1：δ<0，即ρ<1 $  
-> $\rho=\left|\varphi_1\right|-1， \tau=\frac{\hat{\rho}}{S(\hat{\rho})}$  
-> $H_0$：$φ_1≥1$，非平稳；  
-> $\left|\varphi_1\right|<1$时，$t(φ_1)=\frac{\hat{φ}_1-φ_1}{S(\hat{φ}_1)}$渐进$N(0,1)$  
-> $\left|\varphi_1\right|=1$时，$τ=\frac{|\hat{φ}_1|-1}{S(\hat{φ}_1)}$极限$\frac{\int_{0}^{1}W(r)dW(r)}{\int_{0}^{1}[W(r)]^2dr}$  
-> 若拒绝$H_0$（$t<\tau$临界值，$t$统计量有偏误）则为平稳序列  
+\par $X_t=\alpha+\rho X_{t-1}+\mu_t$或$\Delta X_t=\alpha +\delta X_{t-1}+\mu _{t}$  
+\par $H_0$：$\delta =0$，即$\rho =1$；$H_1$：$\delta <0$，即$\rho <1$  
+\par $\rho=\left|\varphi_1\right|-1， \tau=\frac{\hat{\rho}}{S(\hat{\rho})}$  
+\par $H_0$：$\varphi _1≥1$，非平稳；  
+\par $\left|\varphi_1\right|<1$时，$t(\varphi _1)=\frac{\hat{\varphi }_1-\varphi _1}{S(\hat{\varphi }_1)}$渐进$N(0,1)$  
+\par $\left|\varphi_1\right|=1$时，$\tau =\frac{|\hat{\varphi  }_1|-1}{S(\hat{\varphi }_1)}$极限$\frac{\int_{0}^{1}W(r)dW(r)}{\int_{0}^{1}[W(r)]^2dr}$  
+\par 若拒绝$H_0$（$t<\tau$临界值，$t$统计量有偏误）则为平稳序列  
 \begin{gather*}
 x_t=\phi_{1}x_{t-1}+\varepsilon_t\\
 x_t=\mu+\varphi_{1}x_{t-1}+\varepsilon_t\\
@@ -1618,33 +1620,38 @@ x_t=\mu+\beta t+\varphi_{1}x_{t-1}+\varepsilon_t
 
 多阶序列相关，用于方差齐性的情况。
 
-> 若$AR(p)$序列有单位根存在，则自回归系数之和恰好等于1  
-> $$
-> \lambda^p-\varphi_1\lambda^{p-1}-\cdots-\varphi_p=0 \Rightarrow^{\lambda=1} 1-\varphi_1-\cdots-\varphi_p=0 \Rightarrow\varphi_1+\varphi_2+\cdots+\varphi_p=1
-> $$
-> 
-> $x_t=\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t$  
-> $x_t=\mu+\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t$  
-> $x_t=\mu+\beta t+\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t$  
-> 模型1：$∆X_t=δX_{t-1}+\sum_{i=1}^{m}β_i∆X_{t-i}+ε_t$  
-> 模型2：$∆X_t=α+δX_{t-1}+\sum_{i=1}^{m}β_i∆X_{t-i}+ε_{t}$  
-> 模型3：$∆X_t=α+β_T+δX_{t-1}+\sum_{i=1}^{m}β_i∆X_{t-i}+ε_{t}$  
-> $T$：趋势项，时间变量，代表时间序列随时间变化的趋势  
-> $\alpha$：漂移项   
-> $m$：滞后阶数，一般用$LM$检验确定  
-> $H_0：δ=0；H_1：δ<0$；$\tau=\frac{\hat{\rho}}{S(\hat{\rho})}$  
-> 自下而上检验，拒绝$H_0$（$t<\tau$临界值）则为平稳序列，否则继续检验
+若$AR(p)$序列有单位根存在，则自回归系数之和恰好等于1  
+\begin{gather*}
+    \lambda^p-\varphi_1\lambda^{p-1}-\cdots-\varphi_p=0
+    \Rightarrow^{\lambda=1} 1-\varphi_1-\cdots-\varphi_p=0
+    \Rightarrow\varphi_1+\varphi_2+\cdots+\varphi_p=1\\
+    x_t=\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t\\
+    x_t=\mu+\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t \\
+    x_t=\mu+\beta t+\varphi_{1}x_{t-1}+\cdots+\varphi_{p}x_{t-p}+\varepsilon_t
+\end{gather*}
+
+
+ 
+\par 模型1：$\Delta X_t=\delta X_{t-1}+\sum_{i=1}^{m}\beta _i\Delta X_{t-i}+\varepsilon _t$  
+\par 模型2：$\Delta X_t=\alpha +\delta X_{t-1}+\sum_{i=1}^{m}\beta _i\Delta X_{t-i}+\varepsilon _{t}$  
+\par 模型3：$\Delta X_t=\alpha +\beta _T+\delta X_{t-1}+\sum_{i=1}^{m}\beta _i\Delta X_{t-i}+\varepsilon _{t}$  
+\par $T$：趋势项，时间变量，代表时间序列随时间变化的趋势  
+\par $\alpha$：漂移项   
+\par $m$：滞后阶数，一般用$LM$检验确定  
+\par $H_0:\delta =0; H_1:\delta <0$；$\tau=\frac{\hat{\rho}}{S(\hat{\rho})}$  
+\par 自下而上检验，拒绝$H_0$（$t<\tau$临界值）则为平稳序列，否则继续检验
 
 \subparagraph{PP检验}
 
 异方差的平稳性检验
 
 \begin{gather*}
-    Z\left(\tau\right) =\tau(\hat{\sigma}^2/\hat{\sigma}_{Sl}^2 ) -\frac{1}{2}  (\hat{\sigma}_{Sl}^2-\hat{\sigma}^2) T \sqrt{\hat{\sigma}_{Sl}^2 \sum_{t=2}^{T}{(x_{t-1}-x_{T-1})^2}} 
+    Z\left(\tau\right) =\tau(\hat{\sigma}^2/\hat{\sigma}_{Sl}^2 ) -\frac{1}{2}  (\hat{\sigma}_{Sl}^2-\hat{\sigma}^2) T \sqrt{\hat{\sigma}_{Sl}^2 \sum_{t=2}^{T}{(x_{t-1}-x_{T-1})^2}} \\
+    {\hat{\sigma}}^2=T^{-1}\sum_{t=1}^{T}{\hat{\varepsilon}}_t^2\\
+    {\hat{\sigma}}_{Sl}^2=T^{-1}\sum_{t=1}^{T}{\hat{\varepsilon}}_t^2+2T^{-1}\sum_{j=1}^{l}{w_j(l)\sum_{t=j+1}^{T}{{\hat{\varepsilon}}_t{\hat{\varepsilon}}_{t-j}}}\\
+    \bar{x}_{T-1}=\frac{1}{T-1}\sum_{t=1}^{T-1}{x_t}
 \end{gather*}
-\par ${\hat{\sigma}}^2=T^{-1}\sum_{t=1}^{T}{\hat{\varepsilon}}_t^2$  
-\par ${\hat{\sigma}}_{Sl}^2=T^{-1}\sum_{t=1}^{T}{\hat{\varepsilon}}_t^2+2T^{-1}\sum_{j=1}^{l}{w_j(l)\sum_{t=j+1}^{T}{{\hat{\varepsilon}}_t{\hat{\varepsilon}}_{t-j}}}$  
-\par $\bar{x}_{T-1}=\frac{1}{T-1}\sum_{t=1}^{T-1}{x_t}$
+
 
 
 
@@ -1671,25 +1678,39 @@ x_t=\mu+\beta t+\varphi_{1}x_{t-1}+\varepsilon_t
     \end{enumerate}
 }
 
-检验：豪斯曼检验（Hausman test）
-$Cov(\alpha_i,X_{it})=0$ → 无关（随机效应模型）：FE和RE都是一致的，但RE更有效
-$Cov(\alpha_i,X_{it})\neq 0 $ → 有关（固定效应效应）：FE仍然一致，但RE是有偏的
+\par 检验：豪斯曼检验（Hausman test）
+\par $Cov(\alpha_i,X_{it})=0$ → 无关（随机效应模型）：FE和RE都是一致的，但RE更有效
+\par $Cov(\alpha_i,X_{it})\neq 0 $ → 有关（固定效应效应）：FE仍然一致，但RE是有偏的
+
+
 
 \subsubsection{固定效应模型}
+
 假设： $Cov(\alpha_i,X_{it})\neq0$
+
 截面个体和时点变截距模型（双向固定效应模型）：
 $$Y_{it} =\alpha_i+\gamma_t+\beta_1X_{1,it}+\beta_2X_{2,it}+\cdots+\beta_kX_{k,it}+\varepsilon_{it}\left(i=1,2,\cdots,n\right) $$ \\  
 \par $\alpha_i$ ：个体固定效应（individual fixed effects），随个体而变，不随时间而变
 \par $\gamma_t$ ：时间固定效应（time fixed effect），随时间而变，不随个体而变
-* 估计方法
-1、虚拟变量法：
-实质上就是在传统的线性回归模型中加入N-1个虚拟变量，使得每个截面都有自己的截距项
-2、组内离差法：
-(1) 可以通过先从Y和X中减去个体和时间平均值，然后估计被减后的Y关于被减后的X的多元回归方程的方法来估计X的系数。这种方法可以避免二元变量的出现。
-(2) 从Y, X和时间指示变量中减去个体(不是时间)均值然后估计，被减后的Y对被减后的X和被减后的时间指示变量的多元回归中的k+T个系数
+
+\informationBox{
+    * 估计方法
+    \begin{enumerate}[1.]
+        \item 虚拟变量法：
+        \begin{enumerate}[(1)]
+            \item 实质上就是在传统的线性回归模型中加入N-1个虚拟变量，使得每个截面都有自己的截距项
+        \end{enumerate}
+        \item 组内离差法：
+         \begin{enumerate}[(1)]
+            \item 可以通过先从Y和X中减去个体和时间平均值，然后估计被减后的Y关于被减后的X的多元回归方程的方法来估计X的系数。这种方法可以避免二元变量的出现。
+            \item 从Y, X和时间指示变量中减去个体(不是时间)均值然后估计，被减后的Y对被减后的X和被减后的时间指示变量的多元回归中的k+T个系数  
+         \end{enumerate}
+    \end{enumerate}
+}
 
 \subsubsection{随机效应模型}
 假设： $Cov(\alpha_i,X_{it})=0 $
+
 模型：
 \begin{align*} 
     Y_{it} & = \beta_1 X_{1,it}+\beta_2 X_{2,it}+\cdots +\beta_k X_{k,it}+v_{it} \\ & =\beta_1 X_{1,it}+\beta_2 X_{2,it}+\cdots +\beta_k X_{k,it}+\alpha_i+u_{it} (i=1,2,⋯,n) 
@@ -1714,74 +1735,104 @@ $$Y_{it} =\alpha_i+\gamma_t+\beta_1X_{1,it}+\beta_2X_{2,it}+\cdots+\beta_kX_{k,i
 
 
 
-**多重共线性**：某几个解释变量之间出现相关性（multi-collinearity）
+多重共线性：某几个解释变量之间出现相关性（multi-collinearity）
 
 $$
 Cov\left(X_i,X_j\right)\neq0,\ i\neq j 
 $$
 
 \paragraph{原因}
-1、经济变量相关的共同趋势  
-2、模型设定不谨慎  
-3、样本资料的限制
+
+\begin{enumerate}[1.]
+    \item 经济变量相关的共同趋势  
+    \item 模型设定不谨慎  
+    \item 样本资料的限制
+\end{enumerate}
+
 
 \paragraph{后果}
-1、完全共线性（perfect multicollinearity）
 
-参数估计量不存在：相关的变量会合并，多元回归模型会退化
-> 存在$c_1X_{i1}+c_2X_{i2}+\cdots+c_kX_{ik}=0,c_i$不全为0，即某几个解释变量可以用其他解释变量的线性组合表示
 
-2、近似共线性（approximate multicollinearity），又称交互相关（intercorrelated）
-> 普通最小二乘法参数估计量的方差变大。存在$c_1X_{i1}+c_2X_{i2}+\cdots+c_kX_{ik}+v_i=0$，$c_i$不全为0，$v_i$为随机干扰项  
-> 例：二元线性回归：$Var(\hat{\beta}_{1})=\frac{σ2}{\sum{i=1}^{n}{x_{i1}^{2}}}⋅\frac{1}{(1-r)^2}>\frac{σ2}{\sum_{i=1}^{n}{x_{i1}^{2}}}$  
-> 方差膨胀因子（variance inflation factor，VIF）：$VIF\left({\hat{\beta}}_1\right)=\frac{1}{1-r^2}$，越高说明其越能被其他自变量所解释
+\begin{enumerate}[1.]
+    \item 完全共线性（perfect multicollinearity）
+          \begin{enumerate}[(1)]
+              \item 参数估计量不存在：相关的变量会合并，多元回归模型会退化
+              \item 存在$c_1X_{i1}+c_2X_{i2}+\cdots+c_kX_{ik}=0,c_i$不全为0，即某几个解释变量可以用其他解释变量的线性组合表示
+          \end{enumerate}
+    \item 近似共线性（approximate multicollinearity），又称交互相关（intercorrelated）
+          \begin{enumerate}[(1)]
+              \item 普通最小二乘法参数估计量的方差变大。存在$c_1X_{i1}+c_2X_{i2}+\cdots+c_kX_{ik}+v_i=0$，$c_i$不全为0，$v_i$为随机干扰项
+              \item 例：二元线性回归：$Var(\hat{\beta}_{1})=\frac{σ2}{\sum{i=1}^{n}{x_{i1}^{2}}}⋅\frac{1}{(1-r)^2}>\frac{σ2}{\sum_{i=1}^{n}{x_{i1}^{2}}}$
+              \item 方差膨胀因子（variance inflation factor，VIF）：$VIF\left({\hat{\beta}}_1\right)=\frac{1}{1-r^2}$，越高说明其越能被其他自变量所解释
+          \end{enumerate}
+    \item 参数估计量经济意义不合理
+          \begin{enumerate}[(1)]
+              \item 相关变量的参数反映共同影响，非单独影响
+          \end{enumerate}
+    \item 变量的显著性检验和模型的预测功能失去意义
+          \begin{enumerate}[(1)]
+              \item 不影响一致性，只影响有效性（方差变大）
+              \item 方差变大，t值小于临界值误导做出参数为零的推断
+              \item 方差变大，区间变大
+          \end{enumerate}
+\end{enumerate}
 
-3、参数估计量经济意义不合理
-> 相关变量的参数反映共同影响，非单独影响
-
-4、变量的显著性检验和模型的预测功能失去意义
-> 不影响一致性，只影响有效性（方差变大）   
-> 方差变大，t值小于临界值误导做出参数为零的推断  
-> 方差变大，区间变大
 
 \paragraph{检验}
-（一）是否存在
 
-1、两个解释变量：简单相关系数法
 
-> $|r|$接近1
+\begin{enumerate}[1.]
+    \item 是否存在
+          \begin{enumerate}[(1)]
+            \item 两个解释变量：简单相关系数法
+              \begin{enumerate}[a.]
+                \item  $|r|$接近1
+              \end{enumerate}
+              \item 多个解释变量：综合统计检验法
+              \begin{enumerate}[a.]
+                \item  模型的$R^2$与$F$值较大 → 各解释变量对$Y$的联合线性作用显著
+                \item  各参数估计的$t$检验值较小 → 各解释变量间存在共线性使得它们对$Y$的独立作用不能分辨
+              \end{enumerate}
+          \end{enumerate}
+    \item 存在范围
+          \begin{enumerate}[(1)]
+              \item 判定系数检验法
+                    \begin{enumerate}[a.]
+                        \item 构造F检验：$F_j=\frac{R_{j\cdot}^{2}/(k-1)}{(1-R_{j\cdot}^{2})/(n-k)}\sim F(k-1,n-k)$
+                        \item $R_{j\cdot}$是第$j$个解释变量对其他解释变量的回归方程的决定系数
+                        \item 进行辅助回归（auxiliary regression），如果某一种回归$X_{ji}=\alpha_{1}X_{1i}+\alpha_{2}X_{2i}+\cdots+\alpha_{L}X_{Li}$的判定系数较大，说明$X_j$与其他$X$间存在共线性。
+                    \end{enumerate}
+              \item 排除变量法（Stepwise Backward Regression）
+                    \begin{enumerate}[a.]
+                        \item 在模型中排除某一个解释变量$X_j$，估计模型；
+                        \item 如果拟合优度与包含$X_j$时十分接近，则说明$X_j$与其它解释变量之间存在共线性
+                    \end{enumerate}
+              \item 逐步回归法（Stepwise Forward Regression）
+                    \begin{enumerate}[a.]
+                        \item 以$Y$为被解释变量，逐个引入解释变量
+                        \item 若拟合优度变化（增加）显著，说明新引入变量是独立解释变量
+                    \end{enumerate}
+          \end{enumerate}
+\end{enumerate}
 
-2、多个解释变量：综合统计检验法
 
-> (1) 模型的$R^2$与$F$值较大 → 各解释变量对$Y$的联合线性作用显著  
-> (2) 各参数估计的$t$检验值较小 → 各解释变量间存在共线性使得它们对$Y$的独立作用不能分辨
-
-（二）存在范围
-
-1、判定系数检验法
-> 构造F检验：$F_j=\frac{R_{j\cdot}^{2}/(k-1)}{(1-R_{j\cdot}^{2})/(n-k)}\sim F(k-1,n-k)$  
-> $R_{j\cdot}$是第$j$个解释变量对其他解释变量的回归方程的决定系数  
-> 进行辅助回归（auxiliary regression），如果某一种回归$X_{ji}=\alpha_{1}X_{1i}+\alpha_{2}X_{2i}+\cdots+\alpha_{L}X_{Li}$的判定系数较大，说明$X_j$与其他$X$间存在共线性。
-
-2、排除变量法（Stepwise Backward Regression）
-> 在模型中排除某一个解释变量$X_j$，估计模型；  
-> 如果拟合优度与包含$X_j$时十分接近，则说明$X_j$与其它解释变量之间存在共线性
-
-3、逐步回归法（Stepwise Forward Regression）
-> 以$Y$为被解释变量，逐个引入解释变量  
-> 若拟合优度变化（增加）显著，说明新引入变量是独立解释变量
 
 \paragraph{解决方法}
 
-（一）剔除
 
-剩余系数的估值和经济意义发生变化；可能产生内生性问题
 
-（二）减小参数估计量的方差
+\begin{enumerate}[1.]
+    \item 剔除
+          \begin{enumerate}[(1)]
+              \item 剩余系数的估值和经济意义发生变化；可能产生内生性问题
+          \end{enumerate}
+    \item 减小参数估计量的方差
+          \begin{enumerate}[(1)]
+              \item 增加样本容量
+              \item 岭回归法（ridge regression）
+          \end{enumerate}
+\end{enumerate}
 
-1、增加样本容量
-
-2、岭回归法（ridge regression）
 
 
 
