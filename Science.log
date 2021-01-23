@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  23 JAN 2021 00:29
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  23 JAN 2021 14:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2230,17 +2230,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 24.
-[161] [162
+[161]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [162]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [163] [164]
 Chapter 25.
-[163] [164
+[165
+
+] [166
 
 ]
 Chapter 26.
-[165] [166
+[167] [168
 
-] [167] [168]
+] [169] [170]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2259,29 +2265,29 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7803.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7803.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8049.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8049.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7803.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7803.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8049.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8049.
 Package rerunfilecheck Info: File `Science.out' has not changed.
-(rerunfilecheck)             Checksum: 5FAB9028B8EA1D242C0298A5F9BFAE14;42890.
+(rerunfilecheck)             Checksum: 8AE6CB86E3B7B9E1D37AFC06093ADEDF;43881.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 99350 strings out of 479418
- 2252699 string characters out of 5886345
- 2032967 words of memory out of 5000000
- 115928 multiletter control sequences out of 15000+600000
+ 99355 strings out of 479418
+ 2252779 string characters out of 5886345
+ 2032981 words of memory out of 5000000
+ 115933 multiletter control sequences out of 15000+600000
  553025 words of font info for 150 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,56n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (182 pages).
+Output written on Science.pdf (184 pages).
