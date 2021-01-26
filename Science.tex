@@ -162,14 +162,9 @@
                                 \text{非存款类金融机构}
                             }
                             \text{金融辅助机构}
-
                         }
-                        \text{非金融机构}\\
-                        \text{家庭}
-                    }
-                    \text{运作机制}\mindmap{
-                        \text{金融调控}\\
-                        \text{金融监管}
+                        \text{非金融机构：公司金融}\\
+                        \text{家庭：家庭金融}
                     }
                 }
                 \text{房地产市场}
@@ -257,14 +252,15 @@
                     }
                     \text{物价稳定-货币市场}
                 }
-                }
                 \text{外部均衡}\mindmap{
                     \text{国际收支平衡-国际市场}
                 }
+            }
             \text{政府}\mindmap{
                 \text{财政政策}\\
                 \text{货币政策}\\
                 \text{贸易政策}\\
+                \text{监管政策}\\
                 \text{行政政策}
             }
         }
@@ -3366,6 +3362,44 @@ m'=\frac{\text{剩余价值}}{\text{必要劳动价值}}
 
 
 
+定义：一定时期内一国银行系统向经济中投入或抽离货币的行为过程（money supply）
+
+
+
+
+\subsubsection{传导机制}
+
+
+
+
+
+\subsubsection{理论：货币乘数}
+
+
+\begin{equation*}
+    m=\frac{M_s}{B}=\frac{C+D}{C+R}=\frac{\frac{C}{D}+1}{\frac{C}{D}+\frac{R}{D}}=\frac{cr+1}{cr+rr}
+\end{equation*}
+\par $m$：货币供应量与基础货币的倍数关系
+\par $M_s=C+D$：货币供给＝通货+活期存款
+\par $B=C+R$：基础货币＝通货+准备金
+\par $C$：公众以通货形式持有的货币（现金）
+\par $R$：银行以准备金形式持有的货币（存款准备金）
+\par $\frac{C}{D}$：通货-存款比率：流通中的现金与商业银行全部存款的比率（currency-deposit ratio）
+\par $\frac{R}{D}$：准备-存款比率：商业银行法定准备金和超额准备金的总和占全部存款的比重（reserve-deposit ratio）
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{货币需求}
 
 
@@ -5375,6 +5409,16 @@ E
 
 
 
+
+
+
+
+
+
+
+
+
+
 \section{绝对价值评估}
 
 
@@ -5813,9 +5857,81 @@ $$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
 \section{绝对风险评估}
 
 
+\subsection{价格变动}
+
+
+\subsubsection{情景分析}
+
+
+
+\subsubsection{泰勒级数展开}
+
+（Taylor Series Expansion）
+
+
+\begin{align*}
+    \Delta P& = \frac{\partial P}{\partial S}\Delta S+\frac{\partial P}{\partial t}\Delta t+\frac{\partial P}{\partial\sigma}\Delta\sigma+\frac{\partial P}{\partial r}\Delta r
+    + \frac{1}{2} \frac{\partial^2P}{\partial S^2} \Delta S^2
+    + \left( \frac{1}{2}\frac{\partial^{2}P}{\partial t^2}\Delta t^2 \right)
+    + \left( \frac{\partial^{2}P}{\partial S\partial t}\Delta S\Delta t \right) +\cdots \\
+    & = Delta\times\Delta S + Theta\times\Delta t+Vega\times\Delta\sigma+Rho\times\Delta r+\frac{1}{2}Gamma\times\Delta S^2+\cdots \\
+    & = \Delta\times\Delta S+\Theta\times\Delta t+\nu \times\Delta\sigma+\rho\times\Delta r+\frac{1}{2}\Gamma\times\Delta S^2+\cdots 
+\end{align*}
+\par $\Delta P$：交易组合的价值变化
+\par $\Delta S$：某一市场变量的变化
+\par $Delta=\Delta =\frac{\partial P}{\partial S}$：$\Delta=0$则Delta neutral
+\par $Gamma=\Gamma=\frac{\partial^2P}{\partial S^2}$：曲率（curvature）
+\par $T$：时间。时间损耗（time decay）
+\par $Theta=\Theta=\frac{\partial P}{\partial t}$：对于call或put期权通常为负
+\par $\sigma$：标的资产价格波动率
+\par $\Delta \sigma$：在$\Delta t$内波动率的变化
+\par $Vega=\nu=\frac{\partial P}{\partial\sigma}$：
+\par $r$：利率。外汇期权有两个利率
+\par $Rho=\rho=\frac{\partial P}{\partial r}$：
+
+
+
+
+
+
+
+\subsection{尾部风险：光谱型风险度量}
+
+\subsubsection{VaR}
+
+
+\subsubsection{ES}
+
+\subsubsection{回顾测试}
 
 
 \section{相对风险评估}
+
+
+\subsection{相关性}
+
+
+
+\subsection{波动率}
+
+
+
+
+\section{均衡：资产组合理论}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5845,7 +5961,7 @@ $$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
 
 
 
-\chapter{非金融机构}
+\chapter{公司金融}
 
 
 
@@ -5853,9 +5969,9 @@ $$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
 \chapter{家庭金融}
 
 
+ 
 
 
-\chapter{金融调控}
 
 
 
@@ -7611,6 +7727,13 @@ $NX$：净出口（net exports）＝贸易余额（trade balance）
 
 
 
+
+
+
+
+\chapter{财政政策}
+
+
 \chapter{货币政策}
 
 
@@ -7752,6 +7875,35 @@ $NX$：净出口（net exports）＝贸易余额（trade balance）
                 \end{enumerate}
         \end{enumerate}
 \end{enumerate}
+
+
+\chapter{贸易政策}
+
+
+
+\chapter{监管政策}
+
+
+\section{模式}
+
+
+
+\section{行业}
+
+
+\subsection{银行业}
+
+
+
+\subsection{证券业}
+
+
+\chapter{行政政策}
+
+
+
+
+
 
 
 
