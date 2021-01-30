@@ -1720,6 +1720,8 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 
 
+定义在样本空间$\varOmega=\{\omega\}$上的实值函数$X(\omega)$，且对任意实数$x$，$\{X(\omega)\leqslant x\}$是随机事件，称$X(\omega)$为随机变量
+
 
 \section{定义}
 
@@ -1756,8 +1758,8 @@ $f$概率密度函数
 \informationBox{
     \begin{enumerate}[(1)]
         \item 单调性：$f(x)\leqslant 0(-\infty<x<+\infty)$
-        \item 有界性
-        \item 右连续性
+        \item 有界性：$0\leqslant F(x)\leqslant 1$，特别地，有$F(-\infty)=\lim_{x\rightarrow-\infty}{F(x)=0}$，$F(+\infty)=\lim_{x\rightarrow+\infty}{F(x)=1}$
+        \item 右连续性：$F(x)$至多有可列个间断点，且在间断点处右连续
     \end{enumerate}
 }
 
@@ -1980,7 +1982,23 @@ $Rp$是$p$维欧式空间
 \subsubsection{多维随机变量}
 
 
+$A_1,A_2,\cdots,A_n$是$n$个事件
 
+\begin{enumerate}
+    \item 独立性：
+          \begin{enumerate}
+            \item 两两独立：任意两个事件都相互独立
+            \begin{gather*}
+                P(A_i A_j) = P(A_i) P(A_j), i\neq j;i,j=1,2,\cdots,n
+            \end{gather*}
+              \item 互相独立：若对于任意的正整数$m(2\leqslant m\leqslant n)$和任意的$1\leqslant i_{1}\leqslant i_{2}< \cdots < i_{m}\leqslant n $有
+                    \begin{gather*}
+                        P(A_{i_{1}}A_{i_{2}}\cdots A_{i_{m}}) = P(A_{i_{1}}) P(A_{i_{2}}) \cdots P(A_{i_{m}}) \\
+                        P(A_1 A_2 \cdots A_n) = \prod_{i=1}^{n}{ P(A_i) } \\
+                        P(\bigcup_{i=1}^{n}{A_i}) = 1-P(\bigcap_{i=1}^{n}{\overline{A}_i}) = 1- \prod_{i=1}^{n}{P(\overline{A}_i)}
+                    \end{gather*}
+          \end{enumerate}
+\end{enumerate}
 
 
 
@@ -2034,7 +2052,7 @@ $Rp$是$p$维欧式空间
 
 \subsubsection{几何分布}
 
-在n次伯努利试验中，试验k次才得到第一次成功的机率
+在n次伯努利试验中，A首次发生的概率
 
 
 \paragraph{一元} 
@@ -2060,7 +2078,7 @@ $Rp$是$p$维欧式空间
 
 
 
-由有限个物件中抽出n个物件，成功抽出指定种类的物件的次数（不归还）
+由有限个物件N中抽出n个物件，成功抽出M类元素的个数（不归还）
 
 
 \paragraph{一元}
@@ -2719,7 +2737,7 @@ $Y$服从正态分布
     对于匹配样本（paired-sample），样本量必须一样。通过差分变为单一样本，比较前后差异
 }
 
-\subsubsection{均值$\mu$的检验}
+\subsubsection{均值检验}
 
 \paragraph{一元}
 
@@ -2738,7 +2756,7 @@ $Y$服从正态分布
 \end{gather*}
 
 
-置信区间为：
+总体均值$\mu$的置信区间为：
 \begin{gather*}
     \left(\frac{\overline{X}-\sigma_0}{\sqrt{n}}Z_{\frac{\alpha}{2}}, \frac{\overline{X}+\sigma_0}{\sqrt{n}}Z_{\frac{\alpha}{2}} \right)
 \end{gather*}
@@ -2760,9 +2778,9 @@ $Y$服从正态分布
 \end{gather*}
 
 
-置信区间为：
+总体均值$\mu$的置信区间为：
 \begin{gather*}
-    \left( \overline{X}-\frac{S}{\sqrt{n}}t_{\frac{\alpha}{2}}(n-1), \overline{X}+\frac{S}{\sqrt{n}}t_{\frac{\alpha}{2}}(n-1) \right)
+    \left( \overline{X}-\frac{S}{\sqrt{n}}T_{\frac{\alpha}{2}}(n-1), \overline{X}+\frac{S}{\sqrt{n}}T_{\frac{\alpha}{2}}(n-1) \right)
 \end{gather*}
 
 
@@ -2779,7 +2797,7 @@ $Y$服从正态分布
 
 
 
-\subsubsection{方差$\sigma^2$的检验}
+\subsubsection{方差检验}
 
 \paragraph{一元}
 
@@ -2812,7 +2830,7 @@ $Y$服从正态分布
 \end{gather*}
 
 
-置信区间为：
+总体方差$\sigma^2$置信区间为：
 \begin{gather*}
     \left( \frac{(n-1)S^2}{\chi_{\frac{\alpha}{2}}^{2} (n-1)}, \frac{(n-1)S^2}{\chi_{1-\frac{\alpha}{2}}^{2} (n-1)} \right)
 \end{gather*}
@@ -2841,15 +2859,15 @@ $Y$服从正态分布
 
 
 
-\subsubsection{均值$\mu$的检验}
+\subsubsection{均值检验}
 
 \paragraph{一元}
 $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，两样本相互独立
 
 \begin{align*}
-    H_0：\mu_1=\mu_2    & \Leftrightarrow H_1：\mu_1\neq\mu_2 \\
-    H_0：\mu_1\le\mu_2  & \Leftrightarrow H_1：\mu_1>\mu_2    \\
-    H_0：\mu_1\geq\mu_2 & \Leftrightarrow H_1：\mu_1<\mu_2
+    H_0: \mu_1=\mu_2    & \Leftrightarrow H_1: \mu_1\neq\mu_2 \\
+    H_0: \mu_1\le\mu_2  & \Leftrightarrow H_1: \mu_1>\mu_2    \\
+    H_0: \mu_1\geq\mu_2 & \Leftrightarrow H_1: \mu_1<\mu_2
 \end{align*}
 
 
@@ -2857,7 +2875,15 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 检验统计量及其分布：
 \begin{gather*}
-    U=\frac{\overline{X}-\overline{Y}}{\sqrt{\frac{\sigma_1^2}{n}+\frac{\sigma_2^2}{m}}}\sim N(0,1)
+    U=\frac{\overline{X}-\overline{Y}}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\sim N(0,1)
+\end{gather*}
+
+$\mu_1-\mu_2$置信区间为：
+\begin{gather*}
+    \left(
+        (\overline{X}-\overline{Y})-U_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}},
+        (\overline{X}-\overline{Y})+U_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}
+    \right)
 \end{gather*}
 
 
@@ -2874,6 +2900,14 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
     T=\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{\left(n_1-1\right)S_1^2+\left(n_2-1\right)S_2^2}{n_1+n_2-2}}\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\sim t(n_1+n_2-2)
 \end{gather*}
 
+
+$\mu_1-\mu_2$置信区间为：
+\begin{gather*}
+    \left(
+(\overline{X}-\overline{Y})-T_{\frac{\alpha}{2}}\frac{ \sqrt{(n_1-1)S_1^2+(n_2-1)S_2^2} }{ \sqrt{ \frac{ n_1 n_2 (n_1+n_2 -2) }{ n_1+n_2 } } } ,
+(\overline{X}-\overline{Y})+T_{\frac{\alpha}{2}}\frac{ \sqrt{(n_1-1)S_1^2+(n_2-1)S_2^2} }{ \sqrt{ \frac{ n_1 n_2 (n_1+n_2 -2) }{ n_1+n_2 } } }
+    \right)
+\end{gather*}
 
 拒绝域为：
 \begin{gather*}
@@ -2926,7 +2960,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 3、$\bm{\Sigma}_1\neq\bm{\Sigma}_2$
 
-\subsubsection{方差$\sigma^2$的检验}
+\subsubsection{方差检验}
 
 \paragraph{一元}
 
@@ -2935,7 +2969,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 \end{gather*}
 
 
-1、均值$\mu$未知
+1、均值$\mu_1,\mu_2$未知
 
 检验统计量及其分布：
 \begin{gather*}
@@ -2943,11 +2977,21 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 \end{gather*}
 
 
+方差比$\frac{\sigma_1^2}{\sigma_2^2}$的置信区间为：
+\begin{gather*}
+    \left(
+        \frac{\frac{S^2_1}{S_2^2}}{F_{\frac{\alpha}{2}}(n_1-1,n_2-1)},
+        \frac{\frac{S^2_1}{S_2^2}}{F_{1-\frac{\alpha}{2}}(n_1-1,n_2-1)}
+    \right)
+\end{gather*}
+
+
+
 拒绝域为：
 \begin{gather*}
     F>F_{\frac{\alpha}{2}}(n_1-1,n_2-1)
     \text{或}
-    F<F_{\frac{\alpha}{2}}(n_1-1,n_2-1)
+    F<F_{1-\frac{\alpha}{2}}(n_1-1,n_2-1)
 \end{gather*}
 
 
@@ -2986,7 +3030,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 并不是两两比较均值，而是通过方差衡量均值
 
-\subsubsection{均值$\mu$的检验}
+\subsubsection{均值检验}
 
 \paragraph{一元}
 $k$个正态总体$N\left(\mu_1,\sigma_1^2\right),\ \cdots,N\left(\mu_k,\sigma_k^2\right)$，$k$个样本相互独立，第$i$个样本有$n_i$个个体
@@ -3032,7 +3076,7 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 \end{gather*}
 
 
-\subsubsection{方差$\sigma^2$的检验}
+\subsubsection{方差检验}
 
 \paragraph{一元}
 
