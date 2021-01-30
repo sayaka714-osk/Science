@@ -35,7 +35,8 @@
                 \text{代数（数）}\mindmap{
                     \text{算数}\\
                     \text{数论}\\
-                    \text{代数：线性代数}
+                    \text{线性代数}\\
+                    \text{多项式代数}
                 }
                 \text{几何（形）}\mindmap{
                     \text{解析几何}\\
@@ -355,6 +356,13 @@
 \part{数理与数据科学}
 
 
+
+
+
+
+
+
+
 \chapter{函数论}
 
 
@@ -372,6 +380,38 @@ $D$称为函数$y= f(x)$的定义域，$x$称为自变量，$y$称为因变量�
 
 3、隐函数：
 设有关系式$ F(x,y)=0$，若$\forall x\in D$，存在唯一确定的$y$满足$F(x,y)= 0$与$x$相对应，由此确定的$y$与$ x $的函数关系$y = y(x)$称为由方程$  F(x,y)= 0  $所确定的隐函数
+
+
+
+\section{初等函数}
+
+
+
+
+
+
+
+
+
+
+
+\subsection{三角函数}
+
+函数转换
+
+
+\begin{align*}
+\sin(x+y) = \sin{x}\cdot\cos{y}+\cos{x}\cdot\cos{y} \\
+
+\end{align*}
+
+
+
+
+
+
+
+
 
 
 
@@ -429,6 +469,826 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 偶函数的图形关于$y$轴对称，奇函数的图形关于坐标原点对称
 
 偶+偶=偶，奇+奇=奇，偶x偶=偶，奇x奇=偶，奇x偶=奇
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{微分学}
+
+\section{一元函数微分}
+
+
+
+\subsection{定义}
+
+微分：若$\Delta y =A \Delta x +o(\Delta x) $，则$ \mathrm{d} y = A \Delta x $
+
+\begin{enumerate}[1.]
+    \item 导数：
+          \begin{align*}
+              f'(x) & = \lim_{\Delta x\rightarrow 0}{\frac{\Delta y}{\Delta x}} = \lim_{\Delta x\rightarrow 0}{\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}} \\
+              & = \left.y^\prime \right|_{x=x_0}  
+              =\left.\frac{\mathrm{d}y}{\mathrm{d}x} \right|_{x=x_0} = \left.\frac{\mathrm{d}f(x)}{\mathrm{d}x} \right|_{x=x_0}
+          \end{align*}
+    \item $f^\prime_{-}(x_0)=f^\prime_{+}(x_0)\Leftrightarrow f(x)$在$x_0$处可导
+    \item $f(x)$在$x_0$可导$\Leftrightarrow f(x)$在$x_0$可微 $\Rightarrow f(x)$在$x_0$连续
+\end{enumerate}
+
+
+\subsection{运算}
+
+
+
+\subsubsection{初等函数}
+\begin{gather*}
+    \begin{matrix} 
+        (C)'=0 & (x^\mu)^\prime = \mu (x^{\mu-1}) \\
+        (\sin{x})^\prime=\cos{x} & (\cos{x})^\prime=-\sin{x}  \\
+        (\tan{x})^\prime=\sec^2{x}=\frac{1}{\cos^2{x}}  & (\cot{x})^\prime=-\csc^2{x}=-\frac{1}{\sin^2{x}}  \\
+        (\sec{x})^\prime=\sec{x}\tan{x} & (\csc{x})^\prime=-\csc{x}\cot{x}  \\ 
+        (a^x)^\prime = a^x \ln{a} & (e^x)^\prime=e^x  \\
+        (\log_{a}{x})^\prime=\frac{1}{x\ln{a}} & (\ln{x})^\prime=\frac{1}{x}  \\ 
+        (\arcsin{x})^\prime=\frac{1}{\sqrt{1-x^2}} & (\arccos{x})^\prime=-\frac{1}{\sqrt{1-x^2}}  \\
+        (\arctan{x})^\prime=\frac{1}{\sqrt{1+x^2}} & (\mathrm{arccot}{x})^\prime=-\frac{1}{\sqrt{1+x^2}}   \\ 
+        \end{matrix}    
+\end{gather*}
+ 
+
+\subsubsection{基本性质}
+
+设$u=u(x) $，$v=v(x)$都可导，则
+\begin{gather*}
+    (Cu)^\prime=Cu^\prime \\
+    (u\pm v)^\prime=u^\prime v^\prime \\
+    (uv)^\prime=u^\prime v+uv^\prime \\
+    \left(\frac{u}{v}\right)^\prime=\frac{u^\prime v-uv^\prime}{v^2} (v\ne 0)\\
+    (uvw)^\prime =u^\prime vw+uv^\prime w+uvw^\prime
+\end{gather*}
+
+
+\subsubsection{反函数求导}
+
+设$ x=f(y) $在区间$ I_y $内单调、可导且$ f'(y)\ne 0$ ，则它的反函数$ y=f^{-1}(x) $在区间$ I_x=f(I_y) $内也可导，且$ [f^{-1}(x)]'=\frac{1}{f'(y)} $或$ \frac{\mathrm{d}y}{\mathrm{d}{x}}=\frac{1}{\mathrm{d}x/\mathrm{d}y}$ 
+
+\subsubsection{复合函数求导（链式法则）}
+
+设$ y=f(u) $，$ u=g(x) $，且$ f(u) $及$ g(x) $都可导，则复合函数 $y=f[g(x)] $的导数为$ \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\mathrm{d}y}{\mathrm{d}u}\cdot \frac{\mathrm{d}u}{\mathrm{d}x} $ 或 $y'(x)=f'(u)\cdot g'(x) $
+
+\subsubsection{隐函数}
+
+\subsubsection{高阶求导}
+
+
+
+
+
+\section{二元函数微分}
+
+
+\subsection{定义}
+
+全微分：设$ P_0(x_0,y_0) $为$ f $定义域$ D $的一个内点，如果函数$ z=f(x,y) $在点$ P_0(x_0,y_0) $处的全增量$ \Delta z $可表示为$ \Delta z=f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0) =A\cdot \Delta{x}+B\cdot \Delta{y}+o(\rho) $，其中$A$，$B$是与，无关的常数，则称函数$ z=f(x,y) $在点$ P_0(x_0,y_0) $处可微，并称函数$ z=f(x,y) $的全增量$ \Delta z $的线性主部$ A\cdot \Delta{x}+B\cdot \Delta{y} $为函数$ z=f(x,y) $在点$ P_0(x_0,y_0) $处的全微分，记作$ \mathrm{d}z = A\cdot \Delta{x}+B\cdot \Delta{y}=A\mathrm{d}{x}+B\mathrm{d}{y} $
+
+\begin{enumerate}[1.]
+    \item 当函数$z=f(x,y) $在点$ P_0(x_0,y_0) $处可微时，有$ \mathrm{d}z=f'_x(x_0,y_0)\mathrm{d}x+f'_y(x_0,y_0)\mathrm{d}y$ 
+    \item 一阶偏导：函数$ z=f(x,y) $
+    \begin{gather*}
+        \frac{\partial z}{\partial x} = \lim_{\Delta x\rightarrow 0}{\frac{f(x+\Delta x,y)-f(x,y)}{\Delta x}}\\ 
+        \frac{\partial z}{\partial y} = \lim_{\Delta y\rightarrow 0}{\frac{f(x,y+\Delta y)-f(x,y)}{\Delta y}} 
+    \end{gather*} 
+    \item 二阶偏导：若偏导数$ f'_x(x,y) $、$ f'_y(x,y) $存在，则二阶偏导数为
+    \begin{gather*}
+        f''_{xx}(x,y)=\frac{\partial}{\partial x}(\frac{\partial z}{\partial x}) = \frac{\partial^2 z}{\partial{x}^2}\\ 
+        f''_{xy}(x,y)=\frac{\partial}{\partial y}(\frac{\partial z}{\partial x}) = \frac{\partial^2 z}{\partial{x}\partial{y}}\\ 
+        f''_{yx}(x,y)=\frac{\partial}{\partial x}(\frac{\partial z}{\partial y}) = \frac{\partial^2 z}{\partial{y}\partial{x}}\\ 
+        f''_{yy}(x,y)=\frac{\partial}{\partial y}(\frac{\partial z}{\partial y}) = \frac{\partial^2 z}{\partial{y}^2} 
+    \end{gather*}
+    \par 若二阶混合偏导数$ \frac{\partial^2 z}{\partial{x}\partial{y}} $和$ \frac{\partial^2 z}{\partial{y}\partial{x}} $，在区域$ D $内连续，则在该区域$ D $内有$ \frac{\partial^2 z}{\partial{x}\partial{y}}=\frac{\partial^2 z}{\partial{y}\partial{x}} $
+    \item 偏导数点连续→点可微→点可导
+    \item 全导数
+\end{enumerate}
+
+
+
+
+
+
+
+\subsection{运算}
+
+\subsubsection{反函数}
+
+\subsubsection{复合函数}
+
+偏导数：设函数$ u=\varphi(x,y) $，$ v=\psi (x,y) $在点$ (x,y) $处存在偏导数，又函数$ z=f(u,v) $在对应点$ (u,v) $处具有连续的一阶偏导数，则复合函数$ z=f[\varphi(x,y),\psi(x,y)] $在点$ (u,v) $处对$ x $及$ y $的偏导数均存在，且有
+\begin{gather*}
+    \frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial x}，\frac{\partial z}{\partial y}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial y }+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial y} 
+\end{gather*}
+ 
+
+全导数： $z $关于$ x $的全导数为
+\begin{gather*}
+    \frac{\mathrm{d}z}{\mathrm{d}x} = \frac{\partial z}{\partial u}\cdot\frac{\mathrm{d}u}{\mathrm{d}x}+ \frac{\partial z}{\partial v}\cdot\frac{\mathrm{d}v}{\mathrm{d}x} 
+\end{gather*}
+ 
+
+\subsubsection{隐函数}
+
+
+
+\section{多元函数微分}
+
+
+
+
+\chapter{积分学}
+
+
+
+
+\section{一重积分}
+
+
+\subsection{定义}
+
+
+\subsection{运算}
+
+
+\subsubsection{初等函数}
+
+
+\begin{align*}
+& \int x^{a}\mathrm{d}x =\frac{1}{1+a}x^{1+a}+C (a\neq -1)  \\
+\end{align*}
+
+
+
+
+
+\subsubsection{定积分性质}
+
+
+
+\begin{enumerate}[1.]
+    \item 牛顿莱布尼茨公式：如果$f(x)$连续，且$\int{f(x)\mathrm{d}x} = F(x)+C$则有$\int_{a}^{b}{f(x)\mathrm{d}x}=F(b)-F(a)$成立
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{不定积分性质}
+
+
+
+\begin{align*}
+& [\int f(x)\mathrm{d}x]^\prime = f(x) \\
+& \mathrm{d}\int f(x)\mathrm{d}x= f(x)\mathrm{d}x \\
+\end{align*}
+
+
+
+
+\subsubsection{不定积分法}
+
+
+第一换元法（凑微分）
+
+设$f(x)$有原函数$F(u)$，$u=(x)$可导，则有
+\begin{gather*}
+    \int{f[\varphi(x)]\varphi^\prime(x)\mathrm{d}x} 
+    = \int{f[\varphi(x)]\mathrm{d}\varphi(x)} 
+    = \int{f(u)\mathrm{d}u} 
+    = F(u)+C = F[\varphi(x)]+C
+\end{gather*}
+
+
+第二换元法
+
+
+
+分部积分法
+
+设函数$u=u(x)$，$v=v(x)$具有连续导数，则
+\begin{gather*}
+    \int{u\mathrm{d}v} = uv-\int{v\mathrm{d}u}
+\end{gather*}
+
+
+\section{二重积分}
+
+
+
+
+\subsection{运算}
+
+
+\subsubsection{直角坐标}
+
+
+
+\subsubsection{极坐标}
+
+
+
+
+\section{三重积分}
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{随机量}
+
+
+
+
+\section{定义}
+
+$E$存在，要求绝对收敛
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item $E(C) = C$，$C$为常数
+        \item $E(aX+b)=aE(X)+b$，$a$，$b$为常数
+        \item $E(X+Y)=E(X)+E(Y)$
+        \item 若$X_1,X_2,\cdots,X_n$相互独立，则$E(X_{1}X_{2}\cdots X_{n})=E(X_1)E(X_2)\cdots E(X_n)$
+    \end{enumerate}
+}
+
+$D=Var$
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item $D(X)= E(X^2) - [E(X)]^2$
+        \item $D(C) = C$，$C$为常数
+        \item $D(aX+b)=aD(X)+b$，$a$，$b$为常数
+        \item 若$X_1,X_2,\cdots,X_n$相互独立，则$D(X_{1}\pm X_{2}\pm\cdots\pm X_{n})=D(X_1)+D(X_2)+\cdots+D(X_n)$
+    \end{enumerate}
+}
+
+
+$F$分布函数
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item 非负性：$p_k\leqslant 0 (k=1,2,\cdots)$
+        \item 正则性：$\sum_{k=1}^{\infty}{p_k} = 1$
+    \end{enumerate}
+}
+
+$f$概率密度函数
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item 单调性：$f(x)\leqslant 0(-\infty<x<+\infty)$
+        \item 有界性
+        \item 右连续性
+    \end{enumerate}
+}
+
+
+
+
+
+
+
+
+\subsection{连续型}
+
+
+\subsubsection{一维随机变量}
+
+
+连续型随机向量$X=\{x_1,x_2,\cdots,x_i\}$
+
+\begin{enumerate}[1.]
+    \item 
+    \begin{align*}
+        &E(X) 
+        = \int_{-\infty}^{+\infty}{x f(x)\mathrm{d}x}\\
+        &D(X) 
+        = \int_{-\infty}^{+\infty}{
+            [x-E(X)]^2 f(x) \mathrm{d}x
+        }  \\
+        &E(Y) = E[g(X)] = \int_{-\infty}^{+\infty}{ g(x)f(x)\mathrm{d}x }
+    \end{align*}
+    \item 分布：
+    \begin{align*}
+        F_Y(y)&=P\{Y\leqslant y\}
+         = P\{g(x)\leqslant y\} \\
+        f(x) &= F^\prime(x)
+    \end{align*}
+    \informationBox{
+        \begin{gather*}
+            P\{a<X\leqslant b\} 
+            = F(b) - F(a)
+            = \int_{a}^{b}{f(x)\mathrm{d}x}
+        \end{gather*}
+    }
+\end{enumerate}
+
+
+
+
+\subsubsection{二维随机变量}
+
+连续型随机向量$X=\{x_1,x_2,\cdots,x_i\}$，$Y=\{y_1,y_2,\cdots,y_j\}$，$Z=g(X,Y)$
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+        E(Z) = E[g(X,Y)]
+        = \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}{g(x,y)f(x,y)\mathrm{d}x \mathrm{d}y}
+    \end{gather*}
+    \item 联合分布：
+	\begin{align*}
+        F_{Z}(z) &= P\{Z\leqslant z\}
+        = P\{g(X,Y)\leqslant z\} 
+        = \iint_{g(x,y)\leqslant z}{f(x,y)\mathrm{d}x\mathrm{d}y} \\
+        &= F(X,Y) 
+        = \int_{-\infty}^{x}\int_{-\infty}^{y}{ f(u,v) \mathrm{d}v \mathrm{d}u }  \\
+        f_{Z}(z) &= F_{Z}^{\prime}{(z)} = f(x,y) = \frac{\partial^2F\left(x,y\right)}{\partial x\partial y}
+        \end{align*}
+        \informationBox{
+            \begin{gather*}
+                F(-\infty,x)=0,
+            F(x,-\infty)=0,
+            F(-\infty,-\infty)=0,
+            F(+\infty,+\infty)=1 \\
+            P\{x_1 < X \leqslant  x_2, y_1< Y \leqslant y_2\}
+            = F(x_1,y_1) + F(x_2,y_2) - F(x_1,y_2) - F(x_2,y_1)
+            \end{gather*} 
+        }
+    \item 边缘分布：
+    \begin{align*}
+        F_{X}(x)&=\lim_{y\rightarrow+\infty} F(x,y) \\
+        F_{Y}(y)&=\lim_{x\rightarrow+\infty} F(x,y) \\
+        f_{X}(x)&=\int_{-\infty}^{+\infty}f\left(x,y\right) \mathrm{d}y \\
+        f_{Y}(y)&=\int_{-\infty}^{+\infty}f(x,y)\mathrm{d}x
+    \end{align*}
+    \item 条件分布：
+    \begin{align*}
+        F_{X|Y}(x|y)& = \int_{-\infty}^{x}{ \frac{f(u,y)}{f_{Y}(y)}\mathrm{d}u } \\
+        F_{Y|X}(y|x) &= \int_{-\infty}^{y}{ \frac{f(x,v)}{f_{X}(x)}\mathrm{d}v } \\
+        f_{X|Y}(x|y) &= \frac{f(x,y)}{f_{Y}(y)} \\
+        f_{Y|X}(y|x) &= \frac{f(x,y)}{f_{X}(x)}
+    \end{align*}
+    \item 独立性：
+    \begin{gather*}
+        f(x,y) = f_{X}(x) f_{Y}(y) \\
+        \text{相关系数：}\rho_{x,y} = \frac{\mathrm{Cov}(X,Y)}{D(X)\cdot D(Y)}
+        = \frac{E[(X-E(X))(Y-E(Y))]}{D(X)\cdot D(Y)} 
+        =\frac{E(XY)-E(X)E(Y)}{\sigma_X\cdot \sigma_Y} = 0
+    \end{gather*}
+    \informationBox{
+        \begin{enumerate}[(1)]
+            \item $\mathrm{Cov}(X,Y)=\mathrm{Cov}(Y,X)$
+            \item $\mathrm{Cov}(aX,bY)=ab \mathrm{Cov}(X,Y)$
+            \item $\mathrm{Cov}(X+Y,Z)=\mathrm{Cov}(X,Z)+\mathrm{Cov}(Y,Z)$
+            \item $|\rho_{X,Y}|\leqslant 1$
+            \item $|\rho=0|\Leftrightarrow P\{Y=aX+b\}=1\}$且$a>0$时$\rho_{X,Y}=1, a<0$时$\rho_{X,Y}=-1$
+        \end{enumerate}
+    }
+\end{enumerate}
+
+
+\subsubsection{多维随机变量}
+
+
+$p$维随机向量：
+$\mathbf{X}=(X_1,X_2,\cdots,X_p)^\prime$，
+$ \mathbf{x} = (x_1,x_2,\cdots,xp)^\prime \in Rp$，
+$Rp$是$p$维欧式空间
+
+\begin{enumerate}[1.]
+    \item 联合分布：
+          \begin{align*}
+              F(x_1,x_2,\cdots,x_p)
+              &= P\{X_1\leqslant x_1,X_2\leqslant x_2,\cdots,X_p\leqslant x_p \} \\
+              f\left(x_1,x_2,\cdots,x_p\right)
+              &=\frac{\partial F\left(x_1,x_2,\cdots,x_p\right)}{\partial x_1\partial x_2\cdots\partial x_p}
+              =\int_{-\infty}^{+\infty}{\cdots\int_{-\infty}^{+\infty}{f\left(x_1,x_2,\cdots,x_p\right)dx_1\cdots d x_p}}
+          \end{align*}
+    \item 边缘分布：
+          \begin{align*}
+              F_1\left(x_1,x_2,\cdots,x_q\right)
+              &=P\left\{X_1\le x_1,X_2\le x_2,\cdots,X_q\le x_q\right\} \\
+              &=P\left\{X_1\le x_1,X_2\le x_2,\cdots,X_q\le x_q,X_{q=1}\le\infty,\cdots\right\} \\
+              &=F(x_1,x_2,\cdots,x_q,\infty,\cdots,\infty)，
+              \bm{X}(i)=(X_{i1},X_{i2},\cdots,X_{iq})^\prime,q<p  \\
+              f_1\left(x_1,x_2,\cdots,x_q\right)&=\int_{-\infty}^{+\infty}{\cdots\int_{-\infty}^{+\infty}{f\left(x_1,x_2,\cdots,x_q\right)dx_1\cdots d x_q}}
+          \end{align*}
+          \informationBox{
+            一个p元函数$f\left(x_1,x_2,\ldots,x_p\right)$能作为$R^p$中某个随机向量的密度函数的主要条件是：
+            \begin{gather*}
+                f\left(x_1,x_2,\cdots,x_p\right)\geq0,\ \forall\left(x_1,x_2,\cdots,x_p\right)^\prime\in R^n \\
+                \int_{-\infty}^{+\infty}{\cdots\int_{-\infty}^{+\infty}{f\left(x_1,x_2,\cdots,x_p\right)dx_1\cdots d x_p}}=1
+            \end{gather*}
+          }
+    \item 独立性：相互独立
+    \begin{gather*}
+              f(x_1,x_2,\cdots,x_p)
+              = f_1(x_1)\cdot f_{2}(x_2)\cdots f_{p}(x_p)
+          \end{gather*}
+\end{enumerate}
+
+
+\subsection{离散型}
+
+
+
+
+
+\subsubsection{一维随机变量}
+
+\begin{enumerate}[1.]
+    \item \begin{align*}
+        E(X)
+        &= \sum_{k=1}^{\infty}{x_{k}p_{k}} \\
+        D(X) 
+        &= \sum_{k=1}^{\infty}{[x_k - E(X)]^2 p_k} \\
+        E(Y) & = E[g(X)] = \sum_{k=i}^{\infty}{ g(x_k) p_k }
+    \end{align*}
+    \item 分布：
+    \begin{gather*}
+        F(x) = P\{X\leqslant x\} 
+        = \sum_{x_k\leqslant x}{ P\{X=x_k\} }
+        = \sum_{x_k\leqslant x}{ p_k } 
+    \end{gather*}
+\end{enumerate}
+
+\subsubsection{二维随机变量}
+
+离散型随机向量$X$，$Y$，$Z=g(X,Y)$
+
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+        E(Z) = E[g(X,Y)] 
+        = \sum_{i=1}^{\infty}\sum_{j=1}^{\infty}{g(x_i,y_j)p_{ij}}
+    \end{gather*}
+    \item 联合分布
+    \begin{align*}
+        p_{ij} &= P\{X=x_i,Y=y_j\} 
+        = P\{Z=z_{k}\}
+        = P\{ g(X,Y)=z_{k} \} \\
+        &= \sum_{g(x_i\cdot y_j)=z_k}{ P\{X=x_i,Y=y_j\} } , i,j=1,2,\cdots
+    \end{align*}
+    \item 边缘分布：
+    \begin{gather*}
+        p_{i\cdot} 
+        = P\{X=x_i\}
+        = \sum_{j}{p_{ij}}, i=1,2,\cdots \\
+        p_{\cdot j} 
+        = P\{Y=y_j\}
+        = \sum_{i}{p_{ij}} , j=1,2,\cdots
+    \end{gather*}
+    \item 条件分布：
+    \begin{gather*}
+        P\{X=x_i|Y=y_j\}
+        = \frac{P\{X=x_i, Y=y_j\}}{P\{Y=y_j\}}
+        = \frac{p_{ij}}{p_{\cdot j}}, i=1,2,\cdots \\
+        P\{Y=y_i|X=x_i\}
+        = \frac{P\{X=x_i, Y=y_j\}}{P\{X=x_i\}}
+        = \frac{p_{ij}}{p_{i\cdot}}, j=1,2,\cdots
+    \end{gather*}
+    \item 独立性：
+          \begin{gather*}
+              P\{X=x_i,Y=y_i\} 
+              = P\{X=x_i\} P\{Y=y_i\} \\
+              F(x,y)=F_{X}(x) F_{Y}(y)
+          \end{gather*}
+\end{enumerate}
+
+
+
+
+\subsubsection{多维随机变量}
+
+
+
+
+
+
+
+\section{运算}
+
+
+\subsection{常见分布}
+
+
+
+\subsubsection{两点分布}
+
+
+
+\paragraph{一元}
+
+\begin{enumerate}[1.]
+    \item
+          \begin{gather*}
+              X\sim B(1,p) \\
+              E(X) = p \\
+              D(X) = p(1-p)
+          \end{gather*}
+    \item 分布：
+          \begin{gather*}
+              P\{X=k\} = p^{k} (1-p)^{1-k}, k=0,1
+          \end{gather*}
+\end{enumerate}
+
+
+
+\subsubsection{二项分布}
+
+在每次试验中只有两种可能的结果，而且两种结果发生与否互相对立，并且相互独立，其它各次试验结果无关，事件发生与否的概率在每一次独立试验中都保持不变
+
+\paragraph{一元}
+
+\begin{enumerate}[1.]
+    \item
+          \begin{gather*}
+              X\sim B(n,p) \\
+              E(X)=np \\
+              D(X)=np(1-p)
+          \end{gather*}
+    \item 分布：
+          \begin{gather*}
+              P(X=k)= C_{n}^{k} p^{k} (1-p)^{n-k}, k=0,1,\cdots,n
+          \end{gather*}
+\end{enumerate}
+
+\subsubsection{几何分布}
+
+在n次伯努利试验中，试验k次才得到第一次成功的机率
+
+
+\paragraph{一元} 
+
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+              X\sim G(p) \\
+              E(X)=\frac{1}{p} \\
+              D(X)=\frac{1-p}{p^2}
+          \end{gather*}
+    \item 分布：
+          \begin{gather*}
+              P\{X=k\}=(1-p)^{k-1} p^k, k=1,2,\cdots
+          \end{gather*}
+\end{enumerate}
+
+
+
+
+
+\subsubsection{超几何分布}
+
+
+
+由有限个物件中抽出n个物件，成功抽出指定种类的物件的次数（不归还）
+
+
+\paragraph{一元}
+
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+              X\sim H(n,M,N) \\
+              E(X)=\frac{nM}{N} \\
+              D(X)=n\frac{M}{N}\left(1-\frac{M}{N}\right)\frac{N-n}{N-1}
+          \end{gather*}
+    \item 分布：
+          \begin{gather*}
+              P\{X=k\} = \frac{ C_{M}^{k} C_{N-M}^{n-k} }{ C_{N}^{n} }, k=0,1,\cdots,min{M,n}
+          \end{gather*}
+\end{enumerate}
+
+
+
+
+\subsubsection{泊松分布}
+
+
+某个时间范围内，发生某件事情k次的概率
+
+\paragraph{一元}
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+              X\sim P(\lambda) \\
+              E(X)=\lambda \\
+              D(X)=\lambda
+          \end{gather*}
+    \item 分布：
+          \begin{gather*}
+              P\{X=k\}=\frac{\lambda^k}{k!} e^{-\lambda}, k=0,1,\cdots
+          \end{gather*}
+\end{enumerate}
+
+
+
+
+\paragraph{二元}
+
+\begin{gather*}
+P(\lambda_1)P(\lambda_2) 
+= P({\lambda_1+\lambda}_2)
+\end{gather*}
+
+
+
+
+\subsubsection{均匀分布}
+
+
+\paragraph{一元} 
+
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+              X\sim U[a,b] \\
+              E(X)=\frac{a+b}{2} \\
+              D(X)=\frac{(b-a)^2}{12}
+          \end{gather*}
+    \item 分布：
+          \begin{gather*}
+              f(x) = \begin{cases}
+                  \frac{1}{b-a}, a\leqslant x\leqslant b \\
+                  0, \text{其他}
+              \end{cases}
+          \end{gather*}
+\end{enumerate}
+
+
+
+
+\paragraph{二元}
+
+\begin{gather*}
+    f(x) = \begin{cases}
+        \frac{1}{S}, (x,y)\in D \\
+        0, \text{其他}
+    \end{cases}
+\end{gather*}
+
+
+\subsubsection{指数分布}
+
+
+\paragraph{一元}
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+              X\sim E(\lambda) \\
+              E(X)=\frac{1}{\lambda} \\
+              D(X)=\frac{1}{\lambda^2}
+          \end{gather*}
+    \item 分布：
+          \begin{gather*}
+              f(x)=\begin{cases}
+                  \lambda e^{-\lambda x}, x>0, λ>0 \\
+                  0, x\leq 0
+              \end{cases}
+          \end{gather*}
+\end{enumerate}
+
+
+
+
+
+
+\subsubsection{正态分布}
+
+
+
+\paragraph{一元} 
+
+总体$X\sim N(\mu,\sigma^2)$，其中$\mu$，$\sigma(\sigma>0)$是两个常数，样本$X_1,X_2,\cdots,X_n$一个正态分布
+
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+        E(X)=\mu \\
+        D(X)=\sigma^2 
+    \end{gather*}
+    \item 分布：
+    \begin{gather*}
+        F\left(x\right)=\Phi\left(\frac{x-\mu}{\sigma}\right), \Phi\left(-x\right)=1-\Phi\left(x\right)\\
+        f\left(x\right)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{\left(x-\mu\right)^2}{2\sigma^2}}(-\infty<x<+\infty)
+    \end{gather*}
+    \item \begin{gather*}
+        X_i\sim N(\mu,\sigma^2) \\
+        X\sim N(\mu,\frac{\sigma^2}{n}) \\
+        S^2\sim N(\sigma^2,\frac{2\sigma^4}{n-1}) 
+    \end{gather*}
+\end{enumerate}
+
+
+\paragraph{二元}
+
+总体$X\sim N(\mu_1,\sigma_1^2)$，$Y\sim N(\mu_2,\sigma_2^2)$，$X$，$Y$独立，样本$(X_1,X_2,\cdots,X_n)$，$(Y_1,Y_2,\cdots,Y_n)$
+
+
+\begin{enumerate}[1.]
+    \item \begin{gather*}
+        \overline{X}\pm\overline{Y}\sim N\left(\mu_1\pm \mu_2,\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}\right)
+    \end{gather*}
+    \item 联合分布：
+    \begin{gather*}
+        f(x,y) = \frac{1}{2\pi \sigma_1 \sigma_2\sqrt{1-\rho^2}} e^{
+            -\frac{1}{2(1-\rho^2)}
+            \left[\frac{(x-\mu_1)^2}{\sigma_1^2} - 2\rho \frac{(x-\mu_1)(x-\mu_2)}{\sigma_1 \sigma_2}+\frac{(y-\mu_2)^2}{\sigma_2^2} \right]
+        }
+    \end{gather*}
+    \item 边缘分布：
+    \begin{gather*}
+        X\sim N(\mu_1,\sigma_1^2)\\
+        Y\sim N(\mu_2,\sigma_2^2)
+    \end{gather*}
+    \item 标准化
+    \begin{gather*}
+        \frac{(\overline{X}\pm \overline{Y})-(\mu_1 \pm \mu_2)}{\sqrt{
+            \frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}
+            }}\sim N(0,1)
+    \end{gather*}
+    \item \begin{gather*}
+        \frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\sim F(n_1-1,n_2-1)
+    \end{gather*}
+\end{enumerate}
+
+
+
+
+\paragraph{多元}
+
+$\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm{\Sigma}$是$p$阶正定矩阵
+\begin{gather*}
+    \mathbf{X}
+    = \left(X_1,X_2,\cdots,X_p\right)^\prime
+    \sim N_p(\bm{\mu},\bm{\Sigma} )
+\end{gather*}
+
+\begin{enumerate}[1.]
+    \item 联合分布：
+    \begin{gather*}
+        f(X_1,X_2,\cdots,X_p)
+        = \frac{ 
+            e^{ -\frac{1}{2}(\mathbf{X}-\bm{\mu})^\prime }
+            \bm{\Sigma}^{-1}
+            (\bm{X}-\bm{\mu})
+        }{
+            (2\pi)^{\frac{p}{2}}
+            \left|\mathbf{\Sigma}\right|^{\frac{1}{2}}
+        }
+    \end{gather*}
+    \item 独立性：
+    \begin{align*}
+        &\mathbf{X}=(X_1,X_2,\cdots,X_p)^\prime
+        \sim N_p(\bm{\mu},\bm{\Sigma}),\ \bm{\Sigma} \text{是对角阵}\\
+        \Leftrightarrow &X_1,X_2,\cdots,X_p \text{不相关}\\
+        \Leftrightarrow &X_1,X_2,\cdots,X_p \text{相互独立}
+    \end{align*}
+\end{enumerate}
+
+
+
+
+
+
+\subsubsection{$\chi^2$分布}
+
+
+\paragraph{一元}
+
+\begin{enumerate}[1.]
+    \item 若$\chi^2\sim\chi^2(n)$，则$E(\chi^2)=n$，$D(\chi^2)=2n$
+    \item $X\sim \chi^2{n}$，$Y\sim\chi^2(m)$，且$X$和$Y$相互独立，则$X+Y\sim\chi^2(m+n)$
+\end{enumerate}
 
 
 
@@ -549,15 +1409,15 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 总体方差（离差）估计$\approx$样本方差（离差）
 
-\paragraph{一元（离差）}
+\paragraph{一元}
 
 \begin{gather*}
     S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-X)^2}
 \end{gather*}
+\par $\overline{X}$与$S^2$相互独立
 
-
-\paragraph{多元（样本离差阵）}
-
+\paragraph{多元}
+样本离差阵：
 \begin{align*}
 
     \mathbf{S}_{p\times p}
@@ -735,6 +1595,9 @@ $k$：变量个数
 
 \subsubsection{均值估计}
 
+\par k阶原点矩：$\frac{1}{n}\sum_{i=1}^{n}{X_i}, k=1,2,\cdots$
+\par k阶中心矩：$\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^k}, k=1,2,\cdots$
+
 \begin{gather*}
     \begin{cases}
         E(X) = \frac{1}{n}\sum_{i=1}^{n}{X_i}     \\
@@ -879,9 +1742,9 @@ $Y$服从正态分布
 
 1、方差$\sigma^2 = \sigma^2_0$已知：$Z$检验
 
-在$\mu = \mu_0$时，检验统计量及其分布为：
+在$\mu = \mu_0$时，检验统计量及其分布为$t$分布：
 \begin{gather*}
-    Z=\frac{\overline{X}-\mu_0}{\frac{\sigma}{\sqrt{n}}}\sim N(0,1)
+    Z=\frac{\overline{X}-\mu}{\frac{\sigma}{\sqrt{n}}}\sim N(0,1)
 \end{gather*}
 
 
@@ -921,6 +1784,11 @@ $Y$服从正态分布
 \end{gather*}
 
 
+
+
+
+
+
 \subsubsection{方差$\sigma^2$的检验}
 
 \paragraph{一元}
@@ -950,7 +1818,7 @@ $Y$服从正态分布
 
 检验统计量及其分布为：
 \begin{gather*}
-    \chi^2=\frac{1}{\sigma^2}\sum_{i=1}^{n}{X_i- \overline{X}} =\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)
+    \chi^2=\frac{1}{\sigma^2}\sum_{i=1}^{n}{ \left(X_i- \overline{X}\right) } =\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)
 \end{gather*}
 
 
@@ -1025,6 +1893,19 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 3、$\sigma_1^2\neq\sigma_2^2$
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 \paragraph{多元}
 
 
@@ -1068,7 +1949,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 检验统计量及其分布：
 \begin{gather*}
-    F=\frac{S_1^2}{S_2^2}\sim F(n_1-1,n_2-2)
+    F=\frac{S_1^2}{S_2^2}\sim F(n_1-1,n_2-1)
 \end{gather*}
 
 
