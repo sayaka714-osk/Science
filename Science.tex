@@ -45,8 +45,8 @@
                 }
                 \text{分析（极限）}\mindmap{
                     \text{函数论}\\
-                    \text{微积分}\\
-                    \text{泛函分析}
+                    \text{微分学}\\
+                    \text{积分学}
                 }
             }
             \text{不确定数学}\mindmap{
@@ -356,9 +356,26 @@
 \part{数理与数据科学}
 
 
+\chapter{数理逻辑}
+
+（Mathematical Logic）
 
 
 
+
+
+
+
+
+
+
+
+
+\section{集合论}
+
+
+
+\section{映射}
 
 
 \chapter{初等代数}
@@ -428,8 +445,7 @@ n阶行列式：
 
 \par $i_1 i_2\cdots i_n$、$j_1 j_2\cdots j_n$：$n$级排列
 \par $\sum_{j_1 j_2\cdots j_n}$：对所有的n级排列求和
-
-当某项中各元素的行标构成自然排列时，若列标构成的排列为偶排列则取正号，若为奇排列则取负号
+\par $(-1)^{\tau(j_1 j_2\cdots j_n)}$：当某项中各元素的行标构成自然排列时，若列标构成的排列为偶排列则取正号，若为奇排列则取负号
 
 
 \subsection{运算}
@@ -546,7 +562,7 @@ n阶行列式：
         \end{vmatrix}
         \xrightarrow[]{m\times n\text{次对换}} (-1)^{mn}
         \begin{vmatrix}
-            A_M & 0 \\
+            A_m & 0 \\
             0 & B_n
         \end{vmatrix} 
     \end{gather*}
@@ -591,13 +607,7 @@ $n$维向量：
 
 
 
-\informationBox{
-\begin{enumerate}[(1)]
-    \item n级排列：由$1,2,\cdots,n$组成的$n$个不同数字的全排列。记作$j_1 j_2\cdots j_n$
-    \item 逆序：在一个n级排列中，如果有较大数排在较小数的前面，则称这两个数构成一个逆序。一个排列中逆序的总数，称为这个排列的逆序数，记作$\tau(j_1 j_2\cdots j_n)$。如果排列的逆序数是奇数称为奇排列，是偶数称为偶排列。
-    \item 对换：在一个排列中互换两个数的位置，其余数位置不变，称为一次对换。一次对换改变排列的奇偶性。
-\end{enumerate}
-}
+
 
 
 
@@ -637,6 +647,82 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
 
 
 
+\subsubsection{特征向量}
+
+
+
+设$\bm{A}$是n阶方阵，如果数$\lambda$和$n$维非零列向量$\bm{\alpha}$使$\bm{A \alpha}= \lambda \bm{\alpha}$成立，则称数$\lambda$为方阵$\bm{A}$的一个特征值，$\bm{\alpha}$称为$\bm{A}$对应于$\lambda$的特征向量。$\lambda \bm{E}-\bm{A}$称为矩阵$\bm{A}$的特征矩阵。$|\lambda\bm{E}-\bm{A}|$是$\lambda$的$n$次多项式，称为矩阵$\bm{A}$的特征多项式。$|\lambda\bm{E}-\bm{A}|=0$是矩阵$\bm{A}$的特征方程。
+
+
+\begin{enumerate}[(1)]
+    \item $\lambda_1+\lambda_2+\cdots+\lambda_n=\sum_{i=1}^{n}{a_{ii}}$
+    \item $\lambda_{1}\lambda_{2}\cdots\lambda_{n}=|\bm{A}|$
+    \item 对任意常数$k$，$k\lambda$是$k\bm{A}$的特征值 
+    \item 对任意正整数$m$，$\lambda^m$是$\bm{A}^m$的特征值 
+    \item 设$\phi(\lambda)=a_{m}\lambda^{m}+a_{m-1}\lambda^{m-1}+\cdots+a_{1}\lambda+a_{0}$，则$\phi(\lambda)$是矩阵$\phi(\bm{A})$的特征值
+    \item 当$\bm{A}$可逆时，$\frac{1}{\lambda}$是$\bm{A}^{-1}$的特征值
+    \item $\bm{A}$与$\bm{A}^T$有相同特征值，但特征向量不一定相同
+    \item 方阵$\bm{A}$的不同特征值对应的特征向量线性无关
+\end{enumerate}
+
+
+
+\subsubsection{向量内积}
+
+
+向量的数量积、点乘积
+
+内积：$\bm{\alpha}^T\bm{\beta}=a_1 b_1 +a_2 b_2+\cdots+a_n b_n$，记为$[\bm{\alpha},\bm{\beta}]$
+\begin{align*}
+     & [\bm{\alpha},\bm{\beta}] = [\bm{\beta},\bm{\alpha}]                                                      \\
+     & [(\lambda \bm{\alpha}),\bm{\beta}] = [\bm{\alpha},(\lambda\bm{\beta})] = \lambda[\bm{\alpha},\bm{\beta}] \\
+     & [\bm{\alpha},(\bm{\beta}+\bm{\gamma})] = [\bm{\alpha},\bm{\beta}]+[\bm{\alpha},\bm{\gamma}]              \\
+     & [(\bm{\alpha}+\bm{\beta}),\bm{\gamma}] = [(\bm{\alpha}+\bm{\gamma}]+[\bm{\beta},\bm{\gamma}]             \\
+     & [\bm{\alpha},\bm{\alpha}]\geqslant 0\\
+     & [\bm{\alpha},\bm{\alpha}]=0\Leftrightarrow \bm{\alpha}=\bm{O}
+\end{align*}
+
+\subsubsection{向量外积}
+
+
+
+\subsubsection{向量正交}
+
+向量正交：若$[\bm{\alpha},\bm{\beta}]=0$，则称向量$\bm{\alpha}$与$\bm{\beta}$正交
+
+
+\begin{enumerate}[1.]
+    \item 非零向量组$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_m$中任意两个向量都正交，则称$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_m$为一个非零正交向量组
+    \item 若非零向量组$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m}$中任意两个向量都正交，且都是单位向量，则称$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$为正交规范向量组或标准正交向量组
+    \item 施密特正交化方法：
+          \begin{enumerate}[(1)]
+              \item 若$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$线性无关，令
+                    \begin{align*}
+                        &\bm{\beta}_1 = \bm{\alpha}_1                                                                                                                                                                        \\
+                        &\bm{\beta}_2 = \bm{\alpha}_2 - \frac{[\bm{\beta}_{1},\bm{\alpha}_2]}{[\bm{\beta}_1,\bm{\beta}_1]}\bm{\beta}_{1}                                                                                     \\
+                        &\bm{\beta}_3 = \bm{\alpha}_3 - \frac{[\bm{\beta}_{1},\bm{\alpha}_3]}{[\bm{\beta}_1,\bm{\beta}_1]}\bm{\beta}_{1} -  \frac{[\bm{\beta}_{2},\bm{\alpha}_3]}{[\bm{\beta}_2,\bm{\beta}_2]}\bm{\beta}_{2} \\
+                        &\vdots                                                                                                                                                                                              \\
+                        &\bm{\beta}_i = \bm{\alpha}_i - \frac{[\bm{\beta}_{1},\bm{\alpha}_i]}{[\bm{\beta}_1,\bm{\beta}_1]}\bm{\beta}_{1} -  \frac{[\bm{\beta}_{2},\bm{\alpha}_i]}{[\bm{\beta}_2,\bm{\beta}_2]}\bm{\beta}_{2} - \cdots - \frac{[\bm{\beta}_{i-1},\bm{\alpha}_i]}{[\bm{\beta}_{i-1},\bm{\beta}_{i-1}]}\bm{\beta}_{i-1} , i=1,2,\cdots,m
+                    \end{align*}
+              \item 则$\bm{\beta}_{1},\bm{\beta}_{2},\cdots,\bm{\beta}_{m}$构成一个正交向量组，且$\bm{\beta}_{1},\bm{\beta}_{2},\cdots,\bm{\beta}_{m}$与$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$等价。称该过程为将向量组$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$正交化的过程
+              \item 若再将$\bm{\beta}_{1},\bm{\beta}_{2},\cdots,\bm{\beta}_{m}$单位化，令$\hat{\bm{\beta}}_{1}=\frac{\bm{\beta}_1}{||\bm{\beta}_1||}, \hat{\bm{\beta}}_{2}=\frac{\bm{\beta}_2}{||\bm{\beta}_2||}, \cdots, \hat{\bm{\beta}}_{m}=\frac{\bm{\beta}_m}{||\bm{\beta}_m||},$，则称$\hat{\bm{\beta}}_{1}, \hat{\bm{\beta}}_{2}, \cdots, \hat{\bm{\beta}}_{m}$为一个标准正交向量组
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{性质}
+
+
 
 \subsubsection{线性相关性}
 
@@ -656,9 +742,9 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
     \item 含有零向量的向量组一定线性相关
     \item 由单个非零向量组成的向量组一定线性无关
     \item 两个非零向量$\bm{\alpha},\bm{\beta}$线性相关$\Leftrightarrow$存在非零常数$\lambda$使得$\bm{\beta}=\lambda\bm{\alpha}$
-    \item 若向量组$\bm{A}:\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{l}$线性无关，且可由向量组$\bm{B}:\beta_1,\beta_2,\cdots,\beta_m$线性表示，则$l\leqslant m$，$R(\bm{A})\leqslant R(\bm{B})$
+    \item 若向量组$\bm{A}:\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{l}$线性无关，且可由向量组$\bm{B}:\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_m$线性表示，则$l\leqslant m$，$R(\bm{A})\leqslant R(\bm{B})$
     \begin{enumerate}
-        \item 若向量组$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{l}$可由$\beta_1,\beta_2,\cdots,\beta_m$线性表示，且$l>m$，则$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{l}$线性相关 
+        \item 若向量组$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{l}$可由$\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_m$线性表示，且$l>m$，则$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{l}$线性相关 
         \item 任意$n+1$个$n$维向量必线性相关
         \item 两个等价的线性无关向量组含有相同个数的向量
         \item 一个向量组的任意两个极大线性无关组含有相同个数的向量
@@ -666,17 +752,17 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
     \item
           \begin{align*}
                               & \bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m} (m\leqslant 2)\text{线性相关}                         \\
-              \Leftrightarrow & \text{存在不全为零的组合系数}k_1,k_2,\cdots,k_m,\text{使得} k_1\alpha_1+k_2\alpha_2+\cdots+k_m\alpha_m=0 \\
-              \Leftrightarrow & x_1\alpha_1+x_2\alpha_2+\cdots+x_m\alpha_m=0\text{有非零解}                                              \\
-              \Leftrightarrow & \alpha_1,\alpha_2,\cdots,\alpha_{m}\text{中至少有一个向量是其余}m-1\text{个向量的线性组合}                      \\
-              \Leftrightarrow & R(\alpha_1,\alpha_2,\cdots,\alpha_{m})<m
+              \Leftrightarrow & \text{存在不全为零的组合系数}k_1,k_2,\cdots,k_m,\text{使得} k_1\bm{\alpha}_1+k_2\bm{\alpha}_2+\cdots+k_m\bm{\alpha}_m=0 \\
+              \Leftrightarrow & x_1\bm{\alpha}_1+x_2\bm{\alpha}_2+\cdots+x_m\bm{\alpha}_m=0\text{有非零解}                                              \\
+              \Leftrightarrow & \bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m}\text{中至少有一个向量是其余}m-1\text{个向量的线性组合}                      \\
+              \Leftrightarrow & R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})<m
           \end{align*}
     \item
           \begin{enumerate}[(1)]
               \item 当$m=n$时，
                     \begin{enumerate}[a.]
-                        \item $\alpha_1,\alpha_2,\cdots,\alpha_{m}$线性相关$\Leftrightarrow |\bm{A}|=0$
-                        \item $\alpha_1,\alpha_2,\cdots,\alpha_{m}$线性无关$\Leftrightarrow |\bm{A}|\neq 0$
+                        \item $\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m}$线性相关$\Leftrightarrow |\bm{A}|=0$
+                        \item $\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m}$线性无关$\Leftrightarrow |\bm{A}|\neq 0$
                     \end{enumerate}
               \item 部分相关则整体相关，整体无关则部分无关
               \item 长相关则短相关，短无关则长无关
@@ -685,76 +771,44 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
           \begin{align*}
                               & \bm{\beta}\text{可由}\text{向量组}\bm{A}:\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_m\text{线性表示} \\
               \Leftrightarrow & \bm{\beta} = k_1\bm{\alpha}_1+k_2\bm{\alpha}_2+\cdots+k_m\bm{\alpha}_m                                        \\
-              \Leftrightarrow & x_1\bm{\alpha}_1+x_2\bm{\alpha}_2+\cdots+x_m\bm{\alpha}_m=\beta\text{有解}                               \\
-              \Leftrightarrow & R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m},\bm{\beta}) = R(\bm{A \beta})=R(\bm{A})
+              \Leftrightarrow & x_1\bm{\alpha}_1+x_2\bm{\alpha}_2+\cdots+x_m\bm{\alpha}_m=\bm{\beta}\text{有解}                               \\
+              \Leftrightarrow & R(\bm{A}) = R(\bm{A \beta})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m},\bm{\beta}) 
           \end{align*}
     \item
           \begin{align*}
-                              & \text{向量组}\bm{B}:\beta_1,\beta_2,\cdots,\beta_s\text{可由向量组}\bm{A}:\alpha_1,\alpha_2,\cdots,\alpha_m\text{线性表示}                    \\
-              \Leftrightarrow & \beta_j = k_{1j}\alpha_1+k_{2j}\alpha_2+\cdots+k_{mj}\alpha_m (j=1,2,\cdots,s)                               \\
-              \Leftrightarrow & (\alpha_1,\alpha_2,\cdots,\alpha_m)X = (\beta_1,\beta_2,\cdots,\beta_s)\text{有解}                           \\
-              \Leftrightarrow & R(\alpha_1,\alpha_2,\cdots,\alpha_{m})=R(\alpha_1,\alpha_2,\cdots,\alpha_{m},\beta_1,\beta_2,\cdots,\beta_s)
+                              & \text{向量组}\bm{B}:\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_s\text{可由向量组}\bm{A}:\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m}\text{线性表示}                    \\
+              \Leftrightarrow & \bm{\beta}_j = k_{1j}\bm{\alpha}_1+k_{2j}\bm{\alpha}_2+\cdots+k_{mj}\bm{\alpha}_m (j=1,2,\cdots,s)                               \\
+              \Leftrightarrow & (\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})X = (\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_s)\text{有解}                           \\
+              \Leftrightarrow & R(\bm{A})=R(\bm{A},\bm{B}) = R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m},\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_s) 
           \end{align*}
     \item
           \begin{align*}
-                              & \text{向量组}\bm{B}:\beta_1,\beta_2,\cdots,\beta_s\text{与向量组}\bm{A}:\alpha_1,\alpha_2,\cdots,\alpha_m\text{等价}                                                        \\
-              \Leftrightarrow & R(\alpha_1,\alpha_2,\cdots,\alpha_m)=R(\beta_1,\beta_2,\cdots,\beta_s)=R(\alpha_1,\alpha_2,\cdots,\alpha_m,\beta_1,\beta_2,\cdots,\beta_s) \\
+                              & \text{向量组}\bm{B}:\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_s\text{与向量组}\bm{A}:\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m}\text{等价}                                                        \\
+              \Leftrightarrow & R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})=R(\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_s)=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m},\bm{\beta}_1,\bm{\beta}_2,\cdots,\bm{\beta}_s) \\
               \Leftrightarrow & R(\bm{A})=R(\bm{B})=R(\bm{A},\bm{B})
           \end{align*}
 \end{enumerate}
 
 
-\subsubsection{特征向量}
-
-
-
-设$\bm{A}$是n阶方阵，如果数$\lambda$和$n$维非零列向量$\bm{\alpha}$使$\bm{A \alpha}= \lambda \bm{\alpha}$成立，则称数$\lambda$为方阵$\bm{A}$的一个特征值，$\bm{\alpha}$称为$\bm{A}$对应于$\lambda$的特征向量。$\lambda \bm{E}-\bm{A}$称为矩阵$\bm{A}$的特征矩阵。$|\lambda\bm{E}-\bm{A}|$是$\lambda$的$n$次多项式，称为矩阵$\bm{A}$的特征多项式。$|\lambda\bm{E}-\bm{A}|=0$是矩阵$\bm{A}$的特征方程。
-
-
-\begin{enumerate}[(1)]
-    \item $\lambda_1+\lambda_2+\cdots+\lambda_n=\sum_{i=1}^{n}{a_ii}$
-    \item $\lambda_{1}\lambda_{2}\cdots\lambda_{n}=|\bm{A}|$
-    \item 对任意常数$k$，$k\lambda$是$k\bm{A}$的特征值 
-    \item 对任意正整数$m$，$\lambda^m$是$\bm{A}^m$的特征值 
-    \item 设$\phi(\lambda)=a_{m}\lambda^{m}+a_{m-1}\lambda^{m-1}+\cdots+a_{1}\lambda+a_{0}$，则$\phi(\lambda)$是矩阵$\phi(\bm{A})$的特征值
-    \item 当$\bm{A}$可逆时，$\frac{1}{\lambda}$是$\bm{A}^{-1}$的特征值
-    \item $\bm{A}$与$\bm{A}^T$有相同特征值，但特征向量不一定相同
-    \item 方阵$\bm{A}$的不同特征值对应的特征向量线性无关
-\end{enumerate}
 
 
 
 
-\subsubsection{正交向量}
-
-向量正交：若$[\bm{\alpha},\bm{\beta}]=0$，则称向量$\bm{\alpha}$与$\bm{\beta}$正交
 
 
-\begin{enumerate}[1.]
-    \item 内积：$\bm{\alpha}^T\bm{\beta}=a_1 b_1 +a_2 b_2+\cdots+a_n b_n$，记为$[\bm{\alpha},\bm{\beta}]$
-          \begin{align*}
-               & [\bm{\alpha},\bm{\beta}] = [\bm{\beta},\bm{\alpha}]                                                      \\
-               & [(\lambda \bm{\alpha}),\bm{\beta}] = [\bm{\alpha},(\lambda\bm{\beta})] = \lambda[\bm{\alpha},\bm{\beta}] \\
-               & [\bm{\alpha},(\bm{\beta}+\bm{\gamma})] = [\bm{\alpha},\bm{\beta}]+[\bm{\alpha},\bm{\gamma}]              \\
-               & [(\bm{\alpha}+\bm{\beta}),\bm{\gamma}] = [(\bm{\alpha}+\bm{\gamma}]+[\bm{\beta},\bm{\gamma}]             \\
-               & [\bm{\alpha},\bm{\alpha}]\geqslant 0; [\bm{\alpha},\bm{\alpha}]=0\Leftrightarrow \bm{\alpha}=\bm{O}
-          \end{align*}
-    \item 非零向量组$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_m$中任意两个向量都正交，则称$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_m$为一个非零正交向量组
-    \item 若非零向量组$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m}$中任意两个向量都正交，且都是单位向量，则称$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$为正交规范向量组或标准正交向量组
-    \item 施密特正交化方法：
-          \begin{enumerate}[(1)]
-              \item 若$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$线性无关，令
-                    \begin{align*}
-                        &\bm{\beta}_1 = \bm{\alpha}_1                                                                                                                                                                        \\
-                        &\bm{\beta}_2 = \bm{\alpha}_2 - \frac{[\bm{\beta}_{1},\bm{\alpha}_2]}{[\bm{\beta}_1,\bm{\beta}_1]}\bm{\beta}_{1}                                                                                     \\
-                        &\bm{\beta}_3 = \bm{\alpha}_3 - \frac{[\bm{\beta}_{1},\bm{\alpha}_3]}{[\bm{\beta}_1,\bm{\beta}_1]}\bm{\beta}_{1} -  \frac{[\bm{\beta}_{2},\bm{\alpha}_3]}{[\bm{\beta}_2,\bm{\beta}_2]}\bm{\beta}_{2} \\
-                        &\vdots                                                                                                                                                                                              \\
-                        &\bm{\beta}_i = \bm{\alpha}_i - \frac{[\bm{\beta}_{1},\bm{\alpha}_i]}{[\bm{\beta}_1,\bm{\beta}_1]}\bm{\beta}_{1} -  \frac{[\bm{\beta}_{2},\bm{\alpha}_i]}{[\bm{\beta}_2,\bm{\beta}_2]}\bm{\beta}_{2} - \cdots - \frac{[\bm{\beta}_{i-1},\bm{\alpha}_i]}{[\bm{\beta}_{i-1},\bm{\beta}_{i-1}]}\bm{\beta}_{i-1} , i=1,2,\cdots,m
-                    \end{align*}
-              \item 则$\bm{\beta}_{1},\bm{\beta}_{2},\cdots,\bm{\beta}_{m}$构成一个正交向量组，且$\bm{\beta}_{1},\bm{\beta}_{2},\cdots,\bm{\beta}_{m}$与$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$等价。称该过程为将向量组$\bm{\alpha}_{1},\bm{\alpha}_{2},\cdots,\bm{\alpha}_{m}$正交化的过程
-              \item 若再将$\bm{\beta}_{1},\bm{\beta}_{2},\cdots,\bm{\beta}_{m}$单位化，令$\hat{\bm{\beta}}_{1}=\frac{\bm{\beta}_1}{||\bm{\beta}_1||}, \hat{\bm{\beta}}_{2}=\frac{\bm{\beta}_2}{||\bm{\beta}_2||}, \cdots, \hat{\bm{\beta}}_{m}=\frac{\bm{\beta}_m}{||\bm{\beta}_m||},$，则称$\hat{\bm{\beta}}_{1}, \hat{\bm{\beta}}_{2}, \cdots, \hat{\bm{\beta}}_{m}$为一个标准正交向量组
-          \end{enumerate}
-\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -806,16 +860,10 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
 
 
 
-
-
-
-
-
-
 \subsection{运算}
 矩阵$\mathbf{A}=(a_{ij})_{m\times s}$，$\mathbf{B}=(b_{ij})_{s\times n}$
 
-$A_{ii}$为$k_i$阶方阵$(i=1,2,\cdots,t)$，$k\neq 0$
+
 
 \subsubsection{基本性质}
 
@@ -910,7 +958,7 @@ $A_{ii}$为$k_i$阶方阵$(i=1,2,\cdots,t)$，$k\neq 0$
           \begin{enumerate}[(1)]
               \item \begin{align*}
                          & R(\bm{A}+\bm{B})\leqslant R(\bm{A})+R(\bm{B} ) \\
-                         & R(\bm{AB})\leqslant \min\{R(\bm{A},R(\bm{B})\}
+                         & R(\bm{AB})\leqslant \min\{R(\bm{A}),R(\bm{B})\}
                     \end{align*}
               \item 矩阵$\bm{A}$经过初等行变换化为矩阵$\bm{B}$，则矩阵$\bm{A}$的行向量组与$\bm{B}$的行向量组等价
               \item 矩阵的初等行变换不改变列向量组的线性关系
@@ -926,8 +974,6 @@ $A_{ii}$为$k_i$阶方阵$(i=1,2,\cdots,t)$，$k\neq 0$
 $m=n$时，$n$阶矩阵或$n$阶方阵：
 
 \begin{align*}
-& \mathbf{A}^k \mathbf{A}^l = \mathbf{A}^{k+l}  \\
-& (\mathbf{A}^k)^l = \mathbf{A}^{kl} \\
 % 方阵的行列式
 & |\mathbf{A}^T| = |\mathbf{A}| \\
 & |k \mathbf{A}| = k^n |\mathbf{A}^T| \\
@@ -944,6 +990,17 @@ $m=n$时，$n$阶矩阵或$n$阶方阵：
 对于$n$阶方阵$\bm{A}$，若存在矩阵$\bm{B}$，使得$\bm{AB}=\bm{BA}=\bm{E}$，则称$\bm{A}$为可逆矩阵（或非奇异矩阵），并称$\bm{B}$为$\bm{A}$的逆矩阵，记为$\bm{A}^{-1}$
 
 \begin{enumerate}[1.]
+    \item 基本性质
+    \begin{align*}
+               & \bm{A}^{-1}=\bm{B} \Leftrightarrow \bm{B}^{-1}=\bm{A} \\
+               & (\bm{A}^{-1})^{-1} = \bm{A}                           \\
+               & (\bm{A}^{T})^{-1} = (\bm{A}^{-1})^{T}                 \\
+               & |\bm{A}^{-1}| = \frac{1}{|\bm{A}|}                    \\
+               & (k \mathbf{A})^{-1} = \frac{1}{k} \mathbf{A}^{-1}     \\
+               & (\bm{AB})^{-1} = \bm{B}^{-1} \bm{A}^{-1}              \\
+               & \bm{AB}=\bm{AC} \Leftrightarrow \bm{B}=\bm{C}         \\
+               & \bm{AB}=\bm{CA}\nRightarrow \bm{B}=\bm{C}
+          \end{align*}
     \item 初等变换求逆
           \begin{enumerate}[(1)]
               \item 初等变换
@@ -981,16 +1038,6 @@ $m=n$时，$n$阶矩阵或$n$阶方阵：
                     \end{align*}
               \item $ \bm{A}^{-1} = \frac{1}{|\bm{A}|}\bm{A}^{*} $
           \end{enumerate}
-    \item \begin{align*}
-               & \bm{A}^{-1}=\bm{B} \Leftrightarrow \bm{B}^{-1}=\bm{A} \\
-               & (\bm{A}^{-1})^{-1} = \bm{A}                           \\
-               & (\bm{A}^{T})^{-1} = (\bm{A}^{-1})^{T}                 \\
-               & |\bm{A}^{-1}| = \frac{1}{|\bm{A}|}                    \\
-               & (k \mathbf{A})^{-1} = \frac{1}{k} \mathbf{A}^{-1}     \\
-               & (\bm{AB})^{-1} = \bm{B}^{-1} \bm{A}^{-1}              \\
-               & \bm{AB}=\bm{BC} \Leftrightarrow \bm{B}=\bm{C}         \\
-               & \bm{AB}=\bm{CA}\nRightarrow \bm{B}=\bm{C}
-          \end{align*}
 \end{enumerate}
 
 
@@ -1031,11 +1078,20 @@ $m=n$时，$n$阶矩阵或$n$阶方阵：
 \subsubsection{正交矩阵}
 
 
+\begin{enumerate}[1.]
+    \item \begin{align*}
+                              & n\text{阶实矩阵}\bm{A}\text{是正交矩阵}               \\
+              \Leftrightarrow & \bm{A} \text{的行（列）向量组为标准正交向量组}        \\
+              \Leftrightarrow & \bm{A}^{T}\bm{A}=\bm{E}\text{或}\bm{A}\bm{A}^{T}=\bm{E} \\
+          \end{align*}
+    \item 基本性质：
+          \begin{align*}
+               & \bm{A}^T = \bm{A}^{-1} \\
+               & |\bm{A}|=1\text{或}-1  \\
+          \end{align*}
+\end{enumerate}
 
-\par $n$阶实矩阵$\bm{A}$是正交矩阵
-\par $\Leftrightarrow$ $\bm{A}$的行（列）向量组为标准正交向量组
-\par $\Leftrightarrow$ $\bm{A}^{T}\bm{A}=\bm{E}$或（$\bm{A}^{-1}\bm{A}^{T}$）
-\par $\Rightarrow$ $|\bm{A}|=1$或$-1$
+
 
 
 
@@ -1044,8 +1100,8 @@ $m=n$时，$n$阶矩阵或$n$阶方阵：
 
 \subsubsection{合同矩阵}
 
-同阶方阵$\bm{A}$与$\bm{B}$合同 
-$\Leftrightarrow$ 存在可逆矩阵$\bm{C}$使得$\bm{C}^{T}\bm{A}\bm{C}=\bm{B}$
+\par 同阶方阵$\bm{A}$与$\bm{B}$合同 
+\par $\Leftrightarrow$ 存在可逆矩阵$\bm{C}$使得$\bm{C}^{T}\bm{A}\bm{C}=\bm{B}$
 
 
 
@@ -1118,10 +1174,10 @@ $D_j$把行列式$D$的第$j$列换成方程组右端常数项
 \end{gather*}
 
 
-\par 线性齐次方程组+$D=0$$\Leftrightarrow $有非零解
-\par 线性齐次方程组+$D\neq 0$$\Leftrightarrow $仅有零解
-\par 非线性齐次方程组+$D=0$$\Leftrightarrow $未知
-\par 非线性齐次方程组+$D \neq 0$ $\Leftrightarrow$有唯一解
+\par 线性齐次方程组：$D=0$$\Leftrightarrow $有非零解
+\par 线性齐次方程组：$D\neq 0$$\Leftrightarrow $仅有零解
+\par 非线性齐次方程组：$D=0$$\Leftrightarrow $未知
+\par 非线性齐次方程组：$D \neq 0$ $\Leftrightarrow$有唯一解
 
 
 
@@ -1209,7 +1265,7 @@ $m$个方程的$n$元线性方程组
                                       0      & 0      & \cdots & 1      & b_{r1} & \cdots & b_{r,n-r} \\
                                       0      & 0      & \cdots & 0      & 0      & \cdots & 0         \\
                                       \vdots & \vdots &        & \vdots & \vdots &        & \vdots    \\
-                                      0      & 0      & \cdots & 1      & 0      & \cdots & 0         \\
+                                      0      & 0      & \cdots & 0      & 0      & \cdots & 0         \\
                                   \end{bmatrix}=\bm{B}
                               \end{gather*}
                         \item 以$\bm{B}$作为系数矩阵的方程组为：
@@ -1254,7 +1310,7 @@ $m$个方程的$n$元线性方程组
                               \end{enumerate}
                     \end{enumerate}
           \end{enumerate}
-    \item 非齐次线性方称组：$\bm{Ax}=\bm{b}$的通解=$\bm{Ax}=\bm{O}$的基础解系+$\bm{Ax}=\bm{b}$的特解
+    \item 非齐次线性方称组：$\bm{Ax}=\bm{b}$的通解，即$\bm{Ax}=\bm{O}$的基础解系加上$\bm{Ax}=\bm{b}$的特解
           \begin{enumerate}[(1)]
               \item 性质
                     \begin{enumerate}[a.]
@@ -1265,7 +1321,7 @@ $m$个方程的$n$元线性方程组
                                   \item 若$k_1+k_2+\cdots+k_m=1$，则$\bm{\eta}=k_{1} \bm{\eta}_1 + k_2 \bm{\eta}_2+\cdots+k_m \bm{\eta}_m$为$\bm{Ax}=\bm{b}$的解
                                   \item 若$k_1+k_2+\cdots+k_m=0$，则$\bm{\eta}=k_1 \bm{\eta}_1 + k_2 \bm{\eta}_2+\cdots+k_m \bm{\eta}_m$为$\bm{Ax}=\bm{O}$的解
                               \end{enumerate}
-                        \item 若$R(\bm{A b})=R(\bm{A})=r$，$\bm{\xi}_1,\bm{\xi}_2,\cdots,\bm{\xi}_{n-r}$为$\bm{Ax}=\bm{O}$的基础解系，$\eta^{*}$为$\bm{Ax}=\bm{b}$的任一解（特解），则$\bm{\eta}=(\bm{\eta}=k_1 \bm{\eta}_1 + k_2 \bm{\eta}_2+\cdots+k_m \bm{\eta}_m)+\bm{\eta}^{*}$是$\bm{Ax}=\bm{b}$的解，其中$k_1,k_2,\cdots,k_{n-r}$为任意常数。对$\bm{Ax}=\bm{b}$的任一解$\bm{\eta}$，都可找到一组数$k_1,k_2,\cdots,k_{n-r}$使得$\bm{\eta}=(\bm{\eta}=k_1 \bm{\eta}_1 + k_2 \bm{\eta}_2+\cdots+k_m \bm{\eta}_m)+\bm{\eta}^{*}$（通解）
+                        \item 若$R(\bm{A b})=R(\bm{A})=r$，$\bm{\xi}_1,\bm{\xi}_2,\cdots,\bm{\xi}_{n-r}$为$\bm{Ax}=\bm{O}$的基础解系，$\bm{\eta}^{*}$为$\bm{Ax}=\bm{b}$的任一解（特解），则$\bm{\eta}=(k_1 \bm{\eta}_1 + k_2 \bm{\eta}_2+\cdots+k_m \bm{\eta}_m)+\bm{\eta}^{*}$是$\bm{Ax}=\bm{b}$的解，其中$k_1,k_2,\cdots,k_{n-r}$为任意常数。对$\bm{Ax}=\bm{b}$的任一解$\bm{\eta}$，都可找到一组数$k_1,k_2,\cdots,k_{n-r}$使得$\bm{\eta}=(k_1 \bm{\eta}_1 + k_2 \bm{\eta}_2+\cdots+k_m \bm{\eta}_m)+\bm{\eta}^{*}$（通解）
                     \end{enumerate}
               \item 方法
                     \begin{enumerate}[a.]
@@ -1331,32 +1387,203 @@ $m$个方程的$n$元线性方程组
 \subsection{矩阵}
 
 
-取$\bm{a}_{ij} = \bm{a}_{ji}$，记
+取$a_{ij} = a_{ji}$，记
 \begin{gather*}
-    \bm{A} = \begin{bmatrix}
+    f(x_1,x_2,\cdots,x_n)=\bm{x}^{T}\bm{A}\bm{x} = 
+    \begin{bmatrix}
+        x_1,&x_2,&\cdots,&x_n
+    \end{bmatrix}
+    \begin{bmatrix}
         a_{11} & a_{12} & \cdots & a_{1n} \\
         a_{21} & a_{22} & \cdots & a_{2n} \\
         \vdots & \vdots &        & \vdots \\
         a_{n1} & a_{n2} & \cdots & a_{nn} 
-    \end{bmatrix},
-    \bm{x} = \begin{bmatrix}
+    \end{bmatrix}
+    \begin{bmatrix}
         x_1\\x_2\\\vdots\\x_n
     \end{bmatrix}
 \end{gather*}
-则$f(x_1,x_2,\cdots,x_n)=\bm{x}^{T}\bm{A}\bm{x}$，称为二次型$f$的矩阵形式。对称矩阵$\bm{A}$称为二次型$f$的矩阵，$\bm{A}$的秩称为二次型$f$的秩
+\par $f(x_1,x_2,\cdots,x_n)$：二次型$f$的矩阵形式
+\par $\bm{A}$：二次型$f$的矩阵，是对称矩阵
+\par $R(\bm{A})$：二次型$f$的秩
+
+
+
+
+\chapter{解析几何}
 
 
 
 
 
 
+\section{二维：平面}
+
+直角坐标：
+
+柱坐标：
+\begin{gather*}
+    \begin{cases}
+        x=r \cos{\theta} \\
+        y=r \sin{\theta}
+    \end{cases}
+\end{gather*}
+
+
+\subsection{直线}
+
+
+\subsection{曲线}
+
+
+\subsubsection{弧长}
+
+
+\subsection{平面图形}
+
+
+
+
+
+
+\subsubsection{面积}
+
+
+
+\paragraph{直角坐标系}
+
+
+
+区域$D$：
+\begin{gather*}
+    D: \begin{cases}
+        \varphi_{1}(y)\leqslant x\leqslant\varphi_{2}(y) \\
+        \psi_{1}(x)\leqslant y\leqslant \psi_{2}(x)
+    \end{cases}
+\end{gather*}
+
+面积为：
+\begin{gather*}
+    \iint_{D}{f(x,y)\mathrm{d}x\mathrm{d}y } 
+    = 
+    \int_{\varphi_{1}(y)}^{\varphi_{2}(y)}\mathrm{d}x
+    \int_{\psi_{1}(x)}^{\psi_{2}(x)}{f(x,y) \mathrm{d}y }
+\end{gather*}
+
+
+
+
+\paragraph{极坐标系}
+
+
+
+区域$D$：
+\begin{gather*}
+    D: \begin{cases}
+        \alpha\leqslant\theta\leqslant\beta \\
+        r_{1}(\theta)\leqslant r\leqslant r_{2}(\theta)
+    \end{cases}
+\end{gather*}
+
+面积为：
+\begin{gather*}
+    \iint\limits_{D}{f(x,y)\mathrm{d}\sigma } = \int_{\alpha}^{\beta}\int_{r_{1}(\theta)}^{r_{2}(\theta)}{f(r\cos{\theta},r\sin{\theta})r \mathrm{d}r}
+\end{gather*}
+
+
+\section{三维：空间}
+
+
+
+
+
+直角坐标 
+柱坐标
+球面坐标
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{空间直线}
+
+
+
+\subsubsection{方程}
+
+
+
+
+\subsection{空间曲线}
+
+\subsubsection{切线与法平面}
+
+
+
+
+\subsection{空间平面}
+
+
+
+
+\subsection{空间曲面}
+
+
+\subsubsection{切平面与法线}
+
+
+\subsubsection{面积}
+
+
+
+由方程$z=z(x,y)$或$x=x(y,z)$或$y=y(a,z)$确定的单值光滑曲面$\Sigma$的面积为：
+\begin{gather*}
+    S = \iint\limits_{D_{xy}}{ \sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2} \mathrm{d}x\mathrm{d}y} \\
+    S = \iint\limits_{D_{yz}}{ \sqrt{1+\left(\frac{\partial x}{\partial y}\right)^2+\left(\frac{\partial x}{\partial z}\right)^2} \mathrm{d}y\mathrm{d}z}\\
+    S = \iint\limits_{D_{xz}}{ \sqrt{1+\left(\frac{\partial y}{\partial x}\right)^2+\left(\frac{\partial y}{\partial z}\right)^2} \mathrm{d}x\mathrm{d}z}
+\end{gather*}
+\par $D_{xy}$：曲面在$xOy$平面上的投影
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{旋转体}
+
+
+
+\subsubsection{侧面积}
+
+
+
+\subsubsection{体积}
+
+
+
+\subsection{相对位置关系}
 
 
 
 \chapter{函数论}
-
-
-
 
 函数：
 设$x$和$y$是两个变量（均在实数集$R$内取值），$D$是一个给定的非空数集，如果对于每个数$x\in D$，按照某个对应法则$f$，变量$y$都有唯一确定的数值和它对应，则称变量$y$是变量$x$的函数，记作$y= f(x)$。
@@ -1372,33 +1599,54 @@ $D$称为函数$y= f(x)$的定义域，$x$称为自变量，$y$称为因变量�
 设有关系式$ F(x,y)=0$，若$\forall x\in D$，存在唯一确定的$y$满足$F(x,y)= 0$与$x$相对应，由此确定的$y$与$ x $的函数关系$y = y(x)$称为由方程$  F(x,y)= 0  $所确定的隐函数
 
 
+\section{基本函数}
 
-\section{初等函数}
-
-
-
+\subsection{初等函数}
 
 
 
 
 
+\subsubsection{幂函数}
 
 
 
-\subsection{三角函数}
+
+\subsubsection{指数函数}
+
+
+
+\subsubsection{对数函数}
+
+
+
+\subsubsection{三角函数}
 
 函数转换
 
 
 \begin{align*}
-\sin(x+y) = \sin{x}\cdot\cos{y}+\cos{x}\cdot\cos{y} \\
-
+&\text{二角和差}\begin{cases}
+    \sin(x+y) = \sin{x}\cos{y}+\cos{x}\cos{y} \\
+    \cos(x+y) = \cos{x}\cos{y}-\sin{x}\sin{y}
+\end{cases}\\
+&\text{和差化积}\begin{cases}
+    \sin{x}+\sin{y} = 2 \sin{\frac{x+y}{2}}\cos{\frac{x-y}{2}}\\
+    \sin{x}-\sin{y} = 2 \cos{\frac{x+y}{2}}\sin{\frac{x-y}{2}}\\
+    \cos{x}+\cos{y} = 2 \cos{\frac{x+y}{2}}\cos{\frac{x-y}{2}}\\
+    \cos{x}-\cos{y} = -2\sin{\frac{x+y}{2}}\sin{\frac{x-y}{2}}\\
+\end{cases}\\
+&\text{积化和差}\begin{cases}
+    \sin{x}\cos{y} = \frac{1}{2} [\sin{(x+y)}+\sin{(x-y)}] \\
+    \cos{x}\cos{y} = \frac{1}{2} [\cos{(x+y)}+\cos{(x-y)}] \\
+    \sin{x}\sin{y} =-\frac{1}{2} [\cos{(x+y)}-\cos{(x-y)}]
+\end{cases}
 \end{align*}
 
 
 
 
-
+\subsection{数列}
 
 
 
@@ -1435,6 +1683,22 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 若$f'(x_0)=0$，则$x_0$是$f(x)$的驻点
 
+
+
+\subsubsection{极值求解}
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{凹凸性}
 
 定义：对于可导函数$f(x)$的图形，若在区间$[a,b]$中，$f(x)$都位于它每一点切线的上侧（下侧），即$ f(x＋\Delta x)>f(x)＋f'(x)\cdot A x$（$ f(x＋\Delta x)<f(x)＋f'(x)\cdot A x$），则称曲线$f(x)$在$[a,b]$中是向上凹的（向上凸的）
@@ -1458,7 +1722,7 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 偶函数的图形关于$y$轴对称，奇函数的图形关于坐标原点对称
 
-偶+偶=偶，奇+奇=奇，偶x偶=偶，奇x奇=偶，奇x偶=奇
+偶+偶=偶，奇+奇=奇，偶$\times$偶=偶，奇$\times$奇=偶，奇$\times$偶=奇
 
 
 
@@ -1503,16 +1767,24 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 \subsubsection{初等函数}
 \begin{gather*}
-    \begin{matrix} 
-        (C)'=0 & (x^\mu)^\prime = \mu (x^{\mu-1}) \\
-        (\sin{x})^\prime=\cos{x} & (\cos{x})^\prime=-\sin{x}  \\
-        (\tan{x})^\prime=\sec^2{x}=\frac{1}{\cos^2{x}}  & (\cot{x})^\prime=-\csc^2{x}=-\frac{1}{\sin^2{x}}  \\
-        (\sec{x})^\prime=\sec{x}\tan{x} & (\csc{x})^\prime=-\csc{x}\cot{x}  \\ 
-        (a^x)^\prime = a^x \ln{a} & (e^x)^\prime=e^x  \\
-        (\log_{a}{x})^\prime=\frac{1}{x\ln{a}} & (\ln{x})^\prime=\frac{1}{x}  \\ 
-        (\arcsin{x})^\prime=\frac{1}{\sqrt{1-x^2}} & (\arccos{x})^\prime=-\frac{1}{\sqrt{1-x^2}}  \\
-        (\arctan{x})^\prime=\frac{1}{\sqrt{1+x^2}} & (\mathrm{arccot}{x})^\prime=-\frac{1}{\sqrt{1+x^2}}   \\ 
-        \end{matrix}    
+    \begin{aligned} 
+        & (C)^\prime=0 \\
+        & (x^\mu)^\prime = \mu (x^{\mu-1}) \\
+        & (a^x)^\prime = a^x \ln{a} \\
+        & (e^x)^\prime=e^x  \\
+        & (\log_{a}{x})^\prime=\frac{1}{x\ln{a}} \\
+        & (\ln{x})^\prime=\frac{1}{x}  \\ 
+        & (\sin{x})^\prime=\cos{x} \\ 
+        & (\cos{x})^\prime=-\sin{x}  \\
+        & (\tan{x})^\prime=\sec^2{x}=\frac{1}{\cos^2{x}}  \\
+        & (\cot{x})^\prime=-\csc^2{x}=-\frac{1}{\sin^2{x}}  \\
+        & (\sec{x})^\prime=\sec{x}\tan{x} \\
+        & (\csc{x})^\prime=-\csc{x}\cot{x}  \\
+        & (\arcsin{x})^\prime=\frac{1}{\sqrt{1-x^2}} \\
+        & (\arccos{x})^\prime=-\frac{1}{\sqrt{1-x^2}}  \\
+        & (\arctan{x})^\prime=\frac{1}{\sqrt{1+x^2}} \\
+        & (\mathrm{arccot}{x})^\prime=-\frac{1}{\sqrt{1+x^2}}   \\ 
+        \end{aligned}    
 \end{gather*}
  
 
@@ -1520,12 +1792,15 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 设$u=u(x) $，$v=v(x)$都可导，则
 \begin{gather*}
-    (Cu)^\prime=Cu^\prime \\
-    (u\pm v)^\prime=u^\prime v^\prime \\
-    (uv)^\prime=u^\prime v+uv^\prime \\
-    \left(\frac{u}{v}\right)^\prime=\frac{u^\prime v-uv^\prime}{v^2} (v\ne 0)\\
-    (uvw)^\prime =u^\prime vw+uv^\prime w+uvw^\prime
+    \begin{aligned}
+        & (Cu)^\prime=Cu^\prime \\
+        & (u\pm v)^\prime=u^\prime v^\prime \\
+        & (uv)^\prime=u^\prime v+uv^\prime \\
+        & \left(\frac{u}{v}\right)^\prime=\frac{u^\prime v-uv^\prime}{v^2} (v\ne 0)\\
+        & (uvw)^\prime =u^\prime vw+uv^\prime w+uvw^\prime
+    \end{aligned} 
 \end{gather*}
+
 
 
 \subsubsection{反函数求导}
@@ -1541,6 +1816,32 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 \subsubsection{高阶求导}
 
 
+\begin{enumerate}[1.]
+    \item 基本性质：
+    \begin{gather*}
+        \begin{aligned}
+            & (u\pm v)^{(n)} = u^{(n)} \pm v^{(n)}\\
+            & f^{(k)}(x)\equiv 0, k\geqslant n+1
+        \end{aligned}
+    \end{gather*}
+    \item 初等函数：
+    \begin{gather*}
+        \begin{aligned}
+            & (a^{x})^{(n)} = a^{x} (\ln{a})^{n} (a>0) \\
+            & (e^{x})^{(n)} = e^{x} \\
+            & (\sin{kx})^{(n)} = k^{n} \sin{(\frac{n\pi}{2}+kx)} \\
+            & (\cos{kx})^{(n)} = k^{n} \cos{(\frac{n\pi}{2}+kx)} \\
+            & [\ln{(1+x)}]^{(n)} = (-1)^{n-1} \frac{(n-1)!}{(1+x)^{n}} \\
+            & (x^m)^{(n)} = m(m-1)\cdots(m-n+1)x^{m-n} \\
+            & \left(\frac{1}{x+a}\right)^{(n)} = (-1)^{n} \frac{n!}{(x+a)^{n+1}}
+        \end{aligned}
+    \end{gather*}
+    \item 莱布尼茨（Leibniz）公式：若$u(x)$，$v(x)$均$n$阶可导，则
+    \begin{gather*}
+        (uv)^{(n)} = \sum_{k=0}^{n}{ C_{n}^{k} u^{(n-k)} v^{(k)} } = u^{(n)} v^{(0)} + n u^{(n-1)} v^{(1)} + \frac{n(n+1)}{2!} u^{(n-2)} v^{(2)} + \cdots + n u^{(1)} v^{(n-1)} + u^{(0)} v^{(n)}
+    \end{gather*}
+\end{enumerate}
+
 
 
 
@@ -1552,7 +1853,11 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 全微分：设$ P_0(x_0,y_0) $为$ f $定义域$ D $的一个内点，如果函数$ z=f(x,y) $在点$ P_0(x_0,y_0) $处的全增量$ \Delta z $可表示为$ \Delta z=f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0) =A\cdot \Delta{x}+B\cdot \Delta{y}+o(\rho) $，其中$A$，$B$是与，无关的常数，则称函数$ z=f(x,y) $在点$ P_0(x_0,y_0) $处可微，并称函数$ z=f(x,y) $的全增量$ \Delta z $的线性主部$ A\cdot \Delta{x}+B\cdot \Delta{y} $为函数$ z=f(x,y) $在点$ P_0(x_0,y_0) $处的全微分，记作$ \mathrm{d}z = A\cdot \Delta{x}+B\cdot \Delta{y}=A\mathrm{d}{x}+B\mathrm{d}{y} $
 
 \begin{enumerate}[1.]
-    \item 当函数$z=f(x,y) $在点$ P_0(x_0,y_0) $处可微时，有$ \mathrm{d}z=f'_x(x_0,y_0)\mathrm{d}x+f'_y(x_0,y_0)\mathrm{d}y$ 
+    \item 全微分：当函数$z=f(x,y) $在点$ P_0(x_0,y_0) $处可微时，有
+    \begin{gather*}
+        \mathrm{d}z=f'_x(x_0,y_0)\mathrm{d}x+f'_y(x_0,y_0)\mathrm{d}y
+    \end{gather*}
+    \item 全导数
     \item 一阶偏导：函数$ z=f(x,y) $
     \begin{gather*}
         \frac{\partial z}{\partial x} = \lim_{\Delta x\rightarrow 0}{\frac{f(x+\Delta x,y)-f(x,y)}{\Delta x}}\\ 
@@ -1566,8 +1871,7 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
         f''_{yy}(x,y)=\frac{\partial}{\partial y}(\frac{\partial z}{\partial y}) = \frac{\partial^2 z}{\partial{y}^2} 
     \end{gather*}
     \par 若二阶混合偏导数$ \frac{\partial^2 z}{\partial{x}\partial{y}} $和$ \frac{\partial^2 z}{\partial{y}\partial{x}} $，在区域$ D $内连续，则在该区域$ D $内有$ \frac{\partial^2 z}{\partial{x}\partial{y}}=\frac{\partial^2 z}{\partial{y}\partial{x}} $
-    \item 偏导数点连续→点可微→点可导
-    \item 全导数
+    \item 偏导数点连续$\Rightarrow$点可微$\Rightarrow$点可导
 \end{enumerate}
 
 
@@ -1584,7 +1888,8 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 偏导数：设函数$ u=\varphi(x,y) $，$ v=\psi (x,y) $在点$ (x,y) $处存在偏导数，又函数$ z=f(u,v) $在对应点$ (u,v) $处具有连续的一阶偏导数，则复合函数$ z=f[\varphi(x,y),\psi(x,y)] $在点$ (u,v) $处对$ x $及$ y $的偏导数均存在，且有
 \begin{gather*}
-    \frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial x}，\frac{\partial z}{\partial y}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial y }+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial y} 
+    \frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial x}\\
+    \frac{\partial z}{\partial y}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial y }+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial y} 
 \end{gather*}
  
 
@@ -1599,6 +1904,9 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 
 \section{多元函数微分}
+
+
+\section{无穷元函数微分}
 
 
 
@@ -1616,13 +1924,33 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 \subsection{运算}
 
-
+\clearpage
 \subsubsection{初等函数}
 
+\begin{gather*}
+    \begin{aligned}
+        & \int x^{a}\mathrm{d}x =\frac{1}{1+a}x^{1+a}+C (a\neq -1)  \\
+        & \int{ \frac{1}{x} \mathrm{d}x} = \ln{|x|} +C \\
+        & \int{a^{x}\mathrm{d}x} = \frac{a^x}{\ln{a}}+C \\
+        & \int{e^x \mathrm{d}x} = e^x +C \\
+        & \int{\sin{x}\mathrm{d}x} = -\cos{x}+C \\
+        & \int{\cos{x}\mathrm{d}x} = \sin{x}+C \\
+        & \int{\tan{x}\mathrm{d}x} = -\ln{|\cos{x}|}+C \\
+        & \int{\cot{x}\mathrm{d}x} = \ln{|\sin{x}|}+C \\
+        & \int{\sec^{2}{x}\mathrm{d}x} = \int{\frac{1}{\cos^2{x}}\mathrm{d}x} = \tan{x}+C \\
+        & \int{\csc^2{x}\mathrm{d}x} = \int{\frac{1}{\sin^2{x}\mathrm{d}x}=-\cot{x}+C} \\
+        & \int{\sec{x}\tan{x}\mathrm{d}x} = \sec{x}+C \\
+        & \int{\csc{x}\cot{x}\mathrm{d}x} = -\csc{x}+C \\
+        & \int{\sec{x}\mathrm{d}x} = \ln{|\sec{x}+\tan{x}|}+C\\
+        & \int{\csc{x}\mathrm{d}x} = \ln{|\csc{x}-\cot{x}|}+C\\
+        & \int{\frac{1}{a^2+x^2} \mathrm{d}x} = \frac{1}{a}\arctan{\frac{x}{a}}+C \\
+        & \int{\frac{1}{\sqrt{a^2-x^2}}\mathrm{d}x} = \arcsin{\frac{x}{a}}+C \\
+        & \int{\frac{1}{a^2-x^2}\mathrm{d}x} = \frac{1}{2a} \ln{\left|\frac{a+x}{a-x}\right|}+C \\
+        & \int{\frac{1}{\sqrt{x^2\pm a^2}}\mathrm{d}x} = \ln{\left|x+ \sqrt{x^2\pm a^2}\right|}+C
+        \end{aligned}
+\end{gather*}
 
-\begin{align*}
-& \int x^{a}\mathrm{d}x =\frac{1}{1+a}x^{1+a}+C (a\neq -1)  \\
-\end{align*}
+
 
 
 
@@ -1633,14 +1961,17 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 
 \begin{enumerate}[1.]
-    \item 牛顿莱布尼茨公式：如果$f(x)$连续，且$\int{f(x)\mathrm{d}x} = F(x)+C$则有$\int_{a}^{b}{f(x)\mathrm{d}x}=F(b)-F(a)$成立
+    \item 牛顿莱布尼茨公式：如果$f(x)$连续，且$\int{f(x)\mathrm{d}x} = F(x)+C$则
+          \begin{gather*}
+              \int_{a}^{b}{f(x)\mathrm{d}x}=F(b)-F(a)
+          \end{gather*}
 \end{enumerate}
 
 
 
 
 
-
+\subsubsection{定积分法}
 
 
 
@@ -1652,38 +1983,49 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 
 
-\begin{align*}
-& [\int f(x)\mathrm{d}x]^\prime = f(x) \\
-& \mathrm{d}\int f(x)\mathrm{d}x= f(x)\mathrm{d}x \\
-\end{align*}
-
+\begin{gather*}
+    \begin{aligned}
+        & [\int f(x) \mathrm{d}x]^\prime = f(x)  \\
+        & \mathrm{d} \int f(x) \mathrm{d}x = f(x) \mathrm{d}x \\
+        & \int{ f^\prime(x) \mathrm{d}x } = \int{\mathrm{d}x} = f(x) +C \\
+        & \int{ kf(x) \mathrm{d}x} = k \int{f(x)\mathrm{d}x}, k\neq 0 \\
+        & \int{[f(x)\pm g(x)] \mathrm{d}x} = \int{f(x)\mathrm{d}x}\pm\int{g(x)\mathrm{d}x} 
+    \end{aligned}
+\end{gather*}
 
 
 
 \subsubsection{不定积分法}
 
 
-第一换元法（凑微分）
 
-设$f(x)$有原函数$F(u)$，$u=(x)$可导，则有
-\begin{gather*}
-    \int{f[\varphi(x)]\varphi^\prime(x)\mathrm{d}x} 
-    = \int{f[\varphi(x)]\mathrm{d}\varphi(x)} 
-    = \int{f(u)\mathrm{d}u} 
-    = F(u)+C = F[\varphi(x)]+C
-\end{gather*}
+\begin{enumerate}
+    \item 第一换元法（凑微分）：设$f(x)$有原函数$F(u)$，$u=(x)$可导，则有
+          \begin{gather*}
+              \int{f[\varphi(x)]\varphi^\prime(x)\mathrm{d}x}
+              = \int{f[\varphi(x)]\mathrm{d}\varphi(x)}
+              = \int{f(u)\mathrm{d}u}
+              = F(u)+C = F[\varphi(x)]+C
+          \end{gather*}
+    \item 第二换元法：设函数$x=\phi(t)$具有连续导数，且$\phi(t)^\prime \neq 0$，又设$f[\phi(t)]\phi^\prime(t)$具有原函数$\varPhi(t) $，则
+    \begin{gather*}
+        \int{f(x)\mathrm{d}x} = \int{f[\phi(t)]\phi^\prime(t) \mathrm{d}t} = \varPhi(t)+C = \varPhi[\phi^{-1}(x)]+C
+    \end{gather*}
+    \informationBox{
+        \begin{gather*}
+            \begin{aligned}
+                & \sqrt{a^2-x^2}, x=a\sin{t} \\
+                & \sqrt{a^2+x^2}, x=a\tan{t} \\
+                & \sqrt{x^2-a^2}, x=\pm a\sec{t} 
+            \end{aligned}
+        \end{gather*}
+    }
+    \item 分部积分法：设函数$u=u(x)$，$v=v(x)$具有连续导数，则
+          \begin{gather*}
+              \int{u\mathrm{d}v} = uv-\int{v\mathrm{d}u}
+          \end{gather*}
+\end{enumerate}
 
-
-第二换元法
-
-
-
-分部积分法
-
-设函数$u=u(x)$，$v=v(x)$具有连续导数，则
-\begin{gather*}
-    \int{u\mathrm{d}v} = uv-\int{v\mathrm{d}u}
-\end{gather*}
 
 
 \section{二重积分}
@@ -1694,24 +2036,17 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 \subsection{运算}
 
 
-\subsubsection{直角坐标}
-
-
-
-\subsubsection{极坐标}
-
-
 
 
 \section{三重积分}
 
 
 
+\section{n重积分}
 
 
 
-
-
+\section{无穷维重积分}
 
 
 
@@ -1758,7 +2093,7 @@ $f$概率密度函数
 \informationBox{
     \begin{enumerate}[(1)]
         \item 单调性：$f(x)\leqslant 0(-\infty<x<+\infty)$
-        \item 有界性：$0\leqslant F(x)\leqslant 1$，特别地，有$F(-\infty)=\lim_{x\rightarrow-\infty}{F(x)=0}$，$F(+\infty)=\lim_{x\rightarrow+\infty}{F(x)=1}$
+        \item 有界性：$0\leqslant F(x)\leqslant 1$，特别地，有$F(-\infty)=\lim\limits_{x\rightarrow-\infty}{F(x)=0}$，$F(+\infty)=\lim\limits_{x\rightarrow+\infty}{F(x)=1}$
         \item 右连续性：$F(x)$至多有可列个间断点，且在间断点处右连续
     \end{enumerate}
 }
@@ -1804,7 +2139,7 @@ $f$概率密度函数
     }
 \end{enumerate}
 
-
+\paragraph{几何概型}
 
 
 \subsubsection{二维随机变量}
@@ -1828,11 +2163,9 @@ $f$概率密度函数
         \informationBox{
             \begin{gather*}
                 F(-\infty,x)=0,
-            F(x,-\infty)=0,
+            F(x,+\infty)=0,
             F(-\infty,-\infty)=0,
             F(+\infty,+\infty)=1 \\
-            P\{x_1 < X \leqslant  x_2, y_1< Y \leqslant y_2\}
-            = F(x_1,y_1) + F(x_2,y_2) - F(x_1,y_2) - F(x_2,y_1)
             \end{gather*} 
         }
     \item 边缘分布：
@@ -1933,6 +2266,30 @@ $Rp$是$p$维欧式空间
     \end{gather*}
 \end{enumerate}
 
+\paragraph{古典概型}
+
+
+
+\subparagraph{排列}
+
+\informationBox{
+\begin{enumerate}[(1)]
+    \item n级排列：由$1,2,\cdots,n$组成的$n$个不同数字的全排列。记作$j_1 j_2\cdots j_n$
+    \item 逆序：在一个n级排列中，如果有较大数排在较小数的前面，则称这两个数构成一个逆序。一个排列中逆序的总数，称为这个排列的逆序数，记作$\tau(j_1 j_2\cdots j_n)$。如果排列的逆序数是奇数称为奇排列，是偶数称为偶排列。
+    \item 对换：在一个排列中互换两个数的位置，其余数位置不变，称为一次对换。一次对换改变排列的奇偶性。
+\end{enumerate}
+}
+
+\subparagraph{组合}
+
+
+
+\subparagraph{伯努利实验}
+
+
+
+
+
 \subsubsection{二维随机变量}
 
 离散型随机向量$X$，$Y$，$Z=g(X,Y)$
@@ -1950,6 +2307,12 @@ $Rp$是$p$维欧式空间
         = P\{ g(X,Y)=z_{k} \} \\
         &= \sum_{g(x_i\cdot y_j)=z_k}{ P\{X=x_i,Y=y_j\} } , i,j=1,2,\cdots
     \end{align*}
+    \informationBox{
+        \begin{gather*}
+            P\{x_1 < X \leqslant  x_2, y_1< Y \leqslant y_2\}
+            = F(x_1,y_1) + F(x_2,y_2) - F(x_1,y_2) - F(x_2,y_1)
+        \end{gather*}
+    }
     \item 边缘分布：
     \begin{gather*}
         p_{i\cdot} 
@@ -2295,7 +2658,7 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
 
 \begin{enumerate}[1.]
     \item 若$\chi^2\sim\chi^2(n)$，则$E(\chi^2)=n$，$D(\chi^2)=2n$
-    \item $X\sim \chi^2{n}$，$Y\sim\chi^2(m)$，且$X$和$Y$相互独立，则$X+Y\sim\chi^2(m+n)$
+    \item $X\sim \chi^2{(n)}$，$Y\sim\chi^2(m)$，且$X$和$Y$相互独立，则$X+Y\sim\chi^2(m+n)$
 \end{enumerate}
 
 
@@ -2319,7 +2682,7 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
                     \end{gather*}
               \item 有效性
                     \begin{gather*}
-                        D(\hat{\theta}_1)<D(\hat{\theta}_2)，\hat{\theta}_1比\hat{\theta}_2有效
+                        D(\hat{\theta}_1)<D(\hat{\theta}_2),\hat{\theta}_1\text{比}\hat{\theta}_2\text{有效}
                     \end{gather*}
               \item 一致性
                     \begin{gather*}
@@ -2420,7 +2783,8 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
 \paragraph{一元}
 
 \begin{gather*}
-    S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^2}， S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-X)^2}
+    S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^2}\\
+    S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-\overline{X})^2}
 \end{gather*}
 \par $\overline{X}$与$S^2$相互独立
 
@@ -2479,9 +2843,9 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
 \begin{gather*}
     Y_i = \beta_0+\beta_{1}X_{i}+{\hat{\varepsilon}}_i\\
     \min_{{\hat{\beta}}_1}{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2} =\sum_{i=1}^{n}{\left(Y_i-{\hat{\beta}}_0-{\hat{\beta}}_1 X_i\right)^2}\\
-    \frac{\partial}{\partial \beta_{1}}  \sum_{i=1}^{n}{\hat{ε}_i^2} =-2\sum_{i=1}^{n}{(Y_i-\hat{\beta}_{0}-\hat{\beta}_{1} X_i) X_{i}}=0\\
+    \frac{\partial}{\partial \beta_{1}}  \sum_{i=1}^{n}{\hat\varepsilon_i^2} =-2\sum_{i=1}^{n}{(Y_i-\hat{\beta}_{0}-\hat{\beta}_{1} X_i) X_{i}}=0\\
     \hat{\beta}_{1} = \frac{\sum_{i=1}^{n}\left(X_i-\overline{X}\right)\left(Y_i-\overline{Y}\right)}{\sum_{i=1}^{n}\left(X_i-\overline{X}\right)^2}=\frac{\sum_{i=1}^{n}{x_i y_i}}{\sum_{i=1}^{n}x_i^2}，\hat{\beta}_{0}=\overline{Y}-\hat{\beta}_{1}\overline{X}\\
-    {\hat{\beta}}_1 \sim N\left(\beta_1,\frac{\sigma_2}{\sum_{i=1}^{n}{x_i^2}}\right)，\hat{\beta}_{0} \sim N\left(\beta_0, \frac{\sum_{i=1}^{n}{X_i^2}}{ n \sum_{i=1}^{n}{x_i^2}} \sigma^2\right)\\
+    {\hat{\beta}}_1 \sim N\left(\beta_1,\frac{\sigma_2}{\sum_{i=1}^{n}{x_i^2}}\right), \hat{\beta}_{0} \sim N\left(\beta_0, \frac{\sum_{i=1}^{n}{X_i^2}}{ n \sum_{i=1}^{n}{x_i^2}} \sigma^2\right)\\
 \end{gather*}
 
 
@@ -2639,15 +3003,15 @@ $k$：变量个数
 
 
 
-极大似然估计：又称最大似然法（Maximum Likelihood，ML）
+极大似然估计：又称最大似然法（maximum likelihood estimation，MLE）
 
 \subsection{方法}
 \subsubsection{均值估计}
 
 \begin{gather*}
     L\left(x_1,x_2,\cdots,x_n;\theta_1,\theta_2,\cdots,\theta_n\right) =\prod_{i=1}^{n}f\left(x_i;\theta_1,\theta_2,\cdots,\theta_k\right)\\
-    lnL=\sum_{i=1}^{n}lnf\left(x_i;\theta_1,\theta_2,\cdots,\theta_k\right)\\
-    \frac{\partial lnL}{\partial\theta_i}=0,\ i=1,2,\cdots,k\\
+    \ln{L=\sum_{i=1}^{n}} \ln{f\left(x_i;\theta_1,\theta_2,\cdots,\theta_k\right)}\\
+    \frac{\partial \ln{L}}{\partial\theta_i}=0,\ i=1,2,\cdots,k\\
     \begin{cases}
         \hat{\theta}_1 = \hat{\theta}_1(x_1,x_2,\cdots,x_n) \\
         \hat{\theta}_2 = \hat{\theta}_2(x_1,x_2,\cdots,x_n  \\
@@ -2685,16 +3049,10 @@ $Y$服从正态分布
 
 
 
+\section{极大后验概率估计}
 
 
-
-
-
-
-
-
-
-
+（maximum aposteriori estimation, MAP）
 
 
 
@@ -2792,7 +3150,7 @@ $Y$服从正态分布
 \end{gather*}
 
 
-
+\paragraph{多元}
 
 
 
@@ -3347,9 +3705,9 @@ TSS=ESS+RSS
 $$
 
 \par 总离差平方和（Total Sum of Squares）：  
-$$ TSS=\sum_{i=1}^{n}y_i^2=\sum_{i=1}^{n}\left(Y_i-\bar{Y}\right)^2=SST $$  
+$$ TSS=\sum_{i=1}^{n}y_i^2=\sum_{i=1}^{n}\left(Y_i-\overline{Y}\right)^2=SST $$  
 \par 回归平方和（Explained Sum of Squares）： 回归方程能解释的，  
-$$ ESS=\sum_{i=1}^{n}{\hat{y}}_i^2=\sum_{i=1}^{n}\left({\hat{Y}}_i-\bar{Y}\right)^2=SSA $$
+$$ ESS=\sum_{i=1}^{n}{\hat{y}}_i^2=\sum_{i=1}^{n}\left({\hat{Y}}_i-\overline{Y}\right)^2=SSA $$
 \par 残差平方和（Residual Sum of Squares）： 回归方程不能解释的  
 $$ RSS=\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2=\sum_{i=1}^{n}\left(Y_i-{\hat{Y}}_i\right)^2=SSE $$
 
@@ -3358,9 +3716,9 @@ $$ RSS=\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2=\sum_{i=1}^{n}\left(Y_i-{\hat{Y}}_i
 
 \begin{gather*}
 R^2=\frac{ESS}{TSS} 
-=\frac{\sum_{i=1}^{n}\left({\hat{Y}}_i-\bar{Y}\right)^2}{\sum_{i=1}^{n}\left(Y_i-\bar{Y}\right)^2} 
+=\frac{\sum_{i=1}^{n}\left({\hat{Y}}_i-\overline{Y}\right)^2}{\sum_{i=1}^{n}\left(Y_i-\overline{Y}\right)^2} 
 =1-\frac{RSS}{TSS}
-=1-\frac{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2}{\sum_{i=1}^{n}\left(Y_i-\bar{Y}\right)^2}，0≤R^2≤1 \\ 
+=1-\frac{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2}{\sum_{i=1}^{n}\left(Y_i-\overline{Y}\right)^2}，0≤R^2≤1 \\ 
 R^2=\left[Corr\left(Y_i,{\hat{Y}}_i\right)\right]^2
 \end{gather*}
 
@@ -3431,7 +3789,7 @@ F=\frac{ESS/k}{RSS/(n-k-1)} = \frac{\sum_{i=1}^{n}{\hat{y}_i^2/k}}{\sum_{i=1}^{n
 若$F>F_\alpha$，拒绝$H_0$
 
 $$
-{\bar{R}}^2=1-\frac{n-1}{n-k-1+kF}, F=\frac{R^2/k}{(1-R^2)/(n-k-1)}
+{\overline{R}}^2=1-\frac{n-1}{n-k-1+kF}, F=\frac{R^2/k}{(1-R^2)/(n-k-1)}
 $$
 
 
@@ -8655,7 +9013,7 @@ $$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
 
 
 
-\chapter{AD-AS模型}\label{chapter:AD-AS模型}
+\chapter{凯恩斯AD-AS模型}
 
 
 \section{AD：IS-LM-BP模型}
@@ -9280,15 +9638,15 @@ IS-LM模型：新古典综合学派
 
 
 
-
-\subsection{凯恩斯AS}
-
-
-\subsection{古典AS}
+\section{均衡}
 
 
 
+\chapter{古典AD-AS模型}
 
+\section{AD}
+
+\section{AS}
 
 \section{均衡}
 
@@ -10078,6 +10436,17 @@ $NX$：净出口（net exports）＝贸易余额（trade balance）
 
 \chapter{价值观}
 
+
+
+\chapter{逻辑学}
+
+
+
+\section{形式逻辑}
+
+
+
+\section{辩证逻辑}
 
 
 
