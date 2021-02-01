@@ -1650,7 +1650,73 @@ $D$称为函数$y= f(x)$的定义域，$x$称为自变量，$y$称为因变量�
 
 
 
+\subsubsection{级数}
 
+
+
+\paragraph{常数项级数}
+常数项级数：设有数列$\{u_n\}: u_{1},u_{2},\cdots$，将其各项依次累加所得的式子$u_{1}+u_{2}+\cdots+u_{n}+\cdots$称为（常数项）无穷数列，简称（常数项）级数，记作$\sum_{n=1}^{\infty}{u_n}$，即$\sum_{n=1}^{\infty}{u_n} = u_{1}+u_{2}+\cdots+u_{n}+\cdots$
+
+\paragraph{函数项级数}
+
+函数项级数：设给定一个定义在$[a,b]$上的函数列$u_1(x),u_2(x),\cdots,u_n(x),\cdots$，则$u_1(x)+u_2(x)+\cdots+u_n(x)+\cdots$为函数列级数。收敛域内的和函数为：$S(x)=\sum_{n=1}^{\infty}{ u_n(x) }$
+
+
+
+
+\subparagraph{幂级数}
+
+
+\subparagraph{傅里叶级数}
+
+
+
+\subsection{函数与级数转化}
+
+
+函数$f(x)$在$x=0$处展开为幂级数：
+\begin{enumerate}[1.]
+    \item 直接法
+          \begin{enumerate}[(1)]
+              \item 泰勒（Taylor）级数：当$f(x)$在$x_0$的某邻域内存在任意阶导数时，幂级数
+                    \begin{gather*}
+                        \sum_{n=0}^{\infty}{
+                        \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
+                        } =
+                        f(x_0)+
+                        \frac{f^\prime(x_0)}{1!}(x-x_0)+
+                        \frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^{2}+\cdots+
+                        \frac{f^{(n)}(x_0)}{n!}(x-x_0)^{n}+\cdots
+                    \end{gather*}
+                    \par 当$x_0=0$时，泰勒级数称为麦克劳林（Maclaurin）级数
+                    \begin{gather*}
+                        \sum_{n=0}^{\infty}{
+                        \frac{f^{(n)}(0)}{n!}(x0)^n
+                        } =
+                        f(x_0)+
+                        f^\prime(0)x+
+                        \frac{f^{\prime\prime}(0)}{2!}x^{2}+\cdots+
+                        \frac{f^{(n)}(0)}{n!}x^{n}+\cdots
+                    \end{gather*}
+              \item 在收敛区间$(-R,R)$内考察泰勒级数余项$R_{n}(x)$的极限，若等于零，则该麦克劳林级数为$f(x)$的幂级数展开式
+                    \begin{gather*}
+                        \lim_{n\rightarrow\infty}{R_{n}(x)} = \lim_{n\rightarrow\infty}{\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}}, 0<\xi<x
+                    \end{gather*}
+          \end{enumerate}
+    \item 间接法
+    \begin{gather*}
+        \begin{aligned}
+            \frac{1}{1-x} &= \sum_{n=0}^{\infty}{x^n} = 1 + x + x^2 + \cdots + x^n + \cdots , (-1,1) \\
+            \frac{1}{1+x} &= \sum_{n=0}^{\infty}{(-1)^{n}x^{n}} = 1 - x + x^2 - \cdots + (-1)^{n}x^{n} + \cdots , (-1,1) \\
+            e^x &= \sum_{x=0}^{\infty}{\frac{x^n}{n!}} = 1 + x + \frac{1}{2!}x^2 + \cdots + \frac{1}{n!}x^n + \cdots , (-\infty,\infty) \\
+            \ln{(1+x)}&= \sum_{x=0}^{\infty}{(-1)^{n}\frac{x^{n}}{n} } = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots +(-1)^{n-1}\frac{x^{n}}{n}+\cdots ,(-1,1] \\
+            \sin{x} &= \sum_{x=0}^{\infty}{(-1)^{n}\frac{x^{2n+1}}{(2n+1)!} }= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots +(-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}+\cdots ,(-\infty,\infty) \\
+            \cos{x} &= \sum_{x=0}^{\infty}{(-1)^{n}\frac{x^{2n}}{(2n)!} }= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots +(-1)^{n}\frac{x^{2n}}{(2n)!}+\cdots ,(-\infty,\infty) \\
+            (1+x)^{m}& = 1+mx+\frac{m(m-1)}{2!}x^{2}+\cdots+\frac{m(m-1)\cdots (m-n+1)}{n!}x^{n}+\cdots, (-1,1)\\ 
+            &,\text{当}x=\pm 1\text{时，级数是否收敛取决于}m \\
+        \end{aligned}
+    \end{gather*}
+\end{enumerate}
 
 
 
@@ -1726,16 +1792,108 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 
 
+\subsection{敛散性}
 
 
 
+\subsubsection{函数极限}
+
+当$x\rightarrow 0$时：
+\begin{gather*}
+    \begin{aligned}
+        & x\sim\sin{x}\sim\tan{x}\sim\arcsin{x}\sim\arctan{x}\sim e^{x}-1 \sim \ln(1+x)\\
+        & a^{x}-1 \sim x\ln{x} \\
+        & (1+x)^{m}-1 \sim mx  \\
+        & 1-\cos{x}\sim \frac{1}{2}x^2
+      \end{aligned}
+\end{gather*}
+
+\begin{gather*}
+    \lim_{x\rightarrow 0}{\frac{\sin{x}}{x}} = 1 \\
+    \lim_{x\rightarrow 0}{(1+x)^{\frac{1}{x}}} = e \\
+    \lim_{x\rightarrow 0}{(1+\frac{1}{x})^{x}} = 1
+\end{gather*}
 
 
+\subsubsection{级数收敛}
 
 
+\begin{enumerate}[1.]
+    \item 级数：
+          \begin{enumerate}[(1)]
+              \item 柯西收敛准则：$\sum_{n=1}^{\infty}{u_n}$收敛$\Leftrightarrow$ 对于任意给定的正数$\varepsilon$，总存在$N$，使得当$n>N$时，对于任意的自然数$p=1,2,3,\cdots$，有$|u_{n+1}+u_{n+2}+\cdots+u_{n+p}|<\varepsilon$
+              \item $\sum_{n=1}^{\infty}{u_n}$
+              \begin{gather*}
+                \sum_{n=1}^{\infty}{|u_n|} 
+                \begin{cases}
+                    \text{收敛}\Rightarrow \sum_{n=1}^{\infty}{u_n}\text{绝对收敛}\\
+                    \text{发散}+\sum_{n=1}^{\infty}{u_n}\begin{cases}
+                         \text{收敛}\left.\begin{cases}
+                            \lim\limits_{n\rightarrow\infty}{u_n}=0 \\
+                            S_n\text{收敛}
+                        \end{cases}\right\}\Rightarrow \sum_{n=1}^{\infty}{u_n}\text{相对收敛} \\
+                        \text{发散}\Rightarrow \sum_{n=1}^{\infty}{u_n}\text{发散}
+                    \end{cases}
+                \end{cases} 
+              \end{gather*}
+              \informationBox{
+                交错级数的莱布尼茨判别法：若$u_n>0$，$u_n\geqslant u_{n+1}$，$\lim\limits_{n\rightarrow\infty}{u_n}=0$交错级数$\sum_{n=1}^{\infty}{(-1)^{n-1}u_n}$收敛，$S<u_1$
+              }
+          \end{enumerate}
+    \item 常数项级数：
+          \begin{enumerate}[(1)]
+              \item 收敛：设给定常数项级数$\sum_{n=1}^{\infty}{u_n} = u_{1}+u_{2}+\cdots+u_{n}+\cdots$，记$S_n=\sum_{i=1}^{n}{u_i} = u_{1}+u_{2}+\cdots+u_{n}$为级数$\sum_{n=1}^{\infty}{u_n}$的前n项部分和，若$\lim\limits_{n\rightarrow\infty}{S_n}=S$（有限值），则称级数收敛；若$\lim\limits_{n\rightarrow\infty}{S_n}$不存在，则称级数发散
+              \item 基本性质：
+                    \begin{enumerate}[a.]
+                        \item 级数$\sum_{n=1}^{\infty}{u_n}$与$\sum_{n=1}^{\infty}{k u_n}$有相同的敛散性（k是不为零的常数）
+                        \item 若级数$\sum_{n=1}^{\infty}{u_n}$，$\sum_{n=1}^{\infty}{v_n}$均收敛，则级数$\sum_{n=1}^{\infty}{(u_n\pm v_n)}$亦收敛，且有$\sum_{n=1}^{\infty}{(u_n\pm v_n)}=\sum_{n=1}^{\infty}{u_n}+\sum_{n=1}^{\infty}{v_n}$
+                        \item 在级数中去掉或添加有限项，不会影响级数的敛散性。但收敛时，级数和一般会改变
+                        \item 收敛级数任意加括号后形成的级数仍收敛。如果正项级数加括号后所形成的级数收敛，则原级数收敛
+                        \item $\sum_{n=1}^{\infty}{u_n} \Rightarrow \lim\limits_{n\rightarrow\infty}{u_n}=0$
+                    \end{enumerate}
+          \end{enumerate}
+    \item 正项级数：
+    \begin{enumerate}[(1)]
+        \item $\lim\limits_{n\rightarrow\infty}{u_n}\neq 0\Rightarrow$级数发散
+        \item 审敛法：
+        \begin{enumerate}[a.]
+            \item 比值审敛法
+            \begin{gather*}
+                \lim_{n\rightarrow\infty}{\frac{u_{n+1}}{u_{n}}}=\rho \begin{cases}
+                    <1 \Rightarrow \sum_{n=1}^{\infty}{u_n} \text{收敛} \\
+                    >1 \Rightarrow \sum_{n=1}^{\infty}{u_n} \text{发散} \\
+                    =1 \Rightarrow \sum_{n=1}^{\infty}{u_n} \text{敛散性不定} 
+                \end{cases}
+            \end{gather*}
+            \item 根值审敛法
+            \begin{gather*}
+                \lim_{n\rightarrow\infty}{\sqrt[n]{u_n}}=\rho \begin{cases}
+                    <1 \Rightarrow \sum_{n=1}^{\infty}{u_n} \text{收敛} \\
+                    >1 \Rightarrow \sum_{n=1}^{\infty}{u_n} \text{发散} \\
+                    =1 \Rightarrow \sum_{n=1}^{\infty}{u_n} \text{敛散性不定} 
+                \end{cases}
+            \end{gather*}
+            \item 对数审敛法
+            \begin{enumerate}[(a)]
+                \item 若存在$\alpha>0$，使当$n\geqslant n_0$时，$\frac{\ln{\frac{1}{u_n}}}{{\ln{n}}}\geqslant 1+\alpha$，则正项级数$\sum_{n=1}^{\infty}{u_n}$收敛
+                \item 若$n\geqslant n_0$时，$\frac{\ln{\frac{1}{u_n}}}{{\ln{n}}}\leqslant 1$，则正项级数$\sum_{n=1}^{\infty}{u_n}$发散
+            \end{enumerate}
+            \item 比较审敛法
+            \begin{enumerate}[(a)]
+                \item 若$0\leqslant u_n \leqslant v_n$，$\sum_{n=1}^{\infty}{v_n}$收敛，$\sum_{n=1}^{\infty}{u_n}$则收敛
+                \item 若$0\leqslant v_n \leqslant u_n$，$\sum_{n=1}^{\infty}{v_n}$发散，$\sum_{n=1}^{\infty}{u_n}$则发散
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+    \item 函数项级数：对于区间$[a,b]$上的每一个值$x_0$，若$u_1(x_0)+u_2(x_0)+\cdots+u_n(x_0)+\cdots$收敛，则级数收敛，则$x_0$是级数的收敛点；若$u_1(x_0)+u_2(x_0)+\cdots+u_n(x_0)+\cdots$发散，则$x_0$是级数的发散点。$u_1(x)+u_2(x)+\cdots+u_n(x)+\cdots$。所有收敛点的全体称为函数项级数的收敛域
+\end{enumerate}
 
-
-
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item 等比级数：$\sum_{n=0}^{\infty}{ a r^n } (a\neq 0)$，当$|r|<1$时收敛；当$|r|\geqslant 1$时发散
+        \item $p$级数：$\sum_{n=1}^{\infty}{ \frac{1}{n^p} }$，当$p>1$时收敛；当$p\leqslant 1$时发散
+    \end{enumerate}
+}
 
 
 
