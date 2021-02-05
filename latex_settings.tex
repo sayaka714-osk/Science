@@ -92,6 +92,9 @@
 \let\enddescription\endcompactdesc
 
 
+
+
+
 %%%%%%%% 公式
 \usepackage{bm} % 数学公式加粗
 \usepackage{bbm}
@@ -177,7 +180,7 @@
     \end{tcolorbox}
 }
 
-
+% 思维导图
 \newcommand{\mindmap}[1]{
     \begin{cases}
         #1
@@ -185,7 +188,14 @@
 }
 
 
-
+% 引用文本
+\newcommand{\refdocument}[1]{
+    {\kaishu 
+    \begin{quotation}
+        #1
+    \end{quotation}
+    }
+}
 
 
 
