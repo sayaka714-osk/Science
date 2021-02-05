@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  5 FEB 2021 19:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  5 FEB 2021 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1504,11 +1504,11 @@ This may cause the page layout to be inconsistent, however.
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [3])
+ [3] [4] [5])
 \tf@toc=\write8
 \openout8 = `books.toc'.
 
- [4] [1
+ [6] [1
 
 
 ] [2]
@@ -1516,7 +1516,7 @@ Chapter 1.
 (./books/20200602-001.tex [3
 
 ]
-Underfull \vbox (badness 1442) has occurred while \output is active []
+Underfull \vbox (badness 2818) has occurred while \output is active []
 
  [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1565,7 +1565,79 @@ LaTeX Font Warning: Font shape `OMS/CMUSerif(0)/m/n' undefined
 [150] [151]
 Underfull \vbox (badness 2980) has occurred while \output is active []
 
- [152] [153] [154] [155] [156] [157] [158] [159])
+ [152] [153] [154] [155] [156] [157] [158] [159]) (./books/20201106-001.tex [160]
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
+ [161]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [162]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [163]
+Underfull \vbox (badness 6675) has occurred while \output is active []
+
+ [164]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [165] [166] [167] [168] [169] [170] [171] [172] [173] [174] [175] [176] [177]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [178]
+Underfull \vbox (badness 1354) has occurred while \output is active []
+
+ [179] [180] [181] [182] [183] [184] [185] [186] [187] [188] [189] [190] [191] [192] [193] [194] [195]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [196] [197] [198] [199] [200] [201] [202] [203] [204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221] [222] [223]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247] [248] [249] [250] [251] [252]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [253] [254] [255] [256]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [257] [258] [259] [260] [261] [262] [263] [264]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [265] [266] [267]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [268]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [269] [270] [271]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [272] [273] [274] [275] [276] [277] [278]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [279] [280] [281] [282]
+Underfull \vbox (badness 5832) has occurred while \output is active []
+
+ [283] [284] [285] [286] [287] [288] [289] [290] [291] [292] [293] [294] [295] [296] [297] [298] [299] [300] [301] [302] [303] [304] [305] [306]
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [307] [308] [309] [310] [311] [312] [313]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [314] [315] [316] [317]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [318] [319] [320] [321] [322] [323] [324] [325] [326] [327] [328] [329] [330] [331] [332] [333] [334] [335] [336] [337] [338] [339] [340] [341] [342] [343] [344]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [345] [346] [347] [348] [349] [350] [351] [352] [353] [354] [355] [356] [357] [358] [359] [360] [361] [362] [363] [364]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [365]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [366] [367] [368] [369] [370] [371] [372] [373])
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1584,7 +1656,16 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [160]
+
+Underfull \vbox (badness 5637) has occurred while \output is active []
+
+ [374]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [375]
+Overfull \vbox (840.24142pt too high) has occurred while \output is active []
+
+ [376]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
  (./books.aux
@@ -1595,19 +1676,19 @@ LaTeX Info: Redefining \ttfamily on input line 20.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 36.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `books.out' has not changed.
-(rerunfilecheck)             Checksum: 4B9911987E5140FE66DB0D251B692895;3714.
+(rerunfilecheck)             Checksum: FAD276A5A6F983320ED71FEB80A188CF;11205.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 98095 strings out of 479418
- 2230875 string characters out of 5886345
- 1911510 words of memory out of 5000000
- 114671 multiletter control sequences out of 15000+600000
- 546513 words of font info for 124 fonts, out of 8000000 for 9000
+ 98640 strings out of 479418
+ 2263213 string characters out of 5886345
+ 1926339 words of memory out of 5000000
+ 115205 multiletter control sequences out of 15000+600000
+ 548098 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,12n,100p,980b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on books.pdf (164 pages).
+Output written on books.pdf (382 pages).
