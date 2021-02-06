@@ -53,7 +53,14 @@
 \usepackage{fontspec} % 字体
 \usepackage{xeCJK}
 \setmainfont{Times New Roman} 
-\setCJKmainfont{SimSun} 
+\setCJKmainfont{SimSun}  % 
+
+\setCJKfamilyfont{SimSunB}{simsunb.ttf} 
+\newcommand{\UncommonChar}[1]{
+    {\CJKfamily{SimSunB} #1 }
+    %\CJKfamily{SimSun}
+} 
+
 
 %%%%%%%%  表格  %%%%%%%%
 \usepackage{supertabular}
