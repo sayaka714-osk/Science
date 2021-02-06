@@ -234,7 +234,7 @@
 \contentsline {paragraph}{\numberline {12.3.1.2.4}PP检验}{86}{paragraph.12.3.1.2.4}%
 \contentsline {section}{\numberline {12.4}面板模型}{87}{section.12.4}%
 \contentsline {subsection}{\numberline {12.4.1}固定效应模型}{87}{subsection.12.4.1}%
-\contentsline {subsection}{\numberline {12.4.2}随机效应模型}{88}{subsection.12.4.2}%
+\contentsline {subsection}{\numberline {12.4.2}随机效应模型}{87}{subsection.12.4.2}%
 \contentsline {subsection}{\numberline {12.4.3}混合回归模型（polled regression model）}{88}{subsection.12.4.3}%
 \contentsline {section}{\numberline {12.5}放宽假设：多重共线性}{88}{section.12.5}%
 \contentsline {subsection}{\numberline {12.5.1}截面数据}{88}{subsection.12.5.1}%
@@ -550,7 +550,7 @@
 \contentsline {section}{\numberline {36.2}工具}{222}{section.36.2}%
 \contentsline {subsection}{\numberline {36.2.1}一般性}{222}{subsection.36.2.1}%
 \contentsline {subsection}{\numberline {36.2.2}选择性}{222}{subsection.36.2.2}%
-\contentsline {subsection}{\numberline {36.2.3}其他}{223}{subsection.36.2.3}%
+\contentsline {subsection}{\numberline {36.2.3}其他}{222}{subsection.36.2.3}%
 \contentsline {chapter}{\numberline {37}贸易政策}{225}{chapter.37}%
 \contentsline {chapter}{\numberline {38}监管政策}{227}{chapter.38}%
 \contentsline {section}{\numberline {38.1}模式}{227}{section.38.1}%
