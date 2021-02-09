@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  9 FEB 2021 22:28
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  9 FEB 2021 23:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1646,104 +1646,6 @@ Chapter 5.
 
 ]
 Chapter 6.
-(./book/重访边城_张爱玲.tex [27] [28] [29] [30] [31]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [32] [33] [34] [35]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [36] [37] [38] [39]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [40]
-Overfull \hbox (14.36136pt too wide) in paragraph at lines 186--187
-[]\TU/SimSun(1)/m/n/12 夏 威 夷 人 相 信 他 们 来 自 西 方 日 落 处 一 个 有 高 山 的 岛， “夕 阳 里 的 故 乡 夏 威 基  |（\TU/TimesNewRoman(0)/m/n/12 Hawaiki\TU/SimSun(1)/m/n/12 ） ” ，|
- []
-
-[41] [42]
-Underfull \vbox (badness 2818) has occurred while \output is active []
-
- [43] [44]
-Underfull \vbox (badness 2818) has occurred while \output is active []
-
- [45] [46]
-Underfull \vbox (badness 6675) has occurred while \output is active []
-
- [47] [48] [49]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [50]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [51]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [52]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [53]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [54] [55] [56]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [57]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [58] [59] [60]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [61] [62] [63] [64]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [65] [66] [67] [68]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [69] [70] [71] [72] [73]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [74] [75] [76] [77] [78] [79] [80] [81] [82]
-Underfull \vbox (badness 3547) has occurred while \output is active []
-
- [83] [84] [85] [86] [87]
-LaTeX Font Info:    Trying to load font information for OMS+TimesNewRoman(0) on input line 631.
-LaTeX Font Info:    No file OMSTimesNewRoman(0).fd. on input line 631.
-
-
-LaTeX Font Warning: Font shape `OMS/TimesNewRoman(0)/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 631.
-
-[88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 760.
-
-[101]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [102] [103] [104] [105] [106] [107] [108] [109]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 911.
-
-
-Underfull \vbox (badness 1728) has occurred while \output is active []
-
- [110]
-File: picture/对照记1.jpeg Graphic file (type bmp)
-<picture/对照记1.jpeg>
- [111]
-File: picture/对照记2.jpeg Graphic file (type bmp)
-<picture/对照记2.jpeg>
- [112] [113] [114] [115] [116] [117]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1144.
-
-[118] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [129] [130] [131] [132] [133]) [134]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1762,6 +1664,7 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+[27]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
  (./books.aux
@@ -1771,20 +1674,26 @@ LaTeX Info: Redefining \ttfamily on input line 20.
 )
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 209.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
-Package rerunfilecheck Info: File `books.out' has not changed.
-(rerunfilecheck)             Checksum: 562DAA663F832A28B43A095F4D819E5E;9508.
 
+
+Package rerunfilecheck Warning: File `books.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `books.out':
+(rerunfilecheck)             Before: 562DAA663F832A28B43A095F4D819E5E;9508
+(rerunfilecheck)             After:  BDF27BF2611996399525F8DEFB9282BF;5230.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 99069 strings out of 479418
- 2282492 string characters out of 5886345
- 1917248 words of memory out of 5000000
- 115617 multiletter control sequences out of 15000+600000
- 546577 words of font info for 132 fonts, out of 8000000 for 9000
+ 97980 strings out of 479418
+ 2216077 string characters out of 5886345
+ 1912444 words of memory out of 5000000
+ 114540 multiletter control sequences out of 15000+600000
+ 546561 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,12n,100p,884b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on books.pdf (140 pages).
+Output written on books.pdf (33 pages).
