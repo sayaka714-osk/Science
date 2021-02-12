@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  11 FEB 2021 15:41
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  12 FEB 2021 17:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1437,28 +1437,28 @@ LaTeX Info: Redefining \ttfamily on input line 20.
 )
 \openout1 = `books.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1496,7 +1496,7 @@ LaTeX Font Info:    ... okay on input line 52.
 
 \AtBeginShipoutBox=\box159
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 52.
+LaTeX Info: Redefining \selectfont on input line 58.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
@@ -1504,9 +1504,9 @@ Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
- on input line 52.
+ on input line 58.
 
-Package hyperref Info: Link coloring ON on input line 52.
+Package hyperref Info: Link coloring ON on input line 58.
 (d:/APP/TexLive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1516,21 +1516,21 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count426
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
  (./books.out) (./books.out)
 \@outlinefile=\write7
 \openout7 = `books.out'.
 
-LaTeX Info: Redefining \rmfamily on input line 52.
-LaTeX Info: Redefining \sffamily on input line 52.
-LaTeX Info: Redefining \ttfamily on input line 52.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Info: Redefining \rmfamily on input line 58.
+LaTeX Info: Redefining \sffamily on input line 58.
+LaTeX Info: Redefining \ttfamily on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1577,35 +1577,22 @@ Package fontspec Info: Font family 'TH-Tshyn-P2.ttf(0)' created for font
 
 ]
 Chapter 1.
-(./book/小王子.tex) [5] [6
+(./book/激流三部曲_巴金.tex [5]
+Underfull \vbox (badness 2818) has occurred while \output is active []
 
+ [6]
+Underfull \vbox (badness 6675) has occurred while \output is active []
 
-]
-Chapter 2.
-[7] [8
-
-]
-Chapter 3.
-[9] [10
-
-] [11] [12]
-Chapter 4.
-[13
-
-] [14
-
-]
-Chapter 5.
-(./book/雨季不再来_三毛.tex)
+ [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-Overfull \vbox (454.67491pt too high) has occurred while \output is active []
+ [9]
+Underfull \vbox (badness 2818) has occurred while \output is active []
 
- [17] (./book/亲爱的三毛_三毛.tex
+ [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25]
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1629,23 +1616,113 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- [18
-
-] [19] [20] [21]
+ [26] [27] [28] [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [30]
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+ [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59]
+Underfull \vbox (badness 2653) has occurred while \output is active []
+
+ [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113] [114]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [115] [116]
+Underfull \vbox (badness 6675) has occurred while \output is active []
+
+ [117] [118] [119] [120] [121] [122] [123]
+Underfull \vbox (badness 2689) has occurred while \output is active []
+
+ [124] [125]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [126]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [127]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [128] [129] [130]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [131] [132] [133] [134]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [151] [152]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [153] [154] [155] [156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184] [185] [186] [187] [188] [189] [190] [191] [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203] [204] [205] [206] [207] [208] [209]
+Underfull \vbox (badness 2277) has occurred while \output is active []
+
+ [210] [211]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [212] [213]
+Underfull \vbox (badness 6675) has occurred while \output is active []
+
+ [214]
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [215] [216]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [217]
+Underfull \vbox (badness 6675) has occurred while \output is active []
+
+ [218]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [219] [220]) [221] (./book/小王子.tex) [222
+
+]
+Chapter 2.
+[223
+
+
+] [224
+
+]
+Chapter 3.
+[225] [226
+
+] [227] [228]
+Chapter 4.
+[229
+
+] [230
+
+]
+Chapter 5.
+(./book/雨季不再来_三毛.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [231]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [232]
+Overfull \vbox (454.67491pt too high) has occurred while \output is active []
+
+ [233] (./book/亲爱的三毛_三毛.tex [234
+
+] [235] [236] [237]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [238]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [239]
 Overfull \vbox (373.62059pt too high) has occurred while \output is active []
 
- [24] [25]) [26]
+ [240] [241]) [242]
 Chapter 6.
-[27
+[243
 
 
-] [28
+] [244
 
 ]
 Chapter 7.
@@ -1667,16 +1744,16 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+[245]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
  (./books.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
 
 
 Package rerunfilecheck Warning: File `books.out' has changed.
@@ -1684,19 +1761,19 @@ Package rerunfilecheck Warning: File `books.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `books.out':
-(rerunfilecheck)             Before: 604797576B246F3ADC395E806C0DA68B;5478
-(rerunfilecheck)             After:  B534385F9B461D1969595C46D3917A75;5375.
+(rerunfilecheck)             Before: 4CF90644C6BD0D20AA78552A21A9CC61;6177
+(rerunfilecheck)             After:  7892CE97C2766AA7B539764D1198AF12;6082.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 97933 strings out of 479418
- 2212979 string characters out of 5886345
- 1908253 words of memory out of 5000000
- 114492 multiletter control sequences out of 15000+600000
- 546545 words of font info for 128 fonts, out of 8000000 for 9000
+ 99111 strings out of 479418
+ 2284924 string characters out of 5886345
+ 1945113 words of memory out of 5000000
+ 115657 multiletter control sequences out of 15000+600000
+ 548146 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,12n,100p,884b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,100p,2013b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on books.pdf (35 pages).
+Output written on books.pdf (251 pages).
