@@ -55,14 +55,24 @@
 \setmainfont{Times New Roman} 
 
 
-\setCJKfamilyfont{SongA}{TH-Tshyn-P0.ttf} 
+\setCJKfamilyfont{SongD}{TH-Tshyn-P0.ttf} 
 \setCJKmainfont{SimSun}  % SimSun
 
 
 
-\setCJKfamilyfont{SimSunBA}{TH-Tshyn-P2.ttf} % simsunb.ttf
+\setCJKfamilyfont{SongA}{TH-Tshyn-P2.ttf} % simsunb.ttf
 \newcommand{\UncommonChar}[1]{
-    {\CJKfamily{SimSunBA} #1 }
+    {\CJKfamily{SongA} #1 }
+    %\CJKfamily{SimSun}
+} 
+\setCJKfamilyfont{SongB}{TH-Tshyn-P1.ttf} % simsunb.ttf
+\newcommand{\UncommonCharB}[1]{
+    {\CJKfamily{SongB} #1 }
+    %\CJKfamily{SimSun}
+} 
+\setCJKfamilyfont{SongC}{TH-Tshyn-P16.ttf} % simsunb.ttf
+\newcommand{\UncommonCharC}[1]{
+    {\CJKfamily{SongnC} #1 }
     %\CJKfamily{SimSun}
 } 
 
