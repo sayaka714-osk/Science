@@ -119,56 +119,70 @@
 
 构成（是什么），理论（为什么），方法（怎么做）
 
+
+
+
 {\tiny
 \begin{equation*}
     \text{经济学}\mindmap{
         \text{构成}\mindmap{
-            \text{实体经济}\mindmap{
-                \text{商品市场}\mindmap{
-                    \text{产品市场}\mindmap{
-                        \text{商品}
-                    }
-                    \text{生产要素市场}\mindmap{
-                        \text{劳动力}\\
-                        \text{资本}
-                    }
-                }
-            }
-            \text{虚拟经济}\mindmap{
-                \text{资金市场}\mindmap{
-                    \text{基础要素}\mindmap{
-                        \text{货币}\\
-                        \text{信用}\\
-                        \text{利率}\\
-                        \text{汇率}\\
-                        \text{金融工具}
+            \text{要素}\mindmap{
+                \text{实体经济}\mindmap{
+                    \text{商品市场}\mindmap{
+                        \text{产品市场}\mindmap{
+                            \text{商品}
+                        }
+                        \text{生产要素市场}\mindmap{
+                            \text{劳动力——工资}\\
+                            \text{资本——利息}\\
+                            \text{土地——地租}
+                        }
                     }
                     \text{运作载体}\mindmap{
-                        \text{金融市场}\mindmap{
-                            \text{货币市场}\\
-                            \text{资本市场}\\
-                            \text{衍生品市场}
-                        }
-                        \text{金融机构}\mindmap{
-                            \text{金融中介机构}\mindmap{
-                                \text{存款类金融机构}\mindmap{
-                                    \text{管理性}\mindmap{
-                                        \text{中央银行}
-                                    }
-                                    \text{营业性}\mindmap{
-                                        \text{商业性银行}\\
-                                        \text{政策性银行}
-                                    }
-                                }
-                                \text{非存款类金融机构}
-                            }
-                            \text{金融辅助机构}
-                        }
-                        \text{非金融机构：公司金融}\\
-                        \text{家庭：家庭金融}
+                        \text{非金融企业}
                     }
                 }
-                \text{房地产市场}
+                \text{虚拟经济}\mindmap{
+                    \text{资金市场}\mindmap{
+                        \text{基础要素}\mindmap{
+                            \text{货币}\\
+                            \text{信用}\\
+                            \text{利率}\\
+                            \text{汇率}\\
+                            \text{金融工具}
+                        }
+                        \text{运作载体}\mindmap{
+                            \text{金融市场}\mindmap{
+                                \text{货币市场}\\
+                                \text{资本市场}\\
+                                \text{衍生品市场}
+                            }
+                            \text{金融机构}\mindmap{
+                                \text{金融中介机构}\mindmap{
+                                    \text{存款类金融机构}\mindmap{
+                                        \text{管理性}\mindmap{
+                                            \text{中央银行}
+                                        }
+                                        \text{营业性}\mindmap{
+                                            \text{商业性银行}\\
+                                            \text{政策性银行}
+                                        }
+                                    }
+                                    \text{非存款类金融机构}
+                                }
+                                \text{金融辅助机构}
+                            }
+                            \text{非金融机构：公司金融}\\
+                            \text{家庭：家庭金融}
+                        }
+                    }
+                    \text{房地产市场}
+                }
+            }
+            \text{活动}\mindmap{
+                \text{生产}\\
+                \text{消费}\\
+                \text{分配}
             }
         }
         \text{理论}\mindmap{
@@ -8186,8 +8200,9 @@ E
 
 相对估价转换为回归的方式，克服传统的不可比问题；回归中不同行业等可比
 
-\paragraph{资本资产定价模型（capital asset pricing model，CAPM）}
+\paragraph{资本资产定价模型（CAPM）}
 
+资本资产定价模型（capital asset pricing model，CAPM）
 
 \subparagraph{假设}	
 
@@ -8231,7 +8246,9 @@ $$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
 
 
 
-\paragraph{套利定价模型（arbitrage pricing theory，APT）}
+\paragraph{套利定价模型}
+
+（arbitrage pricing theory，APT）
 
 \subparagraph{假设}	
 \begin{enumerate}[(1)]
@@ -8269,7 +8286,7 @@ $$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
 
 
 
-\subparagraph{Fama-French因子模型}
+\paragraph{Fama-French因子模型}
 
 \subparagraph{假设}
 
@@ -8417,7 +8434,14 @@ $$ \beta = \frac{Cov(R_i,R_m )}{Var(R_m)}  $$
 
 
 
+\chapter{生产}
 
+
+\section{生产函数}
+
+
+
+\chapter{消费}
 
 
 
@@ -9846,6 +9870,42 @@ IS-LM模型：新古典综合学派
 
 
 
+\begin{align*}
+    OCF & = EBIT(1-t) + D\&A \\
+        & = (Sales-Costs-D\&A)(1-t)+D\&A \\
+        & = Sales-Costs-T\ \\
+        & = Sales-Costs-(Sales-Costs-D\&A)t\\
+        & = (Sales-Costs)(1-t)+D\&A\times t
+\end{align*}
+$OCF$：经营现金流（operating cash flow）
+    
+\begin{align*}
+NWC   & = CA- noninteres\ tbearing\ CL = CA-(Accounts\ payables + Accruals)\\
+CAPEX & = \Delta gross\ fixed\ assets =\Delta net\ fixed\ assets + Depr.\\
+ICF   & = \Delta NWC + CAPEX
+\end{align*}
+$NWC$：净营运资本（net working capital）\\
+$\Delta NWC$：短期投资现金流, new investment, short-term investment\\
+$CAPEX$：长期投资现金流, capital expenditure, long-term investment\\
+$ICF$：投资现金流（investment cash flow）(outflow)
+
+\begin{gather*}
+FCF = [EBIT(1-t) + D\&A ] - \Delta NWC + CAPEX
+\end{gather*}
+$FCF$：融资现金流（financing cash flow）(inflow)
+
+\begin{gather*}
+FCFF = OCF-ICF 
+     = [EBIT(1-t)+D\&A] - \Delta NWC + CAPEX
+\end{gather*}
+$FCFF$：企业自由现金流（free cash flow to the firm）
+
+\begin{gather*}
+FCFE = NI+\Delta Debt + D\&A - \Delta NWC+CAPEX 
+\end{gather*}
+$FCFE$：股东自由现金流（free cash flow to the equity holder）
+
+
 \section{国际收支平衡表}
 
 
@@ -10177,7 +10237,7 @@ $NX$：净出口（net exports）＝贸易余额（trade balance）
 
 
 
-\subsubsection{传导理论}
+\subsection{传导理论}
 
 \begin{enumerate}[1.]
   \item 金融价格传导论
@@ -10338,6 +10398,287 @@ $NX$：净出口（net exports）＝贸易余额（trade balance）
 
 
 
+
+\chapter{辩证唯物论}
+
+
+
+\begin{enumerate}[1.]
+    \item 关系
+          \begin{enumerate}[(1)]
+              \item 物质决定意识, 意识是客观存在在人脑中的反映
+              \item 意识具有能动作用，它不仅能够能动地认识世界，而能能够能动地改造客观世界
+          \end{enumerate}
+    \item 方法论
+          \begin{enumerate}[(1)]
+              \item 一切从实际出发，主观符合客观
+                    \begin{enumerate}[a.]
+                        \item 一切从实际出发：做事情要尊重物质运动的客观规律，从客观存在的事物出发，经过调查研究，找出事物本身固有的而不是臆造的规律性，以此作为我们行动的依据
+                        \item 原因
+                              \begin{enumerate}[(a)]
+                                  \item 物质决定意识，要求我们必须坚持一切从实际出发，实事求是。
+                                  \item 它是我们做好各种事情的基本要求，也是无产阶级政党制定和执行正确的路线、方针、政策的前提和依据。
+                              \end{enumerate}
+                        \item 要求
+                              \begin{enumerate}[(a)]
+                                  \item 不断解放思想,与时俱进,以求真务实的精神探求事物的本质和规律,在实践中检验和发展真理
+                                  \item 两个结合
+                                  \item 两个反对
+                              \end{enumerate}
+                    \end{enumerate}
+              \item 正确发挥主观能动性，重视精神的力量
+                    \begin{enumerate}[a.]
+                        \item 一切从实际出发是正确发挥人的主观能动性的前提
+                        \item 实践是正确发挥人的主观能动性的基本途径
+                        \item 正确发挥人的主观能动性需要依赖一定的物质条件和物质手段
+                    \end{enumerate}
+              \item 反对：主观主义
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+\section{物质}
+
+物质：不依赖于人的意识，并能为人的意识所反映的客观实在
+
+
+
+\informationBox{
+    * 具体的物质形态与哲学上物质概念的关系：
+    \begin{enumerate}[(1)]
+        \item 区别：
+              \begin{enumerate}[a.]
+                  \item 它所概括的仅仅是物质具体形态的共同的唯一特性。除了具有共同的唯一特性——客观实在性外，还具有自己的个别特性
+                  \item 不能用物质去代替物质的具体形态，否则看不到物质世界
+              \end{enumerate}
+        \item 联系：两者是个性与共性的关系
+              \begin{enumerate}[a.]
+                  \item 物质是从物质具体形态概括抽象出来的
+                  \item 物质具体形态是物质的具体表现，物质存在于物质具体形态之中
+                  \item 物质和物质的具体形态是共性和个性，一般和个别的关系
+              \end{enumerate}
+    \end{enumerate}
+}
+
+
+\subsection{客观实在性（唯一特性）}
+
+
+
+\informationBox{
+    * 客观存在与客观实在
+    \begin{enumerate}[(1)]
+        \item 区别
+              \begin{enumerate}[a.]
+                  \item 客观实在是指不管人们承认不承认、喜欢不喜欢、知道不知道，它都不依赖于人的意识而实实在在地存在着的特性。它是对世界万事万物和现象共同特性的抽象和概括，相对于意识来说，它是第一性的东西，不包括精神、意识现象。
+                  \item 客观存在是相对于主观而言，它既可以指具体的物质形态，也可以指具体的思想。对于任何人来说，客观存在的东西除了物质现象之外，还有精神、意识现象。
+              \end{enumerate}
+        \item 联系
+              \begin{enumerate}[a.]
+                  \item 客观实在是一种客观存在。客观存在不仅包括具有客观实在性的物质现象，还包括不具有客观实在性的精神、意识现象。
+              \end{enumerate}
+    \end{enumerate}
+}
+
+
+\subsection{运动（根本属性）}
+
+\begin{enumerate}[1.]
+    \item 运动：宇宙间一切事物、现象的变化和过程
+          \begin{enumerate}[(1)]
+              \item 存在形式：时间和空间是物质运动的存在形式
+              \item 运动是有规律的
+          \end{enumerate}
+          \informationBox{
+              * 运动和静止的关系
+              \begin{enumerate}[a.]
+                  \item 静止是运动的一种特殊状态。一是事物的根本性质暂时不变；二是空间的相对位置暂时不变。
+                  \item 运动是绝对的、无条件的和永恒的；静止是相对的、有条件的和暂时的。物质世界是绝对运动与相对静止的统一。
+                  \item 只承认静止而否认运动是形而上学的不变论，只承认绝对运动而否认相对静止则导致相对主义和诡辩论。
+              \end{enumerate}
+          }
+    \item 物质和运动的关系：
+          \begin{enumerate}[(1)]
+              \item 物质是运动的物质。物质在运动中才能保持自己的存在，运动是物质的固有属性和存在方式。世界上不存在脱离运动的物质
+              \item 运动是物质的运动，物质是运动的承担者。脱离物质的运动是根本不存在的
+              \item 方法论：
+                    \begin{enumerate}[a.]
+                        \item 看待和分析任何事物，都不能把它看成是一成不变的，要善于在运动中把握事物，不能静止地看问题，一切以时间、地点、条件为转移
+                        \item 反对错误：离开物质谈运动的唯心主义，离开运动谈物质的形而上学。
+                    \end{enumerate}
+          \end{enumerate}
+\end{enumerate}
+
+
+\subsection{规律性}
+
+
+
+规律
+\begin{enumerate}[1.]
+    \item 定义：事物运动过程中固有的、本质的、必然的、稳定的联系
+          \informationBox{
+              * 规律与规则的关系
+              \begin{enumerate}[(1)]
+                  \item 区别
+                        \begin{enumerate}[a.]
+                            \item 含义：规律是事物运动过程中固有的本质的必然的稳定的联系；规则是人们规定出来供大家共同遵守的制度或章程
+                            \item 性质：规律是客观的、普遍的、不能创造和废止；规则是主观的、可以制定、修改、废止
+                        \end{enumerate}
+                  \item 联系：
+                        \begin{enumerate}[a.]
+                            \item 规律决定规则，规则反映规律
+                            \item 正确、合理的规则是对客观规律的正确反映
+                        \end{enumerate}
+              \end{enumerate}
+          }
+    \item 特点：
+          \begin{enumerate}[(1)]
+              \item 普遍性：规律是普遍的，自然界、人类社会和人的思维，在其运动变化和发展的过程中，都遵循其固有的规律
+              \item 客观性：规律是客观的，是不以人的意志为转移的，它既不能被创造，也不能被消灭
+          \end{enumerate}
+    \item 方法论
+          \begin{enumerate}[(1)]
+              \item 规律的客观性和普遍性要求我们，必须遵循规律，而不能违背规律。
+              \item 人可以在认识和把握规律的基础上，根据规律发生作用的条件和形式利用规律，改造客观世界，造福于人类。
+              \item 反对：反对否认规律的客观性和企图创造规律或消灭规律的唯心主义观点，反对不讲科学，不顾客观规律的冒险盲干的主观主义
+          \end{enumerate}
+          \informationBox{
+              * 主观能动性和客观规律性的关系
+              \begin{enumerate}[(1)]
+                  \item 尊重客观规律是正确发挥主观能动性的前提
+                  \item 只有充分发挥主观能动性，才能正确认识和利用客观规律
+                  \item 社会历史领域体现为：社会历史趋向与主体选择的关系
+                        \begin{enumerate}[a.]
+                            \item 社会历史趋向指社会历史规律的客观性和必然性
+                            \item 主体选择指历史主体在社会发展中的能动性和选择性
+                            \item 社会历史规律的客观性和必然性规定了人的活动要受规律性的制约，同时不可否认人作为历史主体的能动性和选择性
+                        \end{enumerate}
+                  \item 方法论
+                        \begin{enumerate}[a.]
+                            \item 要求我们既要尊重客观规律，按规律办事，又要充分发挥主观能动性，把尊重客观规律和发挥主观能动性有机地结合起来
+                            \item 反对：片面强调规律的客观性而否认主观能动性是形而上学的思想；夸大主观能动性而否认客观规律的制约性是唯心主义思想
+                        \end{enumerate}
+              \end{enumerate}
+          }
+\end{enumerate}
+
+
+
+
+
+
+\subsection{可知性（认识论）}
+
+
+\begin{enumerate}[1.]
+    \item 关系
+          \begin{enumerate}[(1)]
+              \item 实践是认识的基础（实践决定意识）
+                    \begin{enumerate}[a.]
+                        \item 实践是认识的来源（唯一来源）
+                        \item 实践是认识发展的动力
+                        \item 实践是检验认识的真理性的唯一标准
+                        \item 实践是认识的最终目的和归宿。
+                    \end{enumerate}
+              \item 认识对实践具有反作用
+                    \begin{enumerate}[a.]
+                        \item 正确的认识促进实践的发展。真理是人们对客观事物及其规律的正确反映，真理能指导人们提出实践活动的正确方案，因而对于人们的实践活动有巨大的推动作用。
+                        \item 错误的认识阻碍实践的发展。不符合事实本质规律的错误认识，会把人们的实践活动引向歧途
+                    \end{enumerate}
+          \end{enumerate}
+    \item 方法论
+          \begin{enumerate}[a.]
+              \item 要求我们首先要坚持实践第一的观点，积极投身实践，在实践中检验和发展认识
+              \item 还要重视认识的反作用，特别是科学理论对实践的巨大指导作用，坚持理论和实践相结合的原则，做到理论和实践的具体的历史的统一
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\subsubsection{实践}
+
+
+
+
+\subsubsection{认识}
+
+
+
+
+\section{意识}
+
+
+意识：人的头脑对于客观物质世界的反映
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item 从意识的起源来看，意识是物质世界发展到一定阶段的产物
+              \begin{enumerate}[a.]
+                  \item 意识是自然界长期发展的产物
+                  \item 意识是社会历史发展的产物
+              \end{enumerate}
+        \item 从意识的生理基础来看，意识是人脑的机能人脑是意识产生的生理基础
+              \begin{enumerate}[a.]
+                  \item 人脑是高度发达的物质系统，是意识活动的物质器官
+                  \item 意识是人脑的机能。
+                  \item 人的意识不同于动物的本能活动。意识是人特有的。
+              \end{enumerate}
+        \item 从意识的内容来看，意识是客观存在的反映任何意识都是客观事物的反映
+              \begin{enumerate}[a.]
+                  \item 正确意识和错误的意识都是客观事物在人脑中反映（从意识的性质来看）
+                  \item 无论是人的具体感觉还是抽象思维，都是人脑对客观事物的反映（从意识的层次来看）
+                  \item 无论是人们对现状的感受与认识，还是人们对过去的思考和总结，以至人们对未来的预测，都是人脑对客观事物的反映。（从意识的外延来看）
+              \end{enumerate}
+    \end{enumerate}
+}
+ 
+
+\subsection{作用}
+
+
+\begin{enumerate}[1.]
+    \item 人能够能动地认识世界
+          \begin{enumerate}[(1)]
+              \item 意识活动具有目的性和计划性
+                    人们对客观世界的反映总是抱有一定的目的和动机，在实施行动之前对该行动做出相关的计划
+              \item 意识活动具有主动创造性和自觉选择性
+                    \begin{enumerate}[a.]
+                        \item 自觉选择性：人的意识对象主要是依据人自己生活或社会实践的需要自觉选择的。
+                        \item 主动创造性：人的意识可以能动地反映客观世界，通过把握事物的本质和规律，创造一个理想的或幻想的世界。
+                    \end{enumerate}
+          \end{enumerate}
+    \item 人能够能动地改造世界
+          \begin{enumerate}[(1)]
+              \item 指导实践改造客观世界（对外）
+                    \begin{enumerate}[a.]
+                        \item 人们在意识的指导下能动地改造世界，即通过实践把意识的东西变成现实的东西,创造出没有人的参与永远也不可能出现的东西。
+                    \end{enumerate}
+                    \begin{enumerate}[a.]
+                        \item 意识不能直接引起客观事物的变化，而是通过指导人们实践才能引起物质形态的变化
+                        \item 正确的意识促进事物的发展，使人们的实践活动获得成功；错误的意识阻碍事物的发展，使人们的实践活遭到失败
+                    \end{enumerate}
+              \item 调控人的行为和人体生理活动（对内）
+                    \begin{enumerate}[a.]
+                        \item 意识活动依赖于人体的生理过程
+                        \item 意识活动对生理过程有能动作用正确、高昂的意识激励向上，错误、萎靡的意识阻碍倒退
+                    \end{enumerate}
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+\chapter{唯物辩证法}
 
 
 

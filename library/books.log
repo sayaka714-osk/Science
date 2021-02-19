@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  12 FEB 2021 22:39
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  14 FEB 2021 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1146,12 +1146,24 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip127
+) (d:/APP/TexLive/2020/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks54
+\footnotemargin=\dimen409
+\c@pp@next@reset=\count394
+\c@@fnserial=\count395
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
 ) (d:/APP/TexLive/2020/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2019/11/15 version 4.22 text color boxes
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks54
-\verbatim@line=\toks55
+\every@verbatim=\toks55
+\verbatim@line=\toks56
 \verbatim@in@stream=\read3
 ) (d:/APP/TexLive/2020/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -1162,9 +1174,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box131
 \tcb@lowerbox=\box132
 \tcb@phantombox=\box133
-\c@tcbbreakpart=\count394
-\c@tcblayer=\count395
-\tcolorbox@number=\count396
+\c@tcbbreakpart=\count396
+\c@tcblayer=\count397
+\tcolorbox@number=\count398
 \tcb@temp=\box134
 \tcb@temp=\box135
 \tcb@temp=\box136
@@ -1183,11 +1195,11 @@ Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-\l__ctex_tmp_int=\count397
+\l__ctex_tmp_int=\count399
 \l__ctex_tmp_box=\box138
-\l__ctex_tmp_dim=\dimen409
-\g__ctex_section_depth_int=\count398
-\g__ctex_font_size_int=\count399
+\l__ctex_tmp_dim=\dimen410
+\g__ctex_section_depth_int=\count400
+\g__ctex_font_size_int=\count401
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2019/05/29 v2.4.16 Option configuration file (CTEX)
 ) (d:/APP/TexLive/2020/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
@@ -1198,28 +1210,28 @@ Package: xeCJKfntef 2020/02/18 v3.8.2 xeCJK font effect
 \UL@box=\box139
 \UL@hyphenbox=\box140
 \UL@skip=\skip128
-\UL@hook=\toks56
-\UL@height=\dimen410
-\UL@pe=\count400
-\UL@pixel=\dimen411
+\UL@hook=\toks57
+\UL@height=\dimen411
+\UL@pe=\count402
+\UL@pixel=\dimen412
 \ULC@box=\box141
 Package: ulem 2019/11/18
-\ULdepth=\dimen412
+\ULdepth=\dimen413
 )
 \l__xeCJK_space_skip=\skip129
-\c__xeCJK_ulem-begin_node_dim=\dimen413
+\c__xeCJK_ulem-begin_node_dim=\dimen414
 \c__xeCJK_null_box=\box142
 \l__xeCJK_fntef_box=\box143
 \l__xeCJK_under_symbol_box=\box144
 \c__xeCJK_filll_skip=\skip130
 )
-\ccwd=\dimen414
+\ccwd=\dimen415
 \l__ctex_ccglue_skip=\skip131
 )
-\l__ctex_ziju_dim=\dimen415
+\l__ctex_ziju_dim=\dimen416
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2019/04/07 v2.7 Typesetting numbers with Chinese glyphs
-\l__zhnum_scale_int=\count401
+\l__zhnum_scale_int=\count403
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2019/04/07 v2.7 Chinese numerals with UTF8 encoding
 )) (d:/APP/TexLive/2020/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
@@ -1268,23 +1280,23 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 ) (d:/APP/TexLive/2020/texmf-dist/tex/latex/autobreak/autobreak.sty
 Package: autobreak 2017/02/23 v0.3 simple line breaking of long formulae
-\everybeforeautobreak=\toks57
-\everyafterautobreak=\toks58
-\@autobreak@alltoks=\toks59
-\@autobreak@linetoks=\toks60
-\@autobreak@lhswidth=\dimen416
-\@autobreak@rhswidth=\dimen417
-\@autobreak@maxlhswidth=\dimen418
-\@autobreak@realmaxlhswidth=\dimen419
-\@autobreak@maxrhswidth=\dimen420
-\c@@autobreak@eqnindex=\count402
-\c@@autobreak@subeqnindex=\count403
+\everybeforeautobreak=\toks58
+\everyafterautobreak=\toks59
+\@autobreak@alltoks=\toks60
+\@autobreak@linetoks=\toks61
+\@autobreak@lhswidth=\dimen417
+\@autobreak@rhswidth=\dimen418
+\@autobreak@maxlhswidth=\dimen419
+\@autobreak@realmaxlhswidth=\dimen420
+\@autobreak@maxrhswidth=\dimen421
+\c@@autobreak@eqnindex=\count404
+\c@@autobreak@subeqnindex=\count405
  (d:/APP/TexLive/2020/texmf-dist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )) (d:/APP/TexLive/2020/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks61
-\inpenc@posthook=\toks62
+\inpenc@prehook=\toks62
+\inpenc@posthook=\toks63
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
@@ -1299,25 +1311,25 @@ Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box145
 )
-\tc@llx=\dimen421
-\tc@lly=\dimen422
-\tc@urx=\dimen423
-\tc@ury=\dimen424
+\tc@llx=\dimen422
+\tc@lly=\dimen423
+\tc@urx=\dimen424
+\tc@ury=\dimen425
 Package trimclip Info: Using driver 'tc-xetex.def'.
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/adjustbox/tc-xetex.def
 File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen425
-\adjbox@Height=\dimen426
-\adjbox@Depth=\dimen427
-\adjbox@Totalheight=\dimen428
-\adjbox@pwidth=\dimen429
-\adjbox@pheight=\dimen430
-\adjbox@pdepth=\dimen431
-\adjbox@ptotalheight=\dimen432
+\adjbox@Width=\dimen426
+\adjbox@Height=\dimen427
+\adjbox@Depth=\dimen428
+\adjbox@Totalheight=\dimen429
+\adjbox@pwidth=\dimen430
+\adjbox@pheight=\dimen431
+\adjbox@pdepth=\dimen432
+\adjbox@ptotalheight=\dimen433
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count404
+\c@checkoddpage=\count406
 )) (d:/APP/TexLive/2020/texmf-dist/tex/latex/tipa/tipa.sty
 Package: tipa 2002/08/08 TIPA version 1.1
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/base/fontenc.sty
@@ -1369,40 +1381,40 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (d:/APP/TexLive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 )
-\AM@pagewidth=\dimen433
-\AM@pageheight=\dimen434
+\AM@pagewidth=\dimen434
+\AM@pageheight=\dimen435
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2020/01/28 v0.5q Pdfpages driver for XeTeX (AM)
 )
 \AM@pagebox=\box146
-\AM@global@opts=\toks63
-\AM@pagecnt=\count405
-\AM@toc@title=\toks64
-\c@AM@survey=\count406
+\AM@global@opts=\toks64
+\AM@pagecnt=\count407
+\AM@toc@title=\toks65
+\c@AM@survey=\count408
 \AM@templatesizebox=\box147
 ) (d:/APP/TexLive/2020/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count407
-\c@Blindtext=\count408
-\c@blind@countparstart=\count409
-\blind@countxx=\count410
-\blindtext@numBlindtext=\count411
-\blind@countyy=\count412
-\c@blindlist=\count413
-\c@blindlistlevel=\count414
-\c@blindlist@level=\count415
-\blind@listitem=\count416
-\c@blind@listcount=\count417
-\c@blind@levelcount=\count418
-\blind@mathformula=\count419
-\blind@Mathformula=\count420
-\c@blind@randomcount=\count421
-\c@blind@randommax=\count422
-\c@blind@pangramcount=\count423
-\c@blind@pangrammax=\count424
+\c@blindtext=\count409
+\c@Blindtext=\count410
+\c@blind@countparstart=\count411
+\blind@countxx=\count412
+\blindtext@numBlindtext=\count413
+\blind@countyy=\count414
+\c@blindlist=\count415
+\c@blindlistlevel=\count416
+\c@blindlist@level=\count417
+\blind@listitem=\count418
+\c@blind@listcount=\count419
+\c@blind@levelcount=\count420
+\blind@mathformula=\count421
+\blind@Mathformula=\count422
+\c@blind@randomcount=\count423
+\c@blind@randommax=\count424
+\c@blind@pangramcount=\count425
+\c@blind@pangrammax=\count426
 ) (d:/APP/TexLive/2020/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/ascmac/tascmac.sty
@@ -1410,30 +1422,30 @@ Package: tascmac 2020/01/15 v2.1 ascmac package (community edition)
 Package tascmac Info: Assuming pdfLaTeX, XeLaTeX or LuaLaTeX on input line 44.
 \scb@x=\box148
 \scscb@x=\box149
-\@bw=\dimen435
+\@bw=\dimen436
 \@nbox=\box150
 \@nbody=\box151
-\@scw=\dimen436
+\@scw=\dimen437
 \ascmac@hoboxa=\box152
 \ascmac@hoboxb=\box153
-\@itemh=\dimen437
-\@iboxpos=\toks65
+\@itemh=\dimen438
+\@iboxpos=\toks66
 \@iboxstr=\box154
 \@bwsp=\box155
 \@@bwsp=\box156
-\@bcal=\count425
-\shaderule=\dimen438
+\@bcal=\count427
+\shaderule=\dimen439
 )) (d:/APP/TexLive/2020/texmf-dist/tex/latex/xpinyin/xpinyin.sty
 Package: xpinyin 2019/04/07 v2.7 Automatically add pinyin to Chinese characters
 \l__xpinyin_tmpa_box=\box157
 \l__xpinyin_tmpb_box=\box158
-\l__xpinyin_CJKglue_dim=\dimen439
+\l__xpinyin_CJKglue_dim=\dimen440
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/xpinyin/xpinyin-database.def
 File: xpinyin-database.def 2019/04/07 v2.7 xpinyin database
 ))) (./books.aux
-LaTeX Info: Redefining \rmfamily on input line 20.
-LaTeX Info: Redefining \sffamily on input line 20.
-LaTeX Info: Redefining \ttfamily on input line 20.
+LaTeX Info: Redefining \rmfamily on input line 22.
+LaTeX Info: Redefining \sffamily on input line 22.
+LaTeX Info: Redefining \ttfamily on input line 22.
 )
 \openout1 = `books.aux'.
 
@@ -1514,7 +1526,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (d:/APP/TexLive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count426
+\c@section@level=\count428
 )
 LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
@@ -1574,6 +1586,18 @@ Package fontspec Info: Font family 'TH-Tshyn-P2.ttf(0)' created for font
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 Missing character: There is no 𰅥 in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Package fontspec Info: Font family 'TH-Tshyn-P1.ttf(0)' created for font
+(fontspec)             'TH-Tshyn-P1.ttf' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[TH-Tshyn-P1.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+Missing character: There is no 痕 in font [TH-Tshyn-P1.ttf]/OT:script=hani;language=dflt;!
 [3] [4
 
 ]
@@ -1609,66 +1633,75 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 Underfull \vbox (badness 1158) has occurred while \output is active []
 
  [18] [19] [20]
-
-Package fontspec Info: Font family 'TH-Tshyn-P1.ttf(0)' created for font
-(fontspec)             'TH-Tshyn-P1.ttf' with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[TH-Tshyn-P1.ttf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
 Missing character: There is no 痕 in font [TH-Tshyn-P1.ttf]/OT:script=hani;language=dflt;!
 Missing character: There is no 痕 in font [TH-Tshyn-P1.ttf]/OT:script=hani;language=dflt;!
- [21] [22] [23]) [24] (./book/小王子.tex) [25
+ [21] [22] [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [26
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25] [26] [27] [28]
+Missing character: There is no ⑤ in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Underfull \vbox (badness 1087) has occurred while \output is active []
+
+ [29] [30] [31] [32] [33]
+Underfull \vbox (badness 6559) has occurred while \output is active []
+
+ [34] [35] [36] [37] [38]
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 1122) has occurred while \output is active []
+
+ [40] [41]) [42] (./book/小王子.tex) [43
+
+] [44
 
 
 ]
 Chapter 2.
-[27] [28
+[45] [46
 
 ]
 Chapter 3.
-[29] [30
+[47] [48
 
-] [31] [32]
+] [49] [50]
 Chapter 4.
-[33
+[51
 
-] [34
+] [52
 
 ]
 Chapter 5.
 (./book/雨季不再来_三毛.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [54]
 Overfull \vbox (454.67491pt too high) has occurred while \output is active []
 
- [37] (./book/亲爱的三毛_三毛.tex [38
+ [55] (./book/亲爱的三毛_三毛.tex [56
 
-] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
+] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
+ [71]
 Overfull \vbox (93.19814pt too high) has occurred while \output is active []
 
- [54] [55]) [56]
+ [72] [73]) [74]
 Chapter 6.
-[57
+[75
 
 
-] [58
+] [76
 
 ]
 Chapter 7.
@@ -1690,16 +1723,16 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
+[77]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
  (./books.aux
-LaTeX Info: Redefining \rmfamily on input line 20.
-LaTeX Info: Redefining \sffamily on input line 20.
-LaTeX Info: Redefining \ttfamily on input line 20.
+LaTeX Info: Redefining \rmfamily on input line 22.
+LaTeX Info: Redefining \sffamily on input line 22.
+LaTeX Info: Redefining \ttfamily on input line 22.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 255.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 Package rerunfilecheck Info: File `books.out' has not changed.
 (rerunfilecheck)             Checksum: 88F53B7FEABFBE90DF6948A516FBA1E4;5990.
 
@@ -1708,12 +1741,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 98987 strings out of 479418
- 2276703 string characters out of 5886345
- 1926526 words of memory out of 5000000
- 115529 multiletter control sequences out of 15000+600000
- 548170 words of font info for 142 fonts, out of 8000000 for 9000
+ 99402 strings out of 479418
+ 2294892 string characters out of 5886345
+ 1939697 words of memory out of 5000000
+ 115938 multiletter control sequences out of 15000+600000
+ 550644 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,12n,100p,1649b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,100p,1836b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on books.pdf (65 pages).
+Output written on books.pdf (83 pages).
