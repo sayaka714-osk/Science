@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  14 FEB 2021 21:57
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  23 FEB 2021 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1449,28 +1449,28 @@ LaTeX Info: Redefining \ttfamily on input line 22.
 )
 \openout1 = `books.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1508,7 +1508,7 @@ LaTeX Font Info:    ... okay on input line 58.
 
 \AtBeginShipoutBox=\box159
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 58.
+LaTeX Info: Redefining \selectfont on input line 94.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
@@ -1516,9 +1516,9 @@ Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
- on input line 58.
+ on input line 94.
 
-Package hyperref Info: Link coloring ON on input line 58.
+Package hyperref Info: Link coloring ON on input line 94.
 (d:/APP/TexLive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1528,21 +1528,21 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count428
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
  (./books.out) (./books.out)
 \@outlinefile=\write7
 \openout7 = `books.out'.
 
-LaTeX Info: Redefining \rmfamily on input line 58.
-LaTeX Info: Redefining \sffamily on input line 58.
-LaTeX Info: Redefining \ttfamily on input line 58.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Info: Redefining \rmfamily on input line 94.
+LaTeX Info: Redefining \sffamily on input line 94.
+LaTeX Info: Redefining \ttfamily on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
  (d:/APP/TexLive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1561,13 +1561,12 @@ This may cause the page layout to be inconsistent, however.
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [3] [4])
+ [3])
 \tf@toc=\write8
 \openout8 = `books.toc'.
 
- [5] [6
+ [4] [1
 
-] [1
 
 ] [2]
 
@@ -1585,6 +1584,16 @@ Package fontspec Info: Font family 'TH-Tshyn-P2.ttf(0)' created for font
 (fontspec)             <->"[TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
+Missing character: There is no 㗒 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 囌 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 俇 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 嫽 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 㻞 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 珖 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 虀 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 弢 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 鹡 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
+Missing character: There is no 鸰 in font [TH-Tshyn-P2.ttf]/OT:script=latn;language=dflt;!
 Missing character: There is no 𰅥 in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 
 Package fontspec Info: Font family 'TH-Tshyn-P1.ttf(0)' created for font
@@ -1655,56 +1664,76 @@ Underfull \vbox (badness 1303) has occurred while \output is active []
  [39]
 Underfull \vbox (badness 1122) has occurred while \output is active []
 
- [40] [41]) [42] (./book/小王子.tex) [43
+ [40] [41] [42]
+Underfull \vbox (badness 1990) has occurred while \output is active []
 
-] [44
+ [43] [44] [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60])
+Underfull \vbox (badness 5908) has occurred while \output is active []
+
+ [61] [62] (./book/小王子.tex) [63
+
+] [64
 
 
-]
+] [65] [66]
 Chapter 2.
-[45] [46
+[67
+
+] [68
 
 ]
 Chapter 3.
-[47] [48
+[69] [70
 
-] [49] [50]
+]
 Chapter 4.
-[51
-
-] [52
+[71] [72
 
 ]
 Chapter 5.
-(./book/雨季不再来_三毛.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[73] [74
 
- [53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54]
-Overfull \vbox (454.67491pt too high) has occurred while \output is active []
-
- [55] (./book/亲爱的三毛_三毛.tex [56
-
-] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [71]
-Overfull \vbox (93.19814pt too high) has occurred while \output is active []
-
- [72] [73]) [74]
+]
 Chapter 6.
-[75
-
-
-] [76
+[75] [76
 
 ]
 Chapter 7.
+[77] [78
+
+]
+Chapter 8.
+[79] [80
+
+]
+Chapter 9.
+[81] [82
+
+]
+Chapter 10.
+[83] [84
+
+]
+Chapter 11.
+[85] [86
+
+]
+Chapter 12.
+[87] [88
+
+]
+Chapter 13.
+[89] [90
+
+]
+Chapter 14.
+[91] [92
+
+]
+Chapter 15.
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1723,30 +1752,30 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[77]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+[93]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
  (./books.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `books.out' has not changed.
-(rerunfilecheck)             Checksum: 88F53B7FEABFBE90DF6948A516FBA1E4;5990.
+(rerunfilecheck)             Checksum: 58E04CAE1FB6E39B3D94345139003520;1877.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 99402 strings out of 479418
- 2294892 string characters out of 5886345
- 1939697 words of memory out of 5000000
- 115938 multiletter control sequences out of 15000+600000
+ 99409 strings out of 479418
+ 2295033 string characters out of 5886345
+ 1941132 words of memory out of 5000000
+ 115951 multiletter control sequences out of 15000+600000
  550644 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,12n,100p,1836b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on books.pdf (83 pages).
+Output written on books.pdf (97 pages).
