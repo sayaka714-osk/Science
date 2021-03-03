@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  19 FEB 2021 14:06
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.19)  1 MAR 2021 13:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1561,13 +1561,12 @@ This may cause the page layout to be inconsistent, however.
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18])
+ [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19])
 \tf@toc=\write8
 \openout8 = `Science.toc'.
 
- [19] [20
+ [20] [1
 
-] [1
 
 ] [2] [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2229,116 +2228,126 @@ Chapter 30.
 
 ]
 Chapter 31.
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+[187] [188]
+Chapter 32.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 8475.
+(hyperref)                removing `math shift' on input line 8549.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 8475.
+(hyperref)                removing `math shift' on input line 8549.
 
 Missing character: There is no ′ in font cmr10!
 Missing character: There is no ′ in font cmr10!
-[187]
-Overfull \hbox (75.0659pt too wide) detected at line 8558
+[189
+
+]
+Overfull \hbox (75.0659pt too wide) detected at line 8632
 []
  []
 
 
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
- [188]
-Overfull \hbox (12.39745pt too wide) in paragraph at lines 8643--8643
+ [190]
+Overfull \hbox (12.39745pt too wide) in paragraph at lines 8717--8717
 []\TU/SimSun(1)/m/n/10.95 影 响 因 素：| $[] \OT1/cmr/m/n/10.95 = []$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [189]
+ [191]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [190] [191]
+ [192] [193]
 Underfull \vbox (badness 5726) has occurred while \output is active []
 
- [192]
-Underfull \hbox (badness 10000) in paragraph at lines 8854--8856
+ [194]
+Underfull \hbox (badness 10000) in paragraph at lines 8928--8930
 
  []
 
-[193]
-Underfull \hbox (badness 10000) in paragraph at lines 8912--8914
+[195]
+Underfull \hbox (badness 10000) in paragraph at lines 8986--8988
 
- []
-
-[194]
-Underfull \vbox (badness 2261) has occurred while \output is active []
-
- [195]
-Overfull \hbox (49.8375pt too wide) in paragraph at lines 9011--9028
-[] 
  []
 
 [196]
-Underfull \hbox (badness 10000) in paragraph at lines 9065--9067
+Underfull \vbox (badness 2261) has occurred while \output is active []
+
+ [197]
+Overfull \hbox (49.8375pt too wide) in paragraph at lines 9085--9102
+[] 
+ []
+
+[198]
+Underfull \hbox (badness 10000) in paragraph at lines 9139--9141
 
  []
 
-[197] [198]
-Chapter 32.
+[199] [200]
+Chapter 33.
 
 Underfull \vbox (badness 3907) has occurred while \output is active []
 
- [199
+ [201
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [200] [201] [202
+ [202] [203] [204
 
-] [203
+] [205
 
 ]
-Overfull \hbox (3.34029pt too wide) in paragraph at lines 9531--9615
+Overfull \hbox (3.34029pt too wide) in paragraph at lines 9605--9689
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [204
-
-] [205]
-Missing character: There is no 套 in font cmr10!
-Missing character: There is no 利 in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no 套 in font cmr10!
-Missing character: There is no 利 in font cmr10!
-Missing character: There is no 左 in font cmr10!
-Missing character: There is no 移 in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↑ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
-Missing character: There is no ↓ in font cmr10!
  [206
 
-]
-Missing character: There is no Δ in font cmmi10!
-Missing character: There is no · in font cmr10!
-Missing character: There is no Δ in font cmmi10!
-Missing character: There is no · in font cmr10!
- [207] [208
+] [207]
+Missing character: There is no 套 in font cmr10!
+Missing character: There is no 利 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no 套 in font cmr10!
+Missing character: There is no 利 in font cmr10!
+Missing character: There is no 左 in font cmr10!
+Missing character: There is no 移 in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↑ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+Missing character: There is no ↓ in font cmr10!
+ [208
 
 ]
-Chapter 33.
-[209] [210
+Missing character: There is no Δ in font cmmi10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no Δ in font cmmi10!
+Missing character: There is no · in font cmr10!
+ [209] [210
 
 ]
 Chapter 34.
@@ -2346,46 +2355,46 @@ Chapter 34.
 
 ]
 Chapter 35.
-[213]
+[213] [214
+
+]
+Chapter 36.
+[215]
 Underfull \vbox (badness 5533) has occurred while \output is active []
 
- [214]
+ [216]
 Underfull \vbox (badness 2846) has occurred while \output is active []
 
- [215] [216]
-Chapter 36.
+ [217] [218]
+Chapter 37.
 
 Underfull \vbox (badness 1389) has occurred while \output is active []
 
- [217
+ [219
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [218]
+ [220]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [219] [220]
-Overfull \hbox (55.75114pt too wide) detected at line 10221
+ [221] [222]
+Overfull \hbox (55.75114pt too wide) detected at line 10295
 []
  []
 
-[221] [222
-
-]
-Chapter 37.
 [223] [224
 
 ]
 Chapter 38.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [225] [226] [227] [228
+[225] [226
 
 ]
 Chapter 39.
-[229] [230
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [227] [228] [229] [230
 
 ]
 Chapter 40.
@@ -2397,44 +2406,58 @@ Chapter 41.
 
 ]
 Chapter 42.
+[235] [236
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [235] [236]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [237]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [238] [239] [240]
+]
 Chapter 43.
-[241
 
-] [242
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [237] [238]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [239]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [240] [241] [242]
 Chapter 44.
-[243]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[243
 
- [244]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [245] [246]
-Chapter 45.
-[247
-
-] [248
+] [244
 
 ]
+Chapter 45.
+[245]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [246]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [247] [248]
 Chapter 46.
-[249] [250
+[249
+
+] [250
 
 ]
 Chapter 47.
 [251] [252
 
-] [253] [254]
+]
+Chapter 48.
+
+Underfull \vbox (badness 3417) has occurred while \output is active []
+
+ [253]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [254] [255] [256
+
+]
+Chapter 49.
+[257] [258
+
+] [259] [260]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2453,29 +2476,29 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10989.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 10989.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11184.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11184.
  (./Science.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10989.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10989.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11184.
 Package rerunfilecheck Info: File `Science.out' has not changed.
-(rerunfilecheck)             Checksum: 9715ECA4BFDE2D170CD7BC6C0F809F7E;61640.
+(rerunfilecheck)             Checksum: 9F6CD2B4206541157A3FC2EEDA22959A;62762.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 99741 strings out of 479418
- 2260155 string characters out of 5886345
- 2040498 words of memory out of 5000000
- 116305 multiletter control sequences out of 15000+600000
+ 99755 strings out of 479418
+ 2260897 string characters out of 5886345
+ 2040685 words of memory out of 5000000
+ 116319 multiletter control sequences out of 15000+600000
  553041 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,62n,100p,875b,47159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Science.pdf (274 pages).
+Output written on Science.pdf (280 pages).
