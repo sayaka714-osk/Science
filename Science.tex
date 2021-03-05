@@ -692,15 +692,10 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
      & [(\lambda \bm{\alpha}),\bm{\beta}] = [\bm{\alpha},(\lambda\bm{\beta})] = \lambda[\bm{\alpha},\bm{\beta}] \\
      & [\bm{\alpha},(\bm{\beta}+\bm{\gamma})] = [\bm{\alpha},\bm{\beta}]+[\bm{\alpha},\bm{\gamma}]              \\
      & [(\bm{\alpha}+\bm{\beta}),\bm{\gamma}] = [(\bm{\alpha}+\bm{\gamma}]+[\bm{\beta},\bm{\gamma}]             \\
-     & [\bm{\alpha},\bm{\alpha}]\geqslant 0\\
-     & [\bm{\alpha},\bm{\alpha}]=0\Leftrightarrow \bm{\alpha}=\bm{O}
+     & [\bm{\alpha},\bm{\alpha}]\geqslant 0, \text{当且仅当}\bm{\alpha}=\bm{O}\text{时},[\bm{\alpha},\bm{\alpha}]=0
 \end{align*}
 
-\subsubsection{向量外积}
-
-
-
-\subsubsection{向量正交}
+\paragraph{向量正交}
 
 向量正交：若$[\bm{\alpha},\bm{\beta}]=0$，则称向量$\bm{\alpha}$与$\bm{\beta}$正交
 
@@ -722,6 +717,13 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
               \item 若再将$\bm{\beta}_{1},\bm{\beta}_{2},\cdots,\bm{\beta}_{m}$单位化，令$\hat{\bm{\beta}}_{1}=\frac{\bm{\beta}_1}{||\bm{\beta}_1||}, \hat{\bm{\beta}}_{2}=\frac{\bm{\beta}_2}{||\bm{\beta}_2||}, \cdots, \hat{\bm{\beta}}_{m}=\frac{\bm{\beta}_m}{||\bm{\beta}_m||},$，则称$\hat{\bm{\beta}}_{1}, \hat{\bm{\beta}}_{2}, \cdots, \hat{\bm{\beta}}_{m}$为一个标准正交向量组
           \end{enumerate}
 \end{enumerate}
+
+
+\subsubsection{向量外积}
+
+
+
+
 
 
 
@@ -786,7 +788,7 @@ $\bm{\alpha}=(a_{1},a_{2},\cdots,a_{n})^T, \bm{\beta}=(b_1,b_2,\cdots,b_n)^T, \l
                               & \bm{\beta}\text{可由}\text{向量组}\bm{A}:\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_m\text{线性表示} \\
               \Leftrightarrow & \bm{\beta} = k_1\bm{\alpha}_1+k_2\bm{\alpha}_2+\cdots+k_m\bm{\alpha}_m                                        \\
               \Leftrightarrow & x_1\bm{\alpha}_1+x_2\bm{\alpha}_2+\cdots+x_m\bm{\alpha}_m=\bm{\beta}\text{有解}                               \\
-              \Leftrightarrow & R(\bm{A}) = R(\bm{A \beta})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m},\bm{\beta}) 
+              \Leftrightarrow & R(\bm{A}) = R(\bm{A}, \bm{\beta})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m})=R(\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_{m},\bm{\beta}) 
           \end{align*}
     \item
           \begin{align*}
@@ -1464,8 +1466,18 @@ $m$个方程的$n$元线性方程组
 
 
 
+
+
+
+
+
+
 \paragraph{直角坐标系}
 
+设平面图形$D$由曲线$y=f(x)$，$y=g(x)$及直线$x=a$，$x=b$所围成，则平面图形$D$的面积
+\begin{gather*}
+    S=\int_{a}^{b}{|f(x)-g(x)| \mathrm{d}x} 
+\end{gather*}
 
 
 区域$D$：
@@ -1532,13 +1544,57 @@ $m$个方程的$n$元线性方程组
 \subsection{空间直线}
 
 
+方向向量：与直线平行的非零向量，称为该直线的方向向量
+
+\begin{enumerate}[1.]
+    \item 对称式方程（点向式或标准式方程）：过点$M_{0}(x_0,y_0,z_0)$，方向向量为$\bm{s}={l,m,n}$的直线的标准式方程为
+    \begin{gather*}
+        \frac{x-x_0}{l}=\frac{y-y_0}{m}=\frac{z-z_0}{n}
+    \end{gather*}
+    \item 参数方程：
+    \begin{gather*}
+        \frac{x-x_0}{l}=\frac{y-y_0}{m}=\frac{z-z_0}{n}=t \\ \Rightarrow
+        \begin{cases}
+            x=x_0+lt \\
+            y=y_0+mt \text{（t为参数)}\\
+            z=z_0+nt 
+        \end{cases}
+    \end{gather*}
+    \item 两点式方程：过点$M_{1}(x_1,y_1,z_1)$和$M_{2}(x_2,y_2,z_2)$的直线方程为
+    \begin{gather*}
+        \frac{x-x_1}{x_2-x_1}=\frac{y-y_1}{y_2-y_1}=\frac{z-z_1}{z_2-z_1}
+    \end{gather*}
+    \item 一般式方程：
+    \begin{gather*}
+        \begin{cases}
+            A_{1}x+B_{1}y+C_{1}z+D_{1}=0\\
+            A_{2}x+B_{2}y+C_{2}z+D_{2}=0\
+        \end{cases}
+    \end{gather*}
+\end{enumerate}
+
 
 \subsubsection{方程}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 \subsection{空间曲线}
+
+
+
+
 
 \subsubsection{切线与法平面}
 
@@ -1546,6 +1602,40 @@ $m$个方程的$n$元线性方程组
 
 
 \subsection{空间平面}
+
+法向量：与平面垂直的任意非零向量，称为该平面的法向量
+
+\begin{enumerate}[1.]
+    \item 点法式方程：设平面过点$M_{0}(x_{0},y_{0},z_{0})$，其法向量为$\bm{n}=\{A,B,C\}$，则平面方程为
+    \begin{gather*}
+        A(x-x_{0})+B(y-y_{0})+C(z-z_{0})=0
+    \end{gather*}
+    \item 截距式方程：设a,b,c分别为平面在线x,y,z轴上的截距，则此平面的方程为
+    \begin{gather*}
+        \frac{x}{a}+\frac{y}{b}+\frac{z}{c}=1
+    \end{gather*}
+    \item 三点式方程：设平面过不共线的三点$A(x_1,y_1,z_1)$，$B(x_2,y_2,z_2)$，$C(x_3,y_3,z_3)$，则此平面的方程为
+    \begin{gather*}
+        \begin{vmatrix}
+            x  -x_1 & y  -y_1 & z  -z_1 \\
+            x_2-x_2 & y_2-y_2 & z_2-z_1 \\
+            x_3-x_2 & y_3-y_3 & z_3-z_1 
+        \end{vmatrix}
+        =0
+    \end{gather*}
+    \item 一般式方程：A,B,C不同时为0
+    \begin{gather*}
+        Ax+By+Cz+D=0
+    \end{gather*}
+    \par $D=0$，平面过原点。$A=0$，平面平行于（或包含）X轴
+\end{enumerate}
+
+
+
+
+
+
+
 
 
 
@@ -1560,7 +1650,7 @@ $m$个方程的$n$元线性方程组
 
 
 
-由方程$z=z(x,y)$或$x=x(y,z)$或$y=y(a,z)$确定的单值光滑曲面$\Sigma$的面积为：
+由方程$z=z(x,y)$或$x=x(y,z)$或$y=y(x,z)$确定的单值光滑曲面$\Sigma$的面积为：
 \begin{gather*}
     S = \iint\limits_{D_{xy}}{ \sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2} \mathrm{d}x\mathrm{d}y} \\
     S = \iint\limits_{D_{yz}}{ \sqrt{1+\left(\frac{\partial x}{\partial y}\right)^2+\left(\frac{\partial x}{\partial z}\right)^2} \mathrm{d}y\mathrm{d}z}\\
@@ -1594,6 +1684,78 @@ $m$个方程的$n$元线性方程组
 
 
 \subsection{相对位置关系}
+
+
+
+\subsubsection{位置}
+
+
+设平面$\pi_{1}:A_{1}x+B_{1}y+C_{1}z+D_{1}=0$，$\pi_{2}:A_{2}x+B_{2}y+C_{2}z+D_{2}=0$，他们的法向量分别为$\bm{n}_1=\{A_1,B_1,C_1\}$，$\bm{n}_2=\{A_2,B_2,C_2\}$。直线$L_{1}:\frac{x-x_1}{l_1}=\frac{y-y_1}{m_1}=\frac{z-z_1}{n_1}$，$L_{2}:\frac{x-x_2}{l_2}=\frac{y-y_2}{m_2}=\frac{z-z_2}{n_2}$，它们的方向向量分别为$\bm{s}_1=\{l_1,m_1,n_1\}$，$\bm{s}_2=\{l_2,m_2,n_2\}$
+
+\begin{enumerate}[1.]
+    \item 夹角
+          \begin{enumerate}[(1)]
+              \item 平面$\pi_1$与平面$\pi_2$间的夹角$\theta$定义为法向量$\bm{n}_1$与$\bm{n}_2$间的夹角，即
+                    \begin{gather*}
+                        \cos{\theta}=\frac{|\bm{n}_{1}\cdot\bm{n}_{2}|}{|\bm{n}_{1}|\cdot|\bm{n}_{2}|}
+                        = \frac{|A_{1}A_{2}+B_{1}B_{2}+C_{1}C_{2}|}{\sqrt{A_{1}^{2}+B_{1}^{2}+C_{1}^{2}}\cdot\sqrt{A_{2}^{2}+B_{2}^{2}+C_{2}^{2}}}
+                    \end{gather*}
+              \item 直线$L_1$与直线$L_2$间的夹角$\theta$定义为方向向量$\bm{s}_1$与$\bm{s}_2$间的夹角，即
+                    \begin{gather*}
+                        \cos{\theta}=\frac{|\bm{s}_{1}\cdot\bm{s}_{2}|}{|\bm{s}_{1}|\cdot|\bm{s}_{2}|}
+                        = \frac{|l_{1}l_{2}+m_{1}m_{2}+n_{1}n_{2}|}{\sqrt{l_{1}^{2}+m_{1}^{2}+n_{1}^{2}}\cdot\sqrt{l_{2}^{2}+m_{2}^{2}+n_{2}^{2}}}
+                    \end{gather*}
+              \item 直线$L_1$与平面$\pi_1$间的夹角定义为直线$L_1$和它在平面$\pi_1$上的投影所成的两邻角中的锐角，即
+                    \begin{gather*}
+                        \cos{\theta}=\frac{|\bm{n}_{1}\cdot\bm{s}_{1}|}{|\bm{n}_{1}|\cdot|\bm{s}_{1}|}
+                        = \frac{|A_{1}l_{1}+B_{1}m_{1}+C_{1}n_{1}|}{\sqrt{A_{1}^{2}+B_{1}^{2}+C_{1}^{2}}\cdot\sqrt{l_{1}^{2}+m_{1}^{2}+n_{1}^{2}}}
+                    \end{gather*}
+          \end{enumerate}
+    \item 平行
+          \begin{enumerate}[(1)]
+              \item 平面$\pi_1$与平面$\pi_2$平行的充分必要条件为$\frac{A_1}{A_2}=\frac{B_1}{B_2}=\frac{C_1}{C_2}$
+              \item 直线$L_1$与直线$L_2$共面的条件为$\mathop{P_{1}P_{2}}\limits^{\rightarrow}\cdot(\bm{s}_{1}\times\bm{s}_{2})=0 $
+              \item 直线$L_1$与直线$L_2$平行的充分必要条件为$\frac{l_1}{l_2}=\frac{m_1}{m_2}=\frac{n_1}{n_2}$
+              \item 直线$L_1$与平面$\pi_1$平行的充分必要条件为${l_1}{A_1}+{m_1}{B_1}+{n_1}{C_1}=0$
+          \end{enumerate}
+    \item 垂直
+          \begin{enumerate}[(1)]
+              \item 平面$\pi_1$与平面$\pi_2$垂直的充分必要条件为$A_{1}A_{2}+B_{1}B_{2}+C_{1}C_{2}=0$
+              \item 直线$L_1$与直线$L_2$垂直的充分必要条件为$l_{1}l_{2}+m_{1}m_{2}+n_{1}n_{2}=0$
+              \item 直线$L_1$与平面$\pi_1$垂直的充分必要条件为$\frac{l_1}{A_1}=\frac{m_1}{B_1}=\frac{n_1}{C_1}$
+          \end{enumerate}
+\end{enumerate}
+
+
+
+\subsubsection{距离}
+
+\begin{enumerate}[1.]
+    \item 点到平面的距离：点$M_{0}(x_{0},y_0,z_0)$到平面$Ax+By+Cz+D=0$的距离为
+    \begin{gather*}
+        d=\frac{|Ax_{0}+By_{0}+Cz_{0}+D|}{\sqrt{A^2+B^2+C^2}}
+    \end{gather*}
+    \item 点到直线的距离：点$P_{0}(x_{1},y_1,z_1)$到直线$\frac{x-x_0}{l}=\frac{y-y_0}{m}=\frac{z-z_0}{n}$的距离为
+    \begin{gather*}
+        d=\frac{|\mathop{M_{0}P_{1}}\limits^{\rightarrow}\times\bm{s}|}{|\bm{s}|}
+    \end{gather*}
+    其中，$M_{0}(x_{0},y_0,z_0)$，$\bm{s}={l,m,n}$
+    \item 两直线间的距离：两异面直线$L_1$，$L_2$的距离为
+    \begin{gather*}
+        d=\frac{\mathop{P_{1}P_{2}}\limits^{\rightarrow}\cdot(\bm{a}\times\bm{b})}{|\bm{a}\times\bm{b}|}
+    \end{gather*}
+    两直线的距离等于两异面直线上任意两点的连结线段在公共法向量上的射影长
+    
+\end{enumerate}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1641,7 +1803,7 @@ $D$称为函数$y= f(x)$的定义域，$x$称为自变量，$y$称为因变量�
 
 \begin{align*}
 &\text{二角和差}\begin{cases}
-    \sin(x+y) = \sin{x}\cos{y}+\cos{x}\cos{y} \\
+    \sin(x+y) = \sin{x}\cos{y}+\cos{x}\sin{y} \\
     \cos(x+y) = \cos{x}\cos{y}-\sin{x}\sin{y}
 \end{cases}\\
 &\text{和差化积}\begin{cases}
@@ -1687,50 +1849,112 @@ $D$称为函数$y= f(x)$的定义域，$x$称为自变量，$y$称为因变量�
 
 \subsection{函数与级数转化}
 
+\subsubsection{一元}
 
-函数$f(x)$在$x=0$处展开为幂级数：
+函数$f(x)$在$x=0$处展开为幂级数
 \begin{enumerate}[1.]
-    \item 直接法
+    \item 泰勒（Taylor）级数：当$f(x)$在$x_0$的某邻域内存在任意阶导数时，幂级数
+          \begin{gather*}
+              \sum_{n=0}^{\infty}{
+              \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
+              } =
+              f(x_0)+
+              \frac{f^\prime(x_0)}{1!}(x-x_0)+
+              \frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^{2}+\cdots+
+              \frac{f^{(n)}(x_0)}{n!}(x-x_0)^{n}+\cdots
+          \end{gather*}
+          \par 当$x_0=0$时，泰勒级数称为麦克劳林（Maclaurin）级数
+          \begin{gather*}
+              \sum_{n=0}^{\infty}{
+              \frac{f^{(n)}(0)}{n!}(x0)^n
+              } =
+              f(x_0)+
+              f^\prime(0)x+
+              \frac{f^{\prime\prime}(0)}{2!}x^{2}+\cdots+
+              \frac{f^{(n)}(0)}{n!}x^{n}+\cdots
+          \end{gather*}
+    \item 泰勒定理：
+          \begin{gather*}
+              f(x) = f(x_0)+
+              \frac{f^\prime(x_0)}{1!}(x-x_0)+
+              \frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^{2}+\cdots+
+              \frac{f^{(n)}(x_0)}{n!}(x-x_0)^{n}+R_{n}(x)
+          \end{gather*}
           \begin{enumerate}[(1)]
-              \item 泰勒（Taylor）级数：当$f(x)$在$x_0$的某邻域内存在任意阶导数时，幂级数
+              \item 若$R_{n}(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$，则称$f(x)$在$x_{0}$处带有拉格朗日余项的n阶泰勒公式
+              \item 若$R_{n}(x)=o((x-x_{0})^{n})$，则称$f(x)$在$x_{0}$处带有皮亚诺余项的n阶泰勒公式
+              \item 麦克劳林公式：
                     \begin{gather*}
-                        \sum_{n=0}^{\infty}{
-                        \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
-                        } =
-                        f(x_0)+
-                        \frac{f^\prime(x_0)}{1!}(x-x_0)+
-                        \frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^{2}+\cdots+
-                        \frac{f^{(n)}(x_0)}{n!}(x-x_0)^{n}+\cdots
-                    \end{gather*}
-                    \par 当$x_0=0$时，泰勒级数称为麦克劳林（Maclaurin）级数
-                    \begin{gather*}
-                        \sum_{n=0}^{\infty}{
-                        \frac{f^{(n)}(0)}{n!}(x0)^n
-                        } =
-                        f(x_0)+
-                        f^\prime(0)x+
+                        f(x) = f(0)+
+                        \frac{f^\prime(0)}{1!}x+
                         \frac{f^{\prime\prime}(0)}{2!}x^{2}+\cdots+
-                        \frac{f^{(n)}(0)}{n!}x^{n}+\cdots
-                    \end{gather*}
-              \item 在收敛区间$(-R,R)$内考察泰勒级数余项$R_{n}(x)$的极限，若等于零，则该麦克劳林级数为$f(x)$的幂级数展开式
-                    \begin{gather*}
-                        \lim_{n\rightarrow\infty}{R_{n}(x)} = \lim_{n\rightarrow\infty}{\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}}, 0<\xi<x
+                        \frac{f^{(n)}(0)}{n!}x^{n}+\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}, 0<\xi<x
                     \end{gather*}
           \end{enumerate}
-    \item 间接法
-    \begin{gather*}
-        \begin{aligned}
-            \frac{1}{1-x} &= \sum_{n=0}^{\infty}{x^n} = 1 + x + x^2 + \cdots + x^n + \cdots , (-1,1) \\
-            \frac{1}{1+x} &= \sum_{n=0}^{\infty}{(-1)^{n}x^{n}} = 1 - x + x^2 - \cdots + (-1)^{n}x^{n} + \cdots , (-1,1) \\
-            e^x &= \sum_{x=0}^{\infty}{\frac{x^n}{n!}} = 1 + x + \frac{1}{2!}x^2 + \cdots + \frac{1}{n!}x^n + \cdots , (-\infty,\infty) \\
-            \ln{(1+x)}&= \sum_{x=0}^{\infty}{(-1)^{n}\frac{x^{n}}{n} } = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots +(-1)^{n-1}\frac{x^{n}}{n}+\cdots ,(-1,1] \\
-            \sin{x} &= \sum_{x=0}^{\infty}{(-1)^{n}\frac{x^{2n+1}}{(2n+1)!} }= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots +(-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}+\cdots ,(-\infty,\infty) \\
-            \cos{x} &= \sum_{x=0}^{\infty}{(-1)^{n}\frac{x^{2n}}{(2n)!} }= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots +(-1)^{n}\frac{x^{2n}}{(2n)!}+\cdots ,(-\infty,\infty) \\
-            (1+x)^{m}& = 1+mx+\frac{m(m-1)}{2!}x^{2}+\cdots+\frac{m(m-1)\cdots (m-n+1)}{n!}x^{n}+\cdots, (-1,1)\\ 
-            &,\text{当}x=\pm 1\text{时，级数是否收敛取决于}m \\
-        \end{aligned}
-    \end{gather*}
+    \item 在收敛区间$(-R,R)$内考察泰勒级数余项$R_{n}(x)$的极限，若等于零，则该麦克劳林级数为$f(x)$的幂级数展开式
+          \begin{gather*}
+              \lim_{n\rightarrow\infty}{R_{n}(x)} = \lim_{n\rightarrow\infty}{\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}}, 0<\xi<x
+          \end{gather*}
 \end{enumerate}
+\informationBox{
+    \begin{enumerate}[(1)]
+        \item 罗尔（Rolle）定理：若$y=f(x)$在$[a,b]$上连续，在$(a,b)$内可导，$f(a)=f(b)$，则在$(a,b)$内至少存在一点$\xi$，使得$f^{\prime}(\xi)=0$
+        \item 拉格朗日（Lagrange）中值定理（微分中值定理）：若$y=f(x)$在$[a,b]$上连续，在$(a,b)$内可导，则在$(a,b)$内至少存在一点$\xi$，使得
+              \begin{gather*}
+                  \frac{f(b)-f(a)}{b-a}=f^{\prime}(\xi)
+              \end{gather*}
+              \par $\xi\in (a,b)$，$\xi$也可表示为$\xi=a+\theta (b-a), 0<\theta<1$；若$\xi\in(0,x)$，则$\xi=\theta(x)\cdot x, 0<\theta(x)<1$
+        \item 柯西（Cauchy）定理：若$f(x)$，$g(x)$在$[a,b]$上连续，在$(a,b)$内可导，则在$(a,b)$内至少存在一点$\xi$，使得
+              \begin{gather*}
+                  \frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^{\prime}(\xi)}{g^{\prime}(\xi)}
+              \end{gather*}
+        \item 柯西定理的特例$g(x)=x$是拉格朗日定理；泰勒定理的特例$n=1$是拉格朗日定理；拉格朗日定理的特例$f(a)=f(b)$是罗尔定理
+    \end{enumerate}
+}
+
+
+\begin{gather*}
+    \begin{aligned}
+        \frac{1}{1-x} & = \sum_{n=0}^{\infty}{x^n} = 1 + x + x^2 + \cdots + x^n + \cdots , (-1,1)                                                                                           \\
+        \frac{1}{1+x} & = \sum_{n=0}^{\infty}{(-1)^{n}x^{n}} = 1 - x + x^2 - \cdots + (-1)^{n}x^{n} + \cdots , (-1,1)                                                                       \\
+        e^x           & = \sum_{n=0}^{\infty}{\frac{x^n}{n!}} = 1 + x + \frac{1}{2!}x^2 + \cdots + \frac{1}{n!}x^n + \cdots , (-\infty,\infty)                                              \\
+        \ln{(1+x)}    & = \sum_{n=1}^{\infty}{(-1)^{n-1}\frac{x^{n}}{n} } = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots +(-1)^{n-1}\frac{x^{n}}{n}+\cdots ,(-1,1]                              \\
+        \sin{x}       & = \sum_{n=0}^{\infty}{(-1)^{n}\frac{x^{2n+1}}{(2n+1)!} }= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots +(-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}+\cdots ,(-\infty,\infty) \\
+        \cos{x}       & = \sum_{n=0}^{\infty}{(-1)^{n}\frac{x^{2n}}{(2n)!} }= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots +(-1)^{n}\frac{x^{2n}}{(2n)!}+\cdots ,(-\infty,\infty)           \\
+        (1+x)^{m}     & = 1+mx+\frac{m(m-1)}{2!}x^{2}+\cdots+\frac{m(m-1)\cdots (m-n+1)}{n!}x^{n}+\cdots, (-1,1)                                                                            \\
+                      & ,\text{当}x=\pm 1\text{时，级数是否收敛取决于}m                                                                                                                     \\
+        (x+y)^{n}     & =\sum_{k=0}^{n}{C_{n}^{k} x^{n-k} y^{k}} \text{（二项式定理）}
+    \end{aligned}
+\end{gather*}
+
+
+\subsubsection{二元}
+
+\begin{enumerate}[1.]
+    \item 泰勒公式：设函数$z=f(x,y)$在点$(x_0,y_0)$的某一邻域内连续且有直到$n+1$阶的连续偏导数，并设$(x=x_{0}+h,y=y_{0}+k)$为此邻域内任意一点，则二元函数的$n$阶泰勒公式
+    \begin{gather*}
+        f(x_{0}+h,y_{0}+k)
+        = f(x_{0},y_{0})
+        + \left(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial y} \right)f(x_{0},y_{0})
+        + \frac{1}{2!} \left(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial y} \right)^{2} f(x_{0},y_{0}) 
+        \\+ \cdots 
+        + \frac{1}{n!} \left(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial y} \right)^{n} f(x_{0},y_{0}) 
+        + R_{n}
+    \end{gather*}
+    \begin{enumerate}[(1)]
+        \item 若$R_{n}=\frac{1}{(n+1)!} \left(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial y} \right)^{n+1} f(x_{0}+\theta h,y_{0}+\theta k), 0<\theta<1 $，则称为在$(x_{0},y_{0})$处带有拉格朗日余项的$n$阶泰勒公式
+        \item 若$n=0$，则
+        \begin{gather*}
+            f(x_{0}+h,y_{0}+k)
+            = f(x_{0},y_{0})
+            + h f^{\prime}_{x}(x_{0}+\theta h,y_{0}+\theta k) 
+            + k f^{\prime}_{y}(x_{0}+\theta h,y_{0}+\theta k) 
+        \end{gather*}
+        为二元函数的拉格朗日中值定理
+    \end{enumerate}
+\end{enumerate}
+
+
 
 
 
@@ -1768,15 +1992,42 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 \subsubsection{极值求解}
 
 
+极值：设函数$z=f(x,y)$在点$P_{0}(x_0,y_0)$的某邻域内有定义，对于该邻域内异于$P_{0}(x_0,y_0)$的点$P(x,y)$，如果都满足不等式$f(x,y)<f(x_0,y_0)$，则称函数在点$P_{0}(x_0,y_0)$处有极大值$f(x_0,y_0)$；如果都不满足不等式$f(x,y)<f(x_0,y_0)$，则称函数在点$P_{0}(x_0,y_0)$处有极小值$f(x_0,y_0)$。使函数取得极值的点称为极值点
 
 
+\begin{enumerate}[1.]
+    \item 极值存在的必要条件
+          \begin{enumerate}[1.]
+              \item 若函数$z=f(x,y)$在点$P_{0}(x_0,y_0)$处可微且取得极值，则必有$f^{\prime}_{x}(x_0,y_0)=0, f^{\prime}_{y}(x_0,y_0)=0$
+          \end{enumerate}
+    \item 极值存在的充分条件
+          \begin{enumerate}[(1)]
+              \item 设函数$z=f(x,y)$在点$P_{0}(x_0,y_0)$的某邻域内具有二阶偏导数，且$f^{\prime}_{x}(x_0,y_0)=0, f^{\prime}_{y}(x_0,y_0)=0$，记$A=f^{\prime\prime}_{xx}(x_0,y_0), B=f^{\prime\prime}_{xy}(x_0,y_0), C=f^{\prime\prime}_{yy}(x_0,y_0)$
+              \item 若$B^{2}-AC<0$，则$f(x_0,y_0)$是极值。当$A>0$时，$f(x_0,y_0)$是极小值，当$A<0$时，$f(x_0,y_0)$是极大值
+              \item 若$B^{2}-AC>0$，则$f(x_0,y_0)$不是极值
+              \item 若$B^{2}-AC=0$，则$f(x_0,y_0)$可能是极值，也可能不是极值
+          \end{enumerate}
+    \item 条件极值（拉格朗日乘数法）
+          \begin{enumerate}[(1)]
+              \item 函数$u=f(x,y)$在附加条件$\phi(x,y)=0$下的极值称为条件极值
+              \item 作$F(x,y,\lambda)=f(x,y)+\lambda\phi(x,y)$，其中$\lambda$是某一常数，则点$(x,y)$是极值点的必要条件为
+                    \begin{gather*}
+                        \begin{cases}
+                            F^{\prime}_{x}(x,y)=f^{\prime}_{x}(x,y)+\lambda\phi^{\prime}_{x}(x,y)=0 \\
+                            F^{\prime}_{y}(x,y)=f^{\prime}_{y}(x,y)+\lambda\phi^{\prime}_{y}(x,y)=0 \\
+                            \phi(x,y)=0
+                        \end{cases}
+                    \end{gather*}
+                    解出的$(x,y)$可能为条件极值的极值点
+          \end{enumerate}
+\end{enumerate}
 
 
+\subsubsection{最值求解}
 
-
-
-
-
+\par 若二元函数$f(x,y)$在有界闭域$D$上连续，则$f(x,y)$在$D$上必定能取得最大值和最小值。
+\par 求函数最大值、最小值的一般方法是把函数$f(x,y)$在区城$D$内部的所有可能的极值点处的函数值连同边界上的函数值加以比较，最大者为最大值，最小者为最小值
+\par 如果根据实际问题的性质已经知道函数的最大值（最小值）一定在区城$D$内部取得,而函数在区域$D$内只有唯一驻点，则该驻点处的函数值就是函数$f(x,y)$在区域$D$上的最大值（最小  值）
 
 
 \subsection{凹凸性}
@@ -1812,21 +2063,33 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 \subsubsection{函数极限}
 
-当$x\rightarrow 0$时：
-\begin{gather*}
-    \begin{aligned}
-        & x\sim\sin{x}\sim\tan{x}\sim\arcsin{x}\sim\arctan{x}\sim e^{x}-1 \sim \ln(1+x)\\
-        & a^{x}-1 \sim x\ln{x} \\
-        & (1+x)^{m}-1 \sim mx  \\
-        & 1-\cos{x}\sim \frac{1}{2}x^2
-      \end{aligned}
-\end{gather*}
+\begin{enumerate}[1.]
+    \item 当$x\rightarrow 0$时：
+    \begin{gather*}
+        \begin{aligned}
+            & x\sim\sin{x}\sim\tan{x}\sim\arcsin{x}\sim\arctan{x}\sim e^{x}-1 \sim \ln(1+x)\\
+            & a^{x}-1 \sim x\ln{x} \\
+            & (1+x)^{m}-1 \sim mx  \\
+            & 1-\cos{x}\sim \frac{1}{2}x^2
+          \end{aligned}
+    \end{gather*}
+    \item 洛必达法则：设$x\rightarrow x_{0}(x\rightarrow\infty\text{，或单侧极限})$时：$f(x)$和$g(x)$均为无穷小量（或无穷大量）；在$x_0$的某去心领域内（或$|x|>N$），$f^{\prime}(x)$与$g^{\prime}(x)$均存在且$g^{\prime}(x)\neq 0$；$\lim_{x\rightarrow x_{0}\\x\rightarrow\infty}{\frac{f^{\prime}(x)}{g^{\prime}(x)}}$存在（或为无穷大），则
+    \begin{gather*}
+        \lim_{x\rightarrow x_{0}\text{或}\infty}{\frac{f(x)}{g(x)}}
+        = \lim_{x\rightarrow x_{0}\text{或}\infty}{\frac{f^{\prime}(x)}{g^{\prime}(x)}}
+    \end{gather*}
+    \informationBox{
+        求$1^{\infty}$，$0^0$，$\infty^{0}$类型的极限时，可引入对数化，先化为$0\cdot\infty$型的极限，再化为$\frac{0}{0}$或$\frac{\infty}{\infty}$型的极限
+        \begin{gather*}
+            \lim_{x\rightarrow 0}{\frac{\sin{x}}{x}} = 1 \\
+            \lim_{x\rightarrow 0}{(1+x)^{\frac{1}{x}}} = e \\
+            \lim_{x\rightarrow 0}{(1+\frac{1}{x})^{x}} = 1
+        \end{gather*}
+    }
+\end{enumerate}
 
-\begin{gather*}
-    \lim_{x\rightarrow 0}{\frac{\sin{x}}{x}} = 1 \\
-    \lim_{x\rightarrow 0}{(1+x)^{\frac{1}{x}}} = e \\
-    \lim_{x\rightarrow 0}{(1+\frac{1}{x})^{x}} = 1
-\end{gather*}
+
+
 
 
 \subsubsection{级数收敛}
@@ -1985,6 +2248,15 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 
 \subsubsection{隐函数}
 
+
+设函数$F(x,y)$在点$P(x_0,y_0)$的某个邻域内具有连续的偏导数$F^{\prime}_{x}(x,y)$，$F^{\prime}_{y}(x,y)$，且$F(x_0,y_0)=0$，$F^{\prime}_{y}(x_0,y_0)\neq 0$，则在$(x_0,y_0)$的某邻域内，方程$F(x,y)=0$恒有唯一确定一个具有连续导数的函数$y=f(x)$，它满足条件$y_{0}=f(x_0)$，并有
+\begin{gather*}
+    \frac{\mathrm{d}y}{\mathrm{d}x}=-\frac{F^{\prime}_{x}(x,y)}{F^{\prime}_{y}(x,y)}
+\end{gather*}
+
+
+
+
 \subsubsection{高阶求导}
 
 
@@ -2072,6 +2344,14 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
  
 
 \subsubsection{隐函数}
+
+
+设函数$F(x,y,z)$在点$P(x_0,y_0,z_0)$的某个邻域内具有连续的偏导数$F^{\prime}_{x}(x,y)$，$F^{\prime}_{y}(x,y)$，$F^{\prime}_{z}(x,y)$，且$F(x_0,y_0,z_0)=0$，$F^{\prime}_{x}(x_0,y_0,z_0)\neq 0$，则在$(x_0,y_0,z_0)$的某邻域内，方程$F(x,y,z)=0$恒有唯一确定一个具有连续导数的函数$z=f(x,y)$，它满足条件$z_{0}=f(x_0,y_0)$，并有
+\begin{gather*}
+    \frac{\partial{z}}{\partial{x}}=-\frac{F^{\prime}_{x}(x,y,z)}{F^{\prime}_{z}(x,y,z)},
+    \frac{\partial{z}}{\partial{y}}=-\frac{F^{\prime}_{y}(x,y,z)}{F^{\prime}_{z}(x,y,z)}
+\end{gather*}
+
 
 
 
@@ -2230,6 +2510,8 @@ $y=f(x)$在$I$上有界$\Leftrightarrow$ 既有上界又有下界
 定义在样本空间$\varOmega=\{\omega\}$上的实值函数$X(\omega)$，且对任意实数$x$，$\{X(\omega)\leqslant x\}$是随机事件，称$X(\omega)$为随机变量
 
 
+
+
 \section{定义}
 
 $E$存在，要求绝对收敛
@@ -2248,12 +2530,13 @@ $D=Var$
         \item $D(X)= E(X^2) - [E(X)]^2$
         \item $D(C) = C$，$C$为常数
         \item $D(aX+b)=aD(X)+b$，$a$，$b$为常数
+        \item $D(X\pm Y)=D(X)+D(Y)\pm \mathrm{Cov}(X,Y)$
         \item 若$X_1,X_2,\cdots,X_n$相互独立，则$D(X_{1}\pm X_{2}\pm\cdots\pm X_{n})=D(X_1)+D(X_2)+\cdots+D(X_n)$
     \end{enumerate}
 }
 
 
-$F$分布函数
+$F$总体分布函数
 \informationBox{
     \begin{enumerate}[(1)]
         \item 非负性：$p_k\leqslant 0 (k=1,2,\cdots)$
@@ -2363,6 +2646,7 @@ $f$概率密度函数
     \end{gather*}
     \informationBox{
         \begin{enumerate}[(1)]
+            \item $\mathrm{Cov}(X,X)=D(X)$
             \item $\mathrm{Cov}(X,Y)=\mathrm{Cov}(Y,X)$
             \item $\mathrm{Cov}(aX,bY)=ab \mathrm{Cov}(X,Y)$
             \item $\mathrm{Cov}(X+Y,Z)=\mathrm{Cov}(X,Z)+\mathrm{Cov}(Y,Z)$
@@ -2746,8 +3030,8 @@ P(\lambda_1)P(\lambda_2)
     \end{gather*}
     \item \begin{gather*}
         X_i\sim N(\mu,\sigma^2) \\
-        X\sim N(\mu,\frac{\sigma^2}{n}) \\
-        S^2\sim N(\sigma^2,\frac{2\sigma^4}{n-1}) 
+        \overline{X}=\frac{1}{n}\sum_{i=1}^{n}{X_i}\sim N\left(\mu,\frac{\sigma^2}{n}\right) \\
+        S^2\sim N\left(\sigma^2,\frac{2\sigma^4}{n-1}\right) 
     \end{gather*}
 \end{enumerate}
 
@@ -2789,7 +3073,7 @@ P(\lambda_1)P(\lambda_2)
 
 \paragraph{多元}
 
-$\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm{\Sigma}$是$p$阶正定矩阵
+$\mathbf{X}$是$p$维正态随机向量，\ $\bm{\mu}$是$p$维向量，$\bm{\Sigma}$是$p$阶正定矩阵
 \begin{gather*}
     \mathbf{X}
     = \left(X_1,X_2,\cdots,X_p\right)^\prime
@@ -2828,12 +3112,46 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
 
 \paragraph{一元}
 
+
+设$X_1,X_2,\cdots,X_n$为来自标准正态总体$N(0,1)$的简单随机样本
+\begin{gather*}
+    \chi^2 = \sum_{i=1}^{n}{X_{i}^{2}}\sim \chi^{2}(n)
+\end{gather*}
+其中$n$为自由度。对于给定的正数$\alpha(0<\alpha<1)$，满足$P\{\chi^{2}>\chi^{2}_{\alpha}(n)\}=\alpha$的数值$\chi^{2}_{\alpha}(n)$为$\chi^2$分布的$\alpha$水平上侧临界值（上侧分位数）
+
 \begin{enumerate}[1.]
     \item 若$\chi^2\sim\chi^2(n)$，则$E(\chi^2)=n$，$D(\chi^2)=2n$
     \item $X\sim \chi^2{(n)}$，$Y\sim\chi^2(m)$，且$X$和$Y$相互独立，则$X+Y\sim\chi^2(m+n)$
 \end{enumerate}
 
 
+\subsubsection{$t$分布}
+
+
+\paragraph{一元}
+
+设随机变量$X\sim N(0,1)$，$Y\sim \chi^{2}(n)$，并且$X$与$Y$相互独立
+\begin{gather*}
+    t=\frac{X}{\sqrt{\frac{Y}{n}}}\sim t(n)
+\end{gather*}
+其中$n$为自由度。对于给定的正数$\alpha(0<\alpha<1)$，满足$P\{t>t_{\alpha}(n)\}=\alpha$的数值$t_{\alpha}(n)$为$t$分布的$\alpha$水平上侧临界值（上侧分位数），$t_{1-\alpha}(n)=-t_{\alpha}(n)$。
+
+
+\subsubsection{$F$分布}
+
+
+\paragraph{一元}
+
+设随机变量$X\sim \chi^{2}(n_1)$，$Y\sim \chi^{2}(n_2)$，并且$X$与$Y$相互独立
+\begin{gather*}
+    F=\frac{X/n_{1}}{Y/n_{2}}\sim F(n_1,n_2)
+\end{gather*}
+其中$n_1$为第一自由度，$n_2$为第二自由度。对于给定的正数$\alpha(0<\alpha<1)$，满足$P\{F>F_{\alpha}(n_1,n_2)\}=\alpha$的数值$F_{\alpha}(n_1,n_2)$为$F$分布的$\alpha$水平上侧临界值（上侧分位数），$F_{1-\alpha}(n_1,n_2)=\frac{1}{F_{\alpha}(n_2,n_1)}$。
+
+\begin{enumerate}[1.]
+    \item 若$F\sim F(n_1,n_2)$，则$\frac{1}{F}\sim F(n_2,n_1)$
+    \item $t^2\sim F(1,n)$
+\end{enumerate}
 
 
 
@@ -2842,7 +3160,41 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
 \chapter{参数估计}
 
 参数估计：利用样本信息对总体数字特征做出的估计（parameter estimation）
-\\
+
+\informationBox{
+    \begin{enumerate}
+        \item 总体：对研究对象的某一数量指标进行试验与观察，全不可能的观察值成为总体，每个观察值称为个体
+              \begin{enumerate}[(1)]
+                  \item 总体分为有限总体和无限总体，当总体中包含的个体数量很大时，通常看做无限总体
+                  \item 一个总体对应一个随机变量$X$，随机变量$X$得分不就是总体的分布
+              \end{enumerate}
+        \item 样本：从总体$X$中随机地抽取$n$个个体，称为总体$X$的一个容量为$n$的样本，记为$X_1,X_2,\cdots,X_n$
+              \begin{enumerate}[(1)]
+                  \item 样本中所包含个体的数目$n$称为样本容量。
+                  \item $X_1,X_2,\cdots,X_n$相互独立
+                  \item 每个个体$X_{i}(i=1,2,\cdots,n)$都与总体$X$同分布
+              \end{enumerate}
+        \item 经验分布函数（样本分布函数）：设总体X的分布函数为$F(X)$，$X_1,X_2,\cdots,X_n$为总体$X$的样本，$x_{1}^{*},x_{2}^{*},\cdots,x_{n}^{*}$是顺序统计量$X_{1}^{*},X_{2}^{*},\cdots,X_{n}^{*}$的观测值
+              \begin{gather*}
+                  F^{*}_{n}(x) =
+                  \begin{cases}
+                      0 ,x<x^{*}_{1}                                                  \\
+                      \frac{k}{n}, x_{k}^{*}\leqslant x<x_{k+1}^{*}, k=1,2,\cdots,n-1 \\
+                      1, x\geqslant x_{n}^{*}
+                  \end{cases}
+              \end{gather*}
+              $F^{*}_{n}(x)$是一个离散型随机变量的分布函数。当样本容量$n$足够大时，经验分布函$F^{*}_{n}(x)$数将近似于总体分布函数$F(x)$。
+        \item 统计量：设$X_{1},X_{2},\cdots,X_{n}$是总体$X$的样本，$g=g(X_{1},X_{2},\cdots,X_{n})$，若$g$中不含任何未知参数，则称$g(X_{1},X_{2},\cdots,X_{n})$是一个统计量
+              \begin{enumerate}[(1)]
+                  \item 统计量是个随机变量
+                  \item 统计量的分布为抽样分布
+                  \item 当样本观测值为$x_1,x_2,\cdots,x_n$时，称$g(x_1,x_2,\cdots,x_n)$为$g(X_{1},X_{2},\cdots,X_{n})$的一个观测值
+              \end{enumerate}
+    \end{enumerate}
+}
+
+
+
 
 \begin{enumerate}[1.]
     \item 原则
@@ -2873,6 +3225,69 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
                         \item 样本标准差s：样本标准差越大，置信区间越宽
                     \end{enumerate}
           \end{enumerate}
+    \item 理论：
+          \begin{enumerate}[(1)]
+              \item 均值：大数定律
+                    \begin{enumerate}[a.]
+                        \item 依概率收敛：设$X_1,X_2,\cdots,X_n,\cdots$是一个随机变量序列，$a$是一个常数，若对于任意的$\varepsilon>0$有
+                              \begin{gather*}
+                                  \lim\limits_{n\rightarrow\infty}{P\{|X_n-a|<\varepsilon\}}=1
+                              \end{gather*}
+                              则称随机变量序列$X_1,X_2,\cdots,X_n,\cdots$依概率收敛于$a$，记为$X_{n}\xrightarrow{P}a$
+                        \item 切比雪夫大数定律：设$X_1,X_2,\cdots,X_n,\cdots$是相互独立的随机变量序列，$E(X_i), D(X_i) (i=1,2,\cdots)$存在，并且存在常数$C>0$，使得$D(X_i)\leqslant C, i=1,2,\cdots$，则对于任意的$\varepsilon>0$，有
+                              \begin{gather*}
+                                  \lim\limits_{n\rightarrow\infty}{P\left\{\left|\frac{1}{n}\sum_{i=1}^{n}X_i-\frac{1}{n}\sum_{i=1}^{n}E\left(X_i\right)\right|<\varepsilon\right\}}=1
+                              \end{gather*}
+                              推论：设$X_1,X_2,\cdots,X_n,\cdots$是独立同分布的随机变量序列，且$E(X_i)=\mu, D(X_i)=\sigma^2 (i=1,2,\cdots)$，则对任意的$\varepsilon>0$，有
+                              \begin{gather*}
+                                  \lim\limits_{n\rightarrow\infty}{P\left\{\left|\frac{1}{n}\sum_{i=1}^{n}X_i-\mu\right|<\varepsilon\right\}}=1
+                              \end{gather*}
+                              \informationBox{
+                                  切比雪夫不等式：设随机变量$X$的数学期望$E(X)$与方差$D(X)$都存在，则对任意的$\varepsilon>0$，有
+                                  \begin{gather*}
+                                      P\{|X-E(X)|\geqslant\varepsilon\}\leqslant\frac{D(X)}{\varepsilon^2}
+                                  \end{gather*}
+                                  或
+                                  \begin{gather*}
+                                      P\{|X-E(X)|<\varepsilon\}\geqslant 1-\frac{D(X)}{\varepsilon^2}
+                                  \end{gather*}
+                              }
+                        \item 伯努利大数定律：设$n_{A}$是$n$重伯努利实验中事件$A$发生的次数，$p$是事件$A$在每次试验中发生的概率，则对任意的$\varepsilon>0$，有
+                              \begin{gather*}
+                                  \lim\limits_{n\rightarrow\infty}{P\left\{\left|\frac{n_A}{n}-p\right|<\varepsilon\right\}}=1
+                              \end{gather*}
+                        \item 辛钦大数定律：设$X_1,X_2,\cdots,X_n,\cdots$是独立同分布的随机变量序列，且$E(X_i)=\mu (i=1,2,\cdots)$，则对任意的$\varepsilon>0$，有
+                              \begin{gather*}
+                                  \lim\limits_{n\rightarrow\infty}{P\left\{\left|\frac{1}{n}\sum_{i=1}^{n}X_i-\mu\right|<\varepsilon\right\}}=1
+                              \end{gather*}
+                              即
+                              \begin{gather*}
+                                  \frac{1}{n}\sum_{i=1}^{n}{X_i}\xrightarrow{P}\mu
+                              \end{gather*}
+                    \end{enumerate}
+              \item 方差：中心极限定理
+                    \begin{enumerate}[a.]
+                        \item 林德伯格-列维中心极限定理（独立同分布的中心极限定理）：设$X_1,X_2,\cdots,X_n,\cdots$是独立同分布的随机变量序列，且$E(X_i)=\mu,D(X_i)=\sigma^{2}>0 (i=1,2,\cdots)$，则对任意的实数$x$，有
+                              \begin{gather*}
+                                  \lim\limits_{n\rightarrow\infty}{P\left\{\frac{\sum_{i=1}^{n}X_i-n\mu}{\sqrt n\sigma}\leqslant x\right\}}
+                                  =\frac{1}{\sqrt{2\pi}}{ \int_{-\infty}^{x}{e^{-\frac{t^2}{2}} \mathrm{d}t} }
+                                  =\Phi\left(x\right)
+                              \end{gather*}
+                              当$n$充分大时，独立同分布的随机变量$X_1,X_2,\cdots,X_n$的和$\sum_{i=1}^{n}{X_i}$的标准化变量$\frac{\sum_{i=1}^{n}{X_i}-n\mu}{\sqrt n\sigma}$近似服从标准正态分布
+                        \item 棣莫弗-拉普拉斯中心极限定理：设在$n$重伯努利实验中，事件$A$在每次试验中发生的概率为$p(0<p<1)$，$n_A$为$n$次实验中事件$A$出现的次数，则对任意的实数$x$，有
+                              \begin{gather*}
+                                  \lim\limits_{n\rightarrow\infty}{P\left\{\frac{n_A-np}{\sqrt{np(1-p)}}\leqslant x\right\}}
+                                  =\frac{1}{\sqrt{2\pi}}{ \int_{-\infty}^{x}{e^{-\frac{t^2}{2}} \mathrm{d}t} }
+                                  =\mathrm{\Phi}(x)
+                              \end{gather*}
+                              \par 正态分布是二项分布的极限分布
+                              \par 近似计算：
+                              \begin{gather*}
+                                  P\left\{x_1<X\leqslant x_2\right\}
+                                  =P\left\{\frac{x_1-np}{\sqrt{npq}}<\frac{X-np}{\sqrt{npq}}\le\frac{x_2-np}{\sqrt{npq}}\right\}\approx\Phi\left(\frac{x_2-np}{\sqrt{npq}}\right)-\Phi\left(\frac{x_1-np}{\sqrt{npq}}\right)
+                              \end{gather*}
+                    \end{enumerate}
+          \end{enumerate}
 \end{enumerate}
 
 
@@ -2891,10 +3306,16 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
 
 \paragraph{一元}
 
+样本均值：
 \begin{gather*}
     \overline{X}=\frac{1}{n}\sum_{i=0}^{n}X_i
 \end{gather*}
-
+\informationBox{
+    \begin{gather*}
+        E(\overline{X})=E(X)\\
+        D(\overline{X})=\frac{D(X)}{n}
+    \end{gather*}
+}
 
 
 \paragraph{多元}
@@ -2958,7 +3379,14 @@ $\mathbf{X}$是$p$维正态随机向量，\ $\mathbf{\mu}$是$p$维向量，$\bm
     S^2=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^2}\\
     S^2=\frac{1}{n-1}\sum_{i=1}^{n}{(X_i-\overline{X})^2}
 \end{gather*}
-\par $\overline{X}$与$S^2$相互独立
+
+
+\informationBox{
+    \par $\overline{X}$与$S^2$相互独立
+    \begin{gather*}
+        E(S^2)=D(X)
+    \end{gather*}
+}
 
 \paragraph{多元}
 样本离差阵：
@@ -3139,8 +3567,16 @@ $k$：变量个数
 
 \subsubsection{均值估计}
 
-\par k阶原点矩：$\frac{1}{n}\sum_{i=1}^{n}{X_i}, k=1,2,\cdots$
-\par k阶中心矩：$\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^k}, k=1,2,\cdots$
+\par $k$阶原点矩：
+\begin{gather*}
+    A_k=\frac{1}{n}\sum_{i=1}^{n}{X_i^k}, k=1,2,\cdots
+\end{gather*}
+$A_1=\overline{X}$
+\par $k$阶中心矩：
+\begin{gather*}
+    B_k=\frac{1}{n}\sum_{i=1}^{n}{(X_i-\overline{X})^k}, k=1,2,\cdots
+\end{gather*}
+$B_2=\frac{n-1}{n}S^2$
 
 \begin{gather*}
     \begin{cases}
@@ -3403,7 +3839,7 @@ $X\sim N\left(\mu_1,\sigma_1^2\right),\ Y\sim N\left(\mu_2,\sigma_2^2\right)$，
 
 1、$\sigma_1^2,\sigma_2^2$已知，$\sigma_1^2=\sigma_2^2$
 
-检验统计量及其分布：
+$\mu_{1}-\mu_{2}$的检验统计量及其分布：
 \begin{gather*}
     U=\frac{\overline{X}-\overline{Y}}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\sim N(0,1)
 \end{gather*}
@@ -3425,7 +3861,7 @@ $\mu_1-\mu_2$置信区间为：
 
 2、$\sigma_1^2,\sigma_2^2$未知，$\sigma_1^2=\sigma_2^2$
 
-检验统计量及其分布：
+$\mu_{1}-\mu_{2}$的检验统计量及其分布：
 \begin{gather*}
     T=\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{\left(n_1-1\right)S_1^2+\left(n_2-1\right)S_2^2}{n_1+n_2-2}}\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\sim t(n_1+n_2-2)
 \end{gather*}
@@ -3446,9 +3882,6 @@ $\mu_1-\mu_2$置信区间为：
 
 
 3、$\sigma_1^2\neq\sigma_2^2$
-
-
-
 
 
 
@@ -3495,13 +3928,13 @@ $\mu_1-\mu_2$置信区间为：
 \paragraph{一元}
 
 \begin{gather*}
-    H_0:\sigma^2=\sigma_0^2\Leftrightarrow H_1:\sigma^2\neq\sigma_0^2
+    H_0:\sigma_1^2=\sigma_2^2\Leftrightarrow H_1:\sigma_1^2\neq\sigma_2^2
 \end{gather*}
 
 
 1、均值$\mu_1,\mu_2$未知
 
-检验统计量及其分布：
+$\sigma_1^2=\sigma_2^2$检验统计量及其分布：
 \begin{gather*}
     F=\frac{S_1^2}{S_2^2}\sim F(n_1-1,n_2-1)
 \end{gather*}
@@ -3648,6 +4081,7 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
 
 \chapter{回归分析}
 
+计量经济学：运用概率统计的方法对经济变量之间的（因果）关系进行定量分析的科学
 
 \section{相关分析}
 
@@ -3797,7 +4231,7 @@ $\mathbf{T}=\mathbf{A}+\mathbf{E}$，$\mathbf{A}$为组间离差阵，$\bm{E}$�
           \begin{enumerate}[(1)]
               \item 条件同方差（conditional homoskedasticity）：
                     \begin{gather*}
-                        Var\left(\varepsilon_i\middle| X_1,X_2,\cdots,X_k\right)=\sigma^2，i=1,2,\cdots,n
+                        Var\left(\varepsilon_i\middle| X_1,X_2,\cdots,X_k\right)=\sigma^2,i=1,2,\cdots,n
                     \end{gather*}
               \item 序列不相关：
                     \begin{gather*}
@@ -3890,7 +4324,7 @@ $$ RSS=\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2=\sum_{i=1}^{n}\left(Y_i-{\hat{Y}}_i
 R^2=\frac{ESS}{TSS} 
 =\frac{\sum_{i=1}^{n}\left({\hat{Y}}_i-\overline{Y}\right)^2}{\sum_{i=1}^{n}\left(Y_i-\overline{Y}\right)^2} 
 =1-\frac{RSS}{TSS}
-=1-\frac{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2}{\sum_{i=1}^{n}\left(Y_i-\overline{Y}\right)^2}，0≤R^2≤1 \\ 
+=1-\frac{\sum_{i=1}^{n}{\hat{\varepsilon}}_i^2}{\sum_{i=1}^{n}\left(Y_i-\overline{Y}\right)^2}，0\leqslant R^2\leqslant 1 \\ 
 R^2=\left[Corr\left(Y_i,{\hat{Y}}_i\right)\right]^2
 \end{gather*}
 
